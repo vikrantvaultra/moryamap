@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import MapShell from '@/components/MapShell';
+import type { MapStrings } from '@/components/MapView';
 import WaitChip from '@/components/WaitChip';
 import { mandalName, queueLabel } from '@/lib/names';
 import { estimateForQueue, getMandalDirectory, type MandalData } from '@/lib/queries';
@@ -25,6 +27,35 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   const t = await getTranslations('home');
+  const tw = await getTranslations('wait');
+  const tb = await getTranslations('bands');
+  const tm = await getTranslations('mandal');
+  const tc = await getTranslations('common');
+
+  // The map is a client island with no intl provider — hand it raw templates.
+  const mapStrings: MapStrings = {
+    loading: tc('loading'),
+    noPins: t('noPinsYet'),
+    queueStart: t('queueStart'),
+    directions: tm('directions'),
+    details: t('details'),
+    report: tm('report'),
+    disclaimer: tw('disclaimer'),
+    estimateLabel: tw('estimateLabel'),
+    reportedLabel: tw.raw('reportedLabel'),
+    reportedJustNow: tw('reportedJustNow'),
+    lineStartsAt: tw.raw('lineStartsAt'),
+    hours: tw.raw('hours'),
+    minutes: tw.raw('minutes'),
+    minutesUpTo: tw.raw('minutesUpTo'),
+    bands: {
+      green: tb('green'),
+      amber: tb('amber'),
+      red: tb('red'),
+      deepred: tb('deepred'),
+    },
+  };
+
   let mandals: MandalData[] = [];
   let dbDown = false;
   try {
@@ -54,7 +85,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* MAP_SLOT */}
+      <MapShell strings={mapStrings} locale={locale} />
 
       <section className="mx-auto w-full max-w-3xl px-4 py-5">
         <div className="flex flex-wrap items-center justify-between gap-2">

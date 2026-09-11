@@ -62,7 +62,8 @@
     "sortNote": "Sorted by area and popularity — never by \"shortest queue right now\".",
     "showList": "List",
     "showMap": "Map",
-    "queueStart": "Queue start"
+    "queueStart": "Queue start",
+    "details": "Details"
   },
   "report": {
     "title": "Where does the line start right now?",

@@ -56,7 +56,8 @@ export interface MandalData {
 
 const TIER_ORDER: Record<Tier, number> = { s: 0, a: 1, b: 2, c: 3 };
 
-async function fetchDirectory(): Promise<MandalData[]> {
+/** Uncached read — used by the snapshot rebuilder. Pages use the cached one. */
+export async function fetchDirectory(): Promise<MandalData[]> {
   const db = getDb();
 
   const ms = await db.select().from(mandals).where(eq(mandals.isActive, true));
