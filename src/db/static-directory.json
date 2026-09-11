@@ -1,0 +1,553 @@
+[
+  {
+    "id": 4,
+    "slug": "andhericha-raja",
+    "name": "Andhericha Raja",
+    "nameMr": "अंधेरीचा राजा",
+    "nameHi": "अंधेरी का राजा",
+    "area": "Andheri West",
+    "tier": "a",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Andheri (Western), Azad Nagar (Metro)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 5,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 90,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "borivali-cha-raja",
+    "name": "Borivali cha Raja",
+    "nameMr": "बोरिवलीचा राजा",
+    "nameHi": "बोरिवली का राजा",
+    "area": "Borivali",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Borivali (Western)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 15,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "chembur-cha-raja",
+    "name": "Chembur cha Raja",
+    "nameMr": "चेंबूरचा राजा",
+    "nameHi": "चेंबूर का राजा",
+    "area": "Chembur",
+    "tier": "b",
+    "idolLat": 19.0656414,
+    "idolLng": 72.8941934,
+    "nearestStation": "Chembur (Harbour)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 14,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "chinchpoklicha-chintamani",
+    "name": "Chinchpoklicha Chintamani",
+    "nameMr": "चिंचपोकळीचा चिंतामणी",
+    "nameHi": "चिंचपोकली का चिंतामणि",
+    "area": "Chinchpokli",
+    "tier": "a",
+    "idolLat": 18.9869701,
+    "idolLng": 72.832906,
+    "nearestStation": "Chinchpokli (Central)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 6,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 90,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "dadar-cha-raja",
+    "name": "Dadar Cha Raja",
+    "nameMr": "दादरचा राजा",
+    "nameHi": "दादर का राजा",
+    "area": "Dadar",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Dadar (Central & Western)",
+    "stationWalkMinutes": null,
+    "notes": "Source: yatrirailways.com Ganesh Chaturthi Mumbai pandal guide",
+    "queues": [
+      {
+        "id": 21,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "dongri-cha-raja",
+    "name": "Dongri Cha Raja",
+    "nameMr": "डोंगरीचा राजा",
+    "nameHi": "डोंगरी का राजा",
+    "area": "Dongri",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Sandhurst Road (Central/Harbour)",
+    "stationWalkMinutes": null,
+    "notes": "Run by Sarvajanik Ganesh Utsav Mandal, Dongri.\n\nSources: sceneloc8.com/50-must-visit-ganesh-pandals-in-mumbai-for-2025-darshan, dongricharaja-website.vercel.app",
+    "queues": [
+      {
+        "id": 17,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "fort-cha-raja",
+    "name": "Fort cha Raja",
+    "nameMr": "फोर्टचा राजा",
+    "nameHi": "फोर्ट का राजा",
+    "area": "Fort",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "CSMT (Central), Churchgate (Western)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 10,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "ghatkoparcha-raja",
+    "name": "Ghatkoparcha Raja",
+    "nameMr": "घाटकोपरचा राजा",
+    "nameHi": "घाटकोपर का राजा",
+    "area": "Ghatkopar East",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Ghatkopar (Central / Metro)",
+    "stationWalkMinutes": null,
+    "notes": "Public Ganeshotsav by Shri Laxminarayan Bal Ganesh Mitra Mandal, Ghatkopar East.\n\nSource: globalprimenews.com (Sarvajanik Ganeshotsav 2025 coverage)",
+    "queues": [
+      {
+        "id": 20,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "girgaoncha-raja",
+    "name": "Girgaoncha Raja",
+    "nameMr": "गिरगावचा राजा",
+    "nameHi": "गिरगांव का राजा",
+    "area": "Girgaon",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Charni Road (Western)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 9,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "keshavji-naik-chawl",
+    "name": "Keshavji Naik Chawl",
+    "nameMr": "केशवजी नाईक चाळ",
+    "nameHi": "केशवजी नाईक चॉल",
+    "area": "Girgaon",
+    "tier": "b",
+    "idolLat": 18.9541724,
+    "idolLng": 72.8219532,
+    "nearestStation": "Charni Road / Grant Road (Western)",
+    "stationWalkMinutes": null,
+    "notes": "One of the oldest sarvajanik Ganeshotsav mandals in Mumbai.",
+    "queues": [
+      {
+        "id": 11,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "kamathipuracha-maharaja",
+    "name": "Kamathipuracha Maharaja",
+    "nameMr": "कामाठीपुराचा महाराजा",
+    "nameHi": "कामाठीपुरा का महाराजा",
+    "area": "Kamathipura",
+    "tier": "b",
+    "idolLat": 18.9650659,
+    "idolLng": 72.8261833,
+    "nearestStation": "Grant Road / Mumbai Central",
+    "stationWalkMinutes": null,
+    "notes": "Sarvajanik Ganeshotsav by Shri Sainath Mitra Mandal, since 1953. Known as a wish-fulfilling Ganpati. Stated venue: 8th Kamathipura (Central), Mumbai Central.\n\nSource: kamathipurachamaharaja.com",
+    "queues": [
+      {
+        "id": 18,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "khetwadicha-ganraj",
+    "name": "Khetwadicha Ganraj",
+    "nameMr": "खेतवाडीचा गणराज",
+    "nameHi": "खेतवाड़ी का गणराज",
+    "area": "Khetwadi",
+    "tier": "a",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Charni Road / Grant Road (Western)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 7,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 90,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "gsb-seva-mandal",
+    "name": "GSB Seva Mandal",
+    "nameMr": "जीएसबी सेवा मंडळ",
+    "nameHi": "जीएसबी सेवा मंडल",
+    "area": "King's Circle",
+    "tier": "a",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "King's Circle (Harbour), Matunga (Central)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 4,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 90,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "slug": "lalbaugcha-raja",
+    "name": "Lalbaugcha Raja",
+    "nameMr": "लालबागचा राजा",
+    "nameHi": "लालबाग का राजा",
+    "area": "Lalbaug",
+    "tier": "s",
+    "idolLat": 18.9914237,
+    "idolLng": 72.8364587,
+    "nearestStation": "Chinchpokli / Currey Road (Central), Lower Parel (Western)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 1,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 240,
+        "entryPoints": [],
+        "report": null
+      },
+      {
+        "id": 2,
+        "kind": "navas_charansparsh",
+        "label": "Navas / Charansparsh",
+        "labelMr": "नवस / चरणस्पर्श",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 600,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "mumbaicha-raja",
+    "name": "Mumbaicha Raja (Ganesh Galli)",
+    "nameMr": "मुंबईचा राजा (गणेश गल्ली)",
+    "nameHi": "मुंबई का राजा (गणेश गली)",
+    "area": "Lalbaug",
+    "tier": "a",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Chinchpokli / Currey Road (Central), Lower Parel (Western)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 3,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 90,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "tejukaya",
+    "name": "Tejukaya Mandal",
+    "nameMr": "तेजुकाया मंडळ",
+    "nameHi": "तेजुकाया मंडल",
+    "area": "Lalbaug",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Currey Road / Chinchpokli (Central)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 8,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "parel-cha-raja",
+    "name": "Parel cha Raja",
+    "nameMr": "परळचा राजा",
+    "nameHi": "परेल का राजा",
+    "area": "Parel",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Parel (Central), Prabhadevi (Western)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 13,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "thane-cha-raja",
+    "name": "Thane cha Raja",
+    "nameMr": "ठाण्याचा राजा",
+    "nameHi": "ठाणे का राजा",
+    "area": "Thane",
+    "tier": "b",
+    "idolLat": 19.1970186,
+    "idolLng": 72.9772325,
+    "nearestStation": "Thane (Central)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 16,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "sahyadri-krida-mandal",
+    "name": "Sahyadri Krida Mandal",
+    "nameMr": "सह्याद्री क्रीडा मंडळ",
+    "nameHi": "सह्याद्री क्रीड़ा मंडल",
+    "area": "Tilak Nagar",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Tilak Nagar (Harbour)",
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 12,
+        "kind": "mukh_darshan",
+        "label": "Mukh Darshan",
+        "labelMr": "मुख दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "vashicha-raja",
+    "name": "Vashicha Raja",
+    "nameMr": "वाशीचा राजा",
+    "nameHi": "वाशी का राजा",
+    "area": "Vashi",
+    "tier": "b",
+    "idolLat": null,
+    "idolLng": null,
+    "nearestStation": "Vashi (Harbour)",
+    "stationWalkMinutes": null,
+    "notes": "One of Navi Mumbai's oldest sarvajanik mandals, since 1974. Stated venue: Sector 8, Vashi.\n\nSource: ilovenavimumbai.com/vashicha-raja",
+    "queues": [
+      {
+        "id": 19,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  }
+]

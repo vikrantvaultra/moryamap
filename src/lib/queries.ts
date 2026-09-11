@@ -58,6 +58,15 @@ const TIER_ORDER: Record<Tier, number> = { s: 0, a: 1, b: 2, c: 3 };
 
 /** Uncached read — used by the snapshot rebuilder. Pages use the cached one. */
 export async function fetchDirectory(): Promise<MandalData[]> {
+  // No database configured (e.g. a fresh deploy before Neon is set up):
+  // serve the bundled, sanitized directory — real curated mandal data with
+  // sourced approximate pins, but no queue pins and no crowd reports.
+  // Estimator waits still compute live from baseMinutes; provenance labels
+  // stay honest. Reporting/admin need a real DATABASE_URL.
+  if (!process.env.DATABASE_URL) {
+    const staticDir = (await import('@/db/static-directory.json')).default;
+    return staticDir as MandalData[];
+  }
   const db = getDb();
 
   const ms = await db.select().from(mandals).where(eq(mandals.isActive, true));
@@ -190,6 +199,9 @@ export async function getMandalBySlug(slug: string): Promise<MandalData | null> 
  */
 export async function getAllMandalSlugs(): Promise<string[]> {
   try {
+    if (!process.env.DATABASE_URL) {
+      return (await fetchDirectory()).map((m) => m.slug);
+    }
     const db = getDb();
     const rows = await db.select({ slug: mandals.slug }).from(mandals);
     return rows.map((r) => r.slug);

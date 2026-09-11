@@ -53,6 +53,8 @@ export async function submitEntryPointReport(formData: FormData) {
   const locale = String(formData.get('locale') ?? 'en');
 
   if (!Number.isInteger(queueId) || queueId <= 0) redirect('/');
+  // Static-fallback mode (no DB): reports can't be stored.
+  if (!process.env.DATABASE_URL) redirect(reportPath(locale, queueId, 'invalid'));
   if (!Number.isInteger(entryPointId) || entryPointId <= 0) {
     redirect(reportPath(locale, queueId, 'invalid'));
   }
@@ -99,6 +101,7 @@ export async function submitCompletedWait(formData: FormData) {
   const queueId = Number(formData.get('queueId'));
   const locale = String(formData.get('locale') ?? 'en');
   if (!Number.isInteger(queueId) || queueId <= 0) redirect('/');
+  if (!process.env.DATABASE_URL) redirect(reportPath(locale, queueId, 'invalid'));
 
   const now = new Date();
   let joinedAt = istTimeToUtc(String(formData.get('joined') ?? ''), now);
