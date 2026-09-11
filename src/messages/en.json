@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Morya Map — Ganeshotsav queues, honestly",
+    "description": "Where the darshan queue starts, how long it really takes, and how to reach Mumbai's famous Ganpati mandals. 14–25 September 2026."
+  },
+  "common": {
+    "appName": "Morya Map",
+    "tagline": "Ganeshotsav queues, honestly.",
+    "backToMap": "Back to the map",
+    "mandals": "Mandals",
+    "map": "Map",
+    "loading": "Loading…",
+    "festivalDates": "14–25 September 2026"
+  },
+  "wait": {
+    "waitLabel": "Expected wait",
+    "minutes": "{low}–{high} min",
+    "minutesUpTo": "up to {high} min",
+    "hours": "{low}–{high} hrs",
+    "estimateLabel": "Estimate — based on past festivals, not live",
+    "reportedLabel": "Reported {mins} min ago by a visitor",
+    "reportedJustNow": "Reported just now by a visitor",
+    "estimateShort": "estimate, not live",
+    "reportedShort": "reported {mins} min ago",
+    "lineStartsAt": "Line reported starting at {landmark}",
+    "disclaimer": "Waits vary hugely. If you are travelling with elders or children, plan for the upper end."
+  },
+  "tier": {
+    "s": "Legendary",
+    "a": "Major",
+    "b": "Popular",
+    "c": "Neighbourhood"
+  },
+  "bands": {
+    "green": "Short",
+    "amber": "Moderate",
+    "red": "Long",
+    "deepred": "Very long"
+  },
+  "mandal": {
+    "queuesTitle": "Darshan queues",
+    "directions": "Directions to queue start",
+    "report": "Report this queue",
+    "gettingThere": "Getting there",
+    "nearestStation": "Nearest station",
+    "walk": "about {mins} min walk to the mandal",
+    "bestTime": "Best time to go",
+    "bestTimeLine": "Quietest between 4–7 am. Evenings after 7 pm are the heaviest — expect the top of the range.",
+    "holdingPoints": "Where the line can start",
+    "holdingPointsHint": "As the crowd grows, police extend the queue backwards through these points. No. 1 is closest to the mandap.",
+    "notes": "Notes",
+    "noPin": "The exact queue-start pin isn't set yet — ask a volunteer on the ground.",
+    "notFound": "Mandal not found."
+  },
+  "home": {
+    "title": "Where's the line?",
+    "subtitle": "Queue starts, honest waits and how to reach {count} famous Ganpati mandals across Mumbai.",
+    "listTitle": "Browse by area",
+    "legendTitle": "Wait bands",
+    "mapNote": "Pins mark where the darshan queue starts — not where the idol is.",
+    "noPinsYet": "Map pins are still being verified on the ground and will appear as they're confirmed. Use the list below meanwhile.",
+    "sortNote": "Sorted by area and popularity — never by \"shortest queue right now\".",
+    "showList": "List",
+    "showMap": "Map",
+    "queueStart": "Queue start"
+  },
+  "report": {
+    "title": "Where does the line start right now?",
+    "instructions": "Tap the landmark where people are joining the queue right now. One tap — no account needed.",
+    "submit": "Send report",
+    "thanks": "Thank you! Your report will appear once a moderator confirms it.",
+    "moderation": "Reports are checked by a moderator before they go live.",
+    "completedTitle": "Finished your darshan?",
+    "completedHint": "Tell us when you joined the line and when you got darshan — it makes next year's estimates better. Times are in IST.",
+    "joinedAt": "Joined the line at",
+    "darshanAt": "Got darshan at",
+    "submitCompleted": "Send times",
+    "rateLimited": "You've sent a few reports recently. Please try again in a while.",
+    "invalid": "That didn't go through — please pick a landmark and try again.",
+    "noLandmarks": "This queue's landmark list isn't set up yet. Reporting opens soon.",
+    "closest": "closest to the mandap",
+    "farthest": "farthest"
+  },
+  "footer": {
+    "madeWith": "A community project for Ganeshotsav 2026.",
+    "honesty": "We never show fake live data. Every figure is labelled with where it came from."
+  }
+}
