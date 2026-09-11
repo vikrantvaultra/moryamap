@@ -6,5 +6,55 @@
     "source": "OSM/Nominatim",
     "osmDisplayName": "Keshavji Naik Chawl, Gokhale Path (Borbhat galli), Girgaon, D Ward, Mumbai Zone 1, Mumbai City District, Maharashtra, 400004, India",
     "fetchedAt": "2026-09-11T13:33:35.023Z"
+  },
+  {
+    "slug": "thane-cha-raja",
+    "lat": 19.1970186,
+    "lng": 72.9772325,
+    "source": "venue geocode (OSM/Nominatim)",
+    "venueQuery": "Tembhi Naka, Thane",
+    "venueSource": "https://sceneloc8.com/50-must-visit-ganesh-pandals-in-mumbai-for-2025-darshan/",
+    "osmDisplayName": "Tembhi Naka, Shivaji Path, Charai, Jambli Naka, Thane, Thane Subdistrict, Thane, Maharashtra, 400602, India",
+    "fetchedAt": "2026-09-11T15:38:40.012Z"
+  },
+  {
+    "slug": "chembur-cha-raja",
+    "lat": 19.0656414,
+    "lng": 72.8941934,
+    "source": "venue geocode (OSM/Nominatim)",
+    "venueQuery": "Shell Colony, Chembur, Mumbai",
+    "venueSource": "https://sceneloc8.com/50-must-visit-ganesh-pandals-in-mumbai-for-2025-darshan/",
+    "osmDisplayName": "Shell Colony, Chembur, M/W Ward, Mumbai Zone 5, Mumbai, Mumbai Suburban District, Maharashtra, 400089, India",
+    "fetchedAt": "2026-09-11T15:38:41.139Z"
+  },
+  {
+    "slug": "chinchpoklicha-chintamani",
+    "lat": 18.9869701,
+    "lng": 72.832906,
+    "source": "venue geocode (OSM/Nominatim)",
+    "venueQuery": "Chinchpokli railway station, Mumbai",
+    "venueSource": "https://www.freepressjournal.in/lifestyle/mumbai-ganesh-pandal-hopping-guide-how-to-visit-lalbaugcha-raja-gsb-seva-mandal-more-in-one-day",
+    "osmDisplayName": "Chinchpokli Railway Station, Byculla West, E Ward, Mumbai Zone 1, Mumbai City District, Maharashtra, India",
+    "fetchedAt": "2026-09-11T15:38:45.485Z"
+  },
+  {
+    "slug": "kamathipuracha-maharaja",
+    "lat": 18.9650659,
+    "lng": 72.8261833,
+    "source": "venue geocode (OSM/Nominatim)",
+    "venueQuery": "Kamathipura, Mumbai",
+    "venueSource": "https://kamathipurachamaharaja.com/",
+    "osmDisplayName": "Kamathipura, Nagpada, E Ward, Mumbai Zone 1, Mumbai City District, Maharashtra, 400004, India",
+    "fetchedAt": "2026-09-11T15:38:37.049Z"
+  },
+  {
+    "slug": "lalbaugcha-raja",
+    "lat": 18.9914237,
+    "lng": 72.8364587,
+    "source": "venue geocode (OSM/Nominatim)",
+    "venueQuery": "Lalbaug, Mumbai",
+    "venueSource": "https://www.freepressjournal.in/lifestyle/mumbai-ganesh-pandal-hopping-guide-how-to-visit-lalbaugcha-raja-gsb-seva-mandal-more-in-one-day",
+    "osmDisplayName": "Lalbaug, F/S Ward, Mumbai Zone 2, Mumbai City District, Maharashtra, 400011, India",
+    "fetchedAt": "2026-09-11T15:38:46.804Z"
   }
 ]

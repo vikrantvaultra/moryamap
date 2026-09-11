@@ -1,0 +1,122 @@
+{
+  "_comment": "Press/official-site-verified mandal dataset, assembled 11 Sep 2026. Every entry carries its sources. Venues are geocoded as APPROXIMATE mandal locations (never queue starts) by scripts/import-press.ts, and only when the geocoder result genuinely matches the stated venue name.",
+  "corrections": [
+    {
+      "slug": "andhericha-raja",
+      "area": "Andheri West",
+      "nearestStation": "Andheri (Western), Azad Nagar (Metro)",
+      "source": "https://www.freepressjournal.in/lifestyle/mumbai-ganesh-pandal-hopping-guide-how-to-visit-lalbaugcha-raja-gsb-seva-mandal-more-in-one-day"
+    }
+  ],
+  "mandals": [
+    {
+      "slug": "dongri-cha-raja",
+      "name": "Dongri Cha Raja",
+      "nameMr": "डोंगरीचा राजा",
+      "nameHi": "डोंगरी का राजा",
+      "area": "Dongri",
+      "tier": "b",
+      "nearestStation": "Sandhurst Road (Central/Harbour)",
+      "notes": "Run by Sarvajanik Ganesh Utsav Mandal, Dongri.\n\nSources: sceneloc8.com/50-must-visit-ganesh-pandals-in-mumbai-for-2025-darshan, dongricharaja-website.vercel.app",
+      "venue": null,
+      "sources": [
+        "https://sceneloc8.com/50-must-visit-ganesh-pandals-in-mumbai-for-2025-darshan/",
+        "https://dongricharaja-website.vercel.app/"
+      ]
+    },
+    {
+      "slug": "kamathipuracha-maharaja",
+      "name": "Kamathipuracha Maharaja",
+      "nameMr": "कामाठीपुराचा महाराजा",
+      "nameHi": "कामाठीपुरा का महाराजा",
+      "area": "Kamathipura",
+      "tier": "b",
+      "nearestStation": "Grant Road / Mumbai Central",
+      "notes": "Sarvajanik Ganeshotsav by Shri Sainath Mitra Mandal, since 1953. Known as a wish-fulfilling Ganpati. Stated venue: 8th Kamathipura (Central), Mumbai Central.\n\nSource: kamathipurachamaharaja.com",
+      "venue": {
+        "query": "Kamathipura, Mumbai",
+        "mustMatch": "kamathipura"
+      },
+      "sources": [
+        "https://kamathipurachamaharaja.com/"
+      ]
+    },
+    {
+      "slug": "vashicha-raja",
+      "name": "Vashicha Raja",
+      "nameMr": "वाशीचा राजा",
+      "nameHi": "वाशी का राजा",
+      "area": "Vashi",
+      "tier": "b",
+      "nearestStation": "Vashi (Harbour)",
+      "notes": "One of Navi Mumbai's oldest sarvajanik mandals, since 1974. Stated venue: Sector 8, Vashi.\n\nSource: ilovenavimumbai.com/vashicha-raja",
+      "venue": {
+        "query": "Sector 8, Vashi",
+        "mustMatch": "sector8"
+      },
+      "sources": [
+        "https://ilovenavimumbai.com/vashicha-raja/"
+      ]
+    },
+    {
+      "slug": "ghatkoparcha-raja",
+      "name": "Ghatkoparcha Raja",
+      "nameMr": "घाटकोपरचा राजा",
+      "nameHi": "घाटकोपर का राजा",
+      "area": "Ghatkopar East",
+      "tier": "b",
+      "nearestStation": "Ghatkopar (Central / Metro)",
+      "notes": "Public Ganeshotsav by Shri Laxminarayan Bal Ganesh Mitra Mandal, Ghatkopar East.\n\nSource: globalprimenews.com (Sarvajanik Ganeshotsav 2025 coverage)",
+      "venue": null,
+      "sources": [
+        "https://globalprimenews.com/2025/07/29/ghatkopar-rajas-arrival-marks-sarvajanik-ganeshotsav-2025-with-a-bang/"
+      ]
+    },
+    {
+      "slug": "dadar-cha-raja",
+      "name": "Dadar Cha Raja",
+      "nameMr": "दादरचा राजा",
+      "nameHi": "दादर का राजा",
+      "area": "Dadar",
+      "tier": "b",
+      "nearestStation": "Dadar (Central & Western)",
+      "notes": "Source: yatrirailways.com Ganesh Chaturthi Mumbai pandal guide",
+      "venue": null,
+      "sources": [
+        "https://yatrirailways.com/bappa-with-yatri-ganesh-chaturthi-2025-in-mumbai-famous-pandals-nearest-stations-travel-guide"
+      ]
+    }
+  ],
+  "venuePinsForExisting": [
+    {
+      "slug": "thane-cha-raja",
+      "query": "Tembhi Naka, Thane",
+      "mustMatch": "tembhinaka",
+      "venueSource": "https://sceneloc8.com/50-must-visit-ganesh-pandals-in-mumbai-for-2025-darshan/"
+    },
+    {
+      "slug": "chembur-cha-raja",
+      "query": "Shell Colony, Chembur, Mumbai",
+      "mustMatch": "shellcolony",
+      "venueSource": "https://sceneloc8.com/50-must-visit-ganesh-pandals-in-mumbai-for-2025-darshan/"
+    },
+    {
+      "slug": "mumbaicha-raja",
+      "query": "Ganesh Gully, Mumbai",
+      "mustMatch": "ganeshgu",
+      "venueSource": "https://yatrirailways.com/bappa-with-yatri-ganesh-chaturthi-2025-in-mumbai-famous-pandals-nearest-stations-travel-guide"
+    },
+    {
+      "slug": "chinchpoklicha-chintamani",
+      "query": "Chinchpokli railway station, Mumbai",
+      "mustMatch": "chinchpokli",
+      "venueSource": "https://www.freepressjournal.in/lifestyle/mumbai-ganesh-pandal-hopping-guide-how-to-visit-lalbaugcha-raja-gsb-seva-mandal-more-in-one-day"
+    },
+    {
+      "slug": "lalbaugcha-raja",
+      "query": "Lalbaug, Mumbai",
+      "mustMatch": "lalbaug",
+      "venueSource": "https://www.freepressjournal.in/lifestyle/mumbai-ganesh-pandal-hopping-guide-how-to-visit-lalbaugcha-raja-gsb-seva-mandal-more-in-one-day"
+    }
+  ]
+}

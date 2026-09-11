@@ -91,9 +91,17 @@ npm run build   # must stay green; survives a missing DATABASE_URL
 ## Getting more mandals in (the "BMC list")
 
 The MCGM/BMC Ganeshotsav portal is an **application system, not a public
-dataset** — there is no downloadable list of the ~2,500 approved mandals.
-When you obtain the ward-wise list (ward office, RTI, or portal access),
-import it in one command:
+dataset** — there is no downloadable list of the ~2,500 approved mandals
+(verified: BMC portal, data.gov.in/opencity, BGSS, OSM Overpass, Wikipedia
+were all checked). What exists instead:
+
+- `src/db/press-mandals.json` — a press/official-site-verified dataset
+  (every entry carries its source URLs). Apply it with
+  `npx tsx scripts/import-press.ts` **after** `db:seed`: it inserts the
+  sourced mandals, applies sourced corrections, and geocodes stated venues
+  into approximate "≈" pins (strict name-match only).
+- The CSV importer below, for the day you obtain the real ward-wise list
+  (ward office, RTI, or portal access):
 
 ```bash
 npm run db:import -- path/to/mandals.csv
