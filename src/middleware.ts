@@ -16,9 +16,14 @@ export default function middleware(req: NextRequest) {
         status: 503,
       });
     }
+    // Same credentials, two transports: the Authorization header (browser
+    // prompt) or a `morya_admin` cookie (base64 user:pass — lets curl/
+    // automation authenticate without the native dialog).
     const header = req.headers.get('authorization') ?? '';
-    const [scheme, encoded] = header.split(' ');
-    if (scheme === 'Basic' && encoded) {
+    const [scheme, headerToken] = header.split(' ');
+    const cookieToken = req.cookies.get('morya_admin')?.value;
+    for (const encoded of [scheme === 'Basic' ? headerToken : null, cookieToken]) {
+      if (!encoded) continue;
       try {
         const decoded = atob(encoded);
         const idx = decoded.indexOf(':');

@@ -93,7 +93,11 @@ export default async function MandalPage({
                   <p className="text-xs text-ink-soft">{q.label}</p>
                 )}
                 <div className="mt-3">
-                  <WaitFigure est={est} landmark={q.report?.landmark} size="lg" />
+                  <WaitFigure
+                    est={est}
+                    landmark={q.report ? landmarkName(q.report, locale) : null}
+                    size="lg"
+                  />
                 </div>
                 <div className="mt-4 flex flex-col gap-2">
                   {hasPin ? (

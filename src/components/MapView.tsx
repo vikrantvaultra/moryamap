@@ -97,9 +97,13 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
       style: 'https://tiles.openfreemap.org/styles/liberty',
       center: [72.88, 19.05],
       zoom: 10.6,
+      minZoom: 8.5,
+      // Generous bounds: tighter ones can be narrower than a desktop
+      // viewport, which wedges MapLibre into a state where it never
+      // requests tiles at all.
       maxBounds: [
-        [72.55, 18.7],
-        [73.35, 19.5],
+        [71.5, 17.9],
+        [74.5, 20.2],
       ],
       attributionControl: { compact: true },
     });
@@ -108,6 +112,10 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
       new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true } }),
       'top-right',
     );
+    if (process.env.NODE_ENV !== 'production') {
+      (window as unknown as Record<string, unknown>).__morya_map = map;
+      map.on('error', (e) => console.warn('[map error]', e.error?.message ?? e));
+    }
     mapRef.current = map;
     return () => {
       map.remove();
@@ -176,7 +184,9 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
 
   return (
     <div className="relative h-[56dvh] min-h-[340px] w-full bg-cream-deep">
-      <div ref={containerRef} className="absolute inset-0" />
+      {/* Explicit height: maplibre's CSS forces position:relative on this el,
+          so absolute-inset positioning would collapse it to 0 height. */}
+      <div ref={containerRef} className="h-full w-full" />
 
       {!loaded && (
         <div className="pointer-events-none absolute inset-0 grid place-items-center">

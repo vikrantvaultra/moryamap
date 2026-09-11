@@ -11,6 +11,12 @@ import { submitCompletedWait, submitEntryPointReport } from './actions';
 // searchParams and stays cacheable.
 export const revalidate = 60;
 
+// No paths at build time, but declaring this opts the route into static
+// generation + ISR (without it Next renders every request dynamically).
+export function generateStaticParams(): { queueId: string }[] {
+  return [];
+}
+
 export async function generateMetadata(): Promise<Metadata> {
   return { title: 'Report the queue', robots: { index: false } };
 }
