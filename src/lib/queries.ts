@@ -168,6 +168,17 @@ export const getMandalDirectory = unstable_cache(fetchDirectory, ['mandal-direct
   tags: ['queues'],
 });
 
+export async function getQueueContext(
+  queueId: number,
+): Promise<{ mandal: MandalData; queue: QueueData } | null> {
+  const all = await getMandalDirectory();
+  for (const mandal of all) {
+    const queue = mandal.queues.find((q) => q.id === queueId);
+    if (queue) return { mandal, queue };
+  }
+  return null;
+}
+
 export async function getMandalBySlug(slug: string): Promise<MandalData | null> {
   const all = await getMandalDirectory();
   return all.find((m) => m.slug === slug) ?? null;
