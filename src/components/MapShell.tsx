@@ -7,7 +7,7 @@ import type { MapStrings } from './MapView';
 // The page (waits, list, directions) is fully usable before/without the map.
 const MapView = dynamic(() => import('./MapView'), {
   ssr: false,
-  loading: () => <div className="h-[56dvh] min-h-[340px] w-full animate-pulse bg-cream-deep" />,
+  loading: () => <div className="h-full w-full animate-pulse bg-cream-deep" />,
 });
 
 export default function MapShell(props: { strings: MapStrings; locale: string }) {

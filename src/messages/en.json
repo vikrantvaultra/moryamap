@@ -63,7 +63,11 @@
     "showList": "List",
     "showMap": "Map",
     "queueStart": "Queue start",
-    "details": "Details"
+    "details": "Details",
+    "searchPlaceholder": "Search mandal or area…",
+    "noResults": "No mandals match your search.",
+    "pageOf": "Page {page} of {total}",
+    "approxLocation": "Approximate mandal location — exact queue start not verified yet."
   },
   "report": {
     "title": "Where does the line start right now?",

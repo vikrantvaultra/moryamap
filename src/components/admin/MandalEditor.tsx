@@ -205,9 +205,24 @@ export default function MandalEditor({
       )}
 
       <div className="rounded-lg border border-stone-300 bg-white p-4">
-        <h2 className="text-sm font-bold">
-          {mandal.name} <span className="font-normal text-stone-500">· {mandal.area} · tier {mandal.tier.toUpperCase()}</span>
-        </h2>
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 className="text-sm font-bold">
+            {mandal.name}{' '}
+            <span className="font-normal text-stone-500">
+              · {mandal.area} · tier {mandal.tier.toUpperCase()}
+            </span>
+          </h2>
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+              `${mandal.name} ${mandal.area} Mumbai`,
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-semibold text-orange-700 underline"
+          >
+            Find on Google Maps ↗ (cross-check, then drop the pin here)
+          </a>
+        </div>
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
           <label className="text-xs font-semibold text-stone-600">
             Nearest station

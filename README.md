@@ -88,6 +88,26 @@ npm run build   # must stay green; survives a missing DATABASE_URL
    landmarks + implied minutes.
 7. Sanity-check `/api/snapshot.json` returns `provenance: "estimate"` figures.
 
+## Getting more mandals in (the "BMC list")
+
+The MCGM/BMC Ganeshotsav portal is an **application system, not a public
+dataset** — there is no downloadable list of the ~2,500 approved mandals.
+When you obtain the ward-wise list (ward office, RTI, or portal access),
+import it in one command:
+
+```bash
+npm run db:import -- path/to/mandals.csv
+# columns: name,area[,nameMr,nameHi,tier,nearestStation,lat,lng]
+```
+
+Imported `lat`/`lng` are treated as **approximate mandal locations** (shown
+as distinct "≈" ring markers), never as queue-start pins. Two helper scripts
+try open sources for locations — `npm run geocode` (OSM/Nominatim) — but
+accept a result only when the name genuinely matches; everything else stays
+unpinned until someone drops a verified pin in `/admin` (each editor row has
+a "Find on Google Maps" cross-check link, so pinning all 15 seeded mandals
+takes ~10 minutes).
+
 ## Operating during the festival
 
 - Reports land as `pending`; accept/reject in `/admin`. Accepting one flips

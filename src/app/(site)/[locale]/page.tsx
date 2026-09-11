@@ -1,8 +1,9 @@
-import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import HomeShell from '@/components/HomeShell';
+import MandalList, { type ListItem } from '@/components/MandalList';
 import MapShell from '@/components/MapShell';
 import type { MapStrings } from '@/components/MapView';
-import WaitChip from '@/components/WaitChip';
+import { formatRangeParts } from '@/components/WaitFigure';
 import { mandalName, queueLabel } from '@/lib/names';
 import { estimateForQueue, getMandalDirectory, type MandalData } from '@/lib/queries';
 
@@ -36,6 +37,8 @@ export default async function HomePage({
   const mapStrings: MapStrings = {
     loading: tc('loading'),
     noPins: t('noPinsYet'),
+    mapNote: t('mapNote'),
+    approxLocation: t('approxLocation'),
     queueStart: t('queueStart'),
     directions: tm('directions'),
     details: t('details'),
@@ -66,92 +69,84 @@ export default async function HomePage({
   const now = new Date();
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
-  const byArea = new Map<string, MandalData[]>();
-  for (const m of mandals) {
-    byArea.set(m.area, [...(byArea.get(m.area) ?? []), m]);
-  }
+  // Precompute display strings server-side so the list client component
+  // ships no i18n runtime. Order stays area/popularity — never wait.
+  const items: ListItem[] = mandals.map((m) => ({
+    slug: m.slug,
+    name: mandalName(m, locale),
+    area: m.area,
+    search: [m.name, m.nameMr, m.nameHi, m.area]
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase(),
+    queues: m.queues.map((q) => {
+      const est = estimateForQueue(q, now);
+      const parts = formatRangeParts(est);
+      const reported = est.provenance === 'reported';
+      return {
+        label: queueLabel(q, locale),
+        band: est.band,
+        range: tw(parts.key, { low: parts.low, high: parts.high }),
+        provenance:
+          reported && est.reportedAt
+            ? tw('reportedShort', {
+                mins: Math.max(1, Math.round((now.getTime() - est.reportedAt.getTime()) / 60_000)),
+              })
+            : tw('estimateShort'),
+        reported,
+      };
+    }),
+  }));
 
   return (
-    <div className="flex flex-1 flex-col">
-      <section className="bg-gradient-to-b from-cream-deep to-cream">
-        <div className="mx-auto w-full max-w-3xl px-4 pb-4 pt-6">
+    <HomeShell
+      labels={{ map: t('showMap'), list: t('showList') }}
+      map={
+        <div className="h-[calc(100dvh-3.75rem)] md:h-[62vh]">
+          <MapShell strings={mapStrings} locale={locale} />
+        </div>
+      }
+      list={
+        <section className="mx-auto w-full max-w-3xl px-4 pb-24 pt-5 md:pb-8">
           <h1 className="text-2xl font-bold leading-tight text-maroon">{t('title')}</h1>
           <p className="mt-1 text-sm text-ink-soft">
             {t('subtitle', { count: mandals.length || 15 })}
           </p>
-          <p className="mt-2 inline-block rounded-lg bg-amber-100 px-3 py-1.5 text-xs font-medium text-maroon">
-            📍 {t('mapNote')}
-          </p>
-        </div>
-      </section>
 
-      <MapShell strings={mapStrings} locale={locale} />
-
-      <section className="mx-auto w-full max-w-3xl px-4 py-5">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">
-            {t('listTitle')}
-          </h2>
-          <LegendInline />
-        </div>
-
-        {dbDown && (
-          <p className="card mt-3 p-4 text-sm text-ink-soft">{t('noPinsYet')}</p>
-        )}
-
-        <div className="mt-3 space-y-5">
-          {[...byArea.entries()].map(([area, ms]) => (
-            <div key={area}>
-              <h3 className="text-base font-bold text-maroon">{area}</h3>
-              <ul className="mt-1.5 space-y-2">
-                {ms.map((m) => (
-                  <li key={m.id}>
-                    <Link
-                      href={`${prefix}/m/${m.slug}`}
-                      className="card block p-3.5 transition-shadow hover:shadow-md"
-                    >
-                      <div className="flex items-baseline justify-between gap-2">
-                        <span className="text-[15px] font-bold text-ink">
-                          {mandalName(m, locale)}
-                        </span>
-                        <span className="shrink-0 text-flame" aria-hidden>
-                          →
-                        </span>
-                      </div>
-                      <div className="mt-1.5 space-y-1">
-                        {m.queues.map((q) => (
-                          <div key={q.id} className="flex flex-wrap items-center gap-x-2">
-                            <span className="text-xs font-medium text-ink-soft">
-                              {queueLabel(q, locale)}:
-                            </span>
-                            <WaitChip est={estimateForQueue(q, now)} />
-                          </div>
-                        ))}
-                      </div>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+            <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">
+              {t('listTitle')}
+            </h2>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+              {BAND_KEYS.map((b) => (
+                <span
+                  key={b}
+                  className="flex items-center gap-1 text-[11px] font-medium text-ink-soft"
+                >
+                  <span className={`size-2 rounded-full ${BAND_DOT[b]}`} aria-hidden />
+                  {tb(b)}
+                </span>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
 
-        <p className="mt-5 text-xs italic text-ink-soft">{t('sortNote')}</p>
-      </section>
-    </div>
-  );
-}
+          {dbDown && <p className="card mt-3 p-4 text-sm text-ink-soft">{t('noPinsYet')}</p>}
 
-async function LegendInline() {
-  const tb = await getTranslations('bands');
-  return (
-    <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-      {BAND_KEYS.map((b) => (
-        <span key={b} className="flex items-center gap-1 text-[11px] font-medium text-ink-soft">
-          <span className={`size-2 rounded-full ${BAND_DOT[b]}`} aria-hidden />
-          {tb(b)}
-        </span>
-      ))}
-    </div>
+          <div className="mt-3">
+            <MandalList
+              items={items}
+              prefix={prefix}
+              labels={{
+                searchPlaceholder: t('searchPlaceholder'),
+                noResults: t('noResults'),
+                pageOf: t.raw('pageOf'),
+              }}
+            />
+          </div>
+
+          <p className="mt-5 text-xs italic text-ink-soft">{t('sortNote')}</p>
+        </section>
+      }
+    />
   );
 }

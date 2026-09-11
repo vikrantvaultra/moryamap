@@ -20,6 +20,8 @@ export default function LocaleSwitcher({ current }: { current: string }) {
   return (
     <nav aria-label="Language" className="flex items-center gap-0.5 rounded-full bg-cream-deep p-0.5">
       {LOCALES.map((l) => {
+        // Locale detection is off, so plain paths are stable: unprefixed =
+        // English (the default), /mr and /hi carry the explicit choice.
         const href = l.code === 'en' ? rest : `/${l.code}${rest === '/' ? '' : rest}`;
         const active = l.code === current;
         return (

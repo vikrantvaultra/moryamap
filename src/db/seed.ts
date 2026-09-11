@@ -8,9 +8,22 @@
  * until measured.
  */
 import 'dotenv/config';
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { getDb } from './index';
 import { mandals, queueEntryPoints, queues, type QueueKind, type Tier } from './schema';
 import { eq } from 'drizzle-orm';
+
+/**
+ * Reviewed OSM-sourced mandal locations (scripts/geocode-mandals.ts).
+ * These are APPROXIMATE mandal locations (idol pins), never queue starts.
+ */
+function geocodedPins(): Map<string, { lat: number; lng: number }> {
+  const file = join(__dirname, 'geocoded-pins.json');
+  if (!existsSync(file)) return new Map();
+  const rows = JSON.parse(readFileSync(file, 'utf8')) as { slug: string; lat: number; lng: number }[];
+  return new Map(rows.map((r) => [r.slug, { lat: r.lat, lng: r.lng }]));
+}
 
 interface QueueSeed {
   kind: QueueKind;
@@ -218,6 +231,7 @@ const SEED: MandalSeed[] = [
 
 async function main() {
   const db = getDb();
+  const pins = geocodedPins();
 
   for (const m of SEED) {
     const existing = await db.select().from(mandals).where(eq(mandals.slug, m.slug));
@@ -235,7 +249,11 @@ async function main() {
         nameHi: m.nameHi,
         area: m.area,
         tier: m.tier,
-        // TODO: set idolLat/idolLng via /admin pin-drop. Do NOT hardcode.
+        // Approximate location from reviewed OSM geocoding, when available.
+        // Everything else: set idolLat/idolLng via /admin pin-drop. Do NOT
+        // hardcode coordinates here.
+        idolLat: pins.get(m.slug)?.lat ?? null,
+        idolLng: pins.get(m.slug)?.lng ?? null,
         nearestStation: m.nearestStation,
         // TODO: stationWalkMinutes — measure, then set via /admin.
         notes: m.notes,

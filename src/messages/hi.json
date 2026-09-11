@@ -63,7 +63,11 @@
     "showList": "सूची",
     "showMap": "नक्शा",
     "queueStart": "कतार की शुरुआत",
-    "details": "विवरण"
+    "details": "विवरण",
+    "searchPlaceholder": "मंडल या इलाका खोजें…",
+    "noResults": "खोज से मेल खाता कोई मंडल नहीं।",
+    "pageOf": "पृष्ठ {page} / {total}",
+    "approxLocation": "मंडल का अनुमानित स्थान — कतार की सटीक शुरुआत अभी तय नहीं।"
   },
   "report": {
     "title": "कतार अभी कहाँ से शुरू हो रही है?",
