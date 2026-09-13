@@ -11,6 +11,7 @@ export interface MapStrings {
   noPins: string;
   mapNote: string;
   approxLocation: string;
+  areaOnly: string;
   queueStart: string;
   directions: string;
   details: string;
@@ -282,6 +283,11 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
                   {(locale !== 'en' && shownQueue.labelMr) || shownQueue.label}
                   {!isApprox && <> · {strings.queueStart}</>}
                 </p>
+                {selected.mandal.address && (
+                  <p className="mt-0.5 text-xs leading-snug text-ink-soft">
+                    {selected.mandal.address}
+                  </p>
+                )}
               </div>
               <button
                 onClick={() => {
@@ -324,7 +330,7 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
             )}
             {isApprox && (
               <p className="mt-1 rounded-md bg-amber-100 px-2 py-1 text-xs font-medium text-maroon">
-                ≈ {strings.approxLocation}
+                ≈ {selected.mandal.pinPrecision === 'area' ? strings.areaOnly : strings.approxLocation}
               </p>
             )}
             <p className="mt-1 text-xs italic text-ink-soft/90">{strings.disclaimer}</p>

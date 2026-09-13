@@ -15,7 +15,8 @@ export interface ListItem {
   slug: string;
   name: string;
   area: string;
-  /** Lowercased haystack of every name variant + area, for search. */
+  address: string | null;
+  /** Lowercased haystack of every name variant + area + address, for search. */
   search: string;
   queues: ListQueue[];
 }
@@ -104,6 +105,9 @@ export default function MandalList({
                           →
                         </span>
                       </div>
+                      {m.address && (
+                        <p className="mt-0.5 text-xs leading-snug text-ink-soft">{m.address}</p>
+                      )}
                       <div className="mt-1.5 space-y-1">
                         {m.queues.map((q, qi) => (
                           <div key={qi} className="flex flex-wrap items-center gap-x-1.5 text-sm">

@@ -56,5 +56,1017 @@
     "venueSource": "https://www.freepressjournal.in/lifestyle/mumbai-ganesh-pandal-hopping-guide-how-to-visit-lalbaugcha-raja-gsb-seva-mandal-more-in-one-day",
     "osmDisplayName": "Lalbaug, F/S Ward, Mumbai Zone 2, Mumbai City District, Maharashtra, 400011, India",
     "fetchedAt": "2026-09-11T15:38:46.804Z"
+  },
+  {
+    "slug": "mumbaicha-raja",
+    "lat": 18.99443354,
+    "lng": 72.8373883,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Mumbai Cha Raja",
+    "address": "9/10 Kalyani Nivas, Lalbaug Sarvajanik Utsav Mandal Ganesh Galli, Lalbaug, Mumbai, Maharashtra 400012",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "gsb-seva-mandal",
+    "lat": 19.02921321,
+    "lng": 72.85913843,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "GSB Seva Mandal",
+    "address": "65/11, R.A. Kidwai Marg, near SNDT Women's College, Matunga East, Mumbai, Maharashtra 400019",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "andhericha-raja",
+    "lat": 19.13005819,
+    "lng": 72.83656941,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Andhericha Raja",
+    "address": "Veera Desai Road, Azad Nagar, Andheri West, Mumbai, Maharashtra 400058",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "khetwadicha-ganraj",
+    "lat": 18.96037887,
+    "lng": 72.82114161,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Khetwadicha Ganraj",
+    "address": "12th Lane, Khetwadi, Girgaon, Mumbai, Maharashtra 400004",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "mumbaicha-maharaja",
+    "lat": 18.95954443,
+    "lng": 72.8212155,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Mumbaicha Maharaja",
+    "address": "11th Lane, Khetwadi, Girgaon, Mumbai, Maharashtra 400004",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "girgaoncha-raja",
+    "lat": 18.95490351,
+    "lng": 72.82062052,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Girgaoncha Raja Shree Ganeshotsav Mandal",
+    "address": "Nikadwari Lane, S.V. Sovani Path, Girgaon, Mumbai, Maharashtra 400004",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "tejukaya",
+    "lat": 18.99364131,
+    "lng": 72.83585449,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Tejukayacha Raja",
+    "address": "Tejukaya Mansion, Lalbaug, Parel, Mumbai, Maharashtra 400012",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "fort-cha-raja",
+    "lat": 18.9399723,
+    "lng": 72.8343386,
+    "source": "OSM/Nominatim: General Post Office (GPO), Fort — mandal is opposite GPO",
+    "precision": "area",
+    "csvName": "Fortcha Icchapurti Raja",
+    "address": "Icchapurti Ganesh Chowk, Dr Sundarlal Bahal Path (Goa Street), opposite GPO, Fort, Mumbai, Maharashtra 400001",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "parel-cha-raja",
+    "lat": 19.00006399,
+    "lng": 72.83888509,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Parelcha Raja",
+    "address": "Nare Park, Bhivajirao Nare Udyan, Parel, Mumbai, Maharashtra 400012",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "sahyadri-krida-mandal",
+    "lat": 19.06907145,
+    "lng": 72.89730539,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Sahyadri Krida Mandal",
+    "address": "Tilak Nagar, Chembur East, Mumbai, Maharashtra 400089",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "dongri-cha-raja",
+    "lat": 18.96037929,
+    "lng": 72.83911468,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Dongri Cha Raja",
+    "address": "Ganesh Chowk, Dr Maisheri Marg, Dongri, Mumbai, Maharashtra 400009",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "jitekar-wadi-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.95335809,
+    "lng": 72.82468922,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Jitekar Wadi Sarvajanik Ganeshotsav Mandal",
+    "address": "88/D, Dr Babasaheb Jaykar Marg, Charni Road East, Girgaon, Mumbai, Maharashtra 400004",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "akhil-chandanwadi-ganeshotsav-mandal",
+    "lat": 18.94597674,
+    "lng": 72.82554013,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Akhil Chandanwadi Ganeshotsav Mandal",
+    "address": "7, Chandan Wadi Road, Kamathi Wada, Marine Lines, Mumbai, Maharashtra 400002",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "grant-road-cha-raja-sarvajanik-ganesh-utsav-mandal",
+    "lat": 18.96415257,
+    "lng": 72.82043574,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Grant Road Cha Raja Sarvajanik Ganesh Utsav Mandal",
+    "address": "26, Pathe Bapurao Road, Bharat Nagar, Grant Road East, Mumbai, Maharashtra 400008",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "tulshiwadi-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.97503527,
+    "lng": 72.81266014,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Tulshiwadi Sarvajanik Ganeshotsav Mandal",
+    "address": "101, Tardeo Road, Malviya Nagar, Tardeo, Mumbai, Maharashtra 400034",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "andheri-cha-morya",
+    "lat": 19.11364478,
+    "lng": 72.84896355,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Andheri Cha Morya",
+    "address": "Kanoji Angre Road, Sai Wadi, Andheri East, Mumbai, Maharashtra 400069",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "vile-parle-cha-vighnesh-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.10179562,
+    "lng": 72.85365912,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Vile Parle Cha Vighnesh Sarvajanik Ganeshotsav Mandal",
+    "address": "Sant Janabai Road, Navpada, Vile Parle East, Mumbai, Maharashtra 400057",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "mumbaicha-peshwa",
+    "lat": 19.09361932,
+    "lng": 72.84499264,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Mumbaicha Peshwa",
+    "address": "Vile Parle East, Mumbai, Maharashtra 400057",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "juhu-koliwada-ganeshotsav-mandal",
+    "lat": 19.08260744,
+    "lng": 72.8256427,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Juhu Koliwada Ganeshotsav Mandal",
+    "address": "HB Gawde Marg, Juhu Koliwada, Santacruz West, Mumbai, Maharashtra 400049",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "dadar-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.01523964,
+    "lng": 72.83959075,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Dadar West Sarvajanik Ganeshotsav Mandal",
+    "address": "Senapati Bapat Marg, Sunder Nagar, Dadar West, Mumbai, Maharashtra 400028",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "sai-ganesh-sadan-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.01498767,
+    "lng": 72.83863764,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Sai Ganesh Sadan Sarvajanik Ganeshotsav Mandal",
+    "address": "Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "dadar-tt-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.0177961,
+    "lng": 72.84781723,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Dadar TT Sarvajanik Ganeshotsav Mandal",
+    "address": "Khodadad Circle, Dadar East, Mumbai, Maharashtra 400014",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "shiv-sai-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.00559732,
+    "lng": 72.83250536,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Shiv Sai Sarvajanik Ganeshotsav Mandal",
+    "address": "B.M. Marg, Elphinstone, Mumbai, Maharashtra 400013",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "parel-sarvajanik-ganeshotsav-bal-gopal-mandal",
+    "lat": 18.99580533,
+    "lng": 72.8466809,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Parel Sarvajanik Ganeshotsav Bal Gopal Mandal",
+    "address": "Parel, Mumbai, Maharashtra 400012",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "antop-hill-shivaji-nagar-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.0235712,
+    "lng": 72.86381633,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Antop Hill Shivaji Nagar Sarvajanik Ganeshotsav Mandal",
+    "address": "Shivaji Nagar, Antop Hill, Mumbai, Maharashtra 400037",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "gsb-sarvajanik-ganeshotsava-samiti-wadala",
+    "lat": 19.01565579,
+    "lng": 72.85189619,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "GSB Sarvajanik Ganeshotsava Samiti Wadala",
+    "address": "Dwarakanath Bhavan, Shree Ram Mandir Complex, Katrak Road, Wadala West, Mumbai, Maharashtra 400031",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "shri-golden-ganesh-mitra-mandal",
+    "lat": 19.03683953,
+    "lng": 72.86401706,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Shri Golden Ganesh Mitra Mandal",
+    "address": "Indira Nagar Cooperative Housing Society, Sion East, Mumbai, Maharashtra 400037",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "chembur-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.02861873,
+    "lng": 72.89701704,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Chembur Sarvajanik Ganeshotsav Mandal",
+    "address": "Near Ashish Talao, Chembur East, Mumbai, Maharashtra 400071",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "ghatkopar-amar-mitra-mandal",
+    "lat": 19.06690855,
+    "lng": 72.89446654,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Ghatkopar Amar Mitra Mandal",
+    "address": "Tilak Nagar, Ghatkopar East, Mumbai, Maharashtra 400075",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "ghatkopar-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.078,
+    "lng": 72.908,
+    "source": "community CSV (area_centroid_approx)",
+    "precision": "area",
+    "csvName": "Ghatkopar Sarvajanik Ganeshotsav Mandal",
+    "address": "Ghatkopar, Mumbai, Maharashtra 400086",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "kanjurmarg-east-shivshakti-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.13310557,
+    "lng": 72.93625626,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Kanjurmarg East Shivshakti Sarvajanik Ganeshotsav Mandal",
+    "address": "Kanjurmarg East, Mumbai, Maharashtra 400042",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "vikhroli-balmitra-kala-mandal",
+    "lat": 19.11147888,
+    "lng": 72.92656074,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Vikhroli Balmitra Kala Mandal",
+    "address": "Vikhroli East, Mumbai, Maharashtra 400083",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "mulund-sargam-mitra-mandal",
+    "lat": 19.17192805,
+    "lng": 72.95255823,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Mulund Sargam Mitra Mandal",
+    "address": "Mulund West, Mumbai, Maharashtra 400080",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "mulund-east-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.14727653,
+    "lng": 72.96695579,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Mulund East Sarvajanik Ganeshotsav Mandal",
+    "address": "Mulund East, Mumbai, Maharashtra 400081",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "bhandup-jay-bajrang-mitra-mandal",
+    "lat": 19.07529823,
+    "lng": 72.92088161,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Bhandup Jay Bajrang Mitra Mandal",
+    "address": "Bhandup, Mumbai, Maharashtra 400078",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "bhandup-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.1523285,
+    "lng": 72.93970232,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Bhandup Sarvajanik Ganeshotsav Mandal",
+    "address": "Bhandup West, Mumbai, Maharashtra 400078",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "vikhroli-kannamwar-nagar-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.12068771,
+    "lng": 72.94099111,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Vikhroli Kannamwar Nagar Sarvajanik Ganeshotsav Mandal",
+    "address": "Kannamwar Nagar, Vikhroli East, Mumbai, Maharashtra 400083",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "marol-ganesh-mitra-mandal",
+    "lat": 19.11403478,
+    "lng": 72.87595211,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Marol Ganesh Mitra Mandal",
+    "address": "Bori Colony, Kadam Wadi, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "pratap-nagar-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.134446100446,
+    "lng": 72.861038293321,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Pratap Nagar Sarvajanik Ganeshotsav Mandal",
+    "address": "Jogeshwari-Vikhroli Link Road, Pratap Nagar, Jogeshwari East, Mumbai, Maharashtra 400060",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "sarvajanik-bal-ganesh-utsav-mandal",
+    "lat": 19.1301942,
+    "lng": 72.8493879,
+    "source": "OSM/Nominatim: Saraswati Baug, Hindu Friends Society Marg",
+    "precision": "street",
+    "csvName": "Sarvajanik Bal Ganesh Utsav Mandal",
+    "address": "Saraswati Baug, Bandra Plot, Prem Nagar, Jogeshwari East, Mumbai, Maharashtra 400060",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "jogeshwari-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.144707972921,
+    "lng": 72.837861548399,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Jogeshwari West Sarvajanik Ganeshotsav Mandal",
+    "address": "Jogeshwari West, Mumbai, Maharashtra 400102",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "shree-ganesh-mitra-mandal-oshiwara",
+    "lat": 19.14942675,
+    "lng": 72.85048162,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Shree Ganesh Mitra Mandal Oshiwara",
+    "address": "Ram Mandir Road, Somani Gram, Oshiwara, Jogeshwari West, Mumbai, Maharashtra 400104",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "goregaon-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.161019247551,
+    "lng": 72.840177922511,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Goregaon Sarvajanik Ganeshotsav Mandal",
+    "address": "Goregaon West, Mumbai, Maharashtra 400062",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "goregaon-east-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.160037625091,
+    "lng": 72.853538979209,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Goregaon East Sarvajanik Ganeshotsav Mandal",
+    "address": "Goregaon East, Mumbai, Maharashtra 400063",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "mumbai-cha-shree-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.198,
+    "lng": 72.817,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Mumbai Cha Shree Sarvajanik Ganeshotsav Mandal",
+    "address": "Rathodi, Malad West, Mumbai, Maharashtra 400095",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "malad-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.18525558,
+    "lng": 72.83588302,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Malad West Sarvajanik Ganeshotsav Mandal",
+    "address": "Malad West, Mumbai, Maharashtra 400064",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "balla-mitra-mandal",
+    "lat": 19.212,
+    "lng": 72.83,
+    "source": "community CSV (area_centroid_approx)",
+    "precision": "area",
+    "csvName": "Balla Mitra Mandal",
+    "address": "Kandivali West, Mumbai, Maharashtra 400067",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "bal-mitra-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.22517476,
+    "lng": 72.86849666,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Bal Mitra Sarvajanik Ganeshotsav Mandal",
+    "address": "Devipada, Borivali East, Mumbai, Maharashtra 400066",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "borivali-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.218738,
+    "lng": 72.84983279,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Borivali Sarvajanik Ganeshotsav Mandal",
+    "address": "Borivali, Mumbai, Maharashtra 400092",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "borivali-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.236709063876,
+    "lng": 72.852137307951,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Borivali West Sarvajanik Ganeshotsav Mandal",
+    "address": "Borivali West, Mumbai, Maharashtra 400092",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "dahisar-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.255,
+    "lng": 72.869,
+    "source": "community CSV (area_centroid_approx)",
+    "precision": "area",
+    "csvName": "Dahisar Sarvajanik Ganeshotsav Mandal",
+    "address": "Dahisar East, Mumbai, Maharashtra 400068",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "charkop-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.21618326,
+    "lng": 72.82948137,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Charkop Sarvajanik Ganeshotsav Mandal",
+    "address": "Charkop, Kandivali West, Mumbai, Maharashtra 400067",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "thakur-village-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.20885306,
+    "lng": 72.87743194,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Thakur Village Sarvajanik Ganeshotsav Mandal",
+    "address": "Thakur Village, Kandivali East, Mumbai, Maharashtra 400101",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "santacruz-east-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.09042354,
+    "lng": 72.858,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Santacruz East Sarvajanik Ganeshotsav Mandal",
+    "address": "Milan Subway, Santacruz East, Mumbai, Maharashtra 400055",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "santacruz-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.0851789,
+    "lng": 72.83816867,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Santacruz West Sarvajanik Ganeshotsav Mandal",
+    "address": "Santacruz West, Mumbai, Maharashtra 400054",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "juhu-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.11210233,
+    "lng": 72.82700126,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Juhu Sarvajanik Ganeshotsav Mandal",
+    "address": "Juhu, Mumbai, Maharashtra 400049",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "andheri-east-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.10501185,
+    "lng": 72.87295626,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Andheri East Sarvajanik Ganeshotsav Mandal",
+    "address": "Andheri East, Mumbai, Maharashtra 400069",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "andheri-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.11353155,
+    "lng": 72.83836674,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Andheri West Sarvajanik Ganeshotsav Mandal",
+    "address": "Andheri West, Mumbai, Maharashtra 400058",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "mahim-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.03514596,
+    "lng": 72.84033299,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Mahim Sarvajanik Ganeshotsav Mandal",
+    "address": "Mahim West, Mumbai, Maharashtra 400016",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "mahim-east-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.038,
+    "lng": 72.841,
+    "source": "community CSV (area_centroid_approx)",
+    "precision": "area",
+    "csvName": "Mahim East Sarvajanik Ganeshotsav Mandal",
+    "address": "Mahim East, Mumbai, Maharashtra 400016",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "worli-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.00523513,
+    "lng": 72.82154057,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Worli Sarvajanik Ganeshotsav Mandal",
+    "address": "Worli, Mumbai, Maharashtra 400018",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "worli-koliwada-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.02290729,
+    "lng": 72.81743966,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Worli Koliwada Sarvajanik Ganeshotsav Mandal",
+    "address": "Worli Koliwada, Mumbai, Maharashtra 400030",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "prabhadevi-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.01187205,
+    "lng": 72.82585927,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Prabhadevi Sarvajanik Ganeshotsav Mandal",
+    "address": "Prabhadevi, Mumbai, Maharashtra 400025",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "lower-parel-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.99643836,
+    "lng": 72.83085642,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Lower Parel Sarvajanik Ganeshotsav Mandal",
+    "address": "Lower Parel, Mumbai, Maharashtra 400013",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "elphinstone-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.00751227,
+    "lng": 72.83596302,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Elphinstone Sarvajanik Ganeshotsav Mandal",
+    "address": "Elphinstone, Mumbai, Maharashtra 400013",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "sewri-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.0031744931,
+    "lng": 72.8486141543,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Sewri Sarvajanik Ganeshotsav Mandal",
+    "address": "Sewri, Mumbai, Maharashtra 400015",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "wadala-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.01612328,
+    "lng": 72.86449523,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Wadala Sarvajanik Ganeshotsav Mandal",
+    "address": "Wadala, Mumbai, Maharashtra 400031",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "matunga-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.025911822508,
+    "lng": 72.86040568243,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Matunga Sarvajanik Ganeshotsav Mandal",
+    "address": "Matunga East, Mumbai, Maharashtra 400019",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "matunga-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.029117519587,
+    "lng": 72.844160435313,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Matunga West Sarvajanik Ganeshotsav Mandal",
+    "address": "Matunga West, Mumbai, Maharashtra 400016",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "kings-circle-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.0327723,
+    "lng": 72.85610424,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "King's Circle Sarvajanik Ganeshotsav Mandal",
+    "address": "King's Circle, Matunga East, Mumbai, Maharashtra 400019",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "sion-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.04402848,
+    "lng": 72.85747059,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Sion Sarvajanik Ganeshotsav Mandal",
+    "address": "Sion East, Mumbai, Maharashtra 400022",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "sion-koliwada-star-boys-mitra-mandal",
+    "lat": 19.03646976,
+    "lng": 72.86414264,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Sion Koliwada Star Boys Mitra Mandal",
+    "address": "Sion Koliwada, Mumbai, Maharashtra 400022",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "dharavi-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.04123901,
+    "lng": 72.85016166,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Dharavi Sarvajanik Ganeshotsav Mandal",
+    "address": "Dharavi, Mumbai, Maharashtra 400017",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "kurla-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.074353269024,
+    "lng": 72.884351477499,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Kurla West Sarvajanik Ganeshotsav Mandal",
+    "address": "Kurla West, Mumbai, Maharashtra 400070",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "kurla-east-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.064350725761,
+    "lng": 72.88676491046,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Kurla East Sarvajanik Ganeshotsav Mandal",
+    "address": "Kurla East, Mumbai, Maharashtra 400024",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "kalina-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.07738772,
+    "lng": 72.86533008,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Kalina Sarvajanik Ganeshotsav Mandal",
+    "address": "Kalina, Santacruz East, Mumbai, Maharashtra 400098",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "bandra-east-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.060079218265,
+    "lng": 72.855871018934,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Bandra East Sarvajanik Ganeshotsav Mandal",
+    "address": "Bandra East, Mumbai, Maharashtra 400051",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "bandra-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.058986423672,
+    "lng": 72.828930730993,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Bandra West Sarvajanik Ganeshotsav Mandal",
+    "address": "Bandra West, Mumbai, Maharashtra 400050",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "khar-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.0715785,
+    "lng": 72.8339589,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Khar West Sarvajanik Ganeshotsav Mandal",
+    "address": "Khar West, Mumbai, Maharashtra 400052",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "ghatkopar-west-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.093052105982,
+    "lng": 72.904576192285,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Ghatkopar West Sarvajanik Ganeshotsav Mandal",
+    "address": "Ghatkopar West, Mumbai, Maharashtra 400086",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "ghatkopar-east-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.071231711628,
+    "lng": 72.912432602978,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Ghatkopar East Sarvajanik Ganeshotsav Mandal",
+    "address": "Ghatkopar East, Mumbai, Maharashtra 400077",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "govandi-sarvajanik-ganesh-utsav-mandal",
+    "lat": 19.05552738,
+    "lng": 72.9259637,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Govandi Sarvajanik Ganesh Utsav Mandal",
+    "address": "Deonar Municipal Colony, Govandi East, Mumbai, Maharashtra 400043",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "deonar-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.05271048,
+    "lng": 72.92424203,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Deonar Sarvajanik Ganeshotsav Mandal",
+    "address": "Deonar, Mumbai, Maharashtra 400043",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "mankhurd-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.045,
+    "lng": 72.931,
+    "source": "community CSV (area_centroid_approx)",
+    "precision": "area",
+    "csvName": "Mankhurd Sarvajanik Ganeshotsav Mandal",
+    "address": "Mankhurd, Mumbai, Maharashtra 400088",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "anushakti-nagar-ganpati-mandal",
+    "lat": 19.032902466254,
+    "lng": 72.929951530844,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Anushakti Nagar Ganpati Mandal",
+    "address": "New Mandala, Anushakti Nagar, Mumbai, Maharashtra 400088",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "trombay-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.033651,
+    "lng": 72.9503637,
+    "source": "OSM/Nominatim: Trombay Koliwada",
+    "precision": "area",
+    "csvName": "Trombay Sarvajanik Ganeshotsav Mandal",
+    "address": "Trombay, Mumbai, Maharashtra 400088",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "mazgaon-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.97,
+    "lng": 72.85,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Mazgaon Sarvajanik Ganeshotsav Mandal",
+    "address": "Mazgaon, Mumbai, Maharashtra 400010",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "byculla-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.97697148,
+    "lng": 72.83111426,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Byculla Sarvajanik Ganeshotsav Mandal",
+    "address": "Byculla, Mumbai, Maharashtra 400008",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "nagpada-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.964975185387,
+    "lng": 72.829241604567,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Nagpada Sarvajanik Ganeshotsav Mandal",
+    "address": "Nagpada, Mumbai, Maharashtra 400008",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "agripada-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.97607185,
+    "lng": 72.82631655,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Agripada Sarvajanik Ganeshotsav Mandal",
+    "address": "Agripada, Mumbai, Maharashtra 400011",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "mumbai-central-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.96857102,
+    "lng": 72.82103452,
+    "source": "community CSV (local_search_verified)",
+    "precision": "street",
+    "csvName": "Mumbai Central Sarvajanik Ganeshotsav Mandal",
+    "address": "Belasis Road, Mumbai Central, Mumbai, Maharashtra 400008",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "bhendi-bazar-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.95675257,
+    "lng": 72.83226277,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Bhendi Bazar Sarvajanik Ganeshotsav Mandal",
+    "address": "Bhendi Bazar, Mumbai, Maharashtra 400003",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "masjid-bunder-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.95269706,
+    "lng": 72.8358371,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Masjid Bunder Sarvajanik Ganeshotsav Mandal",
+    "address": "Masjid Bunder, Mumbai, Maharashtra 400003",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "chinch-bandar-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.954196478285,
+    "lng": 72.845046473866,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Chinch Bandar Sarvajanik Ganeshotsav Mandal",
+    "address": "Chinch Bandar, Mumbai, Maharashtra 400009",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "kalbadevi-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.947,
+    "lng": 72.827,
+    "source": "community CSV (area_centroid_approx)",
+    "precision": "area",
+    "csvName": "Kalbadevi Sarvajanik Ganeshotsav Mandal",
+    "address": "Kalbadevi, Mumbai, Maharashtra 400002",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "thakurdwar-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.9500139,
+    "lng": 72.8236381,
+    "source": "OSM/Nominatim: Thakurdwar locality",
+    "precision": "area",
+    "csvName": "Thakurdwar Sarvajanik Ganeshotsav Mandal",
+    "address": "Thakurdwar, Mumbai, Maharashtra 400002",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "charni-road-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.957,
+    "lng": 72.821,
+    "source": "community CSV (area_centroid_approx)",
+    "precision": "area",
+    "csvName": "Charni Road Sarvajanik Ganeshotsav Mandal",
+    "address": "Charni Road, Mumbai, Maharashtra 400004",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "marine-lines-sarvajanik-ganeshotsav-mandal",
+    "lat": 18.941701472855,
+    "lng": 72.822809931707,
+    "source": "community CSV (local_search_verified)",
+    "precision": "area",
+    "csvName": "Marine Lines Sarvajanik Ganeshotsav Mandal",
+    "address": "Marine Lines, Mumbai, Maharashtra 400002",
+    "fetchedAt": "2026-09-13T08:22:58.683Z"
+  },
+  {
+    "slug": "dadar-cha-raja",
+    "lat": 19.0192269,
+    "lng": 72.8428479,
+    "source": "OSM/Nominatim: Dadar station area",
+    "precision": "area",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "borivali-cha-raja",
+    "lat": 19.2313925,
+    "lng": 72.8408607,
+    "source": "OSM/Nominatim: Borivali (West) station area",
+    "precision": "area",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "ghatkoparcha-raja",
+    "lat": 19.0833438,
+    "lng": 72.9123246,
+    "source": "OSM/Nominatim: Ghatkopar East suburb centre",
+    "precision": "area",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
+  },
+  {
+    "slug": "vashicha-raja",
+    "lat": 19.075784,
+    "lng": 72.9952364,
+    "source": "OSM/Nominatim: Vashi suburb centre (sources disagree: Sector 1 vs Sector 8)",
+    "precision": "area",
+    "fetchedAt": "2026-09-13T08:22:42.170Z"
   }
 ]

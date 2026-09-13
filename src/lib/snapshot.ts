@@ -58,6 +58,8 @@ export function buildPublicSnapshot(state: StoredState) {
       // Mandal location (often geocoded/approximate) — NOT the queue start.
       idolLat: m.idolLat,
       idolLng: m.idolLng,
+      pinPrecision: m.pinPrecision,
+      address: m.address,
       nearestStation: m.nearestStation,
       stationWalkMinutes: m.stationWalkMinutes,
       queues: m.queues.map((q) => {

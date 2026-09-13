@@ -54,6 +54,7 @@ export default async function MandalPage({
   const now = new Date();
   const home = locale === 'en' ? '/' : `/${locale}`;
   const localName = mandalName(mandal, locale);
+  const th = await getTranslations('home');
 
   return (
     <div className="mx-auto w-full max-w-3xl px-4 py-5">
@@ -160,6 +161,26 @@ export default async function MandalPage({
           <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">
             {t('gettingThere')}
           </h2>
+          {mandal.address && (
+            <p className="mt-2 text-sm text-ink">
+              <span className="font-semibold">{t('address')}:</span> {mandal.address}
+            </p>
+          )}
+          {mandal.idolLat != null && mandal.idolLng != null && (
+            <>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${mandal.idolLat},${mandal.idolLng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block text-sm font-semibold text-flame underline hover:text-maroon"
+              >
+                ≈ {t('openInMaps')} ↗
+              </a>
+              <p className="mt-1 text-xs text-ink-soft">
+                {mandal.pinPrecision === 'area' ? th('areaOnly') : th('approxLocation')}
+              </p>
+            </>
+          )}
           {mandal.nearestStation ? (
             <p className="mt-2 text-sm text-ink">
               <span className="font-semibold">{t('nearestStation')}:</span>{' '}

@@ -22,59 +22,11 @@ import 'dotenv/config';
 import { readFileSync } from 'node:fs';
 import { eq } from 'drizzle-orm';
 import { getDb } from './index';
+import { parseCsv, slugify } from '../lib/csv';
 import { mandals, queues, type Tier } from './schema';
 
 const BASE_BY_TIER: Record<Tier, number> = { s: 240, a: 90, b: 35, c: 10 };
 const MUMBAI = { minLat: 18.5, maxLat: 19.6, minLng: 72.5, maxLng: 73.4 };
-
-function parseCsv(text: string): Record<string, string>[] {
-  const rows: string[][] = [];
-  let field = '';
-  let row: string[] = [];
-  let inQuotes = false;
-  for (let i = 0; i < text.length; i++) {
-    const ch = text[i];
-    if (inQuotes) {
-      if (ch === '"' && text[i + 1] === '"') {
-        field += '"';
-        i++;
-      } else if (ch === '"') {
-        inQuotes = false;
-      } else {
-        field += ch;
-      }
-    } else if (ch === '"') {
-      inQuotes = true;
-    } else if (ch === ',') {
-      row.push(field);
-      field = '';
-    } else if (ch === '\n' || ch === '\r') {
-      if (ch === '\r' && text[i + 1] === '\n') i++;
-      row.push(field);
-      field = '';
-      if (row.some((c) => c.trim() !== '')) rows.push(row);
-      row = [];
-    } else {
-      field += ch;
-    }
-  }
-  row.push(field);
-  if (row.some((c) => c.trim() !== '')) rows.push(row);
-
-  const [header, ...body] = rows;
-  const keys = header.map((h) => h.trim());
-  return body.map((r) => Object.fromEntries(keys.map((k, i) => [k, (r[i] ?? '').trim()])));
-}
-
-function slugify(name: string): string {
-  return name
-    .toLowerCase()
-    .normalize('NFKD')
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
-    .slice(0, 60);
-}
 
 async function main() {
   const file = process.argv[2];

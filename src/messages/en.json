@@ -50,7 +50,9 @@
     "holdingPointsHint": "As the crowd grows, police extend the queue backwards through these points. No. 1 is closest to the mandap.",
     "notes": "Notes",
     "noPin": "The exact queue-start pin isn't set yet — ask a volunteer on the ground.",
-    "notFound": "Mandal not found."
+    "notFound": "Mandal not found.",
+    "address": "Address",
+    "openInMaps": "Mandal location in Google Maps"
   },
   "home": {
     "title": "Where's the line?",
@@ -67,7 +69,8 @@
     "searchPlaceholder": "Search mandal or area…",
     "noResults": "No mandals match your search.",
     "pageOf": "Page {page} of {total}",
-    "approxLocation": "Approximate mandal location — exact queue start not verified yet."
+    "approxLocation": "Approximate mandal location — exact queue start not verified yet.",
+    "areaOnly": "Neighbourhood only — the exact pandal spot isn't known. Ask locally."
   },
   "report": {
     "title": "Where does the line start right now?",

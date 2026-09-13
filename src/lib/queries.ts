@@ -1,9 +1,10 @@
 import { unstable_cache } from 'next/cache';
-import { and, desc, eq, gt, inArray } from 'drizzle-orm';
-import { getDb } from '@/db';
-import { crowdReports, mandals, queueEntryPoints, queues } from '@/db/schema';
+import staticDirectory from '@/db/static-directory.json';
 import type { QueueKind, Tier } from '@/db/schema';
-import { estimateWait, REPORT_FRESHNESS_MINUTES, type WaitEstimate } from '@/lib/wait';
+import { estimateWait, type WaitEstimate } from '@/lib/wait';
+
+/** How precise a mandal pin is. 'area' = neighbourhood only, and the UI says so. */
+export type PinPrecision = 'street' | 'area';
 
 // Everything returned here is JSON-serializable (unstable_cache round-trips
 // through JSON), so timestamps travel as ISO strings.
@@ -48,130 +49,29 @@ export interface MandalData {
   tier: Tier;
   idolLat: number | null;
   idolLng: number | null;
+  /** Null = venue-level (recorded provenance in geocoded-pins.json). */
+  pinPrecision: PinPrecision | null;
+  /** Postal address as listed by the source. Not a queue start. */
+  address: string | null;
   nearestStation: string | null;
   stationWalkMinutes: number | null;
   notes: string;
   queues: QueueData[];
 }
 
-const TIER_ORDER: Record<Tier, number> = { s: 0, a: 1, b: 2, c: 3 };
-
-/** Uncached read — used by the snapshot rebuilder. Pages use the cached one. */
+/**
+ * The mandal directory is HARDCODED: src/db/static-directory.json is the
+ * single source of truth (regenerate it with scripts/import-community-csv.ts).
+ * No database is read. Waits are still computed live from baseMinutes by the
+ * estimator, with honest provenance labels; there are no crowd reports.
+ */
 export async function fetchDirectory(): Promise<MandalData[]> {
-  // No database configured (e.g. a fresh deploy before Neon is set up):
-  // serve the bundled, sanitized directory — real curated mandal data with
-  // sourced approximate pins, but no queue pins and no crowd reports.
-  // Estimator waits still compute live from baseMinutes; provenance labels
-  // stay honest. Reporting/admin need a real DATABASE_URL.
-  if (!process.env.DATABASE_URL) {
-    const staticDir = (await import('@/db/static-directory.json')).default;
-    return staticDir as MandalData[];
-  }
-  const db = getDb();
-
-  const ms = await db.select().from(mandals).where(eq(mandals.isActive, true));
-  const mandalIds = ms.map((m) => m.id);
-  const qs = mandalIds.length
-    ? await db.select().from(queues).where(inArray(queues.mandalId, mandalIds))
-    : [];
-  const queueIds = qs.map((q) => q.id);
-  const eps = queueIds.length
-    ? await db
-        .select()
-        .from(queueEntryPoints)
-        .where(inArray(queueEntryPoints.queueId, queueIds))
-        .orderBy(queueEntryPoints.sequence)
-    : [];
-
-  const cutoff = new Date(Date.now() - REPORT_FRESHNESS_MINUTES * 60_000);
-  const reports = queueIds.length
-    ? await db
-        .select({
-          queueId: crowdReports.queueId,
-          reportedAt: crowdReports.reportedAt,
-          impliedMinutes: queueEntryPoints.impliedMinutes,
-          landmark: queueEntryPoints.landmark,
-          landmarkMr: queueEntryPoints.landmarkMr,
-        })
-        .from(crowdReports)
-        .innerJoin(queueEntryPoints, eq(crowdReports.entryPointId, queueEntryPoints.id))
-        .where(
-          and(
-            inArray(crowdReports.queueId, queueIds),
-            eq(crowdReports.status, 'accepted'),
-            eq(crowdReports.kind, 'entry_point'),
-            gt(crowdReports.reportedAt, cutoff),
-          ),
-        )
-        .orderBy(desc(crowdReports.reportedAt))
-    : [];
-
-  const latestByQueue = new Map<number, ReportData>();
-  for (const r of reports) {
-    if (r.impliedMinutes == null || latestByQueue.has(r.queueId)) continue;
-    latestByQueue.set(r.queueId, {
-      impliedMinutes: r.impliedMinutes,
-      reportedAt: r.reportedAt.toISOString(),
-      landmark: r.landmark,
-      landmarkMr: r.landmarkMr,
-    });
-  }
-
-  const epsByQueue = new Map<number, EntryPointData[]>();
-  for (const ep of eps) {
-    const list = epsByQueue.get(ep.queueId) ?? [];
-    list.push({
-      id: ep.id,
-      sequence: ep.sequence,
-      landmark: ep.landmark,
-      landmarkMr: ep.landmarkMr,
-      lat: ep.lat,
-      lng: ep.lng,
-      impliedMinutes: ep.impliedMinutes,
-    });
-    epsByQueue.set(ep.queueId, list);
-  }
-
-  const result: MandalData[] = ms.map((m) => ({
-    id: m.id,
-    slug: m.slug,
-    name: m.name,
-    nameMr: m.nameMr,
-    nameHi: m.nameHi,
-    area: m.area,
-    tier: m.tier,
-    idolLat: m.idolLat,
-    idolLng: m.idolLng,
-    nearestStation: m.nearestStation,
-    stationWalkMinutes: m.stationWalkMinutes,
-    notes: m.notes,
-    queues: qs
-      .filter((q) => q.mandalId === m.id)
-      .map((q) => ({
-        id: q.id,
-        kind: q.kind,
-        label: q.label,
-        labelMr: q.labelMr,
-        entryLat: q.entryLat,
-        entryLng: q.entryLng,
-        baseMinutes: q.baseMinutes,
-        entryPoints: epsByQueue.get(q.id) ?? [],
-        report: latestByQueue.get(q.id) ?? null,
-      })),
-  }));
-
-  // Popularity/area ordering only. NEVER sort by current wait — steering
-  // crowds toward "short queues" is a safety hazard.
-  result.sort(
-    (a, b) =>
-      a.area.localeCompare(b.area) ||
-      TIER_ORDER[a.tier] - TIER_ORDER[b.tier] ||
-      a.name.localeCompare(b.name),
-  );
-  return result;
+  // Already stored in area → tier → name order. NEVER sort by current wait —
+  // steering crowds toward "short queues" is a safety hazard.
+  return staticDirectory as MandalData[];
 }
 
-/** One cached entry covers the whole directory (15 mandals). Tag: 'queues'. */
+/** One cached entry covers the whole directory. Tag: 'queues'. */
 export const getMandalDirectory = unstable_cache(fetchDirectory, ['mandal-directory'], {
   revalidate: 60,
   tags: ['queues'],
@@ -193,22 +93,9 @@ export async function getMandalBySlug(slug: string): Promise<MandalData | null> 
   return all.find((m) => m.slug === slug) ?? null;
 }
 
-/**
- * For generateStaticParams. Returns [] when the DB is unreachable (e.g. a
- * build without DATABASE_URL) — pages then generate on demand via ISR.
- */
+/** For generateStaticParams — every mandal page is prebuilt. */
 export async function getAllMandalSlugs(): Promise<string[]> {
-  try {
-    if (!process.env.DATABASE_URL) {
-      return (await fetchDirectory()).map((m) => m.slug);
-    }
-    const db = getDb();
-    const rows = await db.select({ slug: mandals.slug }).from(mandals);
-    return rows.map((r) => r.slug);
-  } catch (err) {
-    console.warn('[build] mandal slugs unavailable, deferring to ISR:', (err as Error).message);
-    return [];
-  }
+  return (await fetchDirectory()).map((m) => m.slug);
 }
 
 /** Freshness is re-checked here at render time, not at query time. */
