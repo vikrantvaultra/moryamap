@@ -5,7 +5,7 @@ import ShareBar from '@/components/ShareBar';
 import { Notice } from '@/components/PageHeader';
 import { formatRangeParts } from '@/components/WaitFigure';
 import { absoluteUrl } from '@/lib/metadata';
-import { mandalName, queueLabel } from '@/lib/names';
+import { mandalName, pinLabelKey, queueLabel } from '@/lib/names';
 import { estimateForQueue } from '@/lib/queries';
 import {
   kmLabel,
@@ -42,6 +42,7 @@ export default async function RouteView({
 }) {
   const t = await getTranslations('routes');
   const tw = await getTranslations('wait');
+  const th = await getTranslations('home');
   const ts = await getTranslations('share');
   const now = new Date();
   const legs = legKm(stops);
@@ -173,6 +174,11 @@ export default async function RouteView({
                       );
                     })}
                   </div>
+                  {m.pinPrecision !== 'rooftop' && (
+                    <p className="mt-1.5 text-[11px] font-medium text-band-amber">
+                      ≈ {th(pinLabelKey(m.pinPrecision))}
+                    </p>
+                  )}
                   <Link
                     href={localePath(locale, `/m/${m.slug}`)}
                     className="mt-2 inline-block text-sm font-semibold text-flame underline hover:text-maroon"
@@ -201,8 +207,8 @@ export default async function RouteView({
         ))}
       </ol>
 
-      {/* Idol locations are never queue starts, and most pins are geocoded. */}
-      <Notice tone="info">≈ {t('approxPins')}</Notice>
+      {/* Mandal pins are never queue starts; non-rooftop stops say so above. */}
+      <Notice tone="info">{t('approxPins')}</Notice>
       <p className="text-xs italic text-ink-soft">{t('orderNote')}</p>
     </div>
   );

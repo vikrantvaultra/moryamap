@@ -3,6 +3,7 @@
 import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useEffect, useRef } from 'react';
+import { collapseAttribution } from './RouteMap';
 
 export interface PondPoint {
   id: string;
@@ -59,7 +60,11 @@ export default function PondMap({
     }
     const bounds = new maplibregl.LngLatBounds();
     pts.forEach((p) => bounds.extend([p.lng, p.lat]));
-    map.fitBounds(bounds, { padding: 36, maxZoom: 15, duration: 0 });
+    map.fitBounds(bounds, {
+      padding: { top: 36, bottom: 44, left: 36, right: 52 },
+      maxZoom: 15,
+      duration: 0,
+    });
   };
 
   // Create the map once.
@@ -85,6 +90,7 @@ export default function PondMap({
     mapRef.current = map;
 
     map.on('load', () => {
+      collapseAttribution(map);
       map.addSource('ponds', { type: 'geojson', data: toGeoJSON([]) });
       map.addLayer({
         id: 'ponds-dot',

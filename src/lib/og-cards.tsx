@@ -358,7 +358,9 @@ export function MandalStory({ mandal, now }: { mandal: MandalData; now: Date }) 
               {rangeEn(est)}
             </div>
             <div style={{ display: 'flex', fontSize: 32, color: C.inkSoft }}>
-              Estimate from past festivals
+              {est.provenance === 'reported'
+                ? 'Reported by a visitor'
+                : 'Estimate from past festivals'}
             </div>
           </div>
         ))}

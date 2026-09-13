@@ -56,10 +56,17 @@ export default function RouteMap({
       const bounds = new maplibregl.LngLatBounds();
       points.forEach((p) => bounds.extend([p.lng, p.lat]));
       map.resize();
-      map.fitBounds(bounds, { padding: 48, maxZoom: 16, duration: 0 });
+      map.fitBounds(bounds, {
+        padding: { top: 44, bottom: 52, left: 44, right: 56 },
+        maxZoom: 16,
+        duration: 0,
+      });
     };
     frame();
-    map.once('load', frame);
+    map.once('load', () => {
+      collapseAttribution(map);
+      frame();
+    });
 
     if (line && points.length > 1) {
       map.on('load', () => {
@@ -92,4 +99,11 @@ export default function RouteMap({
   }, [points, line]);
 
   return <div ref={ref} className="h-full w-full" />;
+}
+
+/** Start the compact attribution collapsed so it doesn't cover pins on phones. */
+export function collapseAttribution(map: maplibregl.Map) {
+  const el = map.getContainer().querySelector('.maplibregl-ctrl-attrib');
+  el?.classList.remove('maplibregl-compact-show');
+  el?.removeAttribute('open');
 }

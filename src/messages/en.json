@@ -133,7 +133,8 @@
     "tomorrow": "Tomorrow: {name}. Plan your immersion →",
     "today": "Today",
     "tomorrowLabel": "Tomorrow",
-    "done": "Done"
+    "done": "Done",
+    "seven_day": "7-day visarjan"
   },
   "sources": {
     "title": "Sources",
@@ -160,7 +161,7 @@
     "summary": "{count} stops · ≈ {km} straight-line in total",
     "startNear": "Nearest station to stop 1: {station}",
     "endNear": "Nearest station to the last stop: {station}",
-    "approxPins": "Pins are approximate mandal locations, not queue starts. Confirm locally before you walk.",
+    "approxPins": "Pins mark the mandal, not where the darshan queue starts. Stops marked ≈ are approximate, so confirm locally before you walk.",
     "waitsNote": "Waits shown are estimates for right now, not live. Big-mandal queues can take hours, so don't expect to finish every stop in one evening.",
     "customTitle": "Your pandal-hopping route",
     "customSubtitle": "A route someone planned with Morya Map.",
@@ -220,7 +221,8 @@
       "festival_days": "Throughout the festival",
       "one_and_half_day": "1½-day visarjan",
       "five_day": "5-day visarjan",
-      "gauri": "Gauri–Ganpati visarjan"
+      "gauri": "Gauri–Ganpati visarjan",
+      "seven_day": "7-day visarjan"
     },
     "liveTitle": "Where is it right now?",
     "liveBody": "Watch the official channels. We never guess the position.",
@@ -349,5 +351,9 @@
     "emergencyBody": "Dial 112, India's national emergency number, or tell the nearest police officer or mandal volunteer. The big mandals run help and announcement desks for lost children and belongings.",
     "ctaMap": "Find a mandal and its queue start →",
     "ctaRoutes": "Plan a pandal-hopping route →"
+  },
+  "notFound": {
+    "title": "This page isn't here",
+    "body": "The link may be old or mistyped. Mandals, routes and festival info are all a tap away."
   }
 }

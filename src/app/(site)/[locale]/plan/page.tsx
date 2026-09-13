@@ -50,7 +50,7 @@ export default async function PlanPage({ params }: { params: Promise<{ locale: s
       idolLat: m.idolLat,
       idolLng: m.idolLng,
       areaOnly: m.pinPrecision === 'area',
-      search: [m.name, m.nameMr, m.nameHi, m.area, m.address]
+      search: [m.name, m.nameMr, m.nameHi, m.area, m.address, ...m.aliases]
         .filter(Boolean)
         .join(' ')
         .toLowerCase(),

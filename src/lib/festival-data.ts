@@ -11,7 +11,8 @@ import { istDateKey } from '@/lib/site';
 
 export const CURRENT_YEAR = 2026;
 
-export type ImmersionDayKey = 'one_and_half_day' | 'five_day' | 'gauri' | 'anant_chaturdashi';
+export type ImmersionDayKey =
+  'one_and_half_day' | 'five_day' | 'gauri' | 'seven_day' | 'anant_chaturdashi';
 
 export interface ImmersionDate {
   date: string;

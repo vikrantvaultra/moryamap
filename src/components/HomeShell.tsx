@@ -19,7 +19,7 @@ export default function HomeShell({
   list: ReactNode;
   labels: { map: string; list: string };
   /** Floating link above the Map/List pill on phones (festival banner or tools). */
-  callout?: { href: string; label: string };
+  callout?: { href: string; icon: string; label: string };
 }) {
   const [view, setView] = useState<'map' | 'list' | null>(null);
   useEffect(() => setView('map'), []);
@@ -39,6 +39,9 @@ export default function HomeShell({
               href={callout.href}
               className="max-w-full truncate rounded-full border border-amber-900/10 bg-white/95 px-4 py-2 text-[13px] font-semibold text-maroon shadow-lg backdrop-blur"
             >
+              <span aria-hidden className="mr-1.5">
+                {callout.icon}
+              </span>
               {callout.label}
             </Link>
           )}

@@ -47,11 +47,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function HomePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
 
@@ -107,13 +103,20 @@ export default async function HomePage({
   const moment = immersionMoment(now);
   const banner = moment
     ? moment.day.key === 'anant_chaturdashi' && moment.when === 'today'
-      ? { href: localePath(locale, '/visarjan'), label: `🌊 ${tf('todayAnant')}` }
+      ? { href: localePath(locale, '/visarjan'), icon: '🌊', label: tf('todayAnant') }
       : {
           href: localePath(locale, moment.when === 'today' ? '/visarjan/ponds' : '/visarjan'),
-          label: `🪷 ${tf(moment.when === 'today' ? 'todayImmersion' : 'tomorrow', { name: tf(moment.day.key) })}`,
+          icon: '🪷',
+          label: tf(moment.when === 'today' ? 'todayImmersion' : 'tomorrow', {
+            name: tf(moment.day.key),
+          }),
         }
     : null;
-  const callout = banner ?? { href: localePath(locale, '/routes'), label: `🪔 ${tn('routes')} →` };
+  const callout = banner ?? {
+    href: localePath(locale, '/routes'),
+    icon: '🪔',
+    label: `${tn('routes')} →`,
+  };
 
   // Precompute display strings server-side so the list client component
   // ships no i18n runtime. Order stays area/popularity — never wait.
@@ -167,6 +170,9 @@ export default async function HomePage({
               href={banner.href}
               className="mt-3 block rounded-xl bg-maroon px-4 py-3 text-sm font-semibold text-amber-50 shadow-sm hover:bg-maroon-deep"
             >
+              <span aria-hidden className="mr-1.5">
+                {banner.icon}
+              </span>
               {banner.label}
             </Link>
           )}
@@ -209,11 +215,18 @@ export default async function HomePage({
           <p className="mt-5 text-xs italic text-ink-soft">{t('sortNote')}</p>
 
           <div className="card mt-6 p-4">
-            <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">{ts('heading')}</h2>
+            <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">
+              {ts('heading')}
+            </h2>
             <ShareBar
               url={absoluteUrl(locale, '/')}
               text={ts('homeText', { count: mandals.length || 15 })}
-              labels={{ whatsapp: ts('whatsapp'), share: ts('share'), copy: ts('copy'), copied: ts('copied') }}
+              labels={{
+                whatsapp: ts('whatsapp'),
+                share: ts('share'),
+                copy: ts('copy'),
+                copied: ts('copied'),
+              }}
             />
           </div>
         </section>

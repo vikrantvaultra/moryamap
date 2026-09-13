@@ -64,16 +64,18 @@ export default function ShareBar({
   };
 
   const btn =
-    'flex items-center justify-center gap-1.5 rounded-xl px-3 py-2.5 text-sm font-semibold transition-colors';
+    'flex items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-3 py-2.5 text-sm font-semibold transition-colors';
 
   return (
-    <div className={`flex flex-wrap gap-2 ${compact ? '' : 'mt-3'}`}>
+    // Phones: WhatsApp gets its own full-width row, the rest share a 2-column
+    // grid so no label wraps; wider screens put everything on one row.
+    <div className={`grid grid-cols-2 gap-2 sm:flex sm:flex-wrap ${compact ? '' : 'mt-3'}`}>
       <a
         href={waHref}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackShare('whatsapp', path)}
-        className={`${btn} w-full bg-[#128c3e] text-white hover:bg-[#0e7333] sm:w-auto sm:flex-1`}
+        className={`${btn} col-span-2 bg-[#128c3e] text-white hover:bg-[#0e7333] sm:flex-1`}
       >
         <WhatsAppIcon />
         {labels.whatsapp}
@@ -82,7 +84,7 @@ export default function ShareBar({
         <button
           type="button"
           onClick={nativeShare}
-          className={`${btn} flex-1 bg-cream-deep text-maroon hover:bg-amber-100 sm:flex-none`}
+          className={`${btn} bg-cream-deep text-maroon hover:bg-amber-100`}
         >
           {labels.share}
         </button>
@@ -90,7 +92,7 @@ export default function ShareBar({
       <button
         type="button"
         onClick={copy}
-        className={`${btn} flex-1 bg-cream-deep text-maroon hover:bg-amber-100 sm:flex-none`}
+        className={`${btn} bg-cream-deep text-maroon hover:bg-amber-100 ${canNativeShare ? '' : 'col-span-2 sm:col-span-1'}`}
         aria-live="polite"
       >
         {copied ? labels.copied : labels.copy}
@@ -101,7 +103,7 @@ export default function ShareBar({
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackShare('story', path)}
-          className={`${btn} flex-1 border-2 border-flame text-flame hover:bg-flame hover:text-white sm:flex-none`}
+          className={`${btn} col-span-2 border-2 border-flame text-flame hover:bg-flame hover:text-white`}
         >
           {labels.story}
         </a>

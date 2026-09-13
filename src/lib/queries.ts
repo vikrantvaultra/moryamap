@@ -76,11 +76,31 @@ export async function fetchDirectory(): Promise<MandalData[]> {
   return staticDirectory as MandalData[];
 }
 
+/**
+ * FNV-1a fingerprint of the hardcoded directory. It goes into the cache key
+ * so a data change can never be answered from an older cached copy: Vercel
+ * restores .next/cache between builds, and a stale 108-mandal entry once
+ * crashed prerendering of the 128-mandal directory (missing `aliases`).
+ */
+export const DIRECTORY_VERSION = (() => {
+  const text = JSON.stringify(staticDirectory);
+  let h = 0x811c9dc5;
+  for (let i = 0; i < text.length; i++) {
+    h ^= text.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return (h >>> 0).toString(36);
+})();
+
 /** One cached entry covers the whole directory. Tag: 'queues'. */
-export const getMandalDirectory = unstable_cache(fetchDirectory, ['mandal-directory'], {
-  revalidate: 60,
-  tags: ['queues'],
-});
+export const getMandalDirectory = unstable_cache(
+  fetchDirectory,
+  ['mandal-directory', DIRECTORY_VERSION],
+  {
+    revalidate: 60,
+    tags: ['queues'],
+  },
+);
 
 export async function getQueueContext(
   queueId: number,

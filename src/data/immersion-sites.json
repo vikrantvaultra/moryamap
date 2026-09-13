@@ -26,14 +26,6 @@
       "note": "Published 2 Sep 2026."
     },
     {
-      "id": "indiatv-2026-bmc-arrangements",
-      "title": "Ganpati idols below six feet height must be immersed in artificial ponds in Mumbai",
-      "publisher": "India TV",
-      "url": "https://www.indiatvnews.com/maharashtra/ganpati-idols-below-six-feet-height-must-be-immersed-in-artificial-ponds-in-mumbai-says-bmc-latest-updates-2026-09-01-1053000",
-      "year": 2026,
-      "note": "1 Sep 2026. BMC 2026 counts: 281 artificial ponds, 44 beaches/jetties, 23 natural lakes (348 sites); pond locations to be shared via QR codes and Google Maps. Not in the preferred-publisher list; used only for context."
-    },
-    {
       "id": "bombay-samachar-pop-2026",
       "title": "POP Idol Immersion Rules Unchanged for Ganeshotsav 2026",
       "publisher": "Bombay Samachar (English)",
@@ -56,29 +48,13 @@
       "url": "https://www.drikpanchang.com/marathi/festivals/gauri-puja/jyeshtha-gauri-visarjana-date-time.html?year=2026&geoname-id=1275339",
       "year": 2026,
       "note": "Gauri Avahan Thu 17 Sep, Gauri Puja Fri 18 Sep, Gauri Visarjan Sat 19 Sep 2026 (Mumbai)."
-    },
-    {
-      "id": "prahaar-thane-immersion-days-2026",
-      "title": "गणेशोत्सव २०२६ : गणेश विसर्जनाच्या दिवशी ठाण्यात अवजड वाहनांना बंदी",
-      "publisher": "Prahaar",
-      "url": "https://www.prahaar.in/2026/09/09/thane-traffic-updates-thane-imposes-heavy-vehicle-restrictions-on-key-immersion-days-check-details-here",
-      "year": 2026,
-      "note": "9 Sep 2026. Lists 15, 18, 19, 20 and 25 Sep 2026 as the principal immersion days (1½-day, 5-day, Gauri-Ganpati, 7-day, Anant Chaturdashi) but does not pair each date with a label. Only source found for 15 Sep as the 1½-day day."
-    },
-    {
-      "id": "fpj-nh66-ganeshotsav-2026",
-      "title": "Ganeshotsav 2026: Heavy Vehicles Of 16 Tonnes And Above Banned On Mumbai-Goa NH-66 From September 11",
-      "publisher": "Free Press Journal",
-      "url": "https://www.freepressjournal.in/mumbai/ganeshotsav-2026-heavy-vehicles-of-16-tonnes-and-above-banned-on-mumbai-goa-nh-66-from-september-11-check-details",
-      "year": 2026,
-      "note": "8 Sep 2026. Labels 18 Sep 2026 as 5-day Ganpati immersion, 19–20 Sep as Gauri-Ganpati immersion, 25 Sep as Anant Chaturdashi."
     }
   ],
   "dates": [
     {
       "date": "2026-09-15",
       "key": "one_and_half_day",
-      "sourceId": "prahaar-thane-immersion-days-2026"
+      "sourceId": "drikpanchang-ganesh-visarjan-2026"
     },
     {
       "date": "2026-09-18",
@@ -89,6 +65,11 @@
       "date": "2026-09-19",
       "key": "gauri",
       "sourceId": "drikpanchang-gauri-visarjan-2026"
+    },
+    {
+      "date": "2026-09-20",
+      "key": "seven_day",
+      "sourceId": "drikpanchang-ganesh-visarjan-2026"
     },
     {
       "date": "2026-09-25",
