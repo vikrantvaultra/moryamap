@@ -59,6 +59,36 @@ docker run -d --name moryamap-pg -e POSTGRES_PASSWORD=morya \
 Upstash vars are optional in dev (rate limiting no-ops, snapshot falls back to
 Postgres) but **required in production**.
 
+## Festival tools (all hardcoded, no database)
+
+| Page | What it does | Data |
+|---|---|---|
+| `/routes`, `/routes/[circuit]` | Curated pandal-hopping circuits: map, stop-by-stop waits, walking links | `src/lib/routes.ts` (`CIRCUITS`) |
+| `/plan` → `/r/1-5-7` | Route builder; the whole route lives in the URL | mandal directory |
+| `/visarjan` | Immersion dates, Lalbaugcha Raja procession route (not live), closures, old bridges, helplines | `src/data/visarjan.json` |
+| `/visarjan/ponds` | Immersion spot finder, "near me" sorted in the browser | `src/data/immersion-sites.json` |
+| `/trains` | Night special locals, metro/BEST hours, railway advisories | `src/data/trains.json` |
+| `/guide` | First-timer guide: mukh darshan vs navas line, safety | `src/messages/*.json` (`guide`) |
+
+**Data rules** for `src/data/*.json`: every record has a `sourceId` that
+points at an entry in that file's `sources` (with a URL) and a `year`.
+Anything not from 2026 is labelled as such in the UI. If the 2026 notice
+isn't out, keep last year's data *labelled*, never re-dated. `npm test`
+fails on a dangling `sourceId`. To update, edit the JSON and redeploy.
+
+**Sharing**: every shareable page sets an explicit `og:image` served from
+`/api/og/…` (1200×630) and offers WhatsApp / share-sheet / copy buttons.
+Mandal and route pages also get a 1080×1920 status image at `/api/story/…`.
+Images are English-only because Satori can't shape Devanagari; the
+WhatsApp message text is localized. Mandal cards embed a time-stamped
+estimate, so they're cached for 5 minutes only.
+
+**Analytics**: share links carry `utm_source` (`whatsapp`, `native`, `copy`)
++ `utm_medium=share`, and clicks fire a Vercel Web Analytics `share` event.
+Enable Web Analytics on the Vercel project; nothing is stored by the app.
+Set `NEXT_PUBLIC_SITE_URL` to the production domain so previews and share
+links use it.
+
 ## Tests
 
 ```bash

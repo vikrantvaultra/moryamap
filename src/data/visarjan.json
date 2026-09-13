@@ -1,0 +1,804 @@
+{
+  "retrievedAt": "2026-09-13",
+  "sources": [
+    {
+      "id": "fpj-2025-ganeshotsav-traffic-advisory",
+      "title": "Mumbai Traffic Advisory For Ganeshotsav 2025: Check Out Key Blocks, Alternate Routes, No-Parking Zones & Restrictions On August 27",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/mumbai-traffic-advisory-for-ganeshotsav-2025-check-out-key-blocks-alternate-routes-no-parking-zones-restrictions-on-august-27",
+      "year": 2025,
+      "note": "Published 27 Aug 2025; news report of the Mumbai Traffic Police notification. No 2026 city-wide notification was findable as of 13 Sep 2026."
+    },
+    {
+      "id": "lokmattimes-2025-ganeshotsav-traffic",
+      "title": "Mumbai Traffic Update: Police Announce No-Parking Zones, Diversions During Ganeshotsav; Check Details",
+      "publisher": "Lokmat Times",
+      "url": "https://www.lokmattimes.com/mumbai/mumbai-traffic-update-police-announces-no-parking-zones-diversions-during-ganeshotsav-from-august-27-to-september-6-check-details-a517/",
+      "year": 2025,
+      "note": "Published 26 Aug 2025; covers 27 Aug - 6 Sep 2025 festival."
+    },
+    {
+      "id": "fpj-2025-anant-chaturdashi-traffic",
+      "title": "Anant Chaturdashi 2025: Mumbai Traffic Police Issues Advisory Ahead Of Ganesh Visarjan; Check Restrictions Here",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/anant-chaturdashi-2025-mumbai-traffic-police-issues-advisory-ahead-of-ganesh-visarjan-check-restrictions-here",
+      "year": 2025,
+      "note": "Published 6 Sep 2025."
+    },
+    {
+      "id": "fpj-2025-girgaon-chowpatty-safety",
+      "title": "Anant Chaturdashi 2025: Mumbai Police Issues Safety Guidelines For Ganpati Visarjan At Girgaon Chowpatty",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/anant-chaturdashi-2025-mumbai-police-issues-safety-guidelines-for-ganpati-visarjan-at-girgaon-chowpatty",
+      "year": 2025,
+      "note": "Published 6 Sep 2025."
+    },
+    {
+      "id": "fpj-2026-unsafe-fobs",
+      "title": "Ganeshotsav 2026: 4 Foot Over Bridges At Masjid, Matunga Stations To Shut After IIT Mumbai Flags Them Unsafe; BMC Seeks Closure",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/ganeshotsav-2026-4-foot-over-bridges-at-masjid-matunga-stations-to-shut-after-iit-mumbai-flags-them-unsafe-bmc-seeks-closure",
+      "year": 2026,
+      "note": "Published 12 Sep 2026."
+    },
+    {
+      "id": "fpj-2025-lalbaugcha-raja-route",
+      "title": "Where To Catch The Last Glimpse Of Mumbai's Lalbaugcha Raja? Full Visarjan Route Here",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/lalbaugcha-raja-visarjan-2025-mumbai-prepares-for-grand-farewell-of-citys-most-revered-ganesha-on-september-6-check-route-details",
+      "year": 2025
+    },
+    {
+      "id": "fpj-2025-lalbaugcha-raja-procession-begins",
+      "title": "Lalbaugcha Raja Visarjan 2025: Grand Procession For Mumbai's Most Revered Ganesha Begins After Final Aarti In Pandal",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/lalbaugcha-raja-visarjan-2025-grand-procession-for-mumbais-most-revered-ganesha-begins-after-final-aarti-in-pandal-sea-of-devotees-arrive-watch-live",
+      "year": 2025,
+      "note": "Published 6 Sep 2025."
+    },
+    {
+      "id": "indiatv-2025-lalbaugcha-raja-route",
+      "title": "Lalbaugcha Raja 2025 visarjan: Darshan, route, and YouTube details",
+      "publisher": "India TV News",
+      "url": "https://www.indiatvnews.com/lifestyle/events/lalbaugcha-raja-2025-visarjan-live-darshan-route-youtube-2025-09-06-1006956",
+      "year": 2025
+    },
+    {
+      "id": "indiatv-2025-lalbaugcha-raja-delay",
+      "title": "Lalbaugcha Raja's visarjan took 12 hours longer: Know why the delay",
+      "publisher": "India TV News",
+      "url": "https://www.indiatvnews.com/maharashtra/lalbaugcha-raja-s-mumbai-ganpati-visarjan-weather-update-took-12-hours-longer-know-why-the-delay-2025-09-08-1007159",
+      "year": 2025,
+      "note": "Published 8 Sep 2025."
+    },
+    {
+      "id": "tv9marathi-2025-lalbaugcha-raja-route",
+      "title": "लालबागच्या राजाची विसर्जन मिरवणूक हिंदुस्तानी मशि‍दीजवळ का थांबते? 'हे' आहे कारण",
+      "publisher": "TV9 Marathi",
+      "url": "https://www.tv9marathi.com/maharashtra/mumbai/why-does-lalbaugcha-raja-halt-at-hindustani-masjid-here-is-reason-1485949.html",
+      "year": 2025,
+      "note": "Published 5 Sep 2025; used for Marathi checkpoint names."
+    },
+    {
+      "id": "lokmattimes-2024-lalbaugcha-raja-visarjan",
+      "title": "Lalbaugcha Raja 2024 Visarjan Video: Iconic Ganpati Immersion Concludes After 23-Hour Procession on a Raft",
+      "publisher": "Lokmat Times",
+      "url": "https://www.lokmattimes.com/mumbai/lalbaugcha-raja-visarjan-2024-iconic-ganesh-immersion-concludes-after-23-hour-procession-on-a-raft-watch-video-a510",
+      "year": 2024,
+      "note": "Published 18 Sep 2024."
+    },
+    {
+      "id": "mtp-contact",
+      "title": "Contact Us",
+      "publisher": "Mumbai Traffic Police",
+      "url": "https://trafficpolicemumbai.maharashtra.gov.in/en/contact-us/",
+      "year": 2026,
+      "note": "Official page, retrieved 13 Sep 2026."
+    },
+    {
+      "id": "mumbai-police-emergency-contacts",
+      "title": "Emergency Contacts",
+      "publisher": "Mumbai Police",
+      "url": "https://mumbaipolice.gov.in/impcontacts",
+      "year": 2026,
+      "note": "Official page, retrieved 13 Sep 2026."
+    },
+    {
+      "id": "fpj-2025-bmc-final-visarjan-prep",
+      "title": "Ganeshotsav 2025: BMC Deploys 2,178 Lifeguards, 56 Motorboats At Chowpatty For Final Ganpati Visarjan Day",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/ganeshotsav-2025-bmc-deploys-2178-lifeguards-56-motorboats-at-chowpatty-for-final-ganpati-visarjan-day",
+      "year": 2025,
+      "note": "Published 3 Sep 2025."
+    },
+    {
+      "id": "fpj-2025-bmc-eco-guidelines",
+      "title": "Ganeshotsav 2025: BMC Appeals Citizens For Eco-Friendly Celebrations In Mumbai, Issues Guidelines For Immersion",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/ganeshotsav-2025-bmc-appeals-citizens-for-eco-friendly-celebrations-in-mumbai-issues-guidelines-for-immersion",
+      "year": 2025
+    },
+    {
+      "id": "fpj-2025-bmc-diwali-helplines",
+      "title": "Mumbai Diwali 2025: BMC Issues Safety Advisory On Bursting Firecrackers | Check Helpline Numbers Here",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/mumbai-bmc-issues-advisory-helpline-numbers-for-bursting-firecrackers-during-diwali-check-details-here",
+      "year": 2025,
+      "note": "Published 18 Oct 2025; cited only for BMC 1916 and Fire 101 numbers."
+    },
+    {
+      "id": "pib-2021-rail-madad-139",
+      "title": "Indian Railway announces integrated Rail Madad Helpline number 139 for all type of queries/complaints/assistance during travel",
+      "publisher": "Press Information Bureau, Ministry of Railways",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1703201",
+      "year": 2021
+    },
+    {
+      "id": "lalbaugcharaja-official",
+      "title": "Lalbaugcha Raja Sarvajanik Ganeshotsav Mandal (official website)",
+      "publisher": "Lalbaugcha Raja Sarvajanik Ganeshotsav Mandal",
+      "url": "https://lalbaugcharaja.com/en/",
+      "year": 2026,
+      "note": "Retrieved 13 Sep 2026; social links taken from the site."
+    }
+  ],
+  "closures": [
+    {
+      "id": "south-mumbai-heavy-vehicle-ban",
+      "road": "All roads into South Mumbai",
+      "area": "South Mumbai",
+      "restriction": "no-entry heavy vehicles and private buses",
+      "details": "Entry of heavy vehicles and private buses prohibited in South Mumbai on immersion days (2025: Aug 28, 31, Sep 1, 2 and 6). Exemptions listed: milk, vegetables, bakery, water tankers, fuel, ambulances, school buses, government vehicles.",
+      "appliesOn": [
+        "all_immersion_days"
+      ],
+      "timeWindow": "7:00 AM to midnight",
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "greater-mumbai-heavy-vehicle-curbs",
+      "road": "Greater Mumbai (excluding South Mumbai)",
+      "area": "Greater Mumbai",
+      "restriction": "no-entry heavy vehicles and private buses (time-bound)",
+      "details": "Heavy vehicles and private buses restricted 8:00 AM-11:00 AM and 5:00 PM-9:00 PM; during festival days these timings extended until midnight.",
+      "appliesOn": [
+        "festival_days"
+      ],
+      "timeWindow": "8:00 AM-11:00 AM and 5:00 PM-9:00 PM (extended to midnight on festival days)",
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "svp-road-gol-deool-prarthana-samaj",
+      "road": "Sardar Vallabhbhai Patel Road (Gol Deool to Prarthana Samaj Junction)",
+      "area": "Girgaon / Bhuleshwar",
+      "restriction": "closed",
+      "details": "All vehicular movement banned on SVP Road from Gol Deool to Prarthana Samaj Junction on Anant Chaturdashi.",
+      "appliesOn": [
+        "anant_chaturdashi"
+      ],
+      "timeWindow": null,
+      "sourceId": "fpj-2025-anant-chaturdashi-traffic",
+      "year": 2025
+    },
+    {
+      "id": "prarthana-samaj-to-vinoli",
+      "road": "Padmashree Govardhan Bafna Chowk (Prarthana Samaj Junction) to Vinoli Junction",
+      "area": "Girgaon",
+      "restriction": "closed",
+      "details": "No vehicles permitted on this stretch. Diversion: Raja Ram Mohan Roy Road, Bata Junction, Balaram Road, Navjeevan Junction, Tardeo Circle and Nana Chowk.",
+      "appliesOn": [
+        "anant_chaturdashi"
+      ],
+      "timeWindow": null,
+      "sourceId": "fpj-2025-anant-chaturdashi-traffic",
+      "year": 2025
+    },
+    {
+      "id": "navjeevan-to-m-powell",
+      "road": "Navjeevan Junction to M Powell Junction",
+      "area": "Girgaon / Grant Road",
+      "restriction": "closed",
+      "details": "Traffic from Navjeevan Junction to M Powell Junction barred. Alternate routes: Patthe Bapurao Road, Javji Dadaji Marg, Opera House Junction and Maharshi Karve Road.",
+      "appliesOn": [
+        "anant_chaturdashi"
+      ],
+      "timeWindow": null,
+      "sourceId": "fpj-2025-anant-chaturdashi-traffic",
+      "year": 2025
+    },
+    {
+      "id": "nathalal-parekh-marg",
+      "road": "Nathalal Parekh Marg (Bhai Bhandarkar Chowk to Sayyed Mohammed Jamadar Chowk)",
+      "area": "Colaba",
+      "restriction": "closed; no parking",
+      "details": "Listed as a prohibited road in Colaba Division; no-parking on immersion days. Heavy congestion expected in Cuffe Parade and Badhwar Park. The 6 Sep 2025 advisory also lists restrictions between Bhai Bhandarkar Chowk (Badhwar Park Junction) and Indu Clinic Junction.",
+      "appliesOn": [
+        "all_immersion_days"
+      ],
+      "timeWindow": "No parking 11 AM to 6 AM next day on immersion days",
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "captain-prakash-pethe-marg",
+      "road": "Captain Prakash Pethe Marg (Zhulelal Mandir Junction to Sant Ghadge Maharaj Chowk)",
+      "area": "Colaba",
+      "restriction": "closed; no parking",
+      "details": "Listed as a prohibited road in Colaba Division; no-parking on immersion days.",
+      "appliesOn": [
+        "all_immersion_days"
+      ],
+      "timeWindow": "No parking 11 AM to 6 AM next day on immersion days",
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "rambhau-salgaonkar-marg",
+      "road": "Rambhau Salgaonkar Marg (Volga Chowk to Kamal Morarka Chowk)",
+      "area": "Colaba",
+      "restriction": "closed except emergency vehicles; no parking",
+      "details": "Emergency vehicles only; no-parking on immersion days (along with Pandey Road).",
+      "appliesOn": [
+        "all_immersion_days"
+      ],
+      "timeWindow": "No parking 11 AM to 6 AM next day on immersion days",
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "netaji-subhash-road-marine-drive",
+      "road": "Netaji Subhashchandra Bose Road (Marine Drive)",
+      "area": "Marine Drive",
+      "restriction": "no parking; diversion",
+      "details": "No parking from Air India Junction to Mafatlal Junction, both sides. Traffic from the north may be diverted from Islam Gymkhana to the Chhatrapati Sambhaji Maharaj Coastal Road.",
+      "appliesOn": [
+        "all_immersion_days"
+      ],
+      "timeWindow": null,
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "girgaon-chowpatty-entry",
+      "road": "Girgaon Chowpatty main gate",
+      "area": "Girgaon Chowpatty",
+      "restriction": "idol-carrying vehicles only",
+      "details": "Only vehicles carrying Ganpati idols permitted through the main gate. Heavy vehicles directed right (parking B1-B3), light vehicles left (A1-A3). Three designated exit gates after immersion. Citizens advised to use footpaths.",
+      "appliesOn": [
+        "anant_chaturdashi"
+      ],
+      "timeWindow": null,
+      "sourceId": "fpj-2025-girgaon-chowpatty-safety",
+      "year": 2025
+    },
+    {
+      "id": "central-mumbai-lalbaug-procession-roads",
+      "road": "Dr. Annie Besant Road, N.M. Joshi Marg, Bal Govindas Road, S.K. Bole Road",
+      "area": "Worli / Lalbaug / Dadar",
+      "restriction": "one-way or temporarily closed",
+      "details": "Converted into one-way or temporarily closed during processions of Lalbaugcha Raja and other major mandals. Swatantraveer Savarkar Marg, Ranade Road, Tilak Road, M.B. Raut Road and Jambhekar Maharaj Marg will have regulated traffic movements.",
+      "appliesOn": [
+        "during_processions"
+      ],
+      "timeWindow": null,
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "dadar-no-parking",
+      "road": "Dr. Annie Besant Road, R.G. Thadani Road, Swatantraveer Savarkar Marg, Ranade Road, Shivaji Park area roads",
+      "area": "Worli / Dadar / Shivaji Park",
+      "restriction": "no parking",
+      "details": "Declared strict no-parking zones.",
+      "appliesOn": [
+        "festival_days"
+      ],
+      "timeWindow": null,
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "central-mumbai-goods-vehicle-ban",
+      "road": "Swatantraveer Savarkar Marg, Gokhale Road, Tilak Bridge, S.K. Bole Road, Bhawani Shankar Road",
+      "area": "Dadar",
+      "restriction": "no-entry heavy and goods vehicles",
+      "details": "Entry of heavy and goods vehicles prohibited on these roads.",
+      "appliesOn": [
+        "festival_days"
+      ],
+      "timeWindow": null,
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "juhu-tara-road",
+      "road": "Juhu Tara Road, Devde Road and approach roads to Juhu Chowpatty",
+      "area": "Juhu / Santacruz",
+      "restriction": "closed except essential and resident vehicles",
+      "details": "Remain closed except for essential and resident vehicles. FPJ (27 Aug 2025) reports Devde Road, Juhu Tara Road and Oshiwara Nala completely closed during immersion processions.",
+      "appliesOn": [
+        "during_processions"
+      ],
+      "timeWindow": null,
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "juhu-no-parking",
+      "road": "Juhu Road, Juhu Tara Road, Janardhan Mahtre Road, Gulmohar Road, Oshiwara areas, Poisar Junction, Marve Junction",
+      "area": "Juhu / Oshiwara / Kandivali / Malad",
+      "restriction": "no parking",
+      "details": "Strict no-parking regulations.",
+      "appliesOn": [
+        "festival_days"
+      ],
+      "timeWindow": null,
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "western-suburbs-one-way",
+      "road": "Captain Gore Bridge (Santacruz), K.T. Son Marg (Kandivali), Abdul Hamid Road",
+      "area": "Santacruz / Kandivali",
+      "restriction": "one-way",
+      "details": "Operated as one-way during peak immersion timings.",
+      "appliesOn": [
+        "all_immersion_days"
+      ],
+      "timeWindow": "Peak immersion timings",
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "marve-road-diversions",
+      "road": "Marve Road (Malad), Bandarpakhadi Road (Kandivali), L.T. Road (Borivali)",
+      "area": "Malad / Kandivali / Borivali",
+      "restriction": "diversions",
+      "details": "Diversions during immersion days. Heavy vehicles also banned on Madh-Marve Road (FPJ, 27 Aug 2025).",
+      "appliesOn": [
+        "all_immersion_days"
+      ],
+      "timeWindow": null,
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "chembur-closures",
+      "road": "Hemu Kalani Marg (Umarshi Bappa Jn to Basant Park Jn), Gidwani Marg (Golf Club to Chembur Naka), R.C. Road",
+      "area": "Chembur",
+      "restriction": "closed; no parking",
+      "details": "Closed for traffic during immersion processions; strict no-parking on V.N. Purav Marg, Hemu Kalani Marg, R.C. Marg, C.G. Gidwani Road. Segment endpoints from the 6 Sep 2025 FPJ advisory.",
+      "appliesOn": [
+        "during_processions"
+      ],
+      "timeWindow": null,
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "rc-marg-heavy-vehicles",
+      "road": "R.C. Marg (Maravali Church to Chembur Naka)",
+      "area": "Chembur",
+      "restriction": "no-entry heavy vehicles",
+      "details": "Heavy vehicles prohibited in both directions.",
+      "appliesOn": [
+        "anant_chaturdashi"
+      ],
+      "timeWindow": null,
+      "sourceId": "fpj-2025-anant-chaturdashi-traffic",
+      "year": 2025
+    },
+    {
+      "id": "eastern-suburbs-goods-vehicle-curbs",
+      "road": "Sion-Panvel Highway, Ghatkopar-Mankhurd Link Road, R.C. Marg, C.G. Gidwani Road",
+      "area": "Chembur / Mankhurd",
+      "restriction": "no-entry goods vehicles",
+      "details": "Goods vehicle restrictions; Sion-Panvel Highway during peak hours. FPJ (27 Aug 2025) also lists LBS Road, JVLR, Hemu Kalani Marg, Gidwani Marg, Ghatla Village Road and Dr. CG Marg for heavy-vehicle bans.",
+      "appliesOn": [
+        "festival_days"
+      ],
+      "timeWindow": "Peak hours (Sion-Panvel Highway)",
+      "sourceId": "lokmattimes-2025-ganeshotsav-traffic",
+      "year": 2025
+    },
+    {
+      "id": "sion-station-rob-closed",
+      "road": "Shiv (Sion) Station Railway Bridge",
+      "area": "Sion",
+      "restriction": "closed",
+      "details": "Closed to traffic.",
+      "appliesOn": [
+        "festival_days"
+      ],
+      "timeWindow": null,
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "coastal-road-alternate",
+      "road": "Chhatrapati Sambhaji Maharaj Coastal Road",
+      "area": "South Mumbai",
+      "restriction": "recommended alternate route",
+      "details": "Motorists advised to use the Coastal Road for north-south movement during the visarjan period.",
+      "appliesOn": [
+        "anant_chaturdashi"
+      ],
+      "timeWindow": null,
+      "sourceId": "fpj-2025-anant-chaturdashi-traffic",
+      "year": 2025
+    }
+  ],
+  "bridges": [
+    {
+      "id": "ghatkopar-rob",
+      "name": "Ghatkopar railway overbridge",
+      "area": "Ghatkopar",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "currey-road-rob",
+      "name": "Curry Road railway overbridge",
+      "area": "Curry Road / Lalbaug",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it. Combined weight of devotees and vehicles must not exceed 16 tons.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "arthur-road-chinchpokli-rob",
+      "name": "Arthur Road (Chinchpokli) railway overbridge",
+      "area": "Chinchpokli",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it. Combined weight of devotees and vehicles must not exceed 16 tons.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "byculla-rob",
+      "name": "Byculla railway overbridge",
+      "area": "Byculla",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it. Combined weight of devotees and vehicles must not exceed 16 tons.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "prabhadevi-carroll-rob",
+      "name": "Prabhadevi-Carroll bridge",
+      "area": "Prabhadevi",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "tilak-bridge-dadar",
+      "name": "Lokmanya Tilak bridge",
+      "area": "Dadar",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "marine-lines-rob",
+      "name": "Marine Lines railway overbridge",
+      "area": "Marine Lines",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "sandhurst-road-rob",
+      "name": "Sandhurst Road railway overbridge",
+      "area": "Sandhurst Road",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "french-rob",
+      "name": "French railway bridge",
+      "area": "Charni Road / Grant Road",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "kennedy-rob",
+      "name": "Kennedy bridge",
+      "area": "Grant Road / Opera House",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "falkland-rob",
+      "name": "Falkland bridge",
+      "area": "Grant Road",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "mahalaxmi-rob",
+      "name": "Mahalaxmi Station bridge",
+      "area": "Mahalaxmi",
+      "advice": "No loudspeakers, singing or dancing on the bridge; maximum 100 people on a railway overbridge at a time; processions must not halt on it.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "sion-station-rob",
+      "name": "Shiv (Sion) Station railway bridge",
+      "area": "Sion",
+      "advice": "Closed to traffic.",
+      "sourceId": "fpj-2025-ganeshotsav-traffic-advisory",
+      "year": 2025
+    },
+    {
+      "id": "masjid-bhandari-fob",
+      "name": "Bhandari FOB at Masjid",
+      "area": "Masjid Bunder",
+      "advice": "Closed to pedestrians: IIT Mumbai structural audit found deterioration and corrosion; BMC asked railways to ensure no pedestrian movement until further directions.",
+      "sourceId": "fpj-2026-unsafe-fobs",
+      "year": 2026
+    },
+    {
+      "id": "masjid-station-fob",
+      "name": "Masjid Station FOB",
+      "area": "Masjid Bunder",
+      "advice": "Closed to pedestrians: IIT Mumbai structural audit found deterioration and corrosion; BMC asked railways to ensure no pedestrian movement until further directions.",
+      "sourceId": "fpj-2026-unsafe-fobs",
+      "year": 2026
+    },
+    {
+      "id": "matunga-level-crossing-fob",
+      "name": "Matunga Level Crossing FOB at Bhau Daji Road",
+      "area": "Matunga",
+      "advice": "Closed to pedestrians: IIT Mumbai structural audit found deterioration and corrosion; BMC asked railways to ensure no pedestrian movement until further directions.",
+      "sourceId": "fpj-2026-unsafe-fobs",
+      "year": 2026
+    },
+    {
+      "id": "matunga-dharavi-fob",
+      "name": "Matunga Dharavi FOB near Guru Nanak High School",
+      "area": "Matunga / Dharavi",
+      "advice": "Closed to pedestrians: IIT Mumbai structural audit found deterioration and corrosion; BMC asked railways to ensure no pedestrian movement until further directions.",
+      "sourceId": "fpj-2026-unsafe-fobs",
+      "year": 2026
+    }
+  ],
+  "procession": {
+    "mandalSlug": "lalbaugcha-raja",
+    "sourceIds": [
+      "fpj-2025-lalbaugcha-raja-route",
+      "indiatv-2025-lalbaugcha-raja-route",
+      "fpj-2025-lalbaugcha-raja-procession-begins",
+      "tv9marathi-2025-lalbaugcha-raja-route"
+    ],
+    "year": 2025,
+    "checkpoints": [
+      {
+        "id": "lalbaug-pandal",
+        "sequence": 1,
+        "name": "Lalbaugcha Raja pandal, Lalbaug",
+        "nameMr": null,
+        "lat": null,
+        "lng": null,
+        "geocodeMatch": null
+      },
+      {
+        "id": "chivda-galli",
+        "sequence": 2,
+        "name": "Chivda Galli",
+        "nameMr": null,
+        "lat": null,
+        "lng": null,
+        "geocodeMatch": null
+      },
+      {
+        "id": "lalbaug-market",
+        "sequence": 3,
+        "name": "Lalbaug Market",
+        "nameMr": "लालबाग मार्केट",
+        "lat": null,
+        "lng": null,
+        "geocodeMatch": null
+      },
+      {
+        "id": "chinchpokli-station",
+        "sequence": 4,
+        "name": "Chinchpokli Station (West)",
+        "nameMr": "चिंचपोकळी स्टेशन",
+        "lat": 18.9869701,
+        "lng": 72.832906,
+        "geocodeMatch": "Chinchpokli Railway Station, Byculla West, E Ward, Mumbai Zone 1, Mumbai City District, Maharashtra, India"
+      },
+      {
+        "id": "byculla-station",
+        "sequence": 5,
+        "name": "Byculla Station (West), via Delisle Road and S bridge",
+        "nameMr": "भायखळा स्टेशन",
+        "lat": 18.9764065,
+        "lng": 72.8327044,
+        "geocodeMatch": "Byculla Railway Station, Byculla East, E Ward, Mumbai Zone 1, Mumbai City District, Maharashtra, India"
+      },
+      {
+        "id": "hindustani-masjid-byculla",
+        "sequence": 6,
+        "name": "Hindustan Masjid, Byculla",
+        "nameMr": "हिंदुस्तान मशीद, भायखळा",
+        "lat": null,
+        "lng": null,
+        "geocodeMatch": null
+      },
+      {
+        "id": "byculla-fire-brigade",
+        "sequence": 7,
+        "name": "Byculla Fire Brigade",
+        "nameMr": "भायखळा अग्निशमन दल",
+        "lat": 18.9728097,
+        "lng": 72.8318751,
+        "geocodeMatch": "Mumbai Fire Brigade HQ, Meghraj Sethi Marg, Agripada, Byculla West, E Ward, Mumbai Zone 1, Mumbai City District, Maharashtra, 400004, India"
+      },
+      {
+        "id": "nagpada-junction",
+        "sequence": 8,
+        "name": "Nagpada Junction (Khada Parsi / S. Mohani Chowk)",
+        "nameMr": "नागपाडा चौक (खडा पारसी/एस. मोहनी चौक)",
+        "lat": 18.966683,
+        "lng": 72.8287414,
+        "geocodeMatch": "Nagpada Junction, Maulana Azad Road (Duncan Road), Kamathipura, Nagpada, E Ward, Mumbai Zone 1, Mumbai City District, Maharashtra, 400004, India"
+      },
+      {
+        "id": "gol-deool-do-taki",
+        "sequence": 9,
+        "name": "Gol Deool / Do Taki area",
+        "nameMr": "गोल देऊळ/दो टाकी क्षेत्र",
+        "lat": 18.9617755,
+        "lng": 72.8283906,
+        "geocodeMatch": "Do Tanki, Maulana Shaukat Ali Marg, Bhuleshwar, E Ward, Mumbai Zone 1, Mumbai City District, Maharashtra, 400004, India"
+      },
+      {
+        "id": "opera-house-bridge",
+        "sequence": 10,
+        "name": "Opera House Bridge (CP Tank / Prarthana Samaj / SV Road)",
+        "nameMr": "ऑपेरा हाऊस ब्रिज (सीपी टँक/प्रार्थना समाज/एसव्ही रोड)",
+        "lat": null,
+        "lng": null,
+        "geocodeMatch": null
+      },
+      {
+        "id": "girgaon-chowpatty",
+        "sequence": 11,
+        "name": "Girgaon Chowpatty",
+        "nameMr": "गिरगाव चौपाटी",
+        "lat": 18.954359,
+        "lng": 72.8128787,
+        "geocodeMatch": "Girgaum Chowpatty Beach, Gamdevi, D Ward, Mumbai Zone 1, Mumbai City District, Maharashtra, India"
+      }
+    ],
+    "facts": [
+      {
+        "text": "In 2025 the procession began from Lalbaug at noon on Saturday (6 September) and reached Girgaon Chowpatty around 8 AM on Sunday.",
+        "sourceId": "indiatv-2025-lalbaugcha-raja-delay",
+        "year": 2025
+      },
+      {
+        "text": "In 2025 the immersion was completed around 9 PM on Sunday, about 12 hours later than the typical 9 AM timing, after a high tide (4.42 metres predicted at 11:40 AM) and a technical snag while shifting the 18-foot idol onto the electrically operated raft.",
+        "sourceId": "indiatv-2025-lalbaugcha-raja-delay",
+        "year": 2025
+      },
+      {
+        "text": "The visarjan procession often stretches well past 24 hours.",
+        "sourceId": "fpj-2025-lalbaugcha-raja-route",
+        "year": 2025
+      },
+      {
+        "text": "In 2024 Lalbaugcha Raja entered Girgaon Chowpatty around 6 AM on Wednesday (18 September) after a procession that continued for 23 hours; immersion was done using a hydraulic mechanical raft despite heavy rain around 5 AM.",
+        "sourceId": "lokmattimes-2024-lalbaugcha-raja-visarjan",
+        "year": 2024
+      }
+    ]
+  },
+  "helplines": [
+    {
+      "id": "mumbai-police-control-room",
+      "name": "Mumbai Police Control Room",
+      "number": "100",
+      "sourceId": "mumbai-police-emergency-contacts"
+    },
+    {
+      "id": "emergency-112",
+      "name": "Emergency helpline (listed by Mumbai Police for Girgaon Chowpatty visarjan)",
+      "number": "112",
+      "sourceId": "fpj-2025-girgaon-chowpatty-safety"
+    },
+    {
+      "id": "helpline-103",
+      "name": "Mumbai Police helpline 103 (listed for Girgaon Chowpatty visarjan)",
+      "number": "103",
+      "sourceId": "fpj-2025-girgaon-chowpatty-safety"
+    },
+    {
+      "id": "mumbai-police-women-helpline",
+      "name": "Mumbai Police Women Helpline",
+      "number": "22633333 / 22620111",
+      "sourceId": "mumbai-police-emergency-contacts"
+    },
+    {
+      "id": "mtp-whatsapp",
+      "name": "Mumbai Traffic Police WhatsApp helpline",
+      "number": "8454999999",
+      "sourceId": "mtp-contact"
+    },
+    {
+      "id": "mtp-phone",
+      "name": "Mumbai Traffic Police (phone)",
+      "number": "022-24940303",
+      "sourceId": "mtp-contact"
+    },
+    {
+      "id": "bmc-1916",
+      "name": "BMC Municipal Helpline",
+      "number": "1916",
+      "sourceId": "fpj-2025-bmc-diwali-helplines"
+    },
+    {
+      "id": "bmc-whatsapp-chatbot",
+      "name": "BMC WhatsApp chatbot (artificial pond information)",
+      "number": "8999228999",
+      "sourceId": "fpj-2025-bmc-final-visarjan-prep"
+    },
+    {
+      "id": "fire-101",
+      "name": "Fire Department",
+      "number": "101",
+      "sourceId": "fpj-2025-bmc-diwali-helplines"
+    },
+    {
+      "id": "rail-madad-139",
+      "name": "Rail Madad railway helpline",
+      "number": "139",
+      "sourceId": "pib-2021-rail-madad-139"
+    }
+  ],
+  "channels": [
+    {
+      "id": "mtp-x",
+      "name": "Mumbai Traffic Police on X (@MTPHereToHelp)",
+      "url": "https://twitter.com/MTPHereToHelp",
+      "sourceId": "mtp-contact"
+    },
+    {
+      "id": "mtp-website",
+      "name": "Mumbai Traffic Police website",
+      "url": "https://trafficpolicemumbai.maharashtra.gov.in/en/contact-us/",
+      "sourceId": "mtp-contact"
+    },
+    {
+      "id": "bmc-x",
+      "name": "BMC on X (@mybmc)",
+      "url": "https://x.com/mybmc",
+      "sourceId": "fpj-2025-bmc-eco-guidelines"
+    },
+    {
+      "id": "lalbaugcharaja-website",
+      "name": "Lalbaugcha Raja official website",
+      "url": "https://lalbaugcharaja.com/en/",
+      "sourceId": "lalbaugcharaja-official"
+    },
+    {
+      "id": "lalbaugcharaja-youtube",
+      "name": "Lalbaugcha Raja on YouTube",
+      "url": "https://youtube.com/@lalbaugraja",
+      "sourceId": "lalbaugcharaja-official"
+    },
+    {
+      "id": "lalbaugcharaja-x",
+      "name": "Lalbaugcha Raja on X",
+      "url": "https://x.com/LalbaugchaRaja",
+      "sourceId": "lalbaugcharaja-official"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "retrievedAt": "2026-09-13",
+  "announced2026": false,
+  "sources": [
+    {
+      "id": "patrika-2025-visarjan-specials",
+      "title": "Ganpati Visarjan Special Local Trains Announced for 2025",
+      "publisher": "Patrika",
+      "url": "https://www.patrika.com/en/state-news/ganpati-visarjan-special-local-trains-announced-for-2025-19912742",
+      "year": 2025,
+      "note": "Published 2 Sept 2025. Lists Central Railway main line and Harbour special timings; Western Railway specials mentioned without times."
+    },
+    {
+      "id": "tv9marathi-2025-harbour-specials",
+      "title": "अनंतचतुर्थदशीला मध्य रेल्वेची अनोखी भेट, गणेशभक्तांसाठी रात्री विशेष लोकल चालवणार",
+      "publisher": "TV9 Marathi",
+      "url": "https://www.tv9marathi.com/maharashtra/central-railway-to-run-special-night-local-trains-for-ganesh-devotees-on-anant-chaturthi-1485790.html",
+      "year": 2025,
+      "note": "Published 5 Sept 2025. Corroborates Harbour line CSMT–Panvel special timings for the night of 6/7 Sept 2025."
+    },
+    {
+      "id": "lokmattimes-2025-wr-specials",
+      "title": "Western Railway to Run Special Mumbai Local Train Services on the Night of September 6–7 for Anant Chaturdashi",
+      "publisher": "Lokmat Times",
+      "url": "https://www.lokmattimes.com/mumbai/western-railway-to-run-special-mumbai-local-train-services-on-the-night-of-september-6-7-for-anant-chaturdashi-check-timetable-here-a525/",
+      "year": 2025,
+      "note": "Published 2 Sept 2025. Timetable was an image not readable in fetched text; exact WR times not captured."
+    },
+    {
+      "id": "fpj-2025-wr-charni-road",
+      "title": "Ganeshotsav 2025: Western Railway Announces Extra Services, Schedule Changes At Charni Road For Anant Chaturdashi",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/ganeshotsav-2025-western-railway-announces-extra-services-schedule-changes-at-charni-road-for-anant-chaturdashi",
+      "year": 2025,
+      "note": "Published 4 Sept 2025."
+    },
+    {
+      "id": "fpj-2025-wr-charni-road-crowd",
+      "title": "Ganeshotsav 2025: Western Railway Announces Special Crowd Management Measures At Charni Road For Anant Chaturdashi",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/ganeshotsav-2025-western-railway-announces-special-crowd-management-measures-at-charni-road-for-anant-chaturdashi",
+      "year": 2025
+    },
+    {
+      "id": "fpj-2026-metro-one-extension",
+      "title": "Mumbai Metro One Extends Services Until 1.03 AM From September 14 To 25 For Ganeshotsav 2026",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/mumbai-metro-one-extends-services-until-103-am-from-september-14-to-25-for-ganeshotsav-2026",
+      "year": 2026,
+      "note": "Published 12 Sept 2026. Also covers Metro 3 and Metro 2A/7/9/2B extensions."
+    },
+    {
+      "id": "fpj-2026-metro3-midnight",
+      "title": "Mumbai Metro Line 3 To Run Till Midnight During Ganeshotsav From September 14 To 25 For Devotee Convenience",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/mumbai-metro-line-3-to-run-till-midnight-during-ganeshotsav-from-september-14-to-25-for-devotee-convenience",
+      "year": 2026,
+      "note": "Published 6 Sept 2026."
+    },
+    {
+      "id": "fpj-2026-metro-late-night-no-megablocks",
+      "title": "Mumbai Metro To Run Late-Night Services During Ganeshotsav, Central Railway To Avoid Mega Blocks",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/mumbai/mumbai-metro-to-run-late-night-services-during-ganeshotsav-central-railway-to-avoid-mega-blocks",
+      "year": 2026,
+      "note": "Published 22 Aug 2026. Planning directions from a coordination meeting; no specific special-train timings."
+    },
+    {
+      "id": "navbharatlive-2026-best-night-buses",
+      "title": "गणेशोत्सव में श्रद्धालुओं को राहत, मुंबई में 14 से 25 सितंबर तक देर रात चलेंगी बेस्ट की 26 अतिरिक्त बसें",
+      "publisher": "Navbharat Live",
+      "url": "https://navbharatlive.com/maharashtra/mumbai/best-extra-buses-for-mumbai-ganeshotsav-night-commuters-rgs12",
+      "year": 2026,
+      "note": "Published 8 Sept 2026. Route numbers not listed in the article."
+    }
+  ],
+  "specials": [
+    {
+      "id": "cr-2025-csmt-kalyan-0140",
+      "operator": "Central Railway",
+      "night": "2025-09-04/05, 2025-09-05/06 and 2025-09-06/07",
+      "from": "CSMT",
+      "to": "Kalyan",
+      "departs": "01:40",
+      "arrives": "03:10",
+      "stopsAt": "all stations",
+      "sourceId": "patrika-2025-visarjan-specials",
+      "year": 2025
+    },
+    {
+      "id": "cr-2025-csmt-thane-0230",
+      "operator": "Central Railway",
+      "night": "2025-09-04/05, 2025-09-05/06 and 2025-09-06/07",
+      "from": "CSMT",
+      "to": "Thane",
+      "departs": "02:30",
+      "arrives": "03:30",
+      "stopsAt": "all stations",
+      "sourceId": "patrika-2025-visarjan-specials",
+      "year": 2025
+    },
+    {
+      "id": "cr-2025-csmt-kalyan-0325",
+      "operator": "Central Railway",
+      "night": "2025-09-04/05, 2025-09-05/06 and 2025-09-06/07",
+      "from": "CSMT",
+      "to": "Kalyan",
+      "departs": "03:25",
+      "arrives": "04:55",
+      "stopsAt": "all stations",
+      "sourceId": "patrika-2025-visarjan-specials",
+      "year": 2025
+    },
+    {
+      "id": "cr-2025-kalyan-csmt-0005",
+      "operator": "Central Railway",
+      "night": "2025-09-04/05, 2025-09-05/06 and 2025-09-06/07",
+      "from": "Kalyan",
+      "to": "CSMT",
+      "departs": "00:05",
+      "arrives": "01:30",
+      "stopsAt": "all stations",
+      "sourceId": "patrika-2025-visarjan-specials",
+      "year": 2025
+    },
+    {
+      "id": "cr-2025-thane-csmt-0100",
+      "operator": "Central Railway",
+      "night": "2025-09-04/05, 2025-09-05/06 and 2025-09-06/07",
+      "from": "Thane",
+      "to": "CSMT",
+      "departs": "01:00",
+      "arrives": "02:00",
+      "stopsAt": "all stations",
+      "sourceId": "patrika-2025-visarjan-specials",
+      "year": 2025
+    },
+    {
+      "id": "cr-2025-thane-csmt-0200",
+      "operator": "Central Railway",
+      "night": "2025-09-04/05, 2025-09-05/06 and 2025-09-06/07",
+      "from": "Thane",
+      "to": "CSMT",
+      "departs": "02:00",
+      "arrives": "03:00",
+      "stopsAt": "all stations",
+      "sourceId": "patrika-2025-visarjan-specials",
+      "year": 2025
+    },
+    {
+      "id": "harbour-2025-csmt-panvel-0130",
+      "operator": "Harbour",
+      "night": "2025-09-06/07 (night of immersion)",
+      "from": "CSMT",
+      "to": "Panvel",
+      "departs": "01:30",
+      "arrives": "02:50",
+      "stopsAt": "all stations",
+      "sourceId": "tv9marathi-2025-harbour-specials",
+      "year": 2025
+    },
+    {
+      "id": "harbour-2025-csmt-panvel-0245",
+      "operator": "Harbour",
+      "night": "2025-09-06/07 (night of immersion)",
+      "from": "CSMT",
+      "to": "Panvel",
+      "departs": "02:45",
+      "arrives": "04:05",
+      "stopsAt": "all stations",
+      "sourceId": "tv9marathi-2025-harbour-specials",
+      "year": 2025
+    },
+    {
+      "id": "harbour-2025-panvel-csmt-0100",
+      "operator": "Harbour",
+      "night": "2025-09-06/07 (night of immersion)",
+      "from": "Panvel",
+      "to": "CSMT",
+      "departs": "01:00",
+      "arrives": "02:20",
+      "stopsAt": "all stations",
+      "sourceId": "tv9marathi-2025-harbour-specials",
+      "year": 2025
+    },
+    {
+      "id": "harbour-2025-panvel-csmt-0145",
+      "operator": "Harbour",
+      "night": "2025-09-06/07 (night of immersion)",
+      "from": "Panvel",
+      "to": "CSMT",
+      "departs": "01:45",
+      "arrives": "03:05",
+      "stopsAt": "all stations",
+      "sourceId": "tv9marathi-2025-harbour-specials",
+      "year": 2025
+    }
+  ],
+  "extendedHours": [
+    {
+      "id": "metro1-2026-extension",
+      "operator": "Metro Line 1",
+      "dates": "14–25 September 2026",
+      "details": "Last train from Versova towards Ghatkopar departs at 12:15 am; last train from Ghatkopar towards Versova departs at 12:40 am and reaches Versova at 1:03 am.",
+      "sourceId": "fpj-2026-metro-one-extension",
+      "year": 2026
+    },
+    {
+      "id": "metro3-2026-extension",
+      "operator": "Metro Line 3",
+      "dates": "14–25 September 2026",
+      "details": "Last trains from both terminal stations, Cuffe Parade and Aarey JVLR, which normally depart at 10:30 pm, will run till 12 midnight. Devotees may carry Ganesh idols up to 18 inches (45 cm) subject to prescribed safety guidelines.",
+      "sourceId": "fpj-2026-metro3-midnight",
+      "year": 2026
+    },
+    {
+      "id": "metro-2a-7-9-2b-2026-extension",
+      "operator": "Metro Lines 2A, 7, 9, 2B",
+      "dates": "14–25 September 2026",
+      "details": "Services extended until 12:30 am instead of the usual 11 pm, with 10 to 15 additional trips every day across these metro lines.",
+      "sourceId": "fpj-2026-metro-one-extension",
+      "year": 2026
+    },
+    {
+      "id": "best-2026-night-buses",
+      "operator": "BEST",
+      "dates": "14–25 September 2026",
+      "details": "26 additional buses on 10 routes from 10:30 pm to 6:00 am, serving areas including Lalbaug, Parel, Girgaon and Khetwadi; operated from Oshiwara, Shivajinagar, Deonar, Backbay, Mumbai Central, Worli, Santacruz, Wadala and Kala Killa depots. Route numbers were not published in the article.",
+      "sourceId": "navbharatlive-2026-best-night-buses",
+      "year": 2026
+    },
+    {
+      "id": "cr-2026-no-mega-blocks",
+      "operator": "Central Railway",
+      "dates": "From the beginning of Ganeshotsav until Anant Chaturdashi 2026",
+      "details": "No regular mega blocks or night blocks on the Main, Harbour and Trans-Harbour lines; additional suburban special trains to be run during peak and late-night hours (timings not yet published).",
+      "sourceId": "fpj-2026-metro-late-night-no-megablocks",
+      "year": 2026
+    },
+    {
+      "id": "wr-2025-churchgate-virar-specials",
+      "operator": "Western Railway",
+      "dates": "Night of 6/7 September 2025 (Anant Chaturdashi)",
+      "details": "Six pairs (12 services) of additional special local trains ran between Churchgate and Virar at midnight on 6/7 September 2025, stopping at all stations. Exact departure times were not available in the fetched sources.",
+      "sourceId": "patrika-2025-visarjan-specials",
+      "year": 2025
+    }
+  ],
+  "lastTrains": [],
+  "advisories": [
+    {
+      "id": "wr-2025-charni-road-slow-skip",
+      "text": "On Anant Chaturdashi (6 Sept 2025), slow UP locals skipped Charni Road station from 5:00 pm to 11:30 pm to prevent overcrowding on Platforms 2 and 3 near the Girgaon Chowpatty immersion point.",
+      "stations": ["Charni Road"],
+      "sourceId": "fpj-2025-wr-charni-road",
+      "year": 2025
+    },
+    {
+      "id": "wr-2025-fast-extra-halts",
+      "text": "On Anant Chaturdashi (6 Sept 2025), fast UP locals made additional halts at all stations between Mumbai Central and Churchgate between 5:00 pm and 8:30 pm to spread passenger flow.",
+      "stations": ["Mumbai Central", "Grant Road", "Charni Road", "Marine Lines", "Churchgate"],
+      "sourceId": "fpj-2025-wr-charni-road",
+      "year": 2025
+    },
+    {
+      "id": "wr-2025-charni-road-security",
+      "text": "Around 159 RPF and 200 GRP personnel were deployed at Charni Road station with loudspeakers, walkie-talkies and CCTV monitoring for Anant Chaturdashi 2025.",
+      "stations": ["Charni Road"],
+      "sourceId": "fpj-2025-wr-charni-road-crowd",
+      "year": 2025
+    }
+  ]
+}

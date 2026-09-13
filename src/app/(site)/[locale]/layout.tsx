@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Mukta } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { hasLocale } from 'next-intl';
@@ -7,6 +8,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import Logo from '@/components/Logo';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
+import { TOOLS } from '@/components/ToolsNav';
+import { localePath, siteUrl } from '@/lib/site';
 import '@/app/globals.css';
 
 // Mukta covers Devanagari + Latin in one family — no font swap between locales.
@@ -35,8 +38,11 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'meta' });
   return {
+    metadataBase: new URL(siteUrl()),
     title: { default: t('title'), template: '%s · Morya Map' },
     description: t('description'),
+    applicationName: 'Morya Map',
+    formatDetection: { telephone: false },
   };
 }
 
@@ -53,7 +59,8 @@ export default async function LocaleLayout({
 
   const t = await getTranslations('common');
   const tf = await getTranslations('footer');
-  const home = locale === 'en' ? '/' : `/${locale}`;
+  const tn = await getTranslations('nav');
+  const home = localePath(locale, '/');
 
   return (
     <html lang={locale} className={mukta.variable}>
@@ -79,6 +86,21 @@ export default async function LocaleLayout({
 
           <footer className="border-t border-amber-900/10 bg-cream-deep">
             <div className="mx-auto w-full max-w-3xl space-y-1.5 px-4 py-6 text-xs text-ink-soft">
+              <nav aria-label={tn('title')} className="mb-4">
+                <ul className="grid grid-cols-2 gap-x-4 gap-y-2 sm:grid-cols-3">
+                  {TOOLS.map((item) => (
+                    <li key={item.key}>
+                      <Link
+                        href={localePath(locale, item.path)}
+                        className="flex items-center gap-1.5 text-[13px] font-semibold text-maroon hover:text-flame"
+                      >
+                        <span aria-hidden>{item.icon}</span>
+                        {tn(item.key)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
               <p className="font-semibold text-maroon">
                 {t('appName')} · {t('festivalDates')}
               </p>
@@ -87,6 +109,7 @@ export default async function LocaleLayout({
             </div>
           </footer>
         </div>
+        <Analytics />
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useState, type ReactNode } from 'react';
 
 /**
@@ -12,10 +13,13 @@ export default function HomeShell({
   map,
   list,
   labels,
+  callout,
 }: {
   map: ReactNode;
   list: ReactNode;
   labels: { map: string; list: string };
+  /** Floating link above the Map/List pill on phones (festival banner or tools). */
+  callout?: { href: string; label: string };
 }) {
   const [view, setView] = useState<'map' | 'list' | null>(null);
   useEffect(() => setView('map'), []);
@@ -29,7 +33,15 @@ export default function HomeShell({
       <div className={`${showList ? 'block' : 'hidden'} md:block`}>{list}</div>
 
       {view && (
-        <nav className="fixed inset-x-0 bottom-[max(1rem,env(safe-area-inset-bottom))] z-30 flex justify-center md:hidden">
+        <nav className="fixed inset-x-0 bottom-[max(1rem,env(safe-area-inset-bottom))] z-30 flex flex-col items-center gap-2 px-4 md:hidden">
+          {callout && view === 'map' && (
+            <Link
+              href={callout.href}
+              className="max-w-full truncate rounded-full border border-amber-900/10 bg-white/95 px-4 py-2 text-[13px] font-semibold text-maroon shadow-lg backdrop-blur"
+            >
+              {callout.label}
+            </Link>
+          )}
           <div className="flex rounded-full bg-maroon p-1 shadow-lg shadow-maroon/30">
             {(
               [

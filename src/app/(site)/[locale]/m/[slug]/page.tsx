@@ -3,9 +3,13 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { marked } from 'marked';
+import ShareBar from '@/components/ShareBar';
 import WaitFigure from '@/components/WaitFigure';
+import { absoluteUrl, shareMetadata } from '@/lib/metadata';
 import { landmarkName, mandalName, queueLabel } from '@/lib/names';
 import { estimateForQueue, getAllMandalSlugs, getMandalBySlug } from '@/lib/queries';
+import { circuitsContaining, l10n } from '@/lib/routes';
+import { localePath } from '@/lib/site';
 
 // ISR: the CDN absorbs festival-evening spikes; origin sees ~1 req/min/page.
 // Never force-dynamic on public pages.
@@ -25,9 +29,16 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const mandal = await getMandalBySlug(slug);
   if (!mandal) return {};
-  return {
-    title: `${mandalName(mandal, locale)} — ${mandal.area}`,
-  };
+  const t = await getTranslations({ locale, namespace: 'meta' });
+  const title = `${mandalName(mandal, locale)} — ${mandal.area}`;
+  return shareMetadata({
+    locale,
+    path: `/m/${slug}`,
+    title,
+    description: t('description'),
+    image: `/api/og/m/${slug}`,
+    imageAlt: `${mandal.name}, ${mandal.area}: darshan queue and wait estimate`,
+  });
 }
 
 const TIER_STYLE: Record<string, string> = {
@@ -52,9 +63,14 @@ export default async function MandalPage({
   const tt = await getTranslations('tier');
   const tc = await getTranslations('common');
   const now = new Date();
-  const home = locale === 'en' ? '/' : `/${locale}`;
+  const home = localePath(locale, '/');
   const localName = mandalName(mandal, locale);
   const th = await getTranslations('home');
+  const ts = await getTranslations('share');
+  const tr = await getTranslations('routes');
+  const tn = await getTranslations('nav');
+  const ttr = await getTranslations('trains');
+  const circuits = circuitsContaining(mandal.slug);
 
   return (
     <div className="mx-auto w-full max-w-3xl px-4 py-5">
@@ -156,6 +172,43 @@ export default async function MandalPage({
         </section>
       )}
 
+      <section className="card mt-4 p-4">
+        <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">{ts('heading')}</h2>
+        <ShareBar
+          url={absoluteUrl(locale, `/m/${mandal.slug}`)}
+          text={ts('mandalText', { name: localName, area: mandal.area })}
+          storyHref={`/api/story/m/${mandal.slug}`}
+          labels={{
+            whatsapp: ts('whatsapp'),
+            share: ts('share'),
+            copy: ts('copy'),
+            copied: ts('copied'),
+            story: ts('story'),
+          }}
+        />
+        <p className="mt-2 text-xs text-ink-soft">{ts('previewNote')}</p>
+      </section>
+
+      <section className="mt-4 flex flex-col gap-2">
+          {circuits.map((c) => (
+            <Link
+              key={c.id}
+              href={localePath(locale, `/routes/${c.id}`)}
+              className="card flex items-center gap-3 p-3.5 text-sm font-semibold text-maroon hover:shadow-md"
+            >
+              <span aria-hidden className="text-lg">🪔</span>
+              {tr('partOf', { title: l10n(c.title, locale) })}
+            </Link>
+          ))}
+          <Link
+            href={localePath(locale, '/guide')}
+            className="card flex items-center gap-3 p-3.5 text-sm font-semibold text-maroon hover:shadow-md"
+          >
+            <span aria-hidden className="text-lg">🙏</span>
+            {tn('guide')} →
+          </Link>
+      </section>
+
       <section className="mt-6 grid gap-3 sm:grid-cols-2">
         <div className="card p-4">
           <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">
@@ -190,6 +243,12 @@ export default async function MandalPage({
           {mandal.stationWalkMinutes != null && (
             <p className="mt-1 text-sm text-ink">{t('walk', { mins: mandal.stationWalkMinutes })}</p>
           )}
+          <Link
+            href={localePath(locale, '/trains')}
+            className="mt-3 inline-block text-sm font-semibold text-flame underline hover:text-maroon"
+          >
+            <span aria-hidden className="mr-1.5">🚆</span>{ttr('mandalLink')}
+          </Link>
         </div>
         <div className="card p-4">
           <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">

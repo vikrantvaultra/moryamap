@@ -88,6 +88,35 @@ body {
 }
 .amarker--active { outline: 3px solid var(--color-marigold); outline-offset: 1px; }
 
+/* Numbered stop marker on route / procession maps */
+.rmarker {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: var(--color-maroon);
+  color: #fef3c7;
+  border: 2.5px solid #fff;
+  box-shadow: 0 2px 6px rgb(45 27 16 / 0.4);
+  display: grid;
+  place-items: center;
+  font: 700 13px/1 var(--font-mukta), system-ui, sans-serif;
+}
+.rmarker--approx {
+  background: #fff;
+  color: var(--color-maroon);
+  border: 3px solid var(--color-maroon);
+}
+
+/* "You are here" on the immersion-spot map */
+.here-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #2563eb;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 6px rgb(37 99 235 / 0.25);
+}
+
 /* Bottom sheet slide-up */
 @keyframes sheet-up {
   from { transform: translateY(24px); opacity: 0; }

@@ -10,7 +10,9 @@
     "mandals": "Mandals",
     "map": "Map",
     "loading": "Loading…",
-    "festivalDates": "14–25 September 2026"
+    "festivalDates": "14–25 September 2026",
+    "prevPage": "Previous page",
+    "nextPage": "Next page"
   },
   "wait": {
     "waitLabel": "Expected wait",
@@ -92,5 +94,259 @@
   "footer": {
     "madeWith": "A community project for Ganeshotsav 2026.",
     "honesty": "We never show fake live data. Every figure is labelled with where it came from."
+  },
+  "share": {
+    "heading": "Send it to your group",
+    "whatsapp": "WhatsApp",
+    "share": "Share…",
+    "copy": "Copy link",
+    "copied": "Copied ✓",
+    "story": "Status image",
+    "previewNote": "The link preview shows the estimate and the time it was made, so old forwards don't mislead.",
+    "mandalText": "🙏 {name}, {area}: where the darshan line starts, an honest wait estimate (not fake live data) and how to get there 👇",
+    "homeText": "🙏 Going for Ganpati darshan? Morya Map shows where the lines start at {count} Mumbai mandals, with honest wait ranges and directions 👇",
+    "routeText": "🪔 Pandal-hopping plan: {title}. {count} mandals, stop by stop, with walking directions 👇",
+    "plannerText": "🪔 Plan a pandal-hopping route for our group: pick the mandals, get one link 👇",
+    "routesText": "🪔 Ready-made pandal-hopping routes for Mumbai: Lalbaug, Girgaon, King's Circle and more 👇",
+    "visarjanText": "🌊 Visarjan in Mumbai: immersion dates, road closures, unsafe bridges and helplines in one place 👇",
+    "pondsText": "🪷 Immersing Bappa at home? Find an artificial pond or immersion point near you 👇",
+    "trainsText": "🚆 Late-night darshan? Night special locals and railway advisories for Ganeshotsav 👇",
+    "guideText": "🙏 First time at the big mandals? Mukh darshan vs navas line, what to carry, and keeping elders and kids safe 👇"
+  },
+  "nav": {
+    "title": "Festival tools",
+    "map": "Mandal map",
+    "routes": "Pandal-hopping routes",
+    "visarjan": "Visarjan day",
+    "ponds": "Immersion ponds",
+    "trains": "Night trains",
+    "guide": "First-timer guide"
+  },
+  "festival": {
+    "one_and_half_day": "1½-day visarjan",
+    "five_day": "5-day visarjan",
+    "gauri": "Gauri–Ganpati visarjan",
+    "anant_chaturdashi": "Anant Chaturdashi visarjan",
+    "todayImmersion": "Today: {name}. Find an immersion pond near you →",
+    "todayAnant": "Today is Anant Chaturdashi. Open visarjan day mode →",
+    "tomorrow": "Tomorrow: {name}. Plan your immersion →",
+    "today": "Today",
+    "tomorrowLabel": "Tomorrow",
+    "done": "Done"
+  },
+  "sources": {
+    "title": "Sources",
+    "compiled": "Compiled from official notices and news reports, checked on {date}. Rules can change at short notice, and official announcements always win.",
+    "lastYear": "{year} information",
+    "lastYearWarn": "This is from {year}. The 2026 details may differ, so check the official source before relying on it.",
+    "source": "Source"
+  },
+  "routes": {
+    "metaTitle": "Pandal-hopping routes",
+    "title": "Pandal-hopping routes",
+    "subtitle": "Ready-made walking circuits of nearby mandals, or build your own and send one link to your group.",
+    "orderNote": "Stops are ordered by geography, never by whichever queue looks shortest right now.",
+    "stopsCount": "{count} mandals",
+    "totalKm": "≈ {km} straight-line",
+    "buildOwn": "Build your own route",
+    "buildOwnHint": "Pick 2–8 mandals and get one link for the whole group.",
+    "view": "View route",
+    "stop": "Stop {n}",
+    "legKm": "{km} to the next stop in a straight line. The real walk is longer.",
+    "walkLeg": "Walk to stop {n} ↗",
+    "startHere": "Directions to stop 1 from where you are ↗",
+    "fullRoute": "Stops {from}–{to} in Google Maps ↗",
+    "summary": "{count} stops · ≈ {km} straight-line in total",
+    "startNear": "Nearest station to stop 1: {station}",
+    "endNear": "Nearest station to the last stop: {station}",
+    "approxPins": "Pins are approximate mandal locations, not queue starts. Confirm locally before you walk.",
+    "waitsNote": "Waits shown are estimates for right now, not live. Big-mandal queues can take hours, so don't expect to finish every stop in one evening.",
+    "customTitle": "Your pandal-hopping route",
+    "customSubtitle": "A route someone planned with Morya Map.",
+    "edit": "Edit this route",
+    "allRoutes": "All routes",
+    "partOf": "This mandal is on the {title} route →",
+    "mapLoading": "Loading map…",
+    "details": "Mandal details"
+  },
+  "plan": {
+    "metaTitle": "Build a pandal-hopping route",
+    "title": "Build your route",
+    "subtitle": "Pick 2–8 mandals. You'll get one link to share with your group.",
+    "searchPlaceholder": "Search mandal or area to add…",
+    "add": "Add",
+    "added": "Added",
+    "remove": "Remove",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "sortGeo": "Order by geography",
+    "sortGeoHint": "Goes nearest-next from your first stop. Never by queue length.",
+    "selected": "Your stops ({count}/{max})",
+    "empty": "No stops yet. Search below and add mandals.",
+    "create": "Get shareable route →",
+    "needMore": "Add at least 2 mandals",
+    "full": "That's 8, the most one route can hold.",
+    "areaOnly": "≈ neighbourhood-only pin",
+    "noResults": "No mandals match your search."
+  },
+  "visarjan": {
+    "metaTitle": "Visarjan day guide",
+    "title": "Visarjan day",
+    "subtitle": "Immersion dates, road closures, unsafe bridges and who to call. Sourced, never guessed.",
+    "datesTitle": "Immersion dates, 2026",
+    "processionTitle": "Lalbaugcha Raja procession",
+    "processionIntro": "The route the procession has taken in past years, in order. There's no live tracking here: for where it is right now, follow the official channels below.",
+    "routeTitle": "Route, in order",
+    "routeNote": "Route as described in {year} reports. It can change on the day.",
+    "factsTitle": "From past years",
+    "closuresTitle": "Road closures & restrictions",
+    "closuresIntro": "From the Mumbai Traffic Police notification. Roads near immersion points close as processions arrive.",
+    "appliesOn": "Applies on: {days}",
+    "timeWindow": "When: {window}",
+    "bridgesTitle": "Old bridges: don't stop, dance or crowd",
+    "bridgesIntro": "These bridges are old and can't take a heavy, standing crowd. Keep moving across them.",
+    "helplinesTitle": "Helplines",
+    "channelsTitle": "Official updates",
+    "call": "Call {number}",
+    "empty": "Not published yet. We'll add it once there's an official source.",
+    "pondsCta": "Immersing at home? Find an artificial pond →",
+    "trainsCta": "Night special trains →",
+    "noLive": "Not a live tracker. This is the published route, not the procession's current position.",
+    "days": {
+      "anant_chaturdashi": "Anant Chaturdashi",
+      "all_immersion_days": "All immersion days",
+      "during_processions": "During immersion processions",
+      "festival_days": "Throughout the festival",
+      "one_and_half_day": "1½-day visarjan",
+      "five_day": "5-day visarjan",
+      "gauri": "Gauri–Ganpati visarjan"
+    },
+    "liveTitle": "Where is it right now?",
+    "liveBody": "Watch the official channels. We never guess the position.",
+    "bridgesYear": "Bridge list from the {year} advisory. Foot bridges closed in 2026 are marked.",
+    "closed2026": "Closed in 2026",
+    "checkpointNoPin": "no map pin",
+    "mapNote": "Numbers match the route list. The dashed line only joins the points in order and isn’t the road the procession takes.",
+    "callLabel": "Call"
+  },
+  "ponds": {
+    "metaTitle": "Immersion ponds near you",
+    "title": "Find an immersion spot",
+    "subtitle": "BMC artificial ponds and immersion points for your household Ganpati.",
+    "nearMe": "Use my location",
+    "locating": "Finding you…",
+    "locationDenied": "Location is off. Search by area or ward instead.",
+    "sortedNear": "Sorted by distance from you (straight-line).",
+    "searchPlaceholder": "Search area, ward or place…",
+    "all": "All",
+    "artificial": "Artificial pond",
+    "natural": "Natural immersion point",
+    "collection": "Idol collection centre",
+    "ward": "Ward {ward}",
+    "distance": "≈ {km} away",
+    "directions": "Directions ↗",
+    "findInMaps": "Find in Google Maps ↗",
+    "approxPin": "≈ approximate pin, check the address",
+    "count": "{count} places",
+    "noResults": "Nothing matches your search.",
+    "empty": "The official list isn't available yet. We'll add it once it's published.",
+    "rulesTitle": "Rules for household idols",
+    "ecoNote": "Artificial ponds keep the sea, lakes and rivers cleaner. Using one near home also keeps you out of the big crowds at the beaches.",
+    "pageMore": "Show more",
+    "onMap": "{count} on the map",
+    "showOnMap": "Show on map",
+    "unpinnedNote": "Places without a reliable map pin are in the list only. Use \"Find in Google Maps\" for those.",
+    "close": "Close"
+  },
+  "trains": {
+    "metaTitle": "Night trains & last locals",
+    "title": "Getting home late",
+    "subtitle": "Special night locals, longer metro hours and railway crowd advisories for Ganeshotsav.",
+    "specialsTitle": "Anant Chaturdashi night specials",
+    "notAnnounced": "The railways haven't announced 2026 specials yet. Last year's trains are shown for reference only, and this year's will differ.",
+    "announced": "Announced for 2026.",
+    "from": "From",
+    "to": "To",
+    "departs": "Departs",
+    "arrives": "Arrives",
+    "stops": "Stops",
+    "night": "Night of {night}",
+    "extendedTitle": "Metro, monorail & bus",
+    "lastTrainsTitle": "Last regular trains",
+    "lastTrainsNone": "We haven't found an official source for last-train times, so we don't list them. Check the station display or the railways' official apps.",
+    "advisoriesTitle": "Crowd advisories",
+    "confirm": "Timings change at short notice. Confirm at the station before you count on a train.",
+    "empty": "Nothing published yet.",
+    "mandalLink": "Late-night trains & railway advisories →"
+  },
+  "guide": {
+    "metaTitle": "First-timer's guide to Ganpati darshan",
+    "title": "First time at the big mandals?",
+    "subtitle": "What the different lines mean, when to go, what to carry, and how to keep elders and kids safe.",
+    "linesTitle": "Two kinds of line",
+    "mukhTitle": "Mukh darshan",
+    "mukhBody": "A view of the idol's face from a short distance. You keep walking past. It moves much faster and suits elders, children and anyone short on time.",
+    "navasTitle": "Navas / charan-sparsh line",
+    "navasBody": "For people who have made a vow (navas) and want to touch the idol's feet. At the most famous mandals this line can take many hours, sometimes most of a day or night.",
+    "linesTip": "Not sure which line you're in? Ask a volunteer before you join. Switching later means starting again.",
+    "sections": [
+      {
+        "title": "When to go",
+        "points": [
+          "Early morning, roughly 4–7 am, is usually the quietest.",
+          "Evenings after 7 pm, weekends, the first day and the last days are the heaviest.",
+          "Check the wait range for the time you plan to go, and plan for the top end."
+        ]
+      },
+      {
+        "title": "What to carry",
+        "points": [
+          "Water, and a small snack for long lines.",
+          "A charged phone and a power bank. Networks can slow down in thick crowds.",
+          "Some cash as well as UPI, for the same reason.",
+          "A raincoat or small umbrella. September showers are common.",
+          "Comfortable footwear you can walk in for hours."
+        ]
+      },
+      {
+        "title": "What to leave at home",
+        "points": [
+          "Big bags. Large bags slow down security checks, and some mandals don't allow them.",
+          "Jewellery and valuables. Crowds attract pickpockets.",
+          "Keep your phone and wallet in a zipped front pocket."
+        ]
+      },
+      {
+        "title": "With elders and children",
+        "points": [
+          "Plan for the top of the wait range, or choose mukh darshan.",
+          "Write your phone number on a card in your child's pocket, or on their arm.",
+          "Agree on a meeting point at a fixed landmark in case you get separated.",
+          "Keep children on the inside, away from barricades and road edges.",
+          "If someone feels unwell, step out of the line and tell a volunteer or police officer straight away."
+        ]
+      },
+      {
+        "title": "In a big crowd",
+        "points": [
+          "Move with the flow. Don't stop suddenly, especially on stairs and bridges.",
+          "If the crowd starts pressing, keep your arms loosely in front of your chest to protect your breathing space.",
+          "Don't push to get ahead. Surges start small.",
+          "Follow the instructions of police and mandal volunteers."
+        ]
+      },
+      {
+        "title": "Getting there",
+        "points": [
+          "Local trains and walking are usually the easiest. Parking near the big mandals is very limited and roads get closed.",
+          "Check the queue start pin, not just the mandal. Lines often begin far from the pandal.",
+          "Late at night, check which trains are still running before you join a long line."
+        ]
+      }
+    ],
+    "emergencyTitle": "If something goes wrong",
+    "emergencyBody": "Dial 112, India's national emergency number, or tell the nearest police officer or mandal volunteer. The big mandals run help and announcement desks for lost children and belongings.",
+    "ctaMap": "Find a mandal and its queue start →",
+    "ctaRoutes": "Plan a pandal-hopping route →"
   }
 }
