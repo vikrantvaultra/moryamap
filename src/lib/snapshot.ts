@@ -59,6 +59,7 @@ export function buildPublicSnapshot(state: StoredState) {
       idolLat: m.idolLat,
       idolLng: m.idolLng,
       pinPrecision: m.pinPrecision,
+      aliases: m.aliases,
       address: m.address,
       nearestStation: m.nearestStation,
       stationWalkMinutes: m.stationWalkMinutes,

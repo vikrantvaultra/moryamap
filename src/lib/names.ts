@@ -1,3 +1,5 @@
+import type { PinPrecision } from '@/lib/queries';
+
 /** Locale-aware display names with graceful fallback to English. */
 
 export function mandalName(
@@ -21,4 +23,13 @@ export function landmarkName(
 ): string {
   if ((locale === 'mr' || locale === 'hi') && ep.landmarkMr) return ep.landmarkMr;
   return ep.landmark;
+}
+
+/** Message key (home.*) describing how far to trust a mandal pin. */
+export function pinLabelKey(
+  precision: PinPrecision | null,
+): 'mandalLocation' | 'approxLocation' | 'areaOnly' {
+  if (precision === 'rooftop') return 'mandalLocation';
+  if (precision === 'area') return 'areaOnly';
+  return 'approxLocation';
 }

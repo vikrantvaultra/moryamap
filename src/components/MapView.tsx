@@ -4,6 +4,7 @@ import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { pinLabelKey } from '@/lib/names';
 import type { PublicSnapshot, SnapshotMandal, SnapshotQueue } from '@/lib/snapshot';
 
 export interface MapStrings {
@@ -12,6 +13,7 @@ export interface MapStrings {
   mapNote: string;
   approxLocation: string;
   areaOnly: string;
+  mandalLocation: string;
   queueStart: string;
   directions: string;
   details: string;
@@ -283,6 +285,11 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
                   {(locale !== 'en' && shownQueue.labelMr) || shownQueue.label}
                   {!isApprox && <> · {strings.queueStart}</>}
                 </p>
+                {selected.mandal.aliases.length > 0 && (
+                  <p className="mt-0.5 text-xs italic leading-snug text-ink-soft">
+                    {selected.mandal.aliases.join(' · ')}
+                  </p>
+                )}
                 {selected.mandal.address && (
                   <p className="mt-0.5 text-xs leading-snug text-ink-soft">
                     {selected.mandal.address}
@@ -330,7 +337,8 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
             )}
             {isApprox && (
               <p className="mt-1 rounded-md bg-amber-100 px-2 py-1 text-xs font-medium text-maroon">
-                ≈ {selected.mandal.pinPrecision === 'area' ? strings.areaOnly : strings.approxLocation}
+                {selected.mandal.pinPrecision === 'rooftop' ? '📍' : '≈'}{' '}
+                {strings[pinLabelKey(selected.mandal.pinPrecision)]}
               </p>
             )}
             <p className="mt-1 text-xs italic text-ink-soft/90">{strings.disclaimer}</p>

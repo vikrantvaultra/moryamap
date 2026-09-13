@@ -6,7 +6,7 @@ import { marked } from 'marked';
 import ShareBar from '@/components/ShareBar';
 import WaitFigure from '@/components/WaitFigure';
 import { absoluteUrl, shareMetadata } from '@/lib/metadata';
-import { landmarkName, mandalName, queueLabel } from '@/lib/names';
+import { landmarkName, mandalName, pinLabelKey, queueLabel } from '@/lib/names';
 import { estimateForQueue, getAllMandalSlugs, getMandalBySlug } from '@/lib/queries';
 import { circuitsContaining, l10n } from '@/lib/routes';
 import { localePath } from '@/lib/site';
@@ -82,6 +82,9 @@ export default async function MandalPage({
         <h1 className="text-3xl font-bold leading-tight text-maroon">{localName}</h1>
         {localName !== mandal.name && (
           <p className="text-sm font-medium text-ink-soft">{mandal.name}</p>
+        )}
+        {mandal.aliases.length > 0 && (
+          <p className="mt-0.5 text-sm italic text-ink-soft">{mandal.aliases.join(' · ')}</p>
         )}
         <div className="mt-2 flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-cream-deep px-2.5 py-0.5 text-xs font-semibold text-ink-soft">
@@ -227,11 +230,9 @@ export default async function MandalPage({
                 rel="noopener noreferrer"
                 className="mt-2 inline-block text-sm font-semibold text-flame underline hover:text-maroon"
               >
-                ≈ {t('openInMaps')} ↗
+                {mandal.pinPrecision === 'rooftop' ? '📍' : '≈'} {t('openInMaps')} ↗
               </a>
-              <p className="mt-1 text-xs text-ink-soft">
-                {mandal.pinPrecision === 'area' ? th('areaOnly') : th('approxLocation')}
-              </p>
+              <p className="mt-1 text-xs text-ink-soft">{th(pinLabelKey(mandal.pinPrecision))}</p>
             </>
           )}
           {mandal.nearestStation ? (

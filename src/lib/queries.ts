@@ -3,8 +3,11 @@ import staticDirectory from '@/db/static-directory.json';
 import type { QueueKind, Tier } from '@/db/schema';
 import { estimateWait, type WaitEstimate } from '@/lib/wait';
 
-/** How precise a mandal pin is. 'area' = neighbourhood only, and the UI says so. */
-export type PinPrecision = 'street' | 'area';
+/**
+ * How precise a mandal pin is: 'rooftop' = verified place, 'street' =
+ * unverified street address, 'area' = neighbourhood only. The UI says which.
+ */
+export type PinPrecision = 'rooftop' | 'street' | 'area';
 
 // Everything returned here is JSON-serializable (unstable_cache round-trips
 // through JSON), so timestamps travel as ISO strings.
@@ -49,8 +52,10 @@ export interface MandalData {
   tier: Tier;
   idolLat: number | null;
   idolLng: number | null;
-  /** Null = venue-level (recorded provenance in geocoded-pins.json). */
+  /** Null = approximate venue geocode (provenance in geocoded-pins.json). */
   pinPrecision: PinPrecision | null;
+  /** Other names / descriptors people search by. */
+  aliases: string[];
   /** Postal address as listed by the source. Not a queue start. */
   address: string | null;
   nearestStation: string | null;
@@ -61,7 +66,7 @@ export interface MandalData {
 
 /**
  * The mandal directory is HARDCODED: src/db/static-directory.json is the
- * single source of truth (regenerate it with scripts/import-community-csv.ts).
+ * single source of truth (regenerate it with scripts/build-directory.ts).
  * No database is read. Waits are still computed live from baseMinutes by the
  * estimator, with honest provenance labels; there are no crowd reports.
  */

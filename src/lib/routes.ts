@@ -112,6 +112,7 @@ export const CIRCUITS: Circuit[] = [
     },
     stops: [
       'andhericha-raja',
+      'navsala-pavnara-andhericha-maharaja',
       'andheri-cha-morya',
       'vile-parle-cha-vighnesh-sarvajanik-ganeshotsav-mandal',
     ],

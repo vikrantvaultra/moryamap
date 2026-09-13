@@ -15,8 +15,9 @@ export interface ListItem {
   slug: string;
   name: string;
   area: string;
+  aliases: string[];
   address: string | null;
-  /** Lowercased haystack of every name variant + area + address, for search. */
+  /** Lowercased haystack of every name variant, alias, area and address, for search. */
   search: string;
   queues: ListQueue[];
 }
@@ -105,6 +106,11 @@ export default function MandalList({
                           →
                         </span>
                       </div>
+                      {m.aliases.length > 0 && (
+                        <p className="mt-0.5 text-xs italic leading-snug text-ink-soft">
+                          {m.aliases.join(' · ')}
+                        </p>
+                      )}
                       {m.address && (
                         <p className="mt-0.5 text-xs leading-snug text-ink-soft">{m.address}</p>
                       )}

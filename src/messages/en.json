@@ -72,7 +72,8 @@
     "noResults": "No mandals match your search.",
     "pageOf": "Page {page} of {total}",
     "approxLocation": "Approximate mandal location — exact queue start not verified yet.",
-    "areaOnly": "Neighbourhood only — the exact pandal spot isn't known. Ask locally."
+    "areaOnly": "Neighbourhood only — the exact pandal spot isn't known. Ask locally.",
+    "mandalLocation": "Mandal location — the darshan queue may start elsewhere."
   },
   "report": {
     "title": "Where does the line start right now?",

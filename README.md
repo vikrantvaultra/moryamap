@@ -59,6 +59,17 @@ docker run -d --name moryamap-pg -e POSTGRES_PASSWORD=morya \
 Upstash vars are optional in dev (rate limiting no-ops, snapshot falls back to
 Postgres) but **required in production**.
 
+## Mandal directory (hardcoded, no database)
+
+The site serves `src/db/static-directory.json` (128 mandals). Rebuild it with
+`npx tsx scripts/build-directory.ts` from the 20 hand-curated mandals
+(`curated-mandals.json`) plus the community dataset
+(`community-mandals.csv`; read `community-mandals.README.md`, including its
+Google Places licensing caveat). Every pin is labelled by precision —
+rooftop-verified, unverified street, or neighbourhood only — and never as a
+queue start. `npm test` fails on a duplicate id/slug/name/address/pin or an
+unpinned mandal.
+
 ## Festival tools (all hardcoded, no database)
 
 | Page | What it does | Data |

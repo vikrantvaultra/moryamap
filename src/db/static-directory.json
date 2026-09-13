@@ -1,48 +1,22 @@
 [
   {
-    "id": 100,
-    "slug": "agripada-sarvajanik-ganeshotsav-mandal",
-    "name": "Agripada Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Agripada",
-    "tier": "c",
-    "idolLat": 18.97607185,
-    "idolLng": 72.82631655,
-    "pinPrecision": "area",
-    "address": "Agripada, Mumbai, Maharashtra 400011",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 101,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
     "id": 26,
     "slug": "andheri-cha-morya",
-    "name": "Andheri Cha Morya",
+    "name": "Koldongri Shree Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [
+      "Andheri Cha Morya"
+    ],
     "area": "Andheri East",
     "tier": "b",
-    "idolLat": 19.11364478,
-    "idolLng": 72.84896355,
-    "pinPrecision": "street",
-    "address": "Kanoji Angre Road, Sai Wadi, Andheri East, Mumbai, Maharashtra 400069",
+    "idolLat": 19.1120801,
+    "idolLng": 72.8524842,
+    "pinPrecision": "rooftop",
+    "address": "Kanoji Angre Rd, Sai Wadi, Andheri East, Mumbai, Maharashtra 400069",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 27,
@@ -58,23 +32,54 @@
     ]
   },
   {
-    "id": 67,
-    "slug": "andheri-east-sarvajanik-ganeshotsav-mandal",
-    "name": "Andheri East Sarvajanik Ganeshotsav Mandal",
+    "id": 110,
+    "slug": "navsala-pavnara-andhericha-maharaja",
+    "name": "Navsala Pavnara Andhericha Maharaja",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Andheri East",
-    "tier": "c",
-    "idolLat": 19.10501185,
-    "idolLng": 72.87295626,
-    "pinPrecision": "area",
-    "address": "Andheri East, Mumbai, Maharashtra 400069",
+    "tier": "b",
+    "idolLat": 19.1148835,
+    "idolLng": 72.8502605,
+    "pinPrecision": "rooftop",
+    "address": "1030, Professor NS Phadke Rd, opp. Teli Gali, Vijay Nagar, Andheri East, Mumbai, Maharashtra 400069",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 68,
+        "id": 111,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "slug": "bamanwada-sarvajanik-ganeshotsav-mandal",
+    "name": "Bamanwada Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Andheri East",
+    "tier": "c",
+    "idolLat": 19.1037352,
+    "idolLng": 72.8583854,
+    "pinPrecision": "rooftop",
+    "address": "Nya Chagla Marg, Bamanwada, Satya Nagar, Andheri East, Mumbai, Maharashtra 400099",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 110,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -92,6 +97,7 @@
     "name": "Marol Ganesh Mitra Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Andheri East",
     "tier": "c",
     "idolLat": 19.11403478,
@@ -100,7 +106,7 @@
     "address": "Bori Colony, Kadam Wadi, Marol, Andheri East, Mumbai, Maharashtra 400059",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
         "id": 49,
@@ -123,11 +129,11 @@
     "nameHi": "अंधेरी का राजा",
     "area": "Andheri West",
     "tier": "a",
-    "idolLat": 19.13005819,
-    "idolLng": 72.83656941,
+    "idolLat": 19.1298098,
+    "idolLng": 72.8365958,
     "nearestStation": "Andheri (Western), Azad Nagar (Metro)",
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 5,
@@ -141,62 +147,37 @@
         "report": null
       }
     ],
-    "address": "Veera Desai Road, Azad Nagar, Andheri West, Mumbai, Maharashtra 400058",
-    "pinPrecision": "street"
+    "aliases": [
+      "King of the western suburbs"
+    ],
+    "address": "Veera Desai Rd, Azad Nagar, Andheri West, Mumbai, Maharashtra 400053",
+    "pinPrecision": "rooftop"
   },
   {
-    "id": 68,
-    "slug": "andheri-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Andheri West Sarvajanik Ganeshotsav Mandal",
+    "id": 111,
+    "slug": "andhericha-mahaganpati",
+    "name": "Andhericha Mahaganpati",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Andheri West",
-    "tier": "c",
-    "idolLat": 19.11353155,
-    "idolLng": 72.83836674,
-    "pinPrecision": "area",
-    "address": "Andheri West, Mumbai, Maharashtra 400058",
+    "tier": "b",
+    "idolLat": 19.1241241,
+    "idolLng": 72.8309062,
+    "pinPrecision": "rooftop",
+    "address": "Ganesh Chowk, Shanti Nagar, D.N. Nagar, Andheri West, Mumbai, Maharashtra 400053",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 69,
+        "id": 112,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 35,
-    "slug": "antop-hill-shivaji-nagar-sarvajanik-ganeshotsav-mandal",
-    "name": "Antop Hill Shivaji Nagar Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Antop Hill",
-    "tier": "c",
-    "idolLat": 19.0235712,
-    "idolLng": 72.86381633,
-    "pinPrecision": "area",
-    "address": "Shivaji Nagar, Antop Hill, Mumbai, Maharashtra 400037",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 36,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -205,79 +186,24 @@
   {
     "id": 95,
     "slug": "anushakti-nagar-ganpati-mandal",
-    "name": "Anushakti Nagar Ganpati Mandal",
+    "name": "Ganpati Mandal SPDC",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [
+      "Anushakti Nagar Ganpati Mandal"
+    ],
     "area": "Anushakti Nagar",
     "tier": "c",
-    "idolLat": 19.032902466254,
-    "idolLng": 72.929951530844,
-    "pinPrecision": "area",
+    "idolLat": 19.0381997,
+    "idolLng": 72.9296597,
+    "pinPrecision": "rooftop",
     "address": "New Mandala, Anushakti Nagar, Mumbai, Maharashtra 400088",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
         "id": 96,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 87,
-    "slug": "bandra-east-sarvajanik-ganeshotsav-mandal",
-    "name": "Bandra East Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Bandra East",
-    "tier": "c",
-    "idolLat": 19.060079218265,
-    "idolLng": 72.855871018934,
-    "pinPrecision": "area",
-    "address": "Bandra East, Mumbai, Maharashtra 400051",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 88,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 88,
-    "slug": "bandra-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Bandra West Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Bandra West",
-    "tier": "c",
-    "idolLat": 19.058986423672,
-    "idolLng": 72.828930730993,
-    "pinPrecision": "area",
-    "address": "Bandra West, Mumbai, Maharashtra 400050",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 89,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -295,15 +221,16 @@
     "name": "Bhandup Jay Bajrang Mitra Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Bhandup",
     "tier": "c",
-    "idolLat": 19.07529823,
-    "idolLng": 72.92088161,
+    "idolLat": 19.1462636,
+    "idolLng": 72.9339461,
     "pinPrecision": "area",
     "address": "Bhandup, Mumbai, Maharashtra 400078",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 46,
@@ -319,52 +246,148 @@
     ]
   },
   {
-    "id": 46,
-    "slug": "bhandup-sarvajanik-ganeshotsav-mandal",
-    "name": "Bhandup Sarvajanik Ganeshotsav Mandal",
+    "id": 112,
+    "slug": "bhandupcha-raja",
+    "name": "Bhandupcha Raja",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Bhandup West",
-    "tier": "c",
-    "idolLat": 19.1523285,
-    "idolLng": 72.93970232,
-    "pinPrecision": "area",
-    "address": "Bhandup West, Mumbai, Maharashtra 400078",
+    "tier": "b",
+    "idolLat": 19.1394243,
+    "idolLng": 72.9302036,
+    "pinPrecision": "rooftop",
+    "address": "Quarry Rd, off LBS Marg, Ganesh Nagar, Bhandup West, Mumbai, Maharashtra 400078",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 47,
+        "id": 113,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
     ]
   },
   {
-    "id": 102,
-    "slug": "bhendi-bazar-sarvajanik-ganeshotsav-mandal",
-    "name": "Bhendi Bazar Sarvajanik Ganeshotsav Mandal",
+    "id": 113,
+    "slug": "pratap-nagarcha-raja",
+    "name": "Pratap Nagarcha Raja",
     "nameMr": null,
     "nameHi": null,
-    "area": "Bhendi Bazar",
-    "tier": "c",
-    "idolLat": 18.95675257,
-    "idolLng": 72.83226277,
-    "pinPrecision": "area",
-    "address": "Bhendi Bazar, Mumbai, Maharashtra 400003",
+    "aliases": [],
+    "area": "Bhandup West",
+    "tier": "b",
+    "idolLat": 19.1408892,
+    "idolLng": 72.9232317,
+    "pinPrecision": "rooftop",
+    "address": "Kombadi Galli, Pratap Nagar, Farid Nagar, Bhandup West, Mumbai, Maharashtra 400078",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 103,
+        "id": 114,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "slug": "bhoiwada-vibhag-sarvajanik-ganeshotsav-mandal",
+    "name": "Bhoiwada Vibhag Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Bhoiwadyacha Maharaja"
+    ],
+    "area": "Bhoiwada",
+    "tier": "b",
+    "idolLat": 19.0051559,
+    "idolLng": 72.8455893,
+    "pinPrecision": "rooftop",
+    "address": "Bhoiwada, Dadar East, Mumbai, Maharashtra 400012",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 115,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "slug": "matoshree-shivgarjana-sarvajanik-ganeshotsav-mandal",
+    "name": "Matoshree Shivgarjana Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Matoshreecha Vighnaharta"
+    ],
+    "area": "Bhoiwada",
+    "tier": "b",
+    "idolLat": 19.0051617,
+    "idolLng": 72.8484238,
+    "pinPrecision": "rooftop",
+    "address": "Matoshree SRA CHS, Jerbai Wadia Rd, Bhoiwada, Parel, Mumbai, Maharashtra 400012",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 117,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "slug": "ekta-mitra-sarvajanik-ganeshotsav-mandal",
+    "name": "Ekta Mitra Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Bhoiwada",
+    "tier": "c",
+    "idolLat": 19.0054962,
+    "idolLng": 72.8482661,
+    "pinPrecision": "rooftop",
+    "address": "Jerbai Wadia Rd, Bhoiwada, Parel, Mumbai, Maharashtra 400012",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 116,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -388,7 +411,7 @@
     "idolLng": 72.8408607,
     "nearestStation": "Borivali (Western)",
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 15,
@@ -402,27 +425,29 @@
         "report": null
       }
     ],
-    "pinPrecision": "area",
-    "address": null
+    "aliases": [],
+    "address": null,
+    "pinPrecision": "area"
   },
   {
-    "id": 59,
-    "slug": "borivali-sarvajanik-ganeshotsav-mandal",
-    "name": "Borivali Sarvajanik Ganeshotsav Mandal",
+    "id": 117,
+    "slug": "ashtavinayak-mitra-mandal-sarvajanik-ganeshotsav",
+    "name": "Ashtavinayak Mitra Mandal Sarvajanik Ganeshotsav",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Borivali",
     "tier": "c",
-    "idolLat": 19.218738,
-    "idolLng": 72.84983279,
-    "pinPrecision": "area",
-    "address": "Borivali, Mumbai, Maharashtra 400092",
+    "idolLat": 19.2266393,
+    "idolLng": 72.8609804,
+    "pinPrecision": "rooftop",
+    "address": "Chinchpada, Borivali, Mumbai, Maharashtra 400066",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 60,
+        "id": 118,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -435,20 +460,85 @@
     ]
   },
   {
+    "id": 118,
+    "slug": "borivalicha-maharaja",
+    "name": "Borivalicha Maharaja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Sawarpada Sarvajanik Utsav Mandal"
+    ],
+    "area": "Borivali East",
+    "tier": "b",
+    "idolLat": 19.2365863,
+    "idolLng": 72.8672582,
+    "pinPrecision": "rooftop",
+    "address": "Sant Eknath Marg, Sawarpada, Borivali East, Mumbai, Maharashtra 400066",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 119,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "slug": "upnagarcha-raja-ekta-sarvajanik-ganeshotsav-mandal",
+    "name": "Upnagarcha Raja - Ekta Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Tallest idol in the suburbs"
+    ],
+    "area": "Borivali East",
+    "tier": "b",
+    "idolLat": 19.2214656,
+    "idolLng": 72.8690138,
+    "pinPrecision": "rooftop",
+    "address": "Tata Power House, Jay Maharashtra Nagar, Trimurty Nagar, Borivali East, Mumbai, Maharashtra 400066",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 120,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
     "id": 58,
     "slug": "bal-mitra-sarvajanik-ganeshotsav-mandal",
     "name": "Bal Mitra Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Borivali East",
     "tier": "c",
-    "idolLat": 19.22517476,
-    "idolLng": 72.86849666,
-    "pinPrecision": "area",
-    "address": "Devipada, Borivali East, Mumbai, Maharashtra 400066",
+    "idolLat": 19.2252636,
+    "idolLng": 72.8685239,
+    "pinPrecision": "rooftop",
+    "address": "Shankar Temple, Devipada, Kulupwadi, Borivali East, Mumbai, Maharashtra 400066",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
         "id": 59,
@@ -464,23 +554,54 @@
     ]
   },
   {
-    "id": 60,
-    "slug": "borivali-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Borivali West Sarvajanik Ganeshotsav Mandal",
+    "id": 124,
+    "slug": "sodawala-lanecha-raja-sarvajanik-ganeshotsav-mandal",
+    "name": "Sodawala Lanecha Raja Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
+    "area": "Borivali West",
+    "tier": "b",
+    "idolLat": 19.2321772,
+    "idolLng": 72.851433,
+    "pinPrecision": "rooftop",
+    "address": "Maharashtra Nagar Rd, Roshan Nagar, Borivali West, Mumbai, Maharashtra 400092",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 125,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "slug": "bal-vikas-sarvajanik-ganeshotsav-mandal",
+    "name": "Bal Vikas Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
     "area": "Borivali West",
     "tier": "c",
-    "idolLat": 19.236709063876,
-    "idolLng": 72.852137307951,
-    "pinPrecision": "area",
-    "address": "Borivali West, Mumbai, Maharashtra 400092",
+    "idolLat": 19.2229453,
+    "idolLng": 72.8552197,
+    "pinPrecision": "rooftop",
+    "address": "Natakwala Ln, Meghdoot, Hari Om Nagar, Borivali West, Mumbai, Maharashtra 400092",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 61,
+        "id": 121,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -493,23 +614,26 @@
     ]
   },
   {
-    "id": 98,
-    "slug": "byculla-sarvajanik-ganeshotsav-mandal",
-    "name": "Byculla Sarvajanik Ganeshotsav Mandal",
+    "id": 121,
+    "slug": "i-c-colony-sarvajanik-ganeshotsav-mandal",
+    "name": "I C Colony Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Byculla",
+    "aliases": [
+      "I C Youngstars"
+    ],
+    "area": "Borivali West",
     "tier": "c",
-    "idolLat": 18.97697148,
-    "idolLng": 72.83111426,
-    "pinPrecision": "area",
-    "address": "Byculla, Mumbai, Maharashtra 400008",
+    "idolLat": 19.2477499,
+    "idolLng": 72.8492603,
+    "pinPrecision": "rooftop",
+    "address": "Villa Stella, Holy Cross Rd, I C Colony, Borivali West, Mumbai, Maharashtra 400103",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 99,
+        "id": 122,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -522,29 +646,90 @@
     ]
   },
   {
-    "id": 107,
-    "slug": "charni-road-sarvajanik-ganeshotsav-mandal",
-    "name": "Charni Road Sarvajanik Ganeshotsav Mandal",
+    "id": 122,
+    "slug": "jairaj-nagar-sarvajanik-ganeshotsav-mandal",
+    "name": "Jairaj Nagar Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Charni Road",
+    "aliases": [],
+    "area": "Borivali West",
     "tier": "c",
-    "idolLat": 18.957,
-    "idolLng": 72.821,
-    "pinPrecision": "area",
-    "address": "Charni Road, Mumbai, Maharashtra 400004",
+    "idolLat": 19.2330534,
+    "idolLng": 72.8432983,
+    "pinPrecision": "rooftop",
+    "address": "Baburao Paranjape Marg, Vazira, Borivali West, Mumbai, Maharashtra 400091",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 108,
+        "id": 123,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
         "baseMinutes": 10,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "slug": "shree-sarvajanik-ganeshotsav-mandal-kasturpark",
+    "name": "Shree Sarvajanik Ganeshotsav Mandal, Kasturpark",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Borivali West",
+    "tier": "c",
+    "idolLat": 19.2246623,
+    "idolLng": 72.847962,
+    "pinPrecision": "rooftop",
+    "address": "Kastur Park, Borivali West, Mumbai, Maharashtra 400092",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 124,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 10,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "slug": "chandivali-cha-raja",
+    "name": "Chandivali Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Chandivali",
+    "tier": "b",
+    "idolLat": 19.1150732,
+    "idolLng": 72.8932994,
+    "pinPrecision": "rooftop",
+    "address": "Johnson D'Souza Compound, opp. Boomerang, Chandivali, Powai, Mumbai, Maharashtra 400072",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 126,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -558,8 +743,8 @@
     "nameHi": "चेंबूर का राजा",
     "area": "Chembur",
     "tier": "b",
-    "idolLat": 19.0656414,
-    "idolLng": 72.8941934,
+    "idolLat": 19.0457925,
+    "idolLng": 72.8970233,
     "nearestStation": "Chembur (Harbour)",
     "stationWalkMinutes": null,
     "notes": "",
@@ -576,27 +761,121 @@
         "report": null
       }
     ],
-    "address": null,
-    "pinPrecision": null
+    "aliases": [],
+    "address": "Dr CG Rd, Jeevan Sangaram Nagar, Chembur Colony, Chembur, Mumbai, Maharashtra 400074",
+    "pinPrecision": "rooftop"
   },
   {
-    "id": 38,
-    "slug": "chembur-sarvajanik-ganeshotsav-mandal",
-    "name": "Chembur Sarvajanik Ganeshotsav Mandal",
+    "id": 126,
+    "slug": "chembur-cha-samrat",
+    "name": "Chembur Cha Samrat",
     "nameMr": null,
     "nameHi": null,
-    "area": "Chembur East",
-    "tier": "c",
-    "idolLat": 19.02861873,
-    "idolLng": 72.89701704,
-    "pinPrecision": "street",
-    "address": "Near Ashish Talao, Chembur East, Mumbai, Maharashtra 400071",
+    "aliases": [],
+    "area": "Chembur",
+    "tier": "b",
+    "idolLat": 19.0446814,
+    "idolLng": 72.8903416,
+    "pinPrecision": "rooftop",
+    "address": "Shiv Shakti Nagar, Collector Colony, Chembur, Mumbai, Maharashtra 400074",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
-        "id": 39,
+        "id": 127,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "slug": "chembur-cha-sarkar-wadi-cha-raja",
+    "name": "Chembur cha Sarkar - Wadi Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Shree Gauri Ganesh Mitra Mandal"
+    ],
+    "area": "Chembur",
+    "tier": "b",
+    "idolLat": 19.0607438,
+    "idolLng": 72.887743,
+    "pinPrecision": "rooftop",
+    "address": "25, Natyakarmi Sunil Premanand Kambli Marg, Thakkar Bappa Colony, Kurla, Mumbai, Maharashtra 400071",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 128,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "slug": "dukes-cha-raja",
+    "name": "Dukes Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Chembur",
+    "tier": "b",
+    "idolLat": 19.0483397,
+    "idolLng": 72.9097589,
+    "pinPrecision": "rooftop",
+    "address": "near Deonar Depot, Amar Nagar, Ghatla, Chembur, Mumbai, Maharashtra 400071",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 130,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "slug": "chhedanagar-sarvajanik-ganeshotsav-mandal",
+    "name": "Chhedanagar Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Chembur",
+    "tier": "c",
+    "idolLat": 19.068848,
+    "idolLng": 72.906521,
+    "pinPrecision": "rooftop",
+    "address": "W.A Ground, CR Rd Number 4, Sector 1, Chembur West, Mumbai, Maharashtra 400089",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 129,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -609,23 +888,24 @@
     ]
   },
   {
-    "id": 104,
-    "slug": "chinch-bandar-sarvajanik-ganeshotsav-mandal",
-    "name": "Chinch Bandar Sarvajanik Ganeshotsav Mandal",
+    "id": 130,
+    "slug": "sahakar-nagar-sarvajanik-ganeshotsav-mandal",
+    "name": "Sahakar Nagar Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Chinch Bandar",
+    "aliases": [],
+    "area": "Chembur",
     "tier": "c",
-    "idolLat": 18.954196478285,
-    "idolLng": 72.845046473866,
-    "pinPrecision": "area",
-    "address": "Chinch Bandar, Mumbai, Maharashtra 400009",
+    "idolLat": 19.0641864,
+    "idolLng": 72.8942247,
+    "pinPrecision": "rooftop",
+    "address": "3, Thakkar Bappa Colony Rd, Sahakar Nagar, Chembur, Mumbai, Maharashtra 400071",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 105,
+        "id": 131,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -645,8 +925,8 @@
     "nameHi": "चिंचपोकली का चिंतामणि",
     "area": "Chinchpokli",
     "tier": "a",
-    "idolLat": 18.9869701,
-    "idolLng": 72.832906,
+    "idolLat": 18.9880993,
+    "idolLng": 72.8332544,
     "nearestStation": "Chinchpokli (Central)",
     "stationWalkMinutes": null,
     "notes": "",
@@ -663,8 +943,163 @@
         "report": null
       }
     ],
-    "address": "Chinchpokli, Mumbai, Maharashtra 400012",
-    "pinPrecision": null
+    "aliases": [
+      "Chinchpokli Sarvajanik Utsav Mandal"
+    ],
+    "address": "Dattaram Lad Marg, Chinchpokli, Mumbai, Maharashtra 400012",
+    "pinPrecision": "rooftop"
+  },
+  {
+    "id": 131,
+    "slug": "chewoolwadi-balmitra-mandal-sarvajanik-ganeshotsav",
+    "name": "Chewoolwadi Balmitra Mandal Sarvajanik Ganeshotsav",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Chirabazar Ganraj"
+    ],
+    "area": "Chira Bazar",
+    "tier": "b",
+    "idolLat": 18.9468739,
+    "idolLng": 72.827361,
+    "pinPrecision": "rooftop",
+    "address": "Marine Lines East, Cheul Wadi, Kalbadevi, Mumbai, Maharashtra 400002",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 132,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "slug": "colaba-cha-raja",
+    "name": "Colaba Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Colaba",
+    "tier": "b",
+    "idolLat": 18.916681,
+    "idolLng": 72.828025,
+    "pinPrecision": "rooftop",
+    "address": "32, Harmos Ji St, Apollo Bandar, Colaba, Mumbai, Maharashtra 400005",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 133,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "slug": "colaba-cha-samrat",
+    "name": "Colaba cha Samrat",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Colaba",
+    "tier": "b",
+    "idolLat": 18.9183439,
+    "idolLng": 72.8275779,
+    "pinPrecision": "rooftop",
+    "address": "Plot No 10, 2nd Pasta Lane, Shahid Bhagat Singh Rd, Colaba, Mumbai, Maharashtra 400005",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 134,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "slug": "colabacha-yuvraj",
+    "name": "Colabacha Yuvraj",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Colaba",
+    "tier": "b",
+    "idolLat": 18.9172284,
+    "idolLng": 72.8287,
+    "pinPrecision": "rooftop",
+    "address": "Lala Nigam Rd, Apollo Bandar, Colaba, Mumbai, Maharashtra 400005",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 135,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "slug": "cotton-cha-raja",
+    "name": "Cotton Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Cotton Green",
+    "tier": "b",
+    "idolLat": 18.9872174,
+    "idolLng": 72.8457475,
+    "pinPrecision": "rooftop",
+    "address": "Zakaria Bunder Rd, Cotton Green, Sewri, Mumbai, Maharashtra 400033",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 136,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
   },
   {
     "id": 20,
@@ -678,7 +1113,7 @@
     "idolLng": 72.8428479,
     "nearestStation": "Dadar (Central & Western)",
     "stationWalkMinutes": null,
-    "notes": "Source: yatrirailways.com Ganesh Chaturthi Mumbai pandal guide\n\nMap pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Source: yatrirailways.com Ganesh Chaturthi Mumbai pandal guide\n\nMap pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 21,
@@ -692,8 +1127,41 @@
         "report": null
       }
     ],
-    "pinPrecision": "area",
-    "address": null
+    "aliases": [],
+    "address": null,
+    "pinPrecision": "area"
+  },
+  {
+    "id": 136,
+    "slug": "manuber-mansion-sarvajanik-ganeshotsav-mandal",
+    "name": "Manuber Mansion Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Dadarcha Morya"
+    ],
+    "area": "Dadar East",
+    "tier": "b",
+    "idolLat": 19.0132506,
+    "idolLng": 72.8447926,
+    "pinPrecision": "rooftop",
+    "address": "Dr Babasaheb Ambedkar Rd, Old BDD Chawl, Gautam Nagar, Dadar, Mumbai, Maharashtra 400014",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 137,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
   },
   {
     "id": 32,
@@ -701,6 +1169,7 @@
     "name": "Dadar TT Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Dadar East",
     "tier": "c",
     "idolLat": 19.0177961,
@@ -709,39 +1178,10 @@
     "address": "Khodadad Circle, Dadar East, Mumbai, Maharashtra 400014",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 33,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 30,
-    "slug": "dadar-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Dadar West Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Dadar West",
-    "tier": "c",
-    "idolLat": 19.01523964,
-    "idolLng": 72.83959075,
-    "pinPrecision": "street",
-    "address": "Senapati Bapat Marg, Sunder Nagar, Dadar West, Mumbai, Maharashtra 400028",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
-    "queues": [
-      {
-        "id": 31,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -759,6 +1199,7 @@
     "name": "Sai Ganesh Sadan Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Dadar West",
     "tier": "c",
     "idolLat": 19.01498767,
@@ -767,7 +1208,7 @@
     "address": "Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
         "id": 32,
@@ -783,87 +1224,32 @@
     ]
   },
   {
-    "id": 61,
-    "slug": "dahisar-sarvajanik-ganeshotsav-mandal",
-    "name": "Dahisar Sarvajanik Ganeshotsav Mandal",
+    "id": 137,
+    "slug": "dahisar-cha-raja",
+    "name": "Dahisar Cha Raja",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [
+      "Shri Bhatladevi Sarvajanik Ganesh Utsav Mandal"
+    ],
     "area": "Dahisar East",
-    "tier": "c",
-    "idolLat": 19.255,
-    "idolLng": 72.869,
-    "pinPrecision": "area",
-    "address": "Dahisar East, Mumbai, Maharashtra 400068",
+    "tier": "b",
+    "idolLat": 19.2491127,
+    "idolLng": 72.8617843,
+    "pinPrecision": "rooftop",
+    "address": "Bharucha Rd, Maratha Colony, Dahisar East, Mumbai, Maharashtra 400068",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 62,
+        "id": 138,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 93,
-    "slug": "deonar-sarvajanik-ganeshotsav-mandal",
-    "name": "Deonar Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Deonar",
-    "tier": "c",
-    "idolLat": 19.05271048,
-    "idolLng": 72.92424203,
-    "pinPrecision": "area",
-    "address": "Deonar, Mumbai, Maharashtra 400043",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 94,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 83,
-    "slug": "dharavi-sarvajanik-ganeshotsav-mandal",
-    "name": "Dharavi Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Dharavi",
-    "tier": "c",
-    "idolLat": 19.04123901,
-    "idolLng": 72.85016166,
-    "pinPrecision": "area",
-    "address": "Dharavi, Mumbai, Maharashtra 400017",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 84,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -877,11 +1263,11 @@
     "nameHi": "डोंगरी का राजा",
     "area": "Dongri",
     "tier": "b",
-    "idolLat": 18.96037929,
-    "idolLng": 72.83911468,
+    "idolLat": 18.9603472,
+    "idolLng": 72.8391276,
     "nearestStation": "Sandhurst Road (Central/Harbour)",
     "stationWalkMinutes": null,
-    "notes": "Run by Sarvajanik Ganesh Utsav Mandal, Dongri.\n\nSources: sceneloc8.com/50-must-visit-ganesh-pandals-in-mumbai-for-2025-darshan, dongricharaja-website.vercel.app\n\nMap pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Run by Sarvajanik Ganesh Utsav Mandal, Dongri.\n\nSources: sceneloc8.com/50-must-visit-ganesh-pandals-in-mumbai-for-2025-darshan, dongricharaja-website.vercel.app",
     "queues": [
       {
         "id": 17,
@@ -895,27 +1281,31 @@
         "report": null
       }
     ],
-    "address": "Ganesh Chowk, Dr Maisheri Marg, Dongri, Mumbai, Maharashtra 400009",
-    "pinPrecision": "street"
+    "aliases": [
+      "The King Of South Mumbai"
+    ],
+    "address": "Ganesh Chowk, Dr Maisheri Marg, Dongri, Umerkhadi, Mumbai, Maharashtra 400009",
+    "pinPrecision": "rooftop"
   },
   {
-    "id": 75,
-    "slug": "elphinstone-sarvajanik-ganeshotsav-mandal",
-    "name": "Elphinstone Sarvajanik Ganeshotsav Mandal",
+    "id": 33,
+    "slug": "shiv-sai-sarvajanik-ganeshotsav-mandal",
+    "name": "Shiv Sai Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Elphinstone",
     "tier": "c",
-    "idolLat": 19.00751227,
-    "idolLng": 72.83596302,
-    "pinPrecision": "area",
-    "address": "Elphinstone, Mumbai, Maharashtra 400013",
+    "idolLat": 19.00559732,
+    "idolLng": 72.83250536,
+    "pinPrecision": "street",
+    "address": "B.M. Marg, Elphinstone, Mumbai, Maharashtra 400013",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
-        "id": 76,
+        "id": 34,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -928,23 +1318,24 @@
     ]
   },
   {
-    "id": 33,
-    "slug": "shiv-sai-sarvajanik-ganeshotsav-mandal",
-    "name": "Shiv Sai Sarvajanik Ganeshotsav Mandal",
+    "id": 138,
+    "slug": "koliwadi-sarvajanik-ganeshotsav-mandal",
+    "name": "Koliwadi Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Elphinstone",
+    "aliases": [],
+    "area": "Fanas Wadi",
     "tier": "c",
-    "idolLat": 19.00559732,
-    "idolLng": 72.83250536,
-    "pinPrecision": "street",
-    "address": "B.M. Marg, Elphinstone, Mumbai, Maharashtra 400013",
+    "idolLat": 18.952392,
+    "idolLng": 72.8263548,
+    "pinPrecision": "rooftop",
+    "address": "Koliwadi, Raut Estate, Fanas Wadi, Girgaon, Mumbai, Maharashtra 400002",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
-        "id": 34,
+        "id": 139,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -964,11 +1355,11 @@
     "nameHi": "फोर्ट का राजा",
     "area": "Fort",
     "tier": "b",
-    "idolLat": 18.9399723,
-    "idolLng": 72.8343386,
+    "idolLat": 18.9379269,
+    "idolLng": 72.8372378,
     "nearestStation": "CSMT (Central), Churchgate (Western)",
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
         "id": 10,
@@ -982,37 +1373,12 @@
         "report": null
       }
     ],
-    "address": "Icchapurti Ganesh Chowk, Dr Sundarlal Bahal Path (Goa Street), opposite GPO, Fort, Mumbai, Maharashtra 400001",
-    "pinPrecision": "area"
-  },
-  {
-    "id": 40,
-    "slug": "ghatkopar-sarvajanik-ganeshotsav-mandal",
-    "name": "Ghatkopar Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Ghatkopar",
-    "tier": "c",
-    "idolLat": 19.078,
-    "idolLng": 72.908,
-    "pinPrecision": "area",
-    "address": "Ghatkopar, Mumbai, Maharashtra 400086",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 41,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
+    "aliases": [
+      "Fort Vibhag Ganesh Utsav Mandal",
+      "Icchapurti Ganapati"
+    ],
+    "address": "Mint Rd, opp. GPO, Borabazar Precinct, Fort, Mumbai, Maharashtra 400001",
+    "pinPrecision": "rooftop"
   },
   {
     "id": 19,
@@ -1022,11 +1388,11 @@
     "nameHi": "घाटकोपर का राजा",
     "area": "Ghatkopar East",
     "tier": "b",
-    "idolLat": 19.0833438,
-    "idolLng": 72.9123246,
+    "idolLat": 19.080959,
+    "idolLng": 72.9042704,
     "nearestStation": "Ghatkopar (Central / Metro)",
     "stationWalkMinutes": null,
-    "notes": "Public Ganeshotsav by Shri Laxminarayan Bal Ganesh Mitra Mandal, Ghatkopar East.\n\nSource: globalprimenews.com (Sarvajanik Ganeshotsav 2025 coverage)\n\nMap pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Public Ganeshotsav by Shri Laxminarayan Bal Ganesh Mitra Mandal, Ghatkopar East.\n\nSource: globalprimenews.com (Sarvajanik Ganeshotsav 2025 coverage)",
     "queues": [
       {
         "id": 20,
@@ -1040,8 +1406,9 @@
         "report": null
       }
     ],
-    "pinPrecision": "area",
-    "address": null
+    "aliases": [],
+    "address": "Laxminarayan Lane Corner, opp. Gandhi Market, MG Road, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400077",
+    "pinPrecision": "rooftop"
   },
   {
     "id": 39,
@@ -1049,6 +1416,7 @@
     "name": "Ghatkopar Amar Mitra Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Ghatkopar East",
     "tier": "c",
     "idolLat": 19.06690855,
@@ -1057,7 +1425,7 @@
     "address": "Tilak Nagar, Ghatkopar East, Mumbai, Maharashtra 400075",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 40,
@@ -1073,23 +1441,24 @@
     ]
   },
   {
-    "id": 91,
-    "slug": "ghatkopar-east-sarvajanik-ganeshotsav-mandal",
-    "name": "Ghatkopar East Sarvajanik Ganeshotsav Mandal",
+    "id": 139,
+    "slug": "navayuvak-sarvajanik-ganeshotsav-mandal",
+    "name": "Navayuvak Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Ghatkopar East",
+    "aliases": [],
+    "area": "Ghodapdeo",
     "tier": "c",
-    "idolLat": 19.071231711628,
-    "idolLng": 72.912432602978,
-    "pinPrecision": "area",
-    "address": "Ghatkopar East, Mumbai, Maharashtra 400077",
+    "idolLat": 18.987544,
+    "idolLng": 72.843295,
+    "pinPrecision": "rooftop",
+    "address": "2, Barrister Nath Pai Marg, Chatai Chawl, Ghodapdeo, Byculla, Mumbai, Maharashtra 400033",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 92,
+        "id": 140,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -1102,29 +1471,32 @@
     ]
   },
   {
-    "id": 90,
-    "slug": "ghatkopar-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Ghatkopar West Sarvajanik Ganeshotsav Mandal",
+    "id": 140,
+    "slug": "girgaon-cha-maharaja",
+    "name": "Girgaon Cha Maharaja",
     "nameMr": null,
     "nameHi": null,
-    "area": "Ghatkopar West",
-    "tier": "c",
-    "idolLat": 19.093052105982,
-    "idolLng": 72.904576192285,
-    "pinPrecision": "area",
-    "address": "Ghatkopar West, Mumbai, Maharashtra 400086",
+    "aliases": [
+      "Akhil Mugbhat Lane"
+    ],
+    "area": "Girgaon",
+    "tier": "b",
+    "idolLat": 18.952709,
+    "idolLng": 72.822591,
+    "pinPrecision": "rooftop",
+    "address": "36, Mugbhat Cross Ln, Thakurdwar, Girgaon, Mumbai, Maharashtra 400004",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 91,
+        "id": 141,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -1138,11 +1510,11 @@
     "nameHi": "गिरगांव का राजा",
     "area": "Girgaon",
     "tier": "b",
-    "idolLat": 18.95490351,
-    "idolLng": 72.82062052,
+    "idolLat": 18.9548496,
+    "idolLng": 72.8203697,
     "nearestStation": "Charni Road (Western)",
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 9,
@@ -1156,8 +1528,12 @@
         "report": null
       }
     ],
-    "address": "Nikadwari Lane, S.V. Sovani Path, Girgaon, Mumbai, Maharashtra 400004",
-    "pinPrecision": "street"
+    "aliases": [
+      "Girgaoncha Raja Shree Ganeshotsav Mandal",
+      "Raja Paryavarnacha"
+    ],
+    "address": "Nikadwari Lane, SV Sovani Path, Ambewadi, Girgaon, Mumbai, Maharashtra 400004",
+    "pinPrecision": "rooftop"
   },
   {
     "id": 22,
@@ -1165,15 +1541,18 @@
     "name": "Jitekar Wadi Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [
+      "Mumbai's 2nd oldest sarvajanik Ganeshotsav"
+    ],
     "area": "Girgaon",
     "tier": "b",
-    "idolLat": 18.95335809,
-    "idolLng": 72.82468922,
-    "pinPrecision": "street",
-    "address": "88/D, Dr Babasaheb Jaykar Marg, Charni Road East, Girgaon, Mumbai, Maharashtra 400004",
+    "idolLat": 18.9531203,
+    "idolLng": 72.8248453,
+    "pinPrecision": "rooftop",
+    "address": "88/D, Dr Babasaheb Jaykar Marg, Jitekar Wadi, Mangal Wadi, Girgaon, Mumbai, Maharashtra 400002",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 23,
@@ -1196,8 +1575,8 @@
     "nameHi": "केशवजी नाईक चॉल",
     "area": "Girgaon",
     "tier": "b",
-    "idolLat": 18.9541724,
-    "idolLng": 72.8219532,
+    "idolLat": 18.9546037,
+    "idolLng": 72.8221219,
     "nearestStation": "Charni Road / Grant Road (Western)",
     "stationWalkMinutes": null,
     "notes": "One of the oldest sarvajanik Ganeshotsav mandals in Mumbai.",
@@ -1214,8 +1593,12 @@
         "report": null
       }
     ],
-    "address": "Khadilkar Road, Kandawadi, Mangal Wadi, Girgaon, Mumbai, Maharashtra 400004",
-    "pinPrecision": null
+    "aliases": [
+      "Keshavji Naik Chawl Ganeshotsav",
+      "Mumbai's oldest sarvajanik Ganeshotsav (1893)"
+    ],
+    "address": "Keshavji Naik Chawl, 5/3, Khadilkar Rd, Kandawadi, Girgaon, Mumbai, Maharashtra 400004",
+    "pinPrecision": "rooftop"
   },
   {
     "id": 21,
@@ -1223,6 +1606,7 @@
     "name": "Mumbaicha Maharaja",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Girgaon",
     "tier": "b",
     "idolLat": 18.95954443,
@@ -1231,7 +1615,7 @@
     "address": "11th Lane, Khetwadi, Girgaon, Mumbai, Maharashtra 400004",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
         "id": 22,
@@ -1247,23 +1631,86 @@
     ]
   },
   {
-    "id": 54,
-    "slug": "goregaon-east-sarvajanik-ganeshotsav-mandal",
-    "name": "Goregaon East Sarvajanik Ganeshotsav Mandal",
+    "id": 141,
+    "slug": "goregaoncha-raja",
+    "name": "Goregaoncha Raja",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
+    "area": "Goregaon East",
+    "tier": "b",
+    "idolLat": 19.1574629,
+    "idolLng": 72.8539564,
+    "pinPrecision": "rooftop",
+    "address": "St Yadav Rd, Sant Rohidas Nagar, Cama Industrial Estate, Goregaon East, Mumbai, Maharashtra 400063",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 142,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "slug": "sarvajanik-ganeshotsav-mandal-tilak-nagar",
+    "name": "Sarvajanik Ganeshotsav Mandal Tilak Nagar",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Goregaon Cha Maharaja"
+    ],
+    "area": "Goregaon East",
+    "tier": "b",
+    "idolLat": 19.1673503,
+    "idolLng": 72.8544516,
+    "pinPrecision": "rooftop",
+    "address": "Vishveshwar Nagar Rd, Vishveshwar Nagar, Goregaon East, Mumbai, Maharashtra 400063",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 144,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "slug": "pimpleshwar-mahadev-sarvajanik-ganeshotsav-mandal",
+    "name": "Pimpleshwar Mahadev Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
     "area": "Goregaon East",
     "tier": "c",
-    "idolLat": 19.160037625091,
-    "idolLng": 72.853538979209,
-    "pinPrecision": "area",
-    "address": "Goregaon East, Mumbai, Maharashtra 400063",
+    "idolLat": 19.1424991,
+    "idolLng": 72.8540171,
+    "pinPrecision": "rooftop",
+    "address": "Geetanjali Railway Colony, Ram Nagar, Goregaon East, Mumbai, Maharashtra 400060",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 55,
+        "id": 143,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -1276,52 +1723,84 @@
     ]
   },
   {
-    "id": 53,
-    "slug": "goregaon-sarvajanik-ganeshotsav-mandal",
-    "name": "Goregaon Sarvajanik Ganeshotsav Mandal",
+    "id": 144,
+    "slug": "gavdevi-cha-raja-sarvajanik-ganeshotsav-mandal",
+    "name": "Gavdevi Cha Raja Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
+    "area": "Goregaon West",
+    "tier": "b",
+    "idolLat": 19.161707,
+    "idolLng": 72.835802,
+    "pinPrecision": "rooftop",
+    "address": "Mitha Nagar, Goregaon West, Mumbai, Maharashtra 400104",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 145,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "slug": "jawahar-nagar-cha-raja",
+    "name": "Jawahar Nagar Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Goregaon West",
+    "tier": "b",
+    "idolLat": 19.1572564,
+    "idolLng": 72.8484675,
+    "pinPrecision": "rooftop",
+    "address": "Plot 265, Road 11/12, Jawahar Nagar Rd, Goregaon West, Mumbai, Maharashtra 400104",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 147,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "slug": "industrial-colony-sarvajanik-ganeshotsav-mandal",
+    "name": "Industrial Colony Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
     "area": "Goregaon West",
     "tier": "c",
-    "idolLat": 19.161019247551,
-    "idolLng": 72.840177922511,
-    "pinPrecision": "area",
-    "address": "Goregaon West, Mumbai, Maharashtra 400062",
+    "idolLat": 19.1623481,
+    "idolLng": 72.8426164,
+    "pinPrecision": "rooftop",
+    "address": "34-35, Shri Nagar, Goregaon West, Mumbai, Maharashtra 400104",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 54,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 92,
-    "slug": "govandi-sarvajanik-ganesh-utsav-mandal",
-    "name": "Govandi Sarvajanik Ganesh Utsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Govandi East",
-    "tier": "c",
-    "idolLat": 19.05552738,
-    "idolLng": 72.9259637,
-    "pinPrecision": "street",
-    "address": "Deonar Municipal Colony, Govandi East, Mumbai, Maharashtra 400043",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
-    "queues": [
-      {
-        "id": 93,
+        "id": 146,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -1339,6 +1818,7 @@
     "name": "Grant Road Cha Raja Sarvajanik Ganesh Utsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Grant Road East",
     "tier": "b",
     "idolLat": 18.96415257,
@@ -1347,7 +1827,7 @@
     "address": "26, Pathe Bapurao Road, Bharat Nagar, Grant Road East, Mumbai, Maharashtra 400008",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
         "id": 25,
@@ -1363,23 +1843,24 @@
     ]
   },
   {
-    "id": 49,
-    "slug": "pratap-nagar-sarvajanik-ganeshotsav-mandal",
-    "name": "Pratap Nagar Sarvajanik Ganeshotsav Mandal",
+    "id": 147,
+    "slug": "nav-chaitanya-mandal-sarvajanik-ganeshotsav",
+    "name": "Nav Chaitanya Mandal Sarvajanik Ganeshotsav",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Jogeshwari East",
     "tier": "c",
-    "idolLat": 19.134446100446,
-    "idolLng": 72.861038293321,
-    "pinPrecision": "street",
-    "address": "Jogeshwari-Vikhroli Link Road, Pratap Nagar, Jogeshwari East, Mumbai, Maharashtra 400060",
+    "idolLat": 19.1308557,
+    "idolLng": 72.8579359,
+    "pinPrecision": "rooftop",
+    "address": "Saraswati Baug, Shivaji Nagar, Shankarwadi, Jogeshwari East, Mumbai, Maharashtra 400060",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
-        "id": 50,
+        "id": 148,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -1397,47 +1878,21 @@
     "name": "Sarvajanik Bal Ganesh Utsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [
+      "Saraswati Baug"
+    ],
     "area": "Jogeshwari East",
     "tier": "c",
-    "idolLat": 19.1301942,
-    "idolLng": 72.8493879,
-    "pinPrecision": "street",
-    "address": "Saraswati Baug, Bandra Plot, Prem Nagar, Jogeshwari East, Mumbai, Maharashtra 400060",
+    "idolLat": 19.1344791,
+    "idolLng": 72.8582658,
+    "pinPrecision": "rooftop",
+    "address": "L Block, near Mahakali Mandir, Saraswati Baug, Prem Nagar, Jogeshwari East, Mumbai, Maharashtra 400060",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 51,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 51,
-    "slug": "jogeshwari-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Jogeshwari West Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Jogeshwari West",
-    "tier": "c",
-    "idolLat": 19.144707972921,
-    "idolLng": 72.837861548399,
-    "pinPrecision": "area",
-    "address": "Jogeshwari West, Mumbai, Maharashtra 400102",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 52,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -1455,6 +1910,7 @@
     "name": "Shree Ganesh Mitra Mandal Oshiwara",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Jogeshwari West",
     "tier": "c",
     "idolLat": 19.14942675,
@@ -1463,7 +1919,7 @@
     "address": "Ram Mandir Road, Somani Gram, Oshiwara, Jogeshwari West, Mumbai, Maharashtra 400104",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
         "id": 53,
@@ -1479,23 +1935,24 @@
     ]
   },
   {
-    "id": 66,
-    "slug": "juhu-sarvajanik-ganeshotsav-mandal",
-    "name": "Juhu Sarvajanik Ganeshotsav Mandal",
+    "id": 29,
+    "slug": "juhu-koliwada-ganeshotsav-mandal",
+    "name": "Juhu Koliwada Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Juhu",
+    "aliases": [],
+    "area": "Juhu Koliwada",
     "tier": "c",
-    "idolLat": 19.11210233,
-    "idolLng": 72.82700126,
-    "pinPrecision": "area",
-    "address": "Juhu, Mumbai, Maharashtra 400049",
+    "idolLat": 19.0839078,
+    "idolLng": 72.8271444,
+    "pinPrecision": "rooftop",
+    "address": "HB Gawde Marg, Juhu Koliwada, Santacruz West, Mumbai, Maharashtra 400049",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 67,
+        "id": 30,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -1508,29 +1965,95 @@
     ]
   },
   {
-    "id": 105,
-    "slug": "kalbadevi-sarvajanik-ganeshotsav-mandal",
-    "name": "Kalbadevi Sarvajanik Ganeshotsav Mandal",
+    "id": 148,
+    "slug": "abhyudaya-nagar-cha-raja",
+    "name": "Abhyudaya Nagar cha Raja",
     "nameMr": null,
     "nameHi": null,
-    "area": "Kalbadevi",
-    "tier": "c",
-    "idolLat": 18.947,
-    "idolLng": 72.827,
-    "pinPrecision": "area",
-    "address": "Kalbadevi, Mumbai, Maharashtra 400002",
+    "aliases": [
+      "Rathadhish",
+      "Paritoshikancha Raja"
+    ],
+    "area": "Kalachowki",
+    "tier": "b",
+    "idolLat": 18.9898517,
+    "idolLng": 72.8429329,
+    "pinPrecision": "rooftop",
+    "address": "Jijamata Nagar, Kalachowki, Abhyudaya Nagar, Parel, Mumbai, Maharashtra 400033",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 106,
+        "id": 149,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "slug": "abhyudayanagarcha-ganraj",
+    "name": "Abhyudayanagarcha Ganraj",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Kalachowki",
+    "tier": "b",
+    "idolLat": 18.9901382,
+    "idolLng": 72.8441623,
+    "pinPrecision": "rooftop",
+    "address": "16, Abhyudaya Nagar Rd, Kalachowki, Parel, Mumbai, Maharashtra 400033",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 150,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "slug": "kalachowkicha-mahaganpati",
+    "name": "Kalachowkicha Mahaganpati",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Kalachowkicha Raja"
+    ],
+    "area": "Kalachowki",
+    "tier": "b",
+    "idolLat": 18.9880099,
+    "idolLng": 72.8373453,
+    "pinPrecision": "rooftop",
+    "address": "Dattaram Lad Marg, Kalachowki, Byculla East, Mumbai, Maharashtra 400033",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 151,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -1562,33 +2085,125 @@
         "report": null
       }
     ],
+    "aliases": [],
     "address": null,
     "pinPrecision": null
   },
   {
-    "id": 63,
-    "slug": "thakur-village-sarvajanik-ganeshotsav-mandal",
-    "name": "Thakur Village Sarvajanik Ganeshotsav Mandal",
+    "id": 151,
+    "slug": "charkop-cha-raja",
+    "name": "Charkop Cha Raja",
     "nameMr": null,
     "nameHi": null,
-    "area": "Kandivali East",
-    "tier": "c",
-    "idolLat": 19.20885306,
-    "idolLng": 72.87743194,
-    "pinPrecision": "area",
-    "address": "Thakur Village, Kandivali East, Mumbai, Maharashtra 400101",
+    "aliases": [],
+    "area": "Kandivali West",
+    "tier": "b",
+    "idolLat": 19.2130875,
+    "idolLng": 72.8257031,
+    "pinPrecision": "rooftop",
+    "address": "Shivkrupa CHS, Sector 1 Charkop, Kandivali West, Mumbai, Maharashtra 400067",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 64,
+        "id": 152,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "slug": "kandivali-cha-raja-ekta-nagar",
+    "name": "Kandivali Cha Raja (Ekta Nagar)",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Kandivali West",
+    "tier": "b",
+    "idolLat": 19.2133506,
+    "idolLng": 72.8360934,
+    "pinPrecision": "rooftop",
+    "address": "Ekta Nagar Cross Road, New Link Rd, Adarsh Nagar, Kandivali West, Mumbai, Maharashtra 400067",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 153,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "slug": "kandivali-cha-raja-khajuria-tank-rd",
+    "name": "Kandivali Cha Raja (Khajuria Tank Rd)",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Kandivali West",
+    "tier": "b",
+    "idolLat": 19.1964936,
+    "idolLng": 72.8487687,
+    "pinPrecision": "rooftop",
+    "address": "Khajuria Tank Rd, Bhadran Nagar, Kandivali West, Mumbai, Maharashtra 400067",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 154,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "slug": "mahavir-nagar-cha-raja",
+    "name": "Mahavir Nagar Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Kandivali West",
+    "tier": "b",
+    "idolLat": 19.2109396,
+    "idolLng": 72.8389129,
+    "pinPrecision": "rooftop",
+    "address": "K T Soni Marg, Panchsheel Garden, Mahavir Nagar, Kandivali West, Mumbai, Maharashtra 400067",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 155,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -1600,6 +2215,7 @@
     "name": "Balla Mitra Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Kandivali West",
     "tier": "c",
     "idolLat": 19.212,
@@ -1608,39 +2224,10 @@
     "address": "Kandivali West, Mumbai, Maharashtra 400067",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 58,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 62,
-    "slug": "charkop-sarvajanik-ganeshotsav-mandal",
-    "name": "Charkop Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Kandivali West",
-    "tier": "c",
-    "idolLat": 19.21618326,
-    "idolLng": 72.82948137,
-    "pinPrecision": "area",
-    "address": "Charkop, Kandivali West, Mumbai, Maharashtra 400067",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 63,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -1658,6 +2245,7 @@
     "name": "Kanjurmarg East Shivshakti Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Kanjurmarg East",
     "tier": "c",
     "idolLat": 19.13310557,
@@ -1666,7 +2254,7 @@
     "address": "Kanjurmarg East, Mumbai, Maharashtra 400042",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 42,
@@ -1682,29 +2270,62 @@
     ]
   },
   {
-    "id": 89,
-    "slug": "khar-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Khar West Sarvajanik Ganeshotsav Mandal",
+    "id": 155,
+    "slug": "kanjurcha-vighnaharta-ganesh-mandir",
+    "name": "Kanjurcha Vighnaharta Ganesh Mandir",
     "nameMr": null,
     "nameHi": null,
-    "area": "Khar West",
-    "tier": "c",
-    "idolLat": 19.0715785,
-    "idolLng": 72.8339589,
-    "pinPrecision": "area",
-    "address": "Khar West, Mumbai, Maharashtra 400052",
+    "aliases": [],
+    "area": "Kanjurmarg West",
+    "tier": "b",
+    "idolLat": 19.1321011,
+    "idolLng": 72.9290167,
+    "pinPrecision": "rooftop",
+    "address": "Building K6, MMRDA Colony, Ambedkar Nagar, Kanjurmarg West, Mumbai, Maharashtra 400078",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 90,
+        "id": 156,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "slug": "navatarun-sarvajanik-ganeshotsav-mandal",
+    "name": "Navatarun Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "3 Banglyacha Raja"
+    ],
+    "area": "Khar East",
+    "tier": "b",
+    "idolLat": 19.0660601,
+    "idolLng": 72.8435571,
+    "pinPrecision": "rooftop",
+    "address": "Jay Prakash Rd, Jawahar Nagar, Khar East, Mumbai, Maharashtra 400051",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 157,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -1718,11 +2339,11 @@
     "nameHi": "खेतवाड़ी का गणराज",
     "area": "Khetwadi",
     "tier": "a",
-    "idolLat": 18.96037887,
-    "idolLng": 72.82114161,
+    "idolLat": 18.9603222,
+    "idolLng": 72.8211476,
     "nearestStation": "Charni Road / Grant Road (Western)",
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 7,
@@ -1736,8 +2357,263 @@
         "report": null
       }
     ],
-    "address": "12th Lane, Khetwadi, Girgaon, Mumbai, Maharashtra 400004",
-    "pinPrecision": "street"
+    "aliases": [
+      "Khetwadi 12th Lane"
+    ],
+    "address": "12th Lane, Khemraj Srikrishna Das Marg, Khetwadi, Grant Road, Mumbai, Maharashtra 400004",
+    "pinPrecision": "rooftop"
+  },
+  {
+    "id": 159,
+    "slug": "khetwadi-cha-ganadhish",
+    "name": "Khetwadi Cha Ganadhish",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Khetwadi 9th Lane"
+    ],
+    "area": "Khetwadi",
+    "tier": "b",
+    "idolLat": 18.9588081,
+    "idolLng": 72.8242452,
+    "pinPrecision": "rooftop",
+    "address": "5th/9th Khetwadi Ln, Bori Chawl, Khetwadi, Grant Road, Mumbai, Maharashtra 400004",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 160,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "slug": "khetwadi-cha-moraya",
+    "name": "Khetwadi Cha Moraya",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Khetwadi 7th Lane (est. 1949)"
+    ],
+    "area": "Khetwadi",
+    "tier": "b",
+    "idolLat": 18.9592145,
+    "idolLng": 72.823459,
+    "pinPrecision": "rooftop",
+    "address": "14-30, 7th Lane Khetwadi Main Rd, Khetwadi, Girgaon, Mumbai, Maharashtra 400004",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 161,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "slug": "khetwadicha-raja",
+    "name": "Khetwadicha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Khetwadi",
+    "tier": "b",
+    "idolLat": 18.9599162,
+    "idolLng": 72.8234907,
+    "pinPrecision": "rooftop",
+    "address": "Khambata Lane, Grant Road East, Khetwadi, Girgaon, Mumbai, Maharashtra 400004",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 162,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "slug": "mumbai-cha-samrat",
+    "name": "Mumbai cha Samrat",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Khetwadi 6th Lane"
+    ],
+    "area": "Khetwadi",
+    "tier": "b",
+    "idolLat": 18.9586691,
+    "idolLng": 72.8236936,
+    "pinPrecision": "rooftop",
+    "address": "Khetwadi 6th Ln, Bori Chawl, Khetwadi, Grant Road, Mumbai, Maharashtra 400004",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 163,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "slug": "akhil-khetwadi-sarvajanik-ganeshotsav-madhyasta-mandal",
+    "name": "Akhil Khetwadi Sarvajanik Ganeshotsav Madhyasta Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Khetwadi coordinating body"
+    ],
+    "area": "Khetwadi",
+    "tier": "c",
+    "idolLat": 18.9607758,
+    "idolLng": 72.8200714,
+    "pinPrecision": "rooftop",
+    "address": "2/C, Khemraj Srikrishna Das Marg, Khetwadi, Grant Road, Mumbai, Maharashtra 400004",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 158,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 10,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "slug": "balgopal-sarvajanik-ganeshotsav-mandal",
+    "name": "Balgopal Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Khetwadi 10th Lane"
+    ],
+    "area": "Khetwadi",
+    "tier": "c",
+    "idolLat": 18.9596716,
+    "idolLng": 72.8221757,
+    "pinPrecision": "rooftop",
+    "address": "Shreepati Castle, 155/157, 10th Ln, Khetwadi, Girgaon, Mumbai, Maharashtra 400004",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 159,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 10,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "slug": "om-tandav-sarvajanik-utsav-mandal",
+    "name": "Om Tandav Sarvajanik Utsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Khetwadi 10th Lane"
+    ],
+    "area": "Khetwadi",
+    "tier": "c",
+    "idolLat": 18.9605517,
+    "idolLng": 72.822565,
+    "pinPrecision": "rooftop",
+    "address": "Miskin Mansion, 10th Ln, Khetwadi, Grant Road, Mumbai, Maharashtra 400004",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 164,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 10,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "slug": "sarvajanik-shree-ganesh-utsav-mandal-khetwadi-4th-galli",
+    "name": "Sarvajanik Shree Ganesh Utsav Mandal, Khetwadi 4th Galli",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Khetwadi",
+    "tier": "c",
+    "idolLat": 18.95862,
+    "idolLng": 72.8246153,
+    "pinPrecision": "rooftop",
+    "address": "4th Ln, Bori Chawl, Khetwadi, Girgaon, Mumbai, Maharashtra 400004",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 165,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 10,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
   },
   {
     "id": 3,
@@ -1747,11 +2623,11 @@
     "nameHi": "जीएसबी सेवा मंडल",
     "area": "King's Circle",
     "tier": "a",
-    "idolLat": 19.02921321,
-    "idolLng": 72.85913843,
+    "idolLat": 19.0291727,
+    "idolLng": 72.8583943,
     "nearestStation": "King's Circle (Harbour), Matunga (Central)",
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 4,
@@ -1765,56 +2641,62 @@
         "report": null
       }
     ],
+    "aliases": [
+      "GSB Ganpati Matunga",
+      "King's Circle Ganpati"
+    ],
     "address": "65/11, R.A. Kidwai Marg, near SNDT Women's College, Matunga East, Mumbai, Maharashtra 400019",
-    "pinPrecision": "street"
+    "pinPrecision": "rooftop"
   },
   {
-    "id": 85,
-    "slug": "kurla-east-sarvajanik-ganeshotsav-mandal",
-    "name": "Kurla East Sarvajanik Ganeshotsav Mandal",
+    "id": 165,
+    "slug": "kurla-cha-raja",
+    "name": "Kurla Cha Raja",
     "nameMr": null,
     "nameHi": null,
-    "area": "Kurla East",
-    "tier": "c",
-    "idolLat": 19.064350725761,
-    "idolLng": 72.88676491046,
-    "pinPrecision": "area",
-    "address": "Kurla East, Mumbai, Maharashtra 400024",
+    "aliases": [],
+    "area": "Kurla West",
+    "tier": "b",
+    "idolLat": 19.0679934,
+    "idolLng": 72.8778798,
+    "pinPrecision": "rooftop",
+    "address": "New Mill Rd, Subhash Nagar, Kurla West, Mumbai, Maharashtra 400070",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 86,
+        "id": 166,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
     ]
   },
   {
-    "id": 84,
-    "slug": "kurla-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Kurla West Sarvajanik Ganeshotsav Mandal",
+    "id": 166,
+    "slug": "lamboder-sarvajanik-ganeshotsav-mandal",
+    "name": "Lamboder Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Kurla West",
     "tier": "c",
-    "idolLat": 19.074353269024,
-    "idolLng": 72.884351477499,
-    "pinPrecision": "area",
-    "address": "Kurla West, Mumbai, Maharashtra 400070",
+    "idolLat": 19.0726739,
+    "idolLng": 72.878684,
+    "pinPrecision": "rooftop",
+    "address": "New Mill Rd, Tanaji Chowk, Ambedkar Nagar, Kurla West, Mumbai, Maharashtra 400070",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 85,
+        "id": 167,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -1834,8 +2716,8 @@
     "nameHi": "लालबाग का राजा",
     "area": "Lalbaug",
     "tier": "s",
-    "idolLat": 18.9914237,
-    "idolLng": 72.8364587,
+    "idolLat": 18.9910394,
+    "idolLng": 72.8373849,
     "nearestStation": "Chinchpokli / Currey Road (Central), Lower Parel (Western)",
     "stationWalkMinutes": null,
     "notes": "",
@@ -1863,8 +2745,12 @@
         "report": null
       }
     ],
-    "address": "Shree Ganesh Nagar, Dr Babasaheb Ambedkar Road, Lalbaug Market, Lalbaug, Mumbai, Maharashtra 400012",
-    "pinPrecision": null
+    "aliases": [
+      "Lalbaugcha Raja Sarvajanik Ganeshotsav Mandal",
+      "Navsacha Ganpati"
+    ],
+    "address": "50/6, Dinshaw Petit Rd, Shree Ganesh Nagar, Lal Baug, Parel, Mumbai, Maharashtra 400012",
+    "pinPrecision": "rooftop"
   },
   {
     "id": 2,
@@ -1874,11 +2760,11 @@
     "nameHi": "मुंबई का राजा (गणेश गली)",
     "area": "Lalbaug",
     "tier": "a",
-    "idolLat": 18.99443354,
-    "idolLng": 72.8373883,
+    "idolLat": 18.9939838,
+    "idolLng": 72.8373458,
     "nearestStation": "Chinchpokli / Currey Road (Central), Lower Parel (Western)",
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 3,
@@ -1892,8 +2778,14 @@
         "report": null
       }
     ],
-    "address": "9/10 Kalyani Nivas, Lalbaug Sarvajanik Utsav Mandal Ganesh Galli, Lalbaug, Mumbai, Maharashtra 400012",
-    "pinPrecision": "street"
+    "aliases": [
+      "Ganesh Gallicha Raja",
+      "Lalbaug Sarvajanik Utsav Mandal",
+      "Mumbaicha Raja",
+      "Ganesh Galli"
+    ],
+    "address": "Kalyani Nivas, 9/10, Ganesh Galli, Lal Baug, Parel, Mumbai, Maharashtra 400012",
+    "pinPrecision": "rooftop"
   },
   {
     "id": 7,
@@ -1903,11 +2795,11 @@
     "nameHi": "तेजुकाया मंडल",
     "area": "Lalbaug",
     "tier": "b",
-    "idolLat": 18.99364131,
-    "idolLng": 72.83585449,
+    "idolLat": 18.9935582,
+    "idolLng": 72.8356929,
     "nearestStation": "Currey Road / Chinchpokli (Central)",
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 8,
@@ -1921,91 +2813,133 @@
         "report": null
       }
     ],
-    "address": "Tejukaya Mansion, Lalbaug, Parel, Mumbai, Maharashtra 400012",
-    "pinPrecision": "street"
+    "aliases": [
+      "Raja Tejukayacha",
+      "Tejukayacha Raja"
+    ],
+    "address": "Tejukaya Building, Dr Babasaheb Ambedkar Rd, Ganesh Gully, Lal Baug, Parel, Mumbai, Maharashtra 400012",
+    "pinPrecision": "rooftop"
   },
   {
-    "id": 74,
-    "slug": "lower-parel-sarvajanik-ganeshotsav-mandal",
-    "name": "Lower Parel Sarvajanik Ganeshotsav Mandal",
+    "id": 167,
+    "slug": "malad-cha-raja-matanpur-nagar",
+    "name": "Malad Cha Raja (Matanpur Nagar)",
     "nameMr": null,
     "nameHi": null,
-    "area": "Lower Parel",
-    "tier": "c",
-    "idolLat": 18.99643836,
-    "idolLng": 72.83085642,
-    "pinPrecision": "area",
-    "address": "Lower Parel, Mumbai, Maharashtra 400013",
+    "aliases": [
+      "Malad Cha Raja"
+    ],
+    "area": "Malad East",
+    "tier": "b",
+    "idolLat": 19.1824198,
+    "idolLng": 72.8496181,
+    "pinPrecision": "rooftop",
+    "address": "Kishanlal Nivetia Marg, Matanpur Nagar, Malad East, Mumbai, Maharashtra 400097",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 75,
+        "id": 168,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
     ]
   },
   {
-    "id": 70,
-    "slug": "mahim-east-sarvajanik-ganeshotsav-mandal",
-    "name": "Mahim East Sarvajanik Ganeshotsav Mandal",
+    "id": 168,
+    "slug": "maladcha-raja-shree-siddhi-vinayak-mitra-mandal",
+    "name": "Maladcha Raja - Shree Siddhi Vinayak Mitra Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Mahim East",
-    "tier": "c",
-    "idolLat": 19.038,
-    "idolLng": 72.841,
-    "pinPrecision": "area",
-    "address": "Mahim East, Mumbai, Maharashtra 400016",
+    "aliases": [],
+    "area": "Malad East",
+    "tier": "b",
+    "idolLat": 19.1825906,
+    "idolLng": 72.8567996,
+    "pinPrecision": "rooftop",
+    "address": "Rani Sati Rd, opp. Balaji Hospital, Gautam Nagar, Malad East, Mumbai, Maharashtra 400097",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 71,
+        "id": 169,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
     ]
   },
   {
-    "id": 69,
-    "slug": "mahim-sarvajanik-ganeshotsav-mandal",
-    "name": "Mahim Sarvajanik Ganeshotsav Mandal",
+    "id": 169,
+    "slug": "malad-cha-maharaja",
+    "name": "Malad Cha Maharaja",
     "nameMr": null,
     "nameHi": null,
-    "area": "Mahim West",
-    "tier": "c",
-    "idolLat": 19.03514596,
-    "idolLng": 72.84033299,
-    "pinPrecision": "area",
-    "address": "Mahim West, Mumbai, Maharashtra 400016",
+    "aliases": [],
+    "area": "Malad West",
+    "tier": "b",
+    "idolLat": 19.1875491,
+    "idolLng": 72.8345616,
+    "pinPrecision": "rooftop",
+    "address": "Evershine Nagar, Malad West, Mumbai, Maharashtra 400064",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 70,
+        "id": 170,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "slug": "maladcha-raja-goraswadi",
+    "name": "Maladcha Raja (Goraswadi)",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Maladcha Raja",
+      "Goraswadi Mitra Mandal"
+    ],
+    "area": "Malad West",
+    "tier": "b",
+    "idolLat": 19.1952698,
+    "idolLng": 72.846346,
+    "pinPrecision": "rooftop",
+    "address": "Chandra Bhuvan Building, Goraswadi Rd, Goraswadi, Malad West, Mumbai, Maharashtra 400064",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 171,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -2014,18 +2948,19 @@
   {
     "id": 55,
     "slug": "mumbai-cha-shree-sarvajanik-ganeshotsav-mandal",
-    "name": "Mumbai Cha Shree Sarvajanik Ganeshotsav Mandal",
+    "name": "Mumbai cha Shree Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Malad West",
     "tier": "b",
-    "idolLat": 19.198,
-    "idolLng": 72.817,
-    "pinPrecision": "area",
-    "address": "Rathodi, Malad West, Mumbai, Maharashtra 400095",
+    "idolLat": 19.1948877,
+    "idolLng": 72.8215842,
+    "pinPrecision": "rooftop",
+    "address": "Sunrise CHS, BMC Colony, Rathodi, Malad West, Mumbai, Maharashtra 400095",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
         "id": 56,
@@ -2041,69 +2976,12 @@
     ]
   },
   {
-    "id": 56,
-    "slug": "malad-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Malad West Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Malad West",
-    "tier": "c",
-    "idolLat": 19.18525558,
-    "idolLng": 72.83588302,
-    "pinPrecision": "area",
-    "address": "Malad West, Mumbai, Maharashtra 400064",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 57,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 94,
-    "slug": "mankhurd-sarvajanik-ganeshotsav-mandal",
-    "name": "Mankhurd Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Mankhurd",
-    "tier": "c",
-    "idolLat": 19.045,
-    "idolLng": 72.931,
-    "pinPrecision": "area",
-    "address": "Mankhurd, Mumbai, Maharashtra 400088",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 95,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
     "id": 23,
     "slug": "akhil-chandanwadi-ganeshotsav-mandal",
     "name": "Akhil Chandanwadi Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Marine Lines",
     "tier": "b",
     "idolLat": 18.94597674,
@@ -2112,7 +2990,7 @@
     "address": "7, Chandan Wadi Road, Kamathi Wada, Marine Lines, Mumbai, Maharashtra 400002",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
         "id": 24,
@@ -2128,168 +3006,54 @@
     ]
   },
   {
-    "id": 108,
-    "slug": "marine-lines-sarvajanik-ganeshotsav-mandal",
-    "name": "Marine Lines Sarvajanik Ganeshotsav Mandal",
+    "id": 172,
+    "slug": "mazgaon-cha-morya",
+    "name": "Mazgaon cha Morya",
     "nameMr": null,
     "nameHi": null,
-    "area": "Marine Lines",
-    "tier": "c",
-    "idolLat": 18.941701472855,
-    "idolLng": 72.822809931707,
-    "pinPrecision": "area",
-    "address": "Marine Lines, Mumbai, Maharashtra 400002",
+    "aliases": [],
+    "area": "Mazgaon",
+    "tier": "b",
+    "idolLat": 18.9778294,
+    "idolLng": 72.8414422,
+    "pinPrecision": "rooftop",
+    "address": "309-319, Rambhau Bhogle Marg, Ghodapdeo, Mazgaon, Mumbai, Maharashtra 400010",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 109,
+        "id": 173,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
     ]
   },
   {
-    "id": 103,
-    "slug": "masjid-bunder-sarvajanik-ganeshotsav-mandal",
-    "name": "Masjid Bunder Sarvajanik Ganeshotsav Mandal",
+    "id": 171,
+    "slug": "ganeshutsav-mandal-mazgaon-tadwadi",
+    "name": "Ganeshutsav Mandal Mazgaon Tadwadi",
     "nameMr": null,
     "nameHi": null,
-    "area": "Masjid Bunder",
-    "tier": "c",
-    "idolLat": 18.95269706,
-    "idolLng": 72.8358371,
-    "pinPrecision": "area",
-    "address": "Masjid Bunder, Mumbai, Maharashtra 400003",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 104,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 80,
-    "slug": "kings-circle-sarvajanik-ganeshotsav-mandal",
-    "name": "King's Circle Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Matunga East",
-    "tier": "c",
-    "idolLat": 19.0327723,
-    "idolLng": 72.85610424,
-    "pinPrecision": "area",
-    "address": "King's Circle, Matunga East, Mumbai, Maharashtra 400019",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 81,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 78,
-    "slug": "matunga-sarvajanik-ganeshotsav-mandal",
-    "name": "Matunga Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Matunga East",
-    "tier": "c",
-    "idolLat": 19.025911822508,
-    "idolLng": 72.86040568243,
-    "pinPrecision": "area",
-    "address": "Matunga East, Mumbai, Maharashtra 400019",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 79,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 79,
-    "slug": "matunga-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Matunga West Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Matunga West",
-    "tier": "c",
-    "idolLat": 19.029117519587,
-    "idolLng": 72.844160435313,
-    "pinPrecision": "area",
-    "address": "Matunga West, Mumbai, Maharashtra 400016",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 80,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 97,
-    "slug": "mazgaon-sarvajanik-ganeshotsav-mandal",
-    "name": "Mazgaon Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
+    "aliases": [],
     "area": "Mazgaon",
     "tier": "c",
-    "idolLat": 18.97,
-    "idolLng": 72.85,
-    "pinPrecision": "area",
-    "address": "Mazgaon, Mumbai, Maharashtra 400010",
+    "idolLat": 18.9674793,
+    "idolLng": 72.8377616,
+    "pinPrecision": "rooftop",
+    "address": "B.I.T. Chawl No. 5, Tadwadi, Mazgaon, Mumbai, Maharashtra 400010",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 98,
+        "id": 172,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -2302,23 +3066,84 @@
     ]
   },
   {
-    "id": 44,
-    "slug": "mulund-east-sarvajanik-ganeshotsav-mandal",
-    "name": "Mulund East Sarvajanik Ganeshotsav Mandal",
+    "id": 173,
+    "slug": "mazgaon-purva-vibhag-sarvajanik-ganeshotsav-mandal",
+    "name": "Mazgaon Purva Vibhag Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Mulund East",
+    "aliases": [],
+    "area": "Mazgaon",
     "tier": "c",
-    "idolLat": 19.14727653,
-    "idolLng": 72.96695579,
-    "pinPrecision": "area",
-    "address": "Mulund East, Mumbai, Maharashtra 400081",
+    "idolLat": 18.9677773,
+    "idolLng": 72.844524,
+    "pinPrecision": "rooftop",
+    "address": "Eknath Bhai Bandal Maidan, Dockyard Rd, Ekta Nagar, Mazgaon, Mumbai, Maharashtra 400010",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 45,
+        "id": 174,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 10,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "slug": "mulund-cha-raja",
+    "name": "Mulund Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Mulund East",
+    "tier": "b",
+    "idolLat": 19.1716089,
+    "idolLng": 72.9628542,
+    "pinPrecision": "rooftop",
+    "address": "Gurupushyamrut Society, Gavanpada, Mahakali Nagar, Mulund East, Mumbai, Maharashtra 400081",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 175,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "slug": "khindipada-sarvajanik-ganeshotsav-mandal",
+    "name": "Khindipada Sarvajanik Ganeshotsav Mandal",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Mulund West",
+    "tier": "c",
+    "idolLat": 19.1655518,
+    "idolLng": 72.9315463,
+    "pinPrecision": "rooftop",
+    "address": "Link Rd, Shreeram Pada, New Rajaram Wadi, Khindipada, Mulund West, Mumbai, Maharashtra 400082",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 176,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -2336,6 +3161,7 @@
     "name": "Mulund Sargam Mitra Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Mulund West",
     "tier": "c",
     "idolLat": 19.17192805,
@@ -2344,7 +3170,7 @@
     "address": "Mulund West, Mumbai, Maharashtra 400080",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 44,
@@ -2360,58 +3186,32 @@
     ]
   },
   {
-    "id": 101,
-    "slug": "mumbai-central-sarvajanik-ganeshotsav-mandal",
-    "name": "Mumbai Central Sarvajanik Ganeshotsav Mandal",
+    "id": 176,
+    "slug": "baalmurti-sarvajanik-ganeshotsav-mandal",
+    "name": "Baalmurti Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Mumbai Central",
-    "tier": "c",
-    "idolLat": 18.96857102,
-    "idolLng": 72.82103452,
-    "pinPrecision": "street",
-    "address": "Belasis Road, Mumbai Central, Mumbai, Maharashtra 400008",
+    "aliases": [
+      "Wadicha Vighnaharta"
+    ],
+    "area": "Naigaon",
+    "tier": "b",
+    "idolLat": 19.0106137,
+    "idolLng": 72.8458499,
+    "pinPrecision": "rooftop",
+    "address": "Naigaon BBD Chawl, Naigaon, Dadar, Mumbai, Maharashtra 400014",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
-        "id": 102,
+        "id": 177,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 99,
-    "slug": "nagpada-sarvajanik-ganeshotsav-mandal",
-    "name": "Nagpada Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Nagpada",
-    "tier": "c",
-    "idolLat": 18.964975185387,
-    "idolLng": 72.829241604567,
-    "pinPrecision": "area",
-    "address": "Nagpada, Mumbai, Maharashtra 400008",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 100,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -2429,7 +3229,7 @@
     "idolLng": 72.83888509,
     "nearestStation": "Parel (Central), Prabhadevi (Western)",
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
         "id": 13,
@@ -2443,8 +3243,41 @@
         "report": null
       }
     ],
+    "aliases": [],
     "address": "Nare Park, Bhivajirao Nare Udyan, Parel, Mumbai, Maharashtra 400012",
     "pinPrecision": "street"
+  },
+  {
+    "id": 177,
+    "slug": "parelcha-maharaja",
+    "name": "Parelcha Maharaja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Parelcha Raja"
+    ],
+    "area": "Parel",
+    "tier": "b",
+    "idolLat": 19.0049802,
+    "idolLng": 72.8378471,
+    "pinPrecision": "rooftop",
+    "address": "Vitthal Chavan Marg, Parel East, Parel, Mumbai, Maharashtra 400012",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 178,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
   },
   {
     "id": 34,
@@ -2452,6 +3285,9 @@
     "name": "Parel Sarvajanik Ganeshotsav Bal Gopal Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [
+      "Bal Gopal Mitra Mandal"
+    ],
     "area": "Parel",
     "tier": "c",
     "idolLat": 18.99580533,
@@ -2460,7 +3296,7 @@
     "address": "Parel, Mumbai, Maharashtra 400012",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 35,
@@ -2476,23 +3312,54 @@
     ]
   },
   {
-    "id": 73,
-    "slug": "prabhadevi-sarvajanik-ganeshotsav-mandal",
-    "name": "Prabhadevi Sarvajanik Ganeshotsav Mandal",
+    "id": 178,
+    "slug": "powaicha-raja",
+    "name": "Powaicha Raja",
     "nameMr": null,
     "nameHi": null,
-    "area": "Prabhadevi",
-    "tier": "c",
-    "idolLat": 19.01187205,
-    "idolLng": 72.82585927,
-    "pinPrecision": "area",
-    "address": "Prabhadevi, Mumbai, Maharashtra 400025",
+    "aliases": [],
+    "area": "Powai",
+    "tier": "b",
+    "idolLat": 19.1246534,
+    "idolLng": 72.9187864,
+    "pinPrecision": "rooftop",
+    "address": "Gokhale Nagar, Chaitanya Nagar, IIT Area, Powai, Mumbai, Maharashtra 400076",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 74,
+        "id": 179,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "slug": "ekta-bal-mitra-mandal-sarvajanik-ganesh-utsav",
+    "name": "Ekta Bal Mitra Mandal Sarvajanik Ganesh Utsav",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Sakinaka",
+    "tier": "c",
+    "idolLat": 19.0884008,
+    "idolLng": 72.88873,
+    "pinPrecision": "rooftop",
+    "address": "Sunder Baug Ln, Ashok Nagar, Saki Naka, Mumbai, Maharashtra 400070",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 180,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -2505,23 +3372,24 @@
     ]
   },
   {
-    "id": 86,
-    "slug": "kalina-sarvajanik-ganeshotsav-mandal",
-    "name": "Kalina Sarvajanik Ganeshotsav Mandal",
+    "id": 180,
+    "slug": "golibar-sarvajanik-ganeshotsav-mandal",
+    "name": "Golibar Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Santacruz East",
     "tier": "c",
-    "idolLat": 19.07738772,
-    "idolLng": 72.86533008,
-    "pinPrecision": "area",
-    "address": "Kalina, Santacruz East, Mumbai, Maharashtra 400098",
+    "idolLat": 19.0756423,
+    "idolLng": 72.8430269,
+    "pinPrecision": "rooftop",
+    "address": "7th Rd, Golibar, Santacruz East, Mumbai, Maharashtra 400055",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 87,
+        "id": 181,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -2534,116 +3402,30 @@
     ]
   },
   {
-    "id": 64,
-    "slug": "santacruz-east-sarvajanik-ganeshotsav-mandal",
-    "name": "Santacruz East Sarvajanik Ganeshotsav Mandal",
+    "id": 181,
+    "slug": "ganesh-baug-cha-raja",
+    "name": "Ganesh Baug cha Raja",
     "nameMr": null,
     "nameHi": null,
-    "area": "Santacruz East",
-    "tier": "c",
-    "idolLat": 19.09042354,
-    "idolLng": 72.858,
-    "pinPrecision": "street",
-    "address": "Milan Subway, Santacruz East, Mumbai, Maharashtra 400055",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
-    "queues": [
-      {
-        "id": 65,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 29,
-    "slug": "juhu-koliwada-ganeshotsav-mandal",
-    "name": "Juhu Koliwada Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Santacruz West",
-    "tier": "c",
-    "idolLat": 19.08260744,
-    "idolLng": 72.8256427,
-    "pinPrecision": "street",
-    "address": "HB Gawde Marg, Juhu Koliwada, Santacruz West, Mumbai, Maharashtra 400049",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
-    "queues": [
-      {
-        "id": 30,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 65,
-    "slug": "santacruz-west-sarvajanik-ganeshotsav-mandal",
-    "name": "Santacruz West Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Santacruz West",
-    "tier": "c",
-    "idolLat": 19.0851789,
-    "idolLng": 72.83816867,
-    "pinPrecision": "area",
-    "address": "Santacruz West, Mumbai, Maharashtra 400054",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 66,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 76,
-    "slug": "sewri-sarvajanik-ganeshotsav-mandal",
-    "name": "Sewri Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
+    "aliases": [],
     "area": "Sewri",
-    "tier": "c",
-    "idolLat": 19.0031744931,
-    "idolLng": 72.8486141543,
-    "pinPrecision": "area",
-    "address": "Sewri, Mumbai, Maharashtra 400015",
+    "tier": "b",
+    "idolLat": 18.9948794,
+    "idolLng": 72.8488188,
+    "pinPrecision": "rooftop",
+    "address": "73, Ganesh Baug, Tokershi Jivraj Rd, Sewri, Mumbai, Maharashtra 400015",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 77,
+        "id": 182,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
         "entryLat": null,
         "entryLng": null,
-        "baseMinutes": 10,
+        "baseMinutes": 35,
         "entryPoints": [],
         "report": null
       }
@@ -2655,6 +3437,7 @@
     "name": "Shri Golden Ganesh Mitra Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Sion East",
     "tier": "c",
     "idolLat": 19.03683953,
@@ -2663,39 +3446,10 @@
     "address": "Indira Nagar Cooperative Housing Society, Sion East, Mumbai, Maharashtra 400037",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
         "id": 38,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 81,
-    "slug": "sion-sarvajanik-ganeshotsav-mandal",
-    "name": "Sion Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Sion East",
-    "tier": "c",
-    "idolLat": 19.04402848,
-    "idolLng": 72.85747059,
-    "pinPrecision": "area",
-    "address": "Sion East, Mumbai, Maharashtra 400022",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 82,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -2713,6 +3467,9 @@
     "name": "Sion Koliwada Star Boys Mitra Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [
+      "Star Boys Mitra Mandal"
+    ],
     "area": "Sion Koliwada",
     "tier": "c",
     "idolLat": 19.03646976,
@@ -2721,7 +3478,7 @@
     "address": "Sion Koliwada, Mumbai, Maharashtra 400022",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 83,
@@ -2742,6 +3499,7 @@
     "name": "Tulshiwadi Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Tardeo",
     "tier": "b",
     "idolLat": 18.97503527,
@@ -2750,7 +3508,7 @@
     "address": "101, Tardeo Road, Malviya Nagar, Tardeo, Mumbai, Maharashtra 400034",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.",
     "queues": [
       {
         "id": 26,
@@ -2766,23 +3524,24 @@
     ]
   },
   {
-    "id": 106,
-    "slug": "thakurdwar-sarvajanik-ganeshotsav-mandal",
-    "name": "Thakurdwar Sarvajanik Ganeshotsav Mandal",
+    "id": 182,
+    "slug": "kamat-chawl-sarvajanik-ganeshotsav-mandal",
+    "name": "Kamat Chawl Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Thakurdwar",
     "tier": "c",
-    "idolLat": 18.9500139,
-    "idolLng": 72.8236381,
-    "pinPrecision": "area",
-    "address": "Thakurdwar, Mumbai, Maharashtra 400002",
+    "idolLat": 18.950726,
+    "idolLng": 72.822424,
+    "pinPrecision": "rooftop",
+    "address": "318/C, Jagannath Shankar Seth Rd, Thakurdwar, Kalbadevi, Mumbai, Maharashtra 400002",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 107,
+        "id": 183,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -2820,6 +3579,7 @@
         "report": null
       }
     ],
+    "aliases": [],
     "address": null,
     "pinPrecision": null
   },
@@ -2831,11 +3591,11 @@
     "nameHi": "सह्याद्री क्रीड़ा मंडल",
     "area": "Tilak Nagar",
     "tier": "b",
-    "idolLat": 19.06907145,
-    "idolLng": 72.89730539,
+    "idolLat": 19.0690734,
+    "idolLng": 72.8973034,
     "nearestStation": "Tilak Nagar (Harbour)",
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
         "id": 12,
@@ -2849,27 +3609,31 @@
         "report": null
       }
     ],
-    "address": "Tilak Nagar, Chembur East, Mumbai, Maharashtra 400089",
-    "pinPrecision": "area"
+    "aliases": [
+      "Tilak Nagar Ganpati"
+    ],
+    "address": "Samaj Mandir Hall, Sahyadri Ground, Tilak Nagar, Chembur West, Mumbai, Maharashtra 400089",
+    "pinPrecision": "rooftop"
   },
   {
-    "id": 96,
-    "slug": "trombay-sarvajanik-ganeshotsav-mandal",
-    "name": "Trombay Sarvajanik Ganeshotsav Mandal",
+    "id": 183,
+    "slug": "shivaji-nagar-sarvajanik-ganeshotsav-mandal",
+    "name": "Shivaji Nagar Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
-    "area": "Trombay",
+    "aliases": [],
+    "area": "Vakola",
     "tier": "c",
-    "idolLat": 19.033651,
-    "idolLng": 72.9503637,
-    "pinPrecision": "area",
-    "address": "Trombay, Mumbai, Maharashtra 400088",
+    "idolLat": 19.0761821,
+    "idolLng": 72.8482412,
+    "pinPrecision": "rooftop",
+    "address": "Rizvi E St, Pratiksha Nagar, Vakola, Santacruz East, Mumbai, Maharashtra 400055",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 97,
+        "id": 184,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",
@@ -2893,7 +3657,7 @@
     "idolLng": 72.9952364,
     "nearestStation": "Vashi (Harbour)",
     "stationWalkMinutes": null,
-    "notes": "One of Navi Mumbai's oldest sarvajanik mandals, since 1974. Stated venue: Sector 8, Vashi.\n\nSource: ilovenavimumbai.com/vashicha-raja\n\nMap pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "One of Navi Mumbai's oldest sarvajanik mandals, since 1974. Stated venue: Sector 8, Vashi.\n\nSource: ilovenavimumbai.com/vashicha-raja\n\nMap pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 19,
@@ -2907,8 +3671,133 @@
         "report": null
       }
     ],
-    "pinPrecision": "area",
-    "address": null
+    "aliases": [],
+    "address": null,
+    "pinPrecision": "area"
+  },
+  {
+    "id": 184,
+    "slug": "ganesh-marg-cha-raja",
+    "name": "Ganesh Marg Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Vikhroli East",
+    "tier": "b",
+    "idolLat": 19.1162605,
+    "idolLng": 72.9298052,
+    "pinPrecision": "rooftop",
+    "address": "88/7, Tagore Nagar Rd, Kannamwar Nagar II, Vikhroli East, Mumbai, Maharashtra 400083",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 185,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "slug": "market-cha-raja",
+    "name": "Market Cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Tagore Nagar"
+    ],
+    "area": "Vikhroli East",
+    "tier": "b",
+    "idolLat": 19.1130449,
+    "idolLng": 72.9310481,
+    "pinPrecision": "rooftop",
+    "address": "Ram Hajare Marg, Ramwadi, Tagore Nagar, Vikhroli East, Mumbai, Maharashtra 400083",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 186,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "slug": "raigad-cha-raja",
+    "name": "Raigad cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [
+      "Raigad Chowk"
+    ],
+    "area": "Vikhroli East",
+    "tier": "b",
+    "idolLat": 19.1204209,
+    "idolLng": 72.940403,
+    "pinPrecision": "rooftop",
+    "address": "Building 91, Vikrant CHS, Kannamwar Nagar II, Vikhroli East, Mumbai, Maharashtra 400083",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 187,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "slug": "vikhroli-cha-raja",
+    "name": "Vikhroli cha Raja",
+    "nameMr": null,
+    "nameHi": null,
+    "aliases": [],
+    "area": "Vikhroli East",
+    "tier": "b",
+    "idolLat": 19.1128853,
+    "idolLng": 72.9359393,
+    "pinPrecision": "rooftop",
+    "address": "36, Kannamwar Nagar I, Vikhroli East, Mumbai, Maharashtra 400083",
+    "nearestStation": null,
+    "stationWalkMinutes": null,
+    "notes": "",
+    "queues": [
+      {
+        "id": 188,
+        "kind": "general",
+        "label": "Darshan",
+        "labelMr": "दर्शन",
+        "entryLat": null,
+        "entryLng": null,
+        "baseMinutes": 35,
+        "entryPoints": [],
+        "report": null
+      }
+    ]
   },
   {
     "id": 42,
@@ -2916,6 +3805,7 @@
     "name": "Vikhroli Balmitra Kala Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Vikhroli East",
     "tier": "c",
     "idolLat": 19.11147888,
@@ -2924,7 +3814,7 @@
     "address": "Vikhroli East, Mumbai, Maharashtra 400083",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.",
     "queues": [
       {
         "id": 43,
@@ -2940,49 +3830,23 @@
     ]
   },
   {
-    "id": 47,
-    "slug": "vikhroli-kannamwar-nagar-sarvajanik-ganeshotsav-mandal",
-    "name": "Vikhroli Kannamwar Nagar Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Vikhroli East",
-    "tier": "c",
-    "idolLat": 19.12068771,
-    "idolLng": 72.94099111,
-    "pinPrecision": "area",
-    "address": "Kannamwar Nagar, Vikhroli East, Mumbai, Maharashtra 400083",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 48,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
     "id": 28,
     "slug": "mumbaicha-peshwa",
-    "name": "Mumbaicha Peshwa",
+    "name": "Mumbai Cha Peshwa",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [
+      "First paper-idol mandal in Mumbai"
+    ],
     "area": "Vile Parle East",
     "tier": "b",
-    "idolLat": 19.09361932,
-    "idolLng": 72.84499264,
-    "pinPrecision": "area",
-    "address": "Vile Parle East, Mumbai, Maharashtra 400057",
+    "idolLat": 19.0936136,
+    "idolLng": 72.8450381,
+    "pinPrecision": "rooftop",
+    "address": "Siddhivinayak Housing Society, Shraddhanand Rd, Navpada, Vile Parle East, Mumbai, Maharashtra 400057",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
         "id": 29,
@@ -3000,18 +3864,21 @@
   {
     "id": 27,
     "slug": "vile-parle-cha-vighnesh-sarvajanik-ganeshotsav-mandal",
-    "name": "Vile Parle Cha Vighnesh Sarvajanik Ganeshotsav Mandal",
+    "name": "Vile Parle cha Vighnesh Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [
+      "Navsala Pavnara Vighnesh"
+    ],
     "area": "Vile Parle East",
     "tier": "b",
-    "idolLat": 19.10179562,
-    "idolLng": 72.85365912,
-    "pinPrecision": "street",
-    "address": "Sant Janabai Road, Navpada, Vile Parle East, Mumbai, Maharashtra 400057",
+    "idolLat": 19.1017905,
+    "idolLng": 72.8536503,
+    "pinPrecision": "rooftop",
+    "address": "Sant Janabai Rd, Navpada, Vile Parle East, Mumbai, Maharashtra 400057",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 28,
@@ -3027,49 +3894,21 @@
     ]
   },
   {
-    "id": 77,
-    "slug": "wadala-sarvajanik-ganeshotsav-mandal",
-    "name": "Wadala Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Wadala",
-    "tier": "c",
-    "idolLat": 19.01612328,
-    "idolLng": 72.86449523,
-    "pinPrecision": "area",
-    "address": "Wadala, Mumbai, Maharashtra 400031",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 78,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
     "id": 36,
     "slug": "gsb-sarvajanik-ganeshotsava-samiti-wadala",
-    "name": "GSB Sarvajanik Ganeshotsava Samiti Wadala",
+    "name": "GSB Sarvajanik Ganeshotsava Samiti, Wadala",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Wadala West",
     "tier": "b",
-    "idolLat": 19.01565579,
-    "idolLng": 72.85189619,
-    "pinPrecision": "street",
-    "address": "Dwarakanath Bhavan, Shree Ram Mandir Complex, Katrak Road, Wadala West, Mumbai, Maharashtra 400031",
+    "idolLat": 19.0157236,
+    "idolLng": 72.8519126,
+    "pinPrecision": "rooftop",
+    "address": "Dwarakanath Bhavan, Shree Ram Mandir Complex, Katrak Rd, Wadala West, Mumbai, Maharashtra 400031",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin is approximate — taken from a community-compiled mandal list (map search), not verified on the ground. Confirm locally before you go.",
+    "notes": "",
     "queues": [
       {
         "id": 37,
@@ -3085,52 +3924,24 @@
     ]
   },
   {
-    "id": 71,
-    "slug": "worli-sarvajanik-ganeshotsav-mandal",
-    "name": "Worli Sarvajanik Ganeshotsav Mandal",
+    "id": 188,
+    "slug": "janta-colony-sarvajanik-ganeshotsav-mandal",
+    "name": "Janta Colony Sarvajanik Ganeshotsav Mandal",
     "nameMr": null,
     "nameHi": null,
+    "aliases": [],
     "area": "Worli",
     "tier": "c",
-    "idolLat": 19.00523513,
-    "idolLng": 72.82154057,
-    "pinPrecision": "area",
-    "address": "Worli, Mumbai, Maharashtra 400018",
+    "idolLat": 19.0170759,
+    "idolLng": 72.8205655,
+    "pinPrecision": "rooftop",
+    "address": "Janata Colony, BPT Colony, Worli, Mumbai, Maharashtra 400030",
     "nearestStation": null,
     "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
+    "notes": "",
     "queues": [
       {
-        "id": 72,
-        "kind": "general",
-        "label": "Darshan",
-        "labelMr": "दर्शन",
-        "entryLat": null,
-        "entryLng": null,
-        "baseMinutes": 10,
-        "entryPoints": [],
-        "report": null
-      }
-    ]
-  },
-  {
-    "id": 72,
-    "slug": "worli-koliwada-sarvajanik-ganeshotsav-mandal",
-    "name": "Worli Koliwada Sarvajanik Ganeshotsav Mandal",
-    "nameMr": null,
-    "nameHi": null,
-    "area": "Worli Koliwada",
-    "tier": "c",
-    "idolLat": 19.02290729,
-    "idolLng": 72.81743966,
-    "pinPrecision": "area",
-    "address": "Worli Koliwada, Mumbai, Maharashtra 400030",
-    "nearestStation": null,
-    "stationWalkMinutes": null,
-    "notes": "Map pin marks the neighbourhood only — the source list gives the locality, not the pandal’s exact spot. Ask locally for directions.",
-    "queues": [
-      {
-        "id": 73,
+        "id": 189,
         "kind": "general",
         "label": "Darshan",
         "labelMr": "दर्शन",

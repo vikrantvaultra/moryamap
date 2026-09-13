@@ -71,6 +71,7 @@ export default async function HomePage({
     mapNote: t('mapNote'),
     approxLocation: t('approxLocation'),
     areaOnly: t('areaOnly'),
+    mandalLocation: t('mandalLocation'),
     queueStart: t('queueStart'),
     directions: tm('directions'),
     details: t('details'),
@@ -120,8 +121,9 @@ export default async function HomePage({
     slug: m.slug,
     name: mandalName(m, locale),
     area: m.area,
+    aliases: m.aliases,
     address: m.address,
-    search: [m.name, m.nameMr, m.nameHi, m.area, m.address]
+    search: [m.name, m.nameMr, m.nameHi, m.area, m.address, ...m.aliases]
       .filter(Boolean)
       .join(' ')
       .toLowerCase(),
