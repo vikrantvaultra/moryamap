@@ -253,18 +253,9 @@ export default function SevaGate({
         name: order.beneficiary,
         description: 'Ganeshotsav offering via Morya Map',
         theme: { color: '#7c2d12' },
-        // No contact/email step. Razorpay only honours this once "optional
-        // contact" is enabled on the account; until then it's ignored.
-        hidden: { contact: true, email: true },
         config: {
           display: {
-            blocks: {
-              upi: {
-                name: 'UPI',
-                // Phones: open GPay/PhonePe/Paytm directly. Desktop: a QR to scan.
-                instruments: [{ method: 'upi', flows: ['intent', 'qrcode', 'collect'] }],
-              },
-            },
+            blocks: { upi: { name: 'UPI', instruments: [{ method: 'upi' }] } },
             sequence: ['block.upi'],
             preferences: { show_default_blocks: false },
           },
