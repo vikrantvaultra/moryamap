@@ -1,7 +1,9 @@
 import { createHmac } from 'node:crypto';
 import { describe, expect, it } from 'vitest';
 import {
+  FESTIVAL_END_MS,
   isSevaAmount,
+  passMaxAge,
   readToken,
   signToken,
   verifyCheckoutSignature,
@@ -48,8 +50,20 @@ describe('Razorpay signatures', () => {
 });
 
 describe('isSevaAmount', () => {
-  it('only accepts the offered amounts', () => {
-    for (const a of [11, 21, 51, 101]) expect(isSevaAmount(a)).toBe(true);
-    for (const a of [0, 1, 20, 100, '21', null, 21.5]) expect(isSevaAmount(a)).toBe(false);
+  it('only accepts the unlock price', () => {
+    expect(isSevaAmount(21)).toBe(true);
+    for (const a of [0, 1, 11, 20, 51, 101, '21', null, 21.5]) expect(isSevaAmount(a)).toBe(false);
+  });
+});
+
+describe('passMaxAge', () => {
+  it('lasts until the festival ends', () => {
+    const now = FESTIVAL_END_MS - 5 * 24 * 60 * 60 * 1000;
+    expect(passMaxAge(now)).toBe(5 * 24 * 60 * 60);
+  });
+
+  it('never drops below a day', () => {
+    expect(passMaxAge(FESTIVAL_END_MS - 60_000)).toBe(24 * 60 * 60);
+    expect(passMaxAge(FESTIVAL_END_MS + 10 * 24 * 60 * 60 * 1000)).toBe(24 * 60 * 60);
   });
 });

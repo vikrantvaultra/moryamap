@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import PageHeader from '@/components/PageHeader';
+import PaidFeature from '@/components/PaidFeature';
 import RouteView from '@/components/RouteView';
 import { shareMetadata } from '@/lib/metadata';
 import { getMandalDirectory } from '@/lib/queries';
@@ -63,13 +64,15 @@ export default async function CircuitPage({
         title={title}
         subtitle={l10n(circuit.blurb, locale)}
       />
-      <RouteView
-        locale={locale}
-        stops={stops}
-        sharePath={`/routes/${id}`}
-        shareTitle={title}
-        imageKey={id}
-      />
+      <PaidFeature kind="routes" tall>
+        <RouteView
+          locale={locale}
+          stops={stops}
+          sharePath={`/routes/${id}`}
+          shareTitle={title}
+          imageKey={id}
+        />
+      </PaidFeature>
     </div>
   );
 }

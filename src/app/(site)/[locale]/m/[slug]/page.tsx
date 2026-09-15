@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { marked } from 'marked';
+import PaidFeature from '@/components/PaidFeature';
 import ShareBar from '@/components/ShareBar';
 import WaitFigure from '@/components/WaitFigure';
 import { absoluteUrl, shareMetadata } from '@/lib/metadata';
@@ -112,28 +113,32 @@ export default async function MandalPage({
                 {locale !== 'en' && q.labelMr && (
                   <p className="text-xs text-ink-soft">{q.label}</p>
                 )}
-                <div className="mt-3">
-                  <WaitFigure
-                    est={est}
-                    landmark={q.report ? landmarkName(q.report, locale) : null}
-                    size="lg"
-                  />
-                </div>
-                <div className="mt-4 flex flex-col gap-2">
-                  {hasPin ? (
-                    <a
-                      href={`https://www.google.com/maps/dir/?api=1&destination=${q.entryLat},${q.entryLng}&travelmode=walking`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-xl bg-maroon px-4 py-2.5 text-center text-sm font-semibold text-amber-50 shadow-sm transition-colors hover:bg-maroon-deep"
-                    >
-                      {t('directions')} ↗
-                    </a>
-                  ) : (
-                    <p className="rounded-xl bg-cream-deep px-4 py-2.5 text-center text-xs text-ink-soft">
-                      {t('noPin')}
-                    </p>
-                  )}
+                <PaidFeature kind="queue">
+                  <div className="mt-3">
+                    <WaitFigure
+                      est={est}
+                      landmark={q.report ? landmarkName(q.report, locale) : null}
+                      size="lg"
+                    />
+                  </div>
+                  <div className="mt-4">
+                    {hasPin ? (
+                      <a
+                        href={`https://www.google.com/maps/dir/?api=1&destination=${q.entryLat},${q.entryLng}&travelmode=walking`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block rounded-xl bg-maroon px-4 py-2.5 text-center text-sm font-semibold text-amber-50 shadow-sm transition-colors hover:bg-maroon-deep"
+                      >
+                        {t('directions')} ↗
+                      </a>
+                    ) : (
+                      <p className="rounded-xl bg-cream-deep px-4 py-2.5 text-center text-xs text-ink-soft">
+                        {t('noPin')}
+                      </p>
+                    )}
+                  </div>
+                </PaidFeature>
+                <div className="mt-2 flex flex-col gap-2">
                   <Link
                     href={`${locale === 'en' ? '' : `/${locale}`}/report/${q.id}`}
                     className="rounded-xl border-2 border-flame px-4 py-2.5 text-center text-sm font-semibold text-flame transition-colors hover:bg-flame hover:text-white"
@@ -153,25 +158,27 @@ export default async function MandalPage({
             {t('holdingPoints')}
           </h2>
           <p className="mt-1 text-xs text-ink-soft">{t('holdingPointsHint')}</p>
-          {mandal.queues.map((q) => {
-            const eps = q.entryPoints.filter((ep) => !ep.landmark.startsWith('TODO'));
-            if (eps.length === 0) return null;
-            return (
-              <div key={q.id} className="card mt-2 p-4">
-                <h3 className="text-sm font-bold text-ink">{queueLabel(q, locale)}</h3>
-                <ol className="mt-2 space-y-1.5">
-                  {eps.map((ep) => (
-                    <li key={ep.id} className="flex items-center gap-2.5 text-sm text-ink">
-                      <span className="grid size-6 shrink-0 place-items-center rounded-full bg-cream-deep text-xs font-bold text-maroon">
-                        {ep.sequence}
-                      </span>
-                      {landmarkName(ep, locale)}
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            );
-          })}
+          <PaidFeature kind="queue">
+            {mandal.queues.map((q) => {
+              const eps = q.entryPoints.filter((ep) => !ep.landmark.startsWith('TODO'));
+              if (eps.length === 0) return null;
+              return (
+                <div key={q.id} className="card mt-2 p-4">
+                  <h3 className="text-sm font-bold text-ink">{queueLabel(q, locale)}</h3>
+                  <ol className="mt-2 space-y-1.5">
+                    {eps.map((ep) => (
+                      <li key={ep.id} className="flex items-center gap-2.5 text-sm text-ink">
+                        <span className="grid size-6 shrink-0 place-items-center rounded-full bg-cream-deep text-xs font-bold text-maroon">
+                          {ep.sequence}
+                        </span>
+                        {landmarkName(ep, locale)}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              );
+            })}
+          </PaidFeature>
         </section>
       )}
 

@@ -10,7 +10,7 @@ import Logo from '@/components/Logo';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
 import SevaGate, { type SevaLabels } from '@/components/SevaGate';
 import { TOOLS } from '@/components/ToolsNav';
-import { DEFAULT_SEVA_AMOUNT, SEVA_AMOUNTS, sevaConfig } from '@/lib/seva';
+import { SEVA_AMOUNT, sevaConfig } from '@/lib/seva';
 import { localePath, siteUrl } from '@/lib/site';
 import '@/app/globals.css';
 
@@ -113,7 +113,7 @@ export default async function LocaleLayout({
           </footer>
         </div>
         {seva && (
-          <SevaGate labels={seva} amounts={SEVA_AMOUNTS} defaultAmount={DEFAULT_SEVA_AMOUNT} />
+          <SevaGate labels={seva} amount={SEVA_AMOUNT} />
         )}
         <Analytics />
       </body>
@@ -121,20 +121,17 @@ export default async function LocaleLayout({
   );
 }
 
-/** Popup copy, or null when the gate isn't configured (it then never shows). */
+/** Payment sheet copy, or null when payments aren't configured (features stay open). */
 async function sevaLabels(): Promise<SevaLabels | null> {
   const cfg = sevaConfig();
   if (!cfg) return null;
   const t = await getTranslations('seva');
-  const { beneficiary } = cfg;
   const raw = (key: string) => t.raw(key) as string;
   return {
     eyebrow: raw('eyebrow'),
     title: raw('title'),
-    body: t('body', { beneficiary }),
+    body: raw('body'),
     blessing: raw('blessing'),
-    chooseAmount: raw('chooseAmount'),
-    tiers: t.raw('tiers') as string[],
     payOnPhone: raw('payOnPhone'),
     appHint: raw('appHint'),
     inAppTitle: raw('inAppTitle'),
@@ -155,8 +152,9 @@ async function sevaLabels(): Promise<SevaLabels | null> {
     secured: raw('secured'),
     emergency: raw('emergency'),
     successTitle: raw('successTitle'),
-    successBody: t('successBody', { beneficiary }),
+    successBody: raw('successBody'),
     paymentRef: raw('paymentRef'),
     enter: raw('enter'),
+    close: raw('close'),
   };
 }

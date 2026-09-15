@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import PageHeader from '@/components/PageHeader';
+import PaidFeature from '@/components/PaidFeature';
 import RoutePlanner, { type PlannerMandal } from '@/components/RoutePlanner';
 import ShareBar from '@/components/ShareBar';
 import { absoluteUrl, shareMetadata } from '@/lib/metadata';
@@ -64,28 +65,30 @@ export default async function PlanPage({ params }: { params: Promise<{ locale: s
         title={t('title')}
         subtitle={t('subtitle')}
       />
-      <RoutePlanner
-        mandals={mandals}
-        routeBase={localePath(locale, '/r')}
-        labels={{
-          searchPlaceholder: t('searchPlaceholder'),
-          add: t('add'),
-          added: t('added'),
-          remove: t('remove'),
-          moveUp: t('moveUp'),
-          moveDown: t('moveDown'),
-          sortGeo: t('sortGeo'),
-          sortGeoHint: t('sortGeoHint'),
-          selected: t.raw('selected'),
-          empty: t('empty'),
-          create: t('create'),
-          needMore: t('needMore'),
-          full: t('full'),
-          areaOnly: t('areaOnly'),
-          noResults: t('noResults'),
-          pagination: await paginationLabels(),
-        }}
-      />
+      <PaidFeature kind="routes" tall>
+        <RoutePlanner
+          mandals={mandals}
+          routeBase={localePath(locale, '/r')}
+          labels={{
+            searchPlaceholder: t('searchPlaceholder'),
+            add: t('add'),
+            added: t('added'),
+            remove: t('remove'),
+            moveUp: t('moveUp'),
+            moveDown: t('moveDown'),
+            sortGeo: t('sortGeo'),
+            sortGeoHint: t('sortGeoHint'),
+            selected: t.raw('selected'),
+            empty: t('empty'),
+            create: t('create'),
+            needMore: t('needMore'),
+            full: t('full'),
+            areaOnly: t('areaOnly'),
+            noResults: t('noResults'),
+            pagination: await paginationLabels(),
+          }}
+        />
+      </PaidFeature>
       <div className="card mt-6 p-4">
         <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">{ts('heading')}</h2>
         <ShareBar

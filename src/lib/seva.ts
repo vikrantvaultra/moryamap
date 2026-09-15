@@ -3,24 +3,27 @@ import type { NextRequest, NextResponse } from 'next/server';
 import { getRedis } from '@/lib/redis';
 
 /**
- * Seva gate: after 5 seconds every visitor is asked for a UPI offering to the
- * configured mandal/trust, and the site unlocks on this device once Razorpay
- * confirms the payment. No accounts — the proof is a signed cookie.
+ * Paid features: the mandal queue details (queue start, wait estimate,
+ * holding points) and pandal-hopping routes are locked until a one-time UPI
+ * payment, which unlocks them on this device for the rest of the festival.
+ * No accounts — the proof is a signed cookie.
  *
  * Payment confirmation is real (Razorpay API / webhook / checkout signature).
- * The gate itself is a client-side overlay, so it can't stop someone who
- * deletes it in devtools or clears cookies; nothing without a login can.
+ * The lock itself is a client-side overlay on ISR pages, so it can't stop
+ * someone who removes it in devtools; nothing without a login can.
  */
 
-/** Shagun-style amounts offered in the gate, in rupees. */
-export const SEVA_AMOUNTS = [11, 21, 51, 101] as const;
-export const DEFAULT_SEVA_AMOUNT = 21;
+/** The one price for unlocking, in rupees. */
+export const SEVA_AMOUNT = 21;
+const SEVA_AMOUNTS: readonly number[] = [SEVA_AMOUNT];
 
-/** Readable by the client so the gate can skip itself without a request. */
+/** Readable by the client so locked features can open without a request. */
 export const PASS_COOKIE = 'morya_seva';
 const PENDING_COOKIE = 'morya_seva_pending';
 const PENDING_PATH = '/api/donate';
-const PASS_MAX_AGE = 60 * 60 * 24 * 365;
+/** Midnight IST after the last day of Ganeshotsav 2026 (25 September). */
+export const FESTIVAL_END_MS = Date.UTC(2026, 8, 25, 18, 30);
+const MIN_PASS_MAX_AGE = 60 * 60 * 24;
 const PENDING_MAX_AGE = 30 * 60;
 const MAX_PENDING = 6;
 export const QR_TTL_SECONDS = 15 * 60;
@@ -46,8 +49,13 @@ export function sevaConfig(): SevaConfig | null {
   };
 }
 
-export function isSevaAmount(value: unknown): value is (typeof SEVA_AMOUNTS)[number] {
-  return typeof value === 'number' && (SEVA_AMOUNTS as readonly number[]).includes(value);
+export function isSevaAmount(value: unknown): value is number {
+  return typeof value === 'number' && SEVA_AMOUNTS.includes(value);
+}
+
+/** Seconds until the festival ends, but never less than a day. */
+export function passMaxAge(now = Date.now()): number {
+  return Math.max(MIN_PASS_MAX_AGE, Math.floor((FESTIVAL_END_MS - now) / 1000));
 }
 
 // --- Signatures -------------------------------------------------------------
@@ -101,12 +109,12 @@ export function verifyWebhookSignature(rawBody: string, signature: string, secre
 
 const secure = process.env.NODE_ENV === 'production';
 
-/** Unlocks the site on this device. */
+/** Unlocks the paid features on this device until the festival ends. */
 export function setPass(res: NextResponse, paymentRef: string, cfg: SevaConfig): void {
   const issued = Math.floor(Date.now() / 1000);
   res.cookies.set(PASS_COOKIE, signToken(`${paymentRef}.${issued}`, cfg.keySecret), {
     path: '/',
-    maxAge: PASS_MAX_AGE,
+    maxAge: passMaxAge(),
     sameSite: 'lax',
     secure,
   });

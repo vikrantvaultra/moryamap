@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import PageHeader from '@/components/PageHeader';
+import PaidFeature from '@/components/PaidFeature';
 import RouteView from '@/components/RouteView';
 import { shareMetadata } from '@/lib/metadata';
 import { mandalName } from '@/lib/names';
@@ -81,13 +82,15 @@ export default async function CustomRoutePage({
           {t('edit')}
         </Link>
       </PageHeader>
-      <RouteView
-        locale={locale}
-        stops={stops}
-        sharePath={`/r/${param}`}
-        shareTitle={t('customTitle')}
-        imageKey={param}
-      />
+      <PaidFeature kind="routes" tall>
+        <RouteView
+          locale={locale}
+          stops={stops}
+          sharePath={`/r/${param}`}
+          shareTitle={t('customTitle')}
+          imageKey={param}
+        />
+      </PaidFeature>
     </div>
   );
 }

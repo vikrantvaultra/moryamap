@@ -2,14 +2,13 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Logo from '@/components/Logo';
+import { SEVA_OPEN_EVENT, SEVA_PAID_EVENT, hasPass } from '@/lib/seva-client';
 
 export interface SevaLabels {
   eyebrow: string;
   title: string;
   body: string;
   blessing: string;
-  chooseAmount: string;
-  tiers: string[];
   payOnPhone: string;
   appHint: string;
   inAppTitle: string;
@@ -33,6 +32,7 @@ export interface SevaLabels {
   successBody: string;
   paymentRef: string;
   enter: string;
+  close: string;
 }
 
 interface Qr {
@@ -56,9 +56,7 @@ declare global {
   }
 }
 
-const GATE_DELAY_MS = 5000;
 const POLL_MS = 4000;
-const FIRST_SEEN_KEY = 'morya_seva_first_seen';
 const CHECKOUT_SRC = 'https://checkout.razorpay.com/v1/checkout.js';
 
 // In-app browsers (Instagram, Facebook, other WebViews) often can't hand off
@@ -67,23 +65,6 @@ function inAppBrowser(): 'android' | 'ios' | null {
   const ua = navigator.userAgent;
   if (!/FBAN|FBAV|FB_IAB|Instagram|LinkedInApp|Snapchat|Line\/|; wv\)/i.test(ua)) return null;
   return /Android/i.test(ua) ? 'android' : 'ios';
-}
-
-const hasPass = () => /(?:^|;\s*)morya_seva=[^;]+/.test(document.cookie);
-
-/** Milliseconds since this device first opened the site (persisted). */
-function msSinceFirstSeen(): number {
-  const now = Date.now();
-  // Count from navigation start, not hydration, so "5 seconds" is on the clock.
-  let first = Math.round(performance.timeOrigin);
-  try {
-    const stored = Number(localStorage.getItem(FIRST_SEEN_KEY));
-    if (stored > 0 && stored <= now) first = stored;
-    else localStorage.setItem(FIRST_SEEN_KEY, String(first));
-  } catch {
-    // storage blocked — fall back to this page load
-  }
-  return now - first;
 }
 
 let checkoutScript: Promise<void> | null = null;
@@ -106,21 +87,12 @@ function loadCheckout(): Promise<void> {
 const fill = (s: string, amount: number) => s.replaceAll('{amount}', String(amount));
 
 /**
- * Five seconds after a visitor first arrives, a non-dismissable popup asks for
- * a UPI offering to the configured mandal/trust. The rest of the page is made
- * inert until Razorpay confirms payment, then this device is unlocked.
+ * Payment sheet for the paid features. Hidden until a locked feature asks for
+ * it (SEVA_OPEN_EVENT); once Razorpay confirms payment this device is unlocked
+ * and every locked feature on the page opens (SEVA_PAID_EVENT).
  */
-export default function SevaGate({
-  labels,
-  amounts,
-  defaultAmount,
-}: {
-  labels: SevaLabels;
-  amounts: readonly number[];
-  defaultAmount: number;
-}) {
+export default function SevaGate({ labels, amount }: { labels: SevaLabels; amount: number }) {
   const [phase, setPhase] = useState<'hidden' | 'open' | 'paid'>('hidden');
-  const [amount, setAmount] = useState(defaultAmount);
   const [qr, setQr] = useState<Qr | null>(null);
   const [qrState, setQrState] = useState<QrState>('loading');
   const [qrAttempt, setQrAttempt] = useState(0);
@@ -132,19 +104,19 @@ export default function SevaGate({
   const qrCache = useRef(new Map<number, Qr>());
   const dialogRef = useRef<HTMLDivElement>(null);
 
-  // 1. Start the clock.
+  // 1. Open when a locked feature is tapped.
   useEffect(() => {
-    if (hasPass()) return;
     setTouch(window.matchMedia('(pointer: coarse)').matches);
     setInApp(inAppBrowser());
-    const delay = Math.max(0, GATE_DELAY_MS - msSinceFirstSeen());
-    const timer = setTimeout(() => {
-      if (!hasPass()) setPhase('open');
-    }, delay);
-    return () => clearTimeout(timer);
+    const open = () => {
+      if (hasPass()) window.dispatchEvent(new Event(SEVA_PAID_EVENT));
+      else setPhase('open');
+    };
+    window.addEventListener(SEVA_OPEN_EVENT, open);
+    return () => window.removeEventListener(SEVA_OPEN_EVENT, open);
   }, []);
 
-  // 2. Lock the page behind the popup.
+  // 2. Hold the page behind the sheet while it's open; Escape closes it.
   useEffect(() => {
     if (phase === 'hidden') return;
     const shell = document.getElementById('site-shell');
@@ -154,14 +126,24 @@ export default function SevaGate({
     const prevOverflow = root.style.overflow;
     root.style.overflow = 'hidden';
     dialogRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setPhase('hidden');
+    };
+    document.addEventListener('keydown', onKey);
     return () => {
       shell?.removeAttribute('inert');
       shell?.removeAttribute('aria-hidden');
       root.style.overflow = prevOverflow;
+      document.removeEventListener('keydown', onKey);
     };
   }, [phase]);
 
-  // 3. A fresh single-use QR for the chosen amount (cached while still valid).
+  // 3. Tell locked features on the page to open.
+  useEffect(() => {
+    if (phase === 'paid') window.dispatchEvent(new Event(SEVA_PAID_EVENT));
+  }, [phase]);
+
+  // 4. A fresh single-use QR (cached while still valid).
   useEffect(() => {
     if (phase !== 'open' || qrState === 'unavailable') return;
     const cached = qrCache.current.get(amount);
@@ -173,7 +155,7 @@ export default function SevaGate({
     setQr(null);
     setQrState('loading');
     const ctrl = new AbortController();
-    // Debounced so tapping through amounts doesn't mint a QR per tap.
+    // Debounced so opening and closing the sheet doesn't mint a QR each time.
     const timer = setTimeout(async () => {
       try {
         const res = await fetch('/api/donate/start', {
@@ -203,7 +185,7 @@ export default function SevaGate({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, amount, qrAttempt]);
 
-  // 4. Mark the QR expired when Razorpay closes it.
+  // 5. Mark the QR expired when Razorpay closes it.
   useEffect(() => {
     if (!qr || qrState !== 'ready') return;
     const ms = qr.closeBy * 1000 - Date.now();
@@ -214,7 +196,7 @@ export default function SevaGate({
     return () => clearTimeout(timer);
   }, [qr, qrState]);
 
-  // 5. Poll for payment while the popup is open (QR scans, or a Checkout
+  // 6. Poll for payment while the popup is open (QR scans, or a Checkout
   //    payment whose success callback never came back).
   useEffect(() => {
     if (phase !== 'open') return;
@@ -265,7 +247,7 @@ export default function SevaGate({
         amount: order.amountPaise,
         currency: 'INR',
         name: order.beneficiary,
-        description: 'Ganeshotsav offering via Morya Map',
+        description: 'Morya Map: queue times & pandal-hopping routes',
         theme: { color: '#7c2d12' },
         config: {
           display: {
@@ -375,7 +357,12 @@ export default function SevaGate({
   );
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-end justify-center bg-maroon-deep/75 backdrop-blur-sm sm:items-center sm:p-4">
+    <div
+      className="fixed inset-0 z-[100] flex items-end justify-center bg-maroon-deep/75 backdrop-blur-sm sm:items-center sm:p-4"
+      onClick={(e) => {
+        if (e.target === e.currentTarget && phase === 'open') setPhase('hidden');
+      }}
+    >
       <div
         ref={dialogRef}
         role="dialog"
@@ -385,6 +372,16 @@ export default function SevaGate({
         className="seva-rise relative max-h-dvh w-full max-w-md overflow-y-auto rounded-t-3xl bg-cream shadow-2xl outline-none sm:max-h-[92dvh] sm:rounded-3xl"
       >
         <div className="relative overflow-hidden bg-gradient-to-br from-maroon-deep via-maroon to-flame px-5 pt-6 pb-5 text-center text-amber-50">
+          {phase === 'open' && (
+            <button
+              type="button"
+              onClick={() => setPhase('hidden')}
+              aria-label={labels.close}
+              className="absolute right-3 top-3 z-10 grid size-9 place-items-center rounded-full bg-black/20 text-lg text-amber-50 hover:bg-black/35"
+            >
+              ✕
+            </button>
+          )}
           <div aria-hidden className="seva-halo pointer-events-none absolute left-1/2 top-2 size-40 -translate-x-1/2 rounded-full" />
           <div className="relative mx-auto mb-3 w-fit rounded-2xl p-1 ring-2 ring-marigold/60">
             <Logo size={52} />
@@ -421,36 +418,6 @@ export default function SevaGate({
             <p className="rounded-xl bg-cream-deep px-3 py-2 text-center text-sm font-semibold italic text-maroon">
               {labels.blessing}
             </p>
-
-            <fieldset>
-              <legend className="mb-2 text-sm font-semibold text-ink-soft">{labels.chooseAmount}</legend>
-              <div className="grid grid-cols-4 gap-2">
-                {amounts.map((a, i) => {
-                  const active = a === amount;
-                  return (
-                    <label
-                      key={a}
-                      className={`flex cursor-pointer flex-col items-center rounded-xl border-2 px-1 py-2 text-center transition-colors ${
-                        active
-                          ? 'border-flame bg-flame/10 text-maroon'
-                          : 'border-amber-900/10 bg-white text-ink hover:border-marigold'
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="seva-amount"
-                        value={a}
-                        checked={active}
-                        onChange={() => setAmount(a)}
-                        className="sr-only"
-                      />
-                      <span className="text-lg font-bold leading-none">₹{a}</span>
-                      <span className="mt-1 text-[11px] leading-tight text-ink-soft">{labels.tiers[i]}</span>
-                    </label>
-                  );
-                })}
-              </div>
-            </fieldset>
 
             {touch ? (
               <>
