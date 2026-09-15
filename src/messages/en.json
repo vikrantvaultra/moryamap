@@ -369,6 +369,10 @@
       "Aarti"
     ],
     "payOnPhone": "Offer ₹{amount} with any UPI app",
+    "appHint": "Your UPI app will open. Approve the payment there within 5 minutes, then come back here and the site unlocks automatically.",
+    "inAppTitle": "UPI apps often don't open from this app's browser.",
+    "inAppAndroid": "Open in Chrome to pay",
+    "inAppIos": "Tap ⋯ at the top and choose “Open in browser”, then pay.",
     "processing": "Opening UPI…",
     "scanTitle": "Scan & pay with any UPI app",
     "scanOnOtherPhone": "Or scan from another phone",

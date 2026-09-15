@@ -11,6 +11,10 @@ export interface SevaLabels {
   chooseAmount: string;
   tiers: string[];
   payOnPhone: string;
+  appHint: string;
+  inAppTitle: string;
+  inAppAndroid: string;
+  inAppIos: string;
   processing: string;
   scanTitle: string;
   scanOnOtherPhone: string;
@@ -56,6 +60,14 @@ const GATE_DELAY_MS = 5000;
 const POLL_MS = 4000;
 const FIRST_SEEN_KEY = 'morya_seva_first_seen';
 const CHECKOUT_SRC = 'https://checkout.razorpay.com/v1/checkout.js';
+
+// In-app browsers (Instagram, Facebook, other WebViews) often can't hand off
+// to a UPI app, so Checkout's intent payments time out there.
+function inAppBrowser(): 'android' | 'ios' | null {
+  const ua = navigator.userAgent;
+  if (!/FBAN|FBAV|FB_IAB|Instagram|LinkedInApp|Snapchat|Line\/|; wv\)/i.test(ua)) return null;
+  return /Android/i.test(ua) ? 'android' : 'ios';
+}
 
 const hasPass = () => /(?:^|;\s*)morya_seva=[^;]+/.test(document.cookie);
 
@@ -116,6 +128,7 @@ export default function SevaGate({
   const [checkoutError, setCheckoutError] = useState<string | null>(null);
   const [paymentId, setPaymentId] = useState<string | null>(null);
   const [touch, setTouch] = useState(false);
+  const [inApp, setInApp] = useState<'android' | 'ios' | null>(null);
   const qrCache = useRef(new Map<number, Qr>());
   const dialogRef = useRef<HTMLDivElement>(null);
 
@@ -123,6 +136,7 @@ export default function SevaGate({
   useEffect(() => {
     if (hasPass()) return;
     setTouch(window.matchMedia('(pointer: coarse)').matches);
+    setInApp(inAppBrowser());
     const delay = Math.max(0, GATE_DELAY_MS - msSinceFirstSeen());
     const timer = setTimeout(() => {
       if (!hasPass()) setPhase('open');
@@ -299,6 +313,23 @@ export default function SevaGate({
     </button>
   );
 
+  const inAppNotice = inApp && (
+    <div className="rounded-xl border border-band-amber/40 bg-amber-50 px-3 py-2.5 text-center text-sm text-ink">
+      <p className="font-semibold text-band-amber">⚠️ {labels.inAppTitle}</p>
+      {inApp === 'android' ? (
+        <a
+          // Re-opens this page in Chrome, which can launch GPay/PhonePe/Paytm.
+          href={`intent://${location.host}${location.pathname}${location.search}#Intent;scheme=https;package=com.android.chrome;end`}
+          className="mt-2 inline-block rounded-full bg-maroon px-4 py-1.5 text-sm font-semibold text-amber-100"
+        >
+          {labels.inAppAndroid}
+        </a>
+      ) : (
+        <p className="mt-1">{labels.inAppIos}</p>
+      )}
+    </div>
+  );
+
   const qrBlock = qrState === 'unavailable' ? null : (
     <div className="flex flex-col items-center gap-2 rounded-2xl border border-amber-900/10 bg-white p-4">
       <p className="text-sm font-semibold text-maroon">
@@ -423,7 +454,9 @@ export default function SevaGate({
 
             {touch ? (
               <>
+                {inAppNotice}
                 {phoneButton}
+                <p className="-mt-2 text-center text-xs text-ink-soft">{labels.appHint}</p>
                 {checkoutError && <p className="text-center text-sm text-band-red">{checkoutError}</p>}
                 {qrBlock}
               </>
