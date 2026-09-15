@@ -4,8 +4,9 @@ import { getRedis } from '@/lib/redis';
 
 /**
  * Paid features: the mandal queue details (queue start, wait estimate,
- * holding points) and pandal-hopping routes are locked until a one-time UPI
- * payment, which unlocks them on this device for the rest of the festival.
+ * holding points), pandal-hopping routes and the immersion pond finder are
+ * locked until a one-time UPI payment, which unlocks them on this device for
+ * the rest of the festival.
  * No accounts — the proof is a signed cookie.
  *
  * Payment confirmation is real (Razorpay API / webhook / checkout signature).

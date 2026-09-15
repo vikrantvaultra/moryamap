@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import HelplineList from '@/components/HelplineList';
 import PageHeader, { Notice } from '@/components/PageHeader';
+import PaidFeature from '@/components/PaidFeature';
 import PondFinder, { type PondItem } from '@/components/PondFinder';
 import ShareBar from '@/components/ShareBar';
 import Sources, { Cite, citedSources } from '@/components/Sources';
@@ -94,32 +95,34 @@ export default async function PondsPage({ params }: { params: Promise<{ locale: 
         {items.length === 0 ? (
           <p className="card p-4 text-sm text-ink-soft">{t('empty')}</p>
         ) : (
-          <PondFinder
-            items={items}
-            labels={{
-              nearMe: t('nearMe'),
-              locating: t('locating'),
-              locationDenied: t('locationDenied'),
-              sortedNear: t('sortedNear'),
-              searchPlaceholder: t('searchPlaceholder'),
-              all: t('all'),
-              artificial: t('artificial'),
-              natural: t('natural'),
-              collection: t('collection'),
-              ward: t.raw('ward'),
-              distance: t.raw('distance'),
-              directions: t('directions'),
-              findInMaps: t('findInMaps'),
-              approxPin: t('approxPin'),
-              count: t.raw('count'),
-              noResults: t('noResults'),
-              pagination: pagination,
-              onMap: t.raw('onMap'),
-              showOnMap: t('showOnMap'),
-              unpinnedNote: t('unpinnedNote'),
-              close: t('close'),
-            }}
-          />
+          <PaidFeature kind="ponds" tall>
+            <PondFinder
+              items={items}
+              labels={{
+                nearMe: t('nearMe'),
+                locating: t('locating'),
+                locationDenied: t('locationDenied'),
+                sortedNear: t('sortedNear'),
+                searchPlaceholder: t('searchPlaceholder'),
+                all: t('all'),
+                artificial: t('artificial'),
+                natural: t('natural'),
+                collection: t('collection'),
+                ward: t.raw('ward'),
+                distance: t.raw('distance'),
+                directions: t('directions'),
+                findInMaps: t('findInMaps'),
+                approxPin: t('approxPin'),
+                count: t.raw('count'),
+                noResults: t('noResults'),
+                pagination: pagination,
+                onMap: t.raw('onMap'),
+                showOnMap: t('showOnMap'),
+                unpinnedNote: t('unpinnedNote'),
+                close: t('close'),
+              }}
+            />
+          </PaidFeature>
         )}
       </section>
 

@@ -361,7 +361,7 @@
     "title": "Don't let the crowd come between you and Bappa's darshan",
     "body": "Lakhs of devotees, hours in line, and often no idea where the queue even starts. Morya Map shows you where every major mandal's darshan line begins, an honest wait estimate and ready-made pandal-hopping routes, so your parents don't stand for hours at the wrong gate and your children don't get lost in the crowd.",
     "unlocks": "Pay ₹{amount} once and all features unlock",
-    "unlockList": "Where the queue starts, with directions · Wait times · Ready-made pandal-hopping routes · Build your own route",
+    "unlockList": "Where the queue starts, with directions · Wait times · Ready-made pandal-hopping routes · Build your own route · Immersion ponds near you",
     "blessing": "“Sukhkarta Dukhharta” — let your darshan be about devotion, not the struggle to get there.",
     "payOnPhone": "Pay ₹{amount} & unlock all features",
     "appHint": "Your UPI app will open. Approve the payment there within 5 minutes, then come back here and everything unlocks automatically.",
@@ -383,12 +383,13 @@
     "secured": "UPI payments processed securely by Razorpay",
     "emergency": "Emergency? Dial 112",
     "successTitle": "Ganpati Bappa Morya! 🙏",
-    "successBody": "All features are now unlocked on this device: where the queue starts, wait times and pandal-hopping routes. May Bappa bless you and your family with a safe and joyful darshan.",
+    "successBody": "All features are now unlocked on this device: where the queue starts, wait times, pandal-hopping routes and immersion ponds. May Bappa bless you and your family with a safe and joyful darshan.",
     "paymentRef": "Payment reference",
     "enter": "Continue",
     "close": "Close",
     "lockQueue": "Queue start & wait time",
     "lockRoutes": "Pandal-hopping routes",
+    "lockPonds": "Immersion ponds near you",
     "lockCta": "Pay ₹{amount} · unlock all features",
     "lockHint": "One payment unlocks every feature, for all of Ganeshotsav"
   }
