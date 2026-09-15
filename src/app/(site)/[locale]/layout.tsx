@@ -131,6 +131,8 @@ async function sevaLabels(): Promise<SevaLabels | null> {
     eyebrow: raw('eyebrow'),
     title: raw('title'),
     body: raw('body'),
+    unlocks: raw('unlocks'),
+    unlockList: raw('unlockList'),
     blessing: raw('blessing'),
     payOnPhone: raw('payOnPhone'),
     appHint: raw('appHint'),

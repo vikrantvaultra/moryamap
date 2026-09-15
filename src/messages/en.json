@@ -359,9 +359,11 @@
   "seva": {
     "eyebrow": "🌺 Ganpati Bappa Morya! 🌺",
     "title": "Don't let the crowd come between you and Bappa's darshan",
-    "body": "Lakhs of devotees, hours in line, and often no idea where the queue even starts. Morya Map shows you where every major mandal's darshan line begins, an honest wait estimate and ready-made pandal-hopping routes, so your parents don't stand for hours at the wrong gate and your children don't get lost in the crowd. One small payment unlocks it all on this device for the rest of Ganeshotsav.",
+    "body": "Lakhs of devotees, hours in line, and often no idea where the queue even starts. Morya Map shows you where every major mandal's darshan line begins, an honest wait estimate and ready-made pandal-hopping routes, so your parents don't stand for hours at the wrong gate and your children don't get lost in the crowd.",
+    "unlocks": "Pay ₹{amount} once and all features unlock",
+    "unlockList": "Where the queue starts, with directions · Wait times · Ready-made pandal-hopping routes · Build your own route",
     "blessing": "“Sukhkarta Dukhharta” — let your darshan be about devotion, not the struggle to get there.",
-    "payOnPhone": "Unlock for ₹{amount} with any UPI app",
+    "payOnPhone": "Pay ₹{amount} & unlock all features",
     "appHint": "Your UPI app will open. Approve the payment there within 5 minutes, then come back here and everything unlocks automatically.",
     "inAppTitle": "UPI apps often don't open from this app's browser.",
     "inAppAndroid": "Open in Chrome to pay",
@@ -377,17 +379,17 @@
     "error": "Couldn't reach the payment gateway. Check your connection.",
     "rateLimited": "Too many attempts. Please try again in a little while.",
     "retry": "Try again",
-    "unlockNote": "Unlocks on this device as soon as your payment is confirmed, until Ganeshotsav ends on 25 September. No login, no sign-up.",
+    "unlockNote": "All features unlock on this device as soon as your ₹{amount} payment is confirmed, and stay unlocked until Ganeshotsav ends on 25 September. No login, no sign-up.",
     "secured": "UPI payments processed securely by Razorpay",
     "emergency": "Emergency? Dial 112",
     "successTitle": "Ganpati Bappa Morya! 🙏",
-    "successBody": "Queue start points, wait times and pandal-hopping routes are now unlocked on this device. May Bappa bless you and your family with a safe and joyful darshan.",
+    "successBody": "All features are now unlocked on this device: where the queue starts, wait times and pandal-hopping routes. May Bappa bless you and your family with a safe and joyful darshan.",
     "paymentRef": "Payment reference",
     "enter": "Continue",
     "close": "Close",
     "lockQueue": "Queue start & wait time",
     "lockRoutes": "Pandal-hopping routes",
-    "lockCta": "Unlock for ₹{amount}",
-    "lockHint": "One-time · for all of Ganeshotsav"
+    "lockCta": "Pay ₹{amount} · unlock all features",
+    "lockHint": "One payment unlocks every feature, for all of Ganeshotsav"
   }
 }

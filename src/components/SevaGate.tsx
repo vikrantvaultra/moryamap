@@ -8,6 +8,8 @@ export interface SevaLabels {
   eyebrow: string;
   title: string;
   body: string;
+  unlocks: string;
+  unlockList: string;
   blessing: string;
   payOnPhone: string;
   appHint: string;
@@ -415,6 +417,19 @@ export default function SevaGate({ labels, amount }: { labels: SevaLabels; amoun
         ) : (
           <div className="space-y-4 px-5 py-5">
             <p className="text-[15px] leading-relaxed text-ink">{labels.body}</p>
+            <div className="rounded-2xl border-2 border-flame/40 bg-flame/5 px-4 py-3">
+              <p className="text-base font-bold text-maroon">🔓 {fill(labels.unlocks, amount)}</p>
+              <ul className="mt-2 space-y-1 text-sm text-ink">
+                {labels.unlockList.split(' · ').map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span aria-hidden className="font-bold text-band-green">
+                      ✓
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <p className="rounded-xl bg-cream-deep px-3 py-2 text-center text-sm font-semibold italic text-maroon">
               {labels.blessing}
             </p>
@@ -436,7 +451,7 @@ export default function SevaGate({ labels, amount }: { labels: SevaLabels; amoun
             )}
 
             <div className="space-y-1.5 border-t border-amber-900/10 pt-3 text-center text-xs text-ink-soft">
-              <p>{labels.unlockNote}</p>
+              <p>{fill(labels.unlockNote, amount)}</p>
               <p>🔒 {labels.secured}</p>
               <p>
                 <a href="tel:112" className="font-semibold text-band-red underline">
