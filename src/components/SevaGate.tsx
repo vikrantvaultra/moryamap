@@ -38,7 +38,7 @@ interface Qr {
   closeBy: number;
 }
 
-type QrState = 'loading' | 'ready' | 'expired' | 'error' | 'rate_limited';
+type QrState = 'loading' | 'ready' | 'expired' | 'error' | 'rate_limited' | 'unavailable';
 
 interface RazorpayResponse {
   razorpay_order_id: string;
@@ -149,7 +149,7 @@ export default function SevaGate({
 
   // 3. A fresh single-use QR for the chosen amount (cached while still valid).
   useEffect(() => {
-    if (phase !== 'open') return;
+    if (phase !== 'open' || qrState === 'unavailable') return;
     const cached = qrCache.current.get(amount);
     if (cached && cached.closeBy - 30 > Date.now() / 1000) {
       setQr(cached);
@@ -169,6 +169,9 @@ export default function SevaGate({
           signal: ctrl.signal,
         });
         if (res.status === 429) return setQrState('rate_limited');
+        // Razorpay refused (e.g. QR Codes not enabled on the account): drop the
+        // QR for this page load; Checkout below still offers UPI.
+        if (res.status === 502 || res.status === 503) return setQrState('unavailable');
         if (!res.ok) return setQrState('error');
         const next = (await res.json()) as Qr;
         qrCache.current.set(amount, next);
@@ -182,6 +185,8 @@ export default function SevaGate({
       clearTimeout(timer);
       ctrl.abort();
     };
+    // qrState is deliberately not a dependency: this effect sets it.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, amount, qrAttempt]);
 
   // 4. Mark the QR expired when Razorpay closes it.
@@ -294,7 +299,7 @@ export default function SevaGate({
     </button>
   );
 
-  const qrBlock = (
+  const qrBlock = qrState === 'unavailable' ? null : (
     <div className="flex flex-col items-center gap-2 rounded-2xl border border-amber-900/10 bg-white p-4">
       <p className="text-sm font-semibold text-maroon">
         {touch ? labels.scanOnOtherPhone : labels.scanTitle}
