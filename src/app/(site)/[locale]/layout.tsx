@@ -8,7 +8,9 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import Logo from '@/components/Logo';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
+import SevaGate, { type SevaLabels } from '@/components/SevaGate';
 import { TOOLS } from '@/components/ToolsNav';
+import { DEFAULT_SEVA_AMOUNT, SEVA_AMOUNTS, sevaConfig } from '@/lib/seva';
 import { localePath, siteUrl } from '@/lib/site';
 import '@/app/globals.css';
 
@@ -61,11 +63,12 @@ export default async function LocaleLayout({
   const tf = await getTranslations('footer');
   const tn = await getTranslations('nav');
   const home = localePath(locale, '/');
+  const seva = await sevaLabels();
 
   return (
     <html lang={locale} className={mukta.variable}>
       <body className="font-sans antialiased">
-        <div className="flex min-h-dvh flex-col">
+        <div id="site-shell" className="flex min-h-dvh flex-col">
           <header className="sticky top-0 z-40 border-b border-amber-900/10 bg-cream/90 backdrop-blur">
             <div className="mx-auto flex h-14 w-full max-w-3xl items-center justify-between gap-3 px-4">
               <Link href={home} className="flex items-center gap-2.5">
@@ -109,8 +112,47 @@ export default async function LocaleLayout({
             </div>
           </footer>
         </div>
+        {seva && (
+          <SevaGate labels={seva} amounts={SEVA_AMOUNTS} defaultAmount={DEFAULT_SEVA_AMOUNT} />
+        )}
         <Analytics />
       </body>
     </html>
   );
+}
+
+/** Popup copy, or null when the gate isn't configured (it then never shows). */
+async function sevaLabels(): Promise<SevaLabels | null> {
+  const cfg = sevaConfig();
+  if (!cfg) return null;
+  const t = await getTranslations('seva');
+  const { beneficiary } = cfg;
+  const raw = (key: string) => t.raw(key) as string;
+  return {
+    eyebrow: raw('eyebrow'),
+    title: raw('title'),
+    body: t('body', { beneficiary }),
+    blessing: raw('blessing'),
+    chooseAmount: raw('chooseAmount'),
+    tiers: t.raw('tiers') as string[],
+    payOnPhone: raw('payOnPhone'),
+    processing: raw('processing'),
+    scanTitle: raw('scanTitle'),
+    scanOnOtherPhone: raw('scanOnOtherPhone'),
+    apps: raw('apps'),
+    loadingQr: raw('loadingQr'),
+    waiting: raw('waiting'),
+    expired: raw('expired'),
+    newQr: raw('newQr'),
+    error: raw('error'),
+    rateLimited: raw('rateLimited'),
+    retry: raw('retry'),
+    unlockNote: raw('unlockNote'),
+    secured: raw('secured'),
+    emergency: raw('emergency'),
+    successTitle: raw('successTitle'),
+    successBody: t('successBody', { beneficiary }),
+    paymentRef: raw('paymentRef'),
+    enter: raw('enter'),
+  };
 }

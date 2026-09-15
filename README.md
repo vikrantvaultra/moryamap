@@ -116,6 +116,21 @@ npm run build   # must stay green; survives a missing DATABASE_URL
 | `UPSTASH_REDIS_REST_URL` / `_TOKEN` | Snapshot cache + rate limiting |
 | `ADMIN_USER` / `ADMIN_PASSWORD` | Basic auth for `/admin` |
 | `IP_HASH_SALT` | Long random string; salts reporter IP/UA hashes |
+| `RAZORPAY_KEY_ID` / `_SECRET` | Seva gate payments (the account must belong to `SEVA_BENEFICIARY`) |
+| `SEVA_BENEFICIARY` | Mandal/trust named in the popup; gate is off unless all three are set |
+| `RAZORPAY_WEBHOOK_SECRET` | Optional; webhook at `/api/donate/webhook` (`qr_code.credited`, `payment.captured`) |
+
+## Seva gate
+
+Five seconds after a visitor first arrives, `SevaGate` opens a popup that
+can't be closed, asking for a UPI offering (₹11/21/51/101) to
+`SEVA_BENEFICIARY`. On desktop it shows a single-use Razorpay UPI QR; on
+phones it leads with Razorpay Checkout's UPI-app flow. Payment is confirmed
+server-side (Checkout signature, webhook mark in Redis, or the Razorpay API,
+throttled per id), then a signed `morya_seva` cookie unlocks that device for
+a year. No login. Pages stay ISR: the gate is a client overlay, so it can be
+bypassed with devtools or with JS disabled. The popup always shows a
+tap-to-call 112 link.
 
 ## Deploy checklist (before 14 Sep)
 

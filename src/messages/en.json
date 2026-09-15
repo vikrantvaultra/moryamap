@@ -355,5 +355,37 @@
   "notFound": {
     "title": "This page isn't here",
     "body": "The link may be old or mistyped. Mandals, routes and festival info are all a tap away."
+  },
+  "seva": {
+    "eyebrow": "🌺 Ganpati Bappa Morya! 🌺",
+    "title": "Bappa has welcomed you. Will you offer your seva?",
+    "body": "Not everyone can stand in the darshan line, whether it's the crowds, the distance or their age. Wherever you are, your offering goes directly to {beneficiary} and becomes your share in this Ganeshotsav.",
+    "blessing": "“Sukhkarta Dukhharta” — may Bappa clear every obstacle from your path.",
+    "chooseAmount": "Choose your offering",
+    "tiers": [
+      "Durva",
+      "Modak",
+      "Prasad",
+      "Aarti"
+    ],
+    "payOnPhone": "Offer ₹{amount} with any UPI app",
+    "processing": "Opening UPI…",
+    "scanTitle": "Scan & pay with any UPI app",
+    "scanOnOtherPhone": "Or scan from another phone",
+    "apps": "Google Pay · PhonePe · Paytm · BHIM · any bank UPI",
+    "loadingQr": "Preparing your QR…",
+    "waiting": "Waiting for your payment. The site opens automatically.",
+    "expired": "This QR has expired.",
+    "newQr": "Get a new QR",
+    "error": "Couldn't reach the payment gateway. Check your connection.",
+    "rateLimited": "Too many attempts. Please try again in a little while.",
+    "retry": "Try again",
+    "unlockNote": "Morya Map opens on this device as soon as your payment is confirmed. No login, no sign-up.",
+    "secured": "UPI payments processed securely by Razorpay",
+    "emergency": "Emergency? Dial 112",
+    "successTitle": "Ganpati Bappa Morya! 🙏",
+    "successBody": "Your offering has reached {beneficiary}. May Bappa bless you and your family with happiness, health and success.",
+    "paymentRef": "Payment reference",
+    "enter": "Enter Morya Map"
   }
 }

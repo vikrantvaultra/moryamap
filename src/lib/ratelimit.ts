@@ -17,3 +17,20 @@ export function getReportLimiter(): Ratelimit | null {
   }
   return limiter;
 }
+
+let sevaLimiter: Ratelimit | null | undefined;
+
+/** 12 Razorpay QR codes / orders per IP hash per hour. Null (no-op) without Redis. */
+export function getSevaLimiter(): Ratelimit | null {
+  if (sevaLimiter === undefined) {
+    const redis = getRedis();
+    sevaLimiter = redis
+      ? new Ratelimit({
+          redis,
+          limiter: Ratelimit.slidingWindow(12, '1 h'),
+          prefix: 'morya:rl:seva',
+        })
+      : null;
+  }
+  return sevaLimiter;
+}
