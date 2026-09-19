@@ -1,11 +1,11 @@
 import { cookies } from 'next/headers';
-import UnlockGate from '@/components/UnlockGate';
 import {
   ASHIRWAD_AMOUNT,
   ashirwad,
   ashirwadConfig,
   blessingCount,
   daysUntilVisarjan,
+  devUnlockEnabled,
 } from '@/lib/ashirwad';
 import {
   PREVIEW_PATH,
@@ -19,6 +19,7 @@ import {
 } from '@/lib/ashirwad-image';
 import AshirwadReveal from './AshirwadReveal';
 import NameField from './NameField';
+import Offer from './Offer';
 import Petals from './Petals';
 
 // Dynamic on purpose: the pass is read here, on the server, so a visitor who
@@ -48,6 +49,7 @@ export default async function AshirwadPage() {
   const cfg = ashirwadConfig();
   const pass = (await cookies()).get(ashirwad.passCookie)?.value;
   const credit = artworkCredit();
+  const devMode = devUnlockEnabled();
   if (cfg && ashirwad.hasPass(pass, cfg)) {
     return (
       <AshirwadReveal
@@ -57,6 +59,7 @@ export default async function AshirwadPage() {
         shankh={SHANKH_SOURCES}
         chant={chantSrc()}
         credits={[credit, SHANKH_CREDIT].filter((c): c is string => Boolean(c))}
+        devMode={devMode}
       />
     );
   }
@@ -142,19 +145,7 @@ export default async function AshirwadPage() {
         </p>
 
         {cfg && ready ? (
-          <UnlockGate
-            amount={ASHIRWAD_AMOUNT}
-            api="/api/ashirwad"
-            labels={{
-              pay: `🙏 ₹${ASHIRWAD_AMOUNT} अर्पण करा · Receive Bappa’s ashirwad`,
-              opening: 'Opening…',
-              showQr: 'Show a UPI QR code instead',
-              scanCaption:
-                'Scan with any UPI app. Bappa’s darshan opens by itself once your offering lands.',
-              waiting: 'Waiting for your offering to confirm…',
-              checkoutDescription: 'Offering · Bappa’s ashirwad',
-            }}
-          />
+          <Offer amount={ASHIRWAD_AMOUNT} devMode={devMode} />
         ) : (
           <p className="mt-5 rounded-2xl bg-cream-deep px-4 py-3 text-center text-sm text-ink-soft">
             {cfg

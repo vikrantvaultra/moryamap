@@ -246,24 +246,6 @@ body {
 
 /* --- Ashirwad: the name carried to Bappa's ear, then the blessing -------- */
 
-/* Two axes on different easings trace an arc: it rises gently, then swings
-   in toward the ear, shrinking as if whispered. --ex / --ey are the ear. */
-@keyframes whisper-x { from { left: 50%; } to { left: var(--ex); } }
-@keyframes whisper-y { from { top: 90%; } to { top: var(--ey); } }
-@keyframes whisper-life {
-  0% { opacity: 0; transform: translate(-50%, -50%) scale(1.25); }
-  12% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  78% { opacity: 1; transform: translate(-50%, -50%) scale(0.62); }
-  100% { opacity: 0; transform: translate(-50%, -50%) scale(0.12); }
-}
-.ashirwad-whisper {
-  position: absolute;
-  animation:
-    whisper-x 3.4s cubic-bezier(0.55, 0, 0.35, 1) forwards,
-    whisper-y 3.4s cubic-bezier(0.2, 0.6, 0.35, 1) forwards,
-    whisper-life 3.4s ease-in forwards;
-}
-
 /* Golden motes trailing the name, released along its path. */
 @keyframes whisper-mote {
   0% { opacity: 0.95; transform: translate(-50%, -50%) scale(1); }
@@ -331,7 +313,6 @@ body {
 .ashirwad-chant { animation: ashirwad-chant 1.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
 
 @media (prefers-reduced-motion: reduce) {
-  .ashirwad-whisper { animation: none; left: var(--ex); top: var(--ey); opacity: 0; }
   .ashirwad-mote, .ashirwad-ear, .ashirwad-bless { display: none; }
   .ashirwad-blessed, .ashirwad-chant { animation: none; }
 }

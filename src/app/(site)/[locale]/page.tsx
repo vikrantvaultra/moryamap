@@ -143,20 +143,23 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           }),
         }
     : null;
-  // Immersion-day logistics win the one floating slot on their days; the
-  // rest of the time it invites visitors to Bappa's ashirwad (when it can
-  // actually be offered), else to the routes.
   const showAshirwad = await ashirwadOpen();
   const tp = await getTranslations('ashirwadPromo');
   const bappaHome = daysUntilVisarjan(now) < 0;
+  // On phones the map fills the screen, so the ashirwad floats over it as its
+  // own card (promo). The single-line callout above the Map/List pill stays
+  // for immersion-day logistics, else the routes when there's no ashirwad.
+  const promo = showAshirwad
+    ? {
+        href: ASHIRWAD_LINK.href,
+        title: tp('title'),
+        cta: tp(bappaHome ? 'calloutAfter' : 'callout') + ' →',
+      }
+    : undefined;
   const callout =
     banner ??
     (showAshirwad
-      ? {
-          href: ASHIRWAD_LINK.href,
-          icon: ASHIRWAD_LINK.icon,
-          label: `${tp(bappaHome ? 'calloutAfter' : 'callout')} →`,
-        }
+      ? undefined
       : { href: localePath(locale, '/routes'), icon: '🪔', label: `${tn('routes')} →` });
 
   // Precompute display strings server-side so the list client component
@@ -227,6 +230,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <HomeShell
       labels={{ map: t('showMap'), list: t('showList') }}
       callout={callout}
+      promo={promo}
       map={
         <div className="h-[calc(100dvh-3.75rem)] md:h-[62vh]">
           <MapShell strings={mapStrings} locale={locale} />

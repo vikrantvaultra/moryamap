@@ -46,8 +46,9 @@ interface Qr {
 export interface UnlockGateLabels {
   pay: string;
   opening: string;
-  showQr: string;
-  scanCaption: string;
+  /** Only needed when the QR option is on. */
+  showQr?: string;
+  scanCaption?: string;
   waiting: string;
   /** Shown in the Razorpay sheet under the beneficiary. */
   checkoutDescription: string;
@@ -57,10 +58,20 @@ export default function UnlockGate({
   amount,
   api,
   labels,
+  onStart,
+  qrOption = true,
 }: {
   amount: number;
   api: string;
   labels: UnlockGateLabels;
+  /** Runs inside the pay tap itself — for anything browsers only allow from a user gesture. */
+  onStart?: () => void;
+  /**
+   * Offer "Show a UPI QR code instead" (a Razorpay QR to scan from another
+   * phone). Off, the one button opens Razorpay Checkout, which has its own
+   * UPI app and QR options.
+   */
+  qrOption?: boolean;
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
@@ -107,6 +118,7 @@ export default function UnlockGate({
   }, [polling, unlock, api]);
 
   const start = async (method: 'qr' | 'checkout') => {
+    onStart?.();
     setBusy(true);
     setError(null);
     try {
@@ -234,7 +246,9 @@ export default function UnlockGate({
         </p>
       )}
 
-      {touch ? (
+      {!qrOption ? (
+        payButton
+      ) : touch ? (
         <>
           {payButton}
           {qrBlock}

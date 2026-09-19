@@ -14,12 +14,19 @@ export default function HomeShell({
   list,
   labels,
   callout,
+  promo,
 }: {
   map: ReactNode;
   list: ReactNode;
   labels: { map: string; list: string };
   /** Floating link above the Map/List pill on phones (festival banner or tools). */
   callout?: { href: string; icon: string; label: string };
+  /**
+   * Bappa's ashirwad, floating over the map on phones. On the list it is a
+   * card; the map fills the whole screen, so without this a phone visitor
+   * never sees it unless they tap "List".
+   */
+  promo?: { href: string; title: string; cta: string };
 }) {
   const [view, setView] = useState<'map' | 'list' | null>(null);
   useEffect(() => setView('map'), []);
@@ -38,6 +45,21 @@ export default function HomeShell({
         // map — exactly where a thumb rests — so pins down there never
         // opened. Only the controls themselves take taps.
         <nav className="pointer-events-none fixed inset-x-0 bottom-[max(1rem,env(safe-area-inset-bottom))] z-30 flex flex-col items-center gap-2 px-4 md:hidden">
+          {promo && view === 'map' && (
+            <Link
+              href={promo.href}
+              className="ashirwad-sanctum pointer-events-auto relative flex w-full max-w-sm items-center gap-3 overflow-hidden rounded-2xl px-4 py-2.5 text-left text-amber-50 shadow-xl shadow-maroon/40 ring-1 ring-amber-300/40"
+            >
+              <span aria-hidden className="ashirwad-aura absolute -right-8 -top-8 size-24 rounded-full" />
+              <span aria-hidden className="ashirwad-flicker relative text-2xl">
+                🪔
+              </span>
+              <span className="relative min-w-0 flex-1">
+                <span className="block truncate text-[15px] font-bold leading-tight">{promo.title}</span>
+                <span className="block truncate text-xs font-semibold text-marigold">{promo.cta}</span>
+              </span>
+            </Link>
+          )}
           {callout && view === 'map' && (
             <Link
               href={callout.href}
