@@ -158,3 +158,180 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .seva-rise, .seva-halo, .seva-shine::after { animation: none; }
 }
+
+/* --- Ashirwad: petals, light and glow for /ashirwad ---------------------- */
+
+/* Deep sanctum background — lamplight in a dark room, not a flat maroon. */
+.ashirwad-sanctum {
+  background:
+    radial-gradient(ellipse 90% 55% at 50% 28%, rgb(245 158 11 / 0.28), transparent 70%),
+    radial-gradient(ellipse 70% 40% at 50% 100%, rgb(234 88 12 / 0.22), transparent 70%),
+    linear-gradient(180deg, #2a0d04 0%, #3d1307 45%, #1c0802 100%);
+}
+
+/* A breathing golden aura behind the murti. */
+@keyframes ashirwad-aura {
+  0%, 100% { opacity: 0.55; transform: scale(0.96); }
+  50% { opacity: 0.95; transform: scale(1.04); }
+}
+.ashirwad-aura {
+  background: radial-gradient(circle, rgb(253 224 71 / 0.75) 0%, rgb(245 158 11 / 0.35) 38%, transparent 68%);
+  animation: ashirwad-aura 4.5s ease-in-out infinite;
+}
+
+/* Slow rays of light turning behind the revealed image. */
+@keyframes ashirwad-rays { to { transform: rotate(360deg); } }
+.ashirwad-rays {
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgb(253 230 138 / 0.22) 0deg 6deg,
+    transparent 6deg 18deg
+  );
+  mask-image: radial-gradient(circle, #000 20%, transparent 68%);
+  animation: ashirwad-rays 60s linear infinite;
+}
+
+/* Petals: fall the full height while swaying side to side. */
+@keyframes ashirwad-fall {
+  0% { transform: translate3d(0, -12vh, 0) rotate(0deg); opacity: 0; }
+  8% { opacity: 1; }
+  100% { transform: translate3d(var(--drift, 30px), 112vh, 0) rotate(var(--spin, 540deg)); opacity: 0.9; }
+}
+.ashirwad-petal {
+  position: absolute;
+  top: 0;
+  border-radius: 80% 0 80% 0;
+  animation: ashirwad-fall var(--dur, 9s) linear var(--delay, 0s) infinite;
+  will-change: transform;
+}
+
+/* The image settles in slowly, as if you are walking up to Him. */
+@keyframes ashirwad-approach {
+  from { transform: scale(1.14); filter: brightness(1.6) saturate(0.6); }
+  to { transform: scale(1); filter: brightness(1) saturate(1); }
+}
+.ashirwad-approach { animation: ashirwad-approach 3.2s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+
+/* The first moment: a flash of warm light that fades away. */
+@keyframes ashirwad-flash {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.ashirwad-flash {
+  background: radial-gradient(circle at 50% 35%, #fffbeb 0%, #fde68a 40%, rgb(245 158 11 / 0.6) 100%);
+  animation: ashirwad-flash 1.8s ease-out both;
+}
+
+/* Lines of the blessing arrive one after another. */
+@keyframes ashirwad-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+.ashirwad-rise { animation: ashirwad-rise 900ms ease-out both; animation-delay: var(--at, 0s); }
+
+/* A diya flame's flicker for the small lamp beside the offering. */
+@keyframes ashirwad-flicker {
+  0%, 100% { transform: scaleY(1) rotate(-1deg); opacity: 1; }
+  40% { transform: scaleY(1.12) rotate(2deg); opacity: 0.9; }
+  70% { transform: scaleY(0.94) rotate(-2deg); opacity: 1; }
+}
+.ashirwad-flicker { display: inline-block; transform-origin: 50% 90%; animation: ashirwad-flicker 1.4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ashirwad-aura, .ashirwad-rays, .ashirwad-approach, .ashirwad-flash,
+  .ashirwad-rise, .ashirwad-flicker { animation: none; }
+  .ashirwad-flash { opacity: 0; }
+  .ashirwad-petal { display: none; }
+}
+
+/* --- Ashirwad: the name carried to Bappa's ear, then the blessing -------- */
+
+/* Two axes on different easings trace an arc: it rises gently, then swings
+   in toward the ear, shrinking as if whispered. --ex / --ey are the ear. */
+@keyframes whisper-x { from { left: 50%; } to { left: var(--ex); } }
+@keyframes whisper-y { from { top: 90%; } to { top: var(--ey); } }
+@keyframes whisper-life {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(1.25); }
+  12% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  78% { opacity: 1; transform: translate(-50%, -50%) scale(0.62); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(0.12); }
+}
+.ashirwad-whisper {
+  position: absolute;
+  animation:
+    whisper-x 3.4s cubic-bezier(0.55, 0, 0.35, 1) forwards,
+    whisper-y 3.4s cubic-bezier(0.2, 0.6, 0.35, 1) forwards,
+    whisper-life 3.4s ease-in forwards;
+}
+
+/* Golden motes trailing the name, released along its path. */
+@keyframes whisper-mote {
+  0% { opacity: 0.95; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, calc(-50% - 26px)) scale(0.2); }
+}
+.ashirwad-mote {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, #fffbeb 0%, #fde047 35%, #f59e0b 60%, transparent 72%);
+  box-shadow: 0 0 10px rgb(253 224 71 / 0.9);
+  animation: whisper-mote 1.6s ease-out forwards;
+}
+
+/* The ear receives it: a soft golden pulse where the name disappeared. */
+@keyframes ear-heard {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+  35% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(2.6); }
+}
+.ashirwad-ear {
+  position: absolute;
+  width: 22%;
+  aspect-ratio: 1;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgb(255 251 235 / 0.95) 0%, rgb(251 191 36 / 0.6) 40%, transparent 70%);
+  animation: ear-heard 1.5s ease-out forwards;
+  pointer-events: none;
+}
+
+/* The blessing: light pours out from Bappa over the whole darshan. */
+@keyframes ashirwad-bless {
+  0% { opacity: 0; transform: scale(0.2); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: scale(3.2); }
+}
+.ashirwad-bless {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: 70%;
+  aspect-ratio: 1;
+  margin: -35% 0 0 -35%;
+  border-radius: 9999px;
+  background: radial-gradient(circle, #fffbeb 0%, rgb(253 224 71 / 0.85) 30%, rgb(245 158 11 / 0.35) 55%, transparent 70%);
+  mix-blend-mode: screen;
+  animation: ashirwad-bless 2.4s ease-out forwards;
+  pointer-events: none;
+}
+
+/* After the blessing the murti keeps a gentle, breathing glow. */
+@keyframes ashirwad-blessed {
+  0%, 100% { filter: brightness(1.04) saturate(1.05); }
+  50% { filter: brightness(1.16) saturate(1.12); }
+}
+.ashirwad-blessed { animation: ashirwad-blessed 4s ease-in-out infinite; }
+
+/* The chant: big, and it breathes with the voice. */
+@keyframes ashirwad-chant {
+  0% { opacity: 0; transform: scale(0.85); letter-spacing: 0.02em; }
+  25% { opacity: 1; transform: scale(1.06); }
+  100% { opacity: 1; transform: scale(1); letter-spacing: 0.04em; }
+}
+.ashirwad-chant { animation: ashirwad-chant 1.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ashirwad-whisper { animation: none; left: var(--ex); top: var(--ey); opacity: 0; }
+  .ashirwad-mote, .ashirwad-ear, .ashirwad-bless { display: none; }
+  .ashirwad-blessed, .ashirwad-chant { animation: none; }
+}

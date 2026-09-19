@@ -139,6 +139,27 @@ Images are English-only because Satori can't shape Devanagari; the
 WhatsApp message text is localized. Mandal cards embed a time-stamped
 estimate, so they're cached for 5 minutes only.
 
+## Bappa's ashirwad (`/ashirwad`, ₹501)
+
+A standalone page (outside the locale tree, like `/darshan`) that sells a
+digital darshan for a ₹501 offering. The devotee writes the names they are
+praying for. When the payment clears they see a receipt, the shankh is blown,
+their name travels into Bappa's ear, and Bappa blesses them with light,
+petals, the bell and "Ganpati Bappa Morya!".
+
+- **Payment**: the same Razorpay UPI QR / Checkout machinery as seva and
+  darshan, via `src/lib/unlock.ts`. Every signed token is scoped to its flow,
+  so a ₹21 seva pass or order id cannot open the ₹501 page.
+- **Honesty**: the only urgency is the real date (Anant Chaturdashi, 25
+  September). The devotee count shows only real payments, and only from 21.
+  The page names the payee and says plainly that this is not a puja.
+- **Discovery**: a chip in the tools row and footer, a card on the home list
+  and on every mandal page, and the home floating callout (immersion-day
+  banners keep priority). These appear only once payments are configured and
+  the artwork exists.
+- **Artwork and sounds**: see `src/assets/ashirwad/README.md`, which covers
+  licences, credits, swapping in your own image and adding a recorded chant.
+
 **Analytics**: share links carry `utm_source` (`whatsapp`, `native`, `copy`)
 + `utm_medium=share`, and clicks fire a Vercel Web Analytics `share` event.
 Enable Web Analytics on the Vercel project; nothing is stored by the app.

@@ -9,7 +9,8 @@ import { routing } from '@/i18n/routing';
 import Logo from '@/components/Logo';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
 import SevaGate, { type SevaLabels } from '@/components/SevaGate';
-import { TOOLS } from '@/components/ToolsNav';
+import { ASHIRWAD_LINK, TOOLS } from '@/components/ToolsNav';
+import { ashirwadOpen } from '@/lib/ashirwad';
 import { SEVA_AMOUNT, sevaConfig } from '@/lib/seva';
 import { localePath, siteUrl } from '@/lib/site';
 import '@/app/globals.css';
@@ -64,6 +65,7 @@ export default async function LocaleLayout({
   const tn = await getTranslations('nav');
   const home = localePath(locale, '/');
   const seva = await sevaLabels();
+  const showAshirwad = await ashirwadOpen();
 
   return (
     <html lang={locale} className={mukta.variable}>
@@ -102,6 +104,17 @@ export default async function LocaleLayout({
                       </Link>
                     </li>
                   ))}
+                  {showAshirwad && (
+                    <li>
+                      <Link
+                        href={ASHIRWAD_LINK.href}
+                        className="flex items-center gap-1.5 text-[13px] font-semibold text-flame hover:text-maroon"
+                      >
+                        <span aria-hidden>{ASHIRWAD_LINK.icon}</span>
+                        {tn('ashirwad')}
+                      </Link>
+                    </li>
+                  )}
                 </ul>
               </nav>
               <p className="font-semibold text-maroon">

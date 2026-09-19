@@ -4,9 +4,10 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 /**
- * The ₹500 payment controls for the darshan photo. Standalone: it renders
- * inline on its own page rather than as the site-wide seva sheet, and it talks
- * only to /api/darshan/*.
+ * Inline payment controls for a one-time unlock page (/darshan, /ashirwad).
+ * Rendered on the page itself rather than as the site-wide seva sheet, and
+ * talks only to its own flow's API: `${api}/start`, `/status`, `/verify`.
+ * On success it re-renders the page, which reads the pass server-side.
  */
 
 const POLL_MS = 4000;
@@ -42,7 +43,25 @@ interface Qr {
   closeBy: number;
 }
 
-export default function DarshanGate({ amount }: { amount: number }) {
+export interface UnlockGateLabels {
+  pay: string;
+  opening: string;
+  showQr: string;
+  scanCaption: string;
+  waiting: string;
+  /** Shown in the Razorpay sheet under the beneficiary. */
+  checkoutDescription: string;
+}
+
+export default function UnlockGate({
+  amount,
+  api,
+  labels,
+}: {
+  amount: number;
+  api: string;
+  labels: UnlockGateLabels;
+}) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
   const [qr, setQr] = useState<Qr | null>(null);
@@ -72,7 +91,7 @@ export default function DarshanGate({ amount }: { amount: number }) {
     const tick = async () => {
       if (stop || document.hidden) return;
       try {
-        const res = await fetch('/api/darshan/status', { cache: 'no-store' });
+        const res = await fetch(`${api}/status`, { cache: 'no-store' });
         const data = (await res.json()) as { paid?: boolean };
         if (data.paid) unlock();
       } catch {
@@ -85,13 +104,13 @@ export default function DarshanGate({ amount }: { amount: number }) {
       stop = true;
       clearInterval(id);
     };
-  }, [polling, unlock]);
+  }, [polling, unlock, api]);
 
   const start = async (method: 'qr' | 'checkout') => {
     setBusy(true);
     setError(null);
     try {
-      const res = await fetch('/api/darshan/start', {
+      const res = await fetch(`${api}/start`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ method }),
@@ -128,7 +147,7 @@ export default function DarshanGate({ amount }: { amount: number }) {
         amount: order.amountPaise,
         currency: 'INR',
         name: order.beneficiary,
-        description: 'Mandal darshan photograph',
+        description: labels.checkoutDescription,
         theme: { color: '#7c2d12' },
         config: {
           display: {
@@ -139,7 +158,7 @@ export default function DarshanGate({ amount }: { amount: number }) {
         },
         handler: async (response: Record<string, string>) => {
           try {
-            const verify = await fetch('/api/darshan/verify', {
+            const verify = await fetch(`${api}/verify`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(response),
@@ -165,7 +184,7 @@ export default function DarshanGate({ amount }: { amount: number }) {
       onClick={() => start('checkout')}
       className="seva-shine relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-flame to-marigold px-5 py-3.5 text-base font-bold text-white shadow-lg shadow-flame/30 active:scale-[0.98] disabled:opacity-60"
     >
-      {busy ? 'Opening…' : `Pay ₹${amount} to see the image`}
+      {busy ? labels.opening : labels.pay}
     </button>
   );
 
@@ -179,7 +198,7 @@ export default function DarshanGate({ amount }: { amount: number }) {
         className="mx-auto block h-52 w-52 rounded-lg bg-white"
       />
       <figcaption className="mt-3 text-xs text-ink-soft">
-        Scan with any UPI app. The image unlocks by itself once the payment lands.
+        {labels.scanCaption}
       </figcaption>
     </figure>
   ) : (
@@ -189,7 +208,7 @@ export default function DarshanGate({ amount }: { amount: number }) {
       onClick={() => start('qr')}
       className="mt-3 w-full rounded-2xl border border-maroon/25 px-5 py-3 text-sm font-semibold text-maroon active:scale-[0.98] disabled:opacity-60"
     >
-      Show a UPI QR code instead
+      {labels.showQr}
     </button>
   );
 
@@ -228,7 +247,7 @@ export default function DarshanGate({ amount }: { amount: number }) {
       )}
 
       {polling && !qr && (
-        <p className="mt-3 text-center text-xs text-ink-soft">Waiting for the payment to confirm…</p>
+        <p className="mt-3 text-center text-xs text-ink-soft">{labels.waiting}</p>
       )}
       {error && <p className="mt-3 text-center text-xs text-band-red">{error}</p>}
     </div>

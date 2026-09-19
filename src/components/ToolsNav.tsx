@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
+import { ashirwadOpen } from '@/lib/ashirwad';
 import { localePath } from '@/lib/site';
 
 export const TOOLS = [
@@ -12,6 +13,12 @@ export const TOOLS = [
 ] as const;
 
 export type ToolKey = (typeof TOOLS)[number]['key'];
+
+/**
+ * Bappa's ashirwad (/ashirwad). Not in TOOLS: it lives outside the locale
+ * tree (no /mr or /hi prefix) and only shows once it can actually be offered.
+ */
+export const ASHIRWAD_LINK = { key: 'ashirwad', href: '/ashirwad', icon: '🌼' } as const;
 
 /**
  * Festival tools as a swipeable chip row. On phones it scrolls sideways
@@ -28,12 +35,24 @@ export default async function ToolsNav({
 }) {
   const t = await getTranslations('nav');
   const items = hideMap ? TOOLS.filter((x) => x.key !== 'map') : TOOLS;
+  const showAshirwad = await ashirwadOpen();
   return (
     <nav
       aria-label={t('title')}
       className="-mx-4 overflow-x-auto px-4 [scrollbar-width:none] sm:mx-0 sm:px-0"
     >
       <ul className="flex w-max gap-2 pb-1 sm:w-auto sm:flex-wrap">
+        {showAshirwad && (
+          <li>
+            <Link
+              href={ASHIRWAD_LINK.href}
+              className="seva-shine relative flex items-center gap-1.5 overflow-hidden whitespace-nowrap rounded-full border border-flame bg-gradient-to-r from-flame to-marigold px-3 py-1.5 text-[13px] font-bold text-white shadow-sm"
+            >
+              <span aria-hidden>{ASHIRWAD_LINK.icon}</span>
+              {t('ashirwad')}
+            </Link>
+          </li>
+        )}
         {items.map((item) => {
           const active = item.key === current;
           return (
