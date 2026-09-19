@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { primeSpeech, speakChant } from '@/lib/chant';
 import Petals from './Petals';
 import { readName } from './NameField';
 
@@ -16,7 +17,10 @@ import { readName } from './NameField';
  *   5. Bappa blesses: light pours out, the bell rings, petals shower, and the
  *      blessing appears line by line.
  *   6. "Ganpati Bappa Morya! Mangalmurti Morya!" — a recording if one is
- *      provided, otherwise the phone's own Marathi/Hindi voice.
+ *      provided, otherwise the device's own Indian voice (@/lib/chant).
+ *
+ * Nothing starts until the image has loaded: on a phone the artwork arrives
+ * after the page, and a name flown across an empty frame misses the ear.
  *
  * Browsers only allow sound after a tap. Straight after paying, the payment
  * tap still counts and everything plays at once; on a later visit the page
@@ -32,8 +36,7 @@ interface Point {
 
 /** When each step starts, in ms from the shankh. */
 const AT = { whisper: 900, heard: 4300, blessed: 5000, chant: 7300 } as const;
-
-const CHANT = 'गणपती बाप्पा मोरया! मंगलमूर्ती मोरया!';
+const FLIGHT_MS = AT.heard - AT.whisper;
 
 /** A temple bell, synthesised: inharmonic partials with a long decay. No audio file to ship. */
 function ringBell(ctx: AudioContext) {
@@ -62,33 +65,42 @@ function ringBell(ctx: AudioContext) {
   }
 }
 
+/** Piecewise-linear interpolation through [t, value] stops. */
+function through(stops: [number, number][], t: number): number {
+  for (let i = 1; i < stops.length; i++) {
+    const [t0, v0] = stops[i - 1];
+    const [t1, v1] = stops[i];
+    if (t <= t1) return v0 + ((v1 - v0) * (t - t0)) / (t1 - t0);
+  }
+  return stops[stops.length - 1][1];
+}
+
 /**
- * The chant in the device's own Marathi or Hindi voice. With neither, stay
- * silent: an English voice mangling "Morya" would break the moment.
+ * The name's flight, in pixels of the frame as it is actually rendered — so
+ * it lands on the ear at any screen width. A quadratic curve: it rises from
+ * below, drifts out a little, then swings into the ear, shrinking to fit
+ * inside it (a phone-sized pill is almost half the image wide).
  */
-function speakChant() {
-  const synth = window.speechSynthesis;
-  if (!synth) return;
-  const say = () => {
-    // Google's Indic voices sound the most natural where a device has them.
-    const voices = [...synth.getVoices()].sort(
-      (a, b) => Number(b.name.includes('Google')) - Number(a.name.includes('Google')),
-    );
-    const voice =
-      voices.find((v) => v.lang.toLowerCase().startsWith('mr')) ??
-      voices.find((v) => v.lang.toLowerCase().startsWith('hi'));
-    if (!voice) return;
-    const u = new SpeechSynthesisUtterance(CHANT);
-    u.voice = voice;
-    u.lang = voice.lang;
-    u.rate = 0.88;
-    u.pitch = 1.05;
-    synth.cancel();
-    synth.speak(u);
-  };
-  // Voices load asynchronously on first use in Chrome.
-  if (synth.getVoices().length) say();
-  else synth.addEventListener('voiceschanged', say, { once: true });
+function flightKeyframes(w: number, h: number, ear: Point): Keyframe[] {
+  const start = { x: w * 0.5, y: h * 0.9 };
+  const end = { x: (w * ear.x) / 100, y: (h * ear.y) / 100 };
+  const ctrl = { x: start.x - w * 0.14, y: end.y - h * 0.02 };
+  const scale: [number, number][] = [[0, 1.15], [0.12, 1], [0.6, 0.72], [0.92, 0.2], [1, 0.05]];
+  const opacity: [number, number][] = [[0, 0], [0.1, 1], [0.9, 1], [1, 0]];
+  const frames: Keyframe[] = [];
+  const N = 36;
+  for (let i = 0; i <= N; i++) {
+    const t = i / N;
+    const p = 0.5 - Math.cos(Math.PI * t) / 2; // ease in and out along the path
+    const x = (1 - p) ** 2 * start.x + 2 * (1 - p) * p * ctrl.x + p ** 2 * end.x;
+    const y = (1 - p) ** 2 * start.y + 2 * (1 - p) * p * ctrl.y + p ** 2 * end.y;
+    frames.push({
+      offset: t,
+      opacity: through(opacity, t),
+      transform: `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) translate(-50%, -50%) scale(${through(scale, t).toFixed(3)})`,
+    });
+  }
+  return frames;
 }
 
 export default function AshirwadReveal({
@@ -98,6 +110,7 @@ export default function AshirwadReveal({
   shankh,
   chant,
   credits,
+  devMode = false,
 }: {
   ear: Point;
   receipt: string | null;
@@ -105,13 +118,17 @@ export default function AshirwadReveal({
   shankh: readonly string[];
   chant: string | null;
   credits: string[];
+  /** Local test mode: offer to lock the page again so the flow can be retried. */
+  devMode?: boolean;
 }) {
   const [stage, setStage] = useState<Stage>('ready');
   const [name, setName] = useState('');
+  const [loaded, setLoaded] = useState(false);
   const [chanting, setChanting] = useState(false);
   const [motes, setMotes] = useState<{ id: number; x: number; y: number }[]>([]);
   const audio = useRef<AudioContext | null>(null);
   const shankhEl = useRef<HTMLAudioElement | null>(null);
+  const img = useRef<HTMLImageElement | null>(null);
   const frame = useRef<HTMLDivElement | null>(null);
   const whisper = useRef<HTMLSpanElement | null>(null);
   const words = useRef<HTMLElement | null>(null);
@@ -126,6 +143,8 @@ export default function AshirwadReveal({
     setName(readName());
     history.scrollRestoration = 'manual';
     window.scrollTo({ top: 0 });
+    // A cached image can finish before React attaches onLoad.
+    if (img.current?.complete && img.current.naturalWidth > 0) setLoaded(true);
     return () => {
       history.scrollRestoration = 'auto';
     };
@@ -144,9 +163,9 @@ export default function AshirwadReveal({
   const playChant = useCallback(() => {
     setChanting(true);
     if (chant) {
-      new Audio(chant).play().catch(speakChant);
+      new Audio(chant).play().catch(() => void speakChant());
     } else {
-      speakChant();
+      void speakChant();
     }
   }, [chant]);
 
@@ -169,41 +188,63 @@ export default function AshirwadReveal({
     at(AT.chant, playChant);
   }, [bell, playChant]);
 
-  // Try the shankh straight away. If the browser allows it (it does right
-  // after paying), the darshan runs; if not, ask for one tap.
+  // Once the artwork is on screen, try the shankh. If the browser allows it
+  // (it does right after the offering tap), the darshan runs; if not, ask for
+  // one tap.
   useEffect(() => {
+    if (!loaded) return;
     const el = shankhEl.current;
     if (!el) return;
     el.volume = 0.85;
-    el.play().then(begin, () => setStage('tap'));
+    el.play().then(begin, () => setStage((s) => (started.current ? s : 'tap')));
+  }, [loaded, begin]);
+
+  useEffect(() => {
     const pending = timers.current;
     return () => {
       pending.forEach(clearTimeout);
       window.speechSynthesis?.cancel();
     };
-  }, [begin]);
+  }, []);
 
   const tapToBegin = () => {
+    primeSpeech();
     setStage('ready');
     void shankhEl.current?.play().catch(() => undefined);
     begin();
   };
 
-  // Golden motes left behind along the name's path to the ear.
+  // 3. Fly the name to the ear, measured from the frame as rendered now.
   useEffect(() => {
     if (stage !== 'whisper') return;
+    const el = whisper.current;
+    const box = frame.current?.getBoundingClientRect();
+    if (!el || !box || box.height === 0) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const flight = el.animate(flightKeyframes(box.width, box.height, ear), {
+      duration: FLIGHT_MS,
+      fill: 'forwards',
+      easing: 'linear',
+    });
+
+    // Golden motes left behind along the way.
     let id = 0;
     const iv = setInterval(() => {
-      const box = frame.current?.getBoundingClientRect();
-      const w = whisper.current?.getBoundingClientRect();
-      if (!box || !w || box.width === 0) return;
-      const x = ((w.left + w.width / 2 - box.left) / box.width) * 100;
-      const y = ((w.top + w.height / 2 - box.top) / box.height) * 100;
-      const mote = { id: ++id, x, y };
+      const b = frame.current?.getBoundingClientRect();
+      const r = el.getBoundingClientRect();
+      if (!b || b.width === 0 || r.width === 0) return;
+      const mote = {
+        id: ++id,
+        x: ((r.left + r.width / 2 - b.left) / b.width) * 100,
+        y: ((r.top + r.height / 2 - b.top) / b.height) * 100,
+      };
       setMotes((m) => [...m.slice(-24), mote]);
     }, 110);
-    return () => clearInterval(iv);
-  }, [stage]);
+    return () => {
+      clearInterval(iv);
+      flight.cancel();
+    };
+  }, [stage, ear]);
 
   const blessed = stage === 'blessed';
   const offered = name || 'तुमची प्रार्थना';
@@ -215,6 +256,11 @@ export default function AshirwadReveal({
       `मी माझं नाव बाप्पाच्या कानात सांगितलं आणि आशीर्वाद घेतला.\n` +
       `Whisper your name to Bappa and receive His ashirwad before He goes home:\n${url}`;
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+  };
+
+  const lockAgain = async () => {
+    await fetch('/api/ashirwad/dev-unlock', { method: 'DELETE' }).catch(() => undefined);
+    location.reload();
   };
 
   return (
@@ -251,22 +297,35 @@ export default function AshirwadReveal({
         <div aria-hidden className="ashirwad-aura absolute -inset-[12%] rounded-full" />
         <div
           ref={frame}
-          className="relative overflow-hidden rounded-[2rem] shadow-[0_0_80px_rgb(245_158_11/0.45)] ring-2 ring-amber-300/60"
+          className="relative overflow-hidden rounded-[2rem] bg-maroon-deep shadow-[0_0_80px_rgb(245_158_11/0.45)] ring-2 ring-amber-300/60"
         >
+          {/* width/height give the frame its 4:5 shape before the bytes
+              arrive; once loaded, the image's own proportions take over. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
+            ref={img}
             src="/api/ashirwad/image"
             alt="Ganpati Bappa, in full light, blessing you"
-            className={`ashirwad-approach block w-full ${blessed ? 'ashirwad-blessed' : ''}`}
+            width={1200}
+            height={1500}
+            onLoad={() => setLoaded(true)}
+            onError={() => setLoaded(true)}
+            className={`block h-auto w-full ${loaded ? 'ashirwad-approach' : 'opacity-0'} ${blessed ? 'ashirwad-blessed' : ''}`}
           />
-          <div aria-hidden className="ashirwad-flash pointer-events-none absolute inset-0" />
+          {loaded && <div aria-hidden className="ashirwad-flash pointer-events-none absolute inset-0" />}
+          {!loaded && (
+            <div className="absolute inset-0 grid place-items-center">
+              <span className="ashirwad-flicker text-5xl" aria-hidden>
+                🪔
+              </span>
+            </div>
+          )}
 
-          {/* 3. The name, carried up into Bappa's ear. */}
+          {/* 3. The name, carried up into Bappa's ear (flown by the effect above). */}
           {stage === 'whisper' && (
             <span
               ref={whisper}
-              className="ashirwad-whisper z-10 max-w-[80%] truncate whitespace-nowrap rounded-full bg-amber-50/95 px-4 py-1.5 text-lg font-bold text-maroon shadow-[0_0_28px_rgb(251_191_36/0.95)]"
-              style={{ '--ex': `${ear.x}%`, '--ey': `${ear.y}%` } as React.CSSProperties}
+              className="pointer-events-none absolute left-0 top-0 z-10 max-w-[70%] truncate whitespace-nowrap rounded-full bg-amber-50/95 px-3 py-1 text-sm font-bold text-maroon opacity-0 shadow-[0_0_22px_rgb(251_191_36/0.95)] sm:px-4 sm:py-1.5 sm:text-lg"
             >
               🙏 {offered}
             </span>
@@ -367,6 +426,7 @@ export default function AshirwadReveal({
             <button
               type="button"
               onClick={() => {
+                primeSpeech();
                 bell();
                 playChant();
               }}
@@ -392,6 +452,15 @@ export default function AshirwadReveal({
           <p className="pt-1 text-center text-xs text-amber-100/60">
             Open on this device for a year. Clearing your browser data clears it.
           </p>
+          {devMode && (
+            <button
+              type="button"
+              onClick={lockAgain}
+              className="w-full rounded-2xl border border-dashed border-sky-300/50 px-5 py-3 text-sm font-semibold text-sky-200"
+            >
+              🧪 Lock again and test from the start (local only)
+            </button>
+          )}
         </div>
       )}
 

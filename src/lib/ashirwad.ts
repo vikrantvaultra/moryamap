@@ -30,10 +30,35 @@ export const ashirwad = createUnlock({
   description: 'Offering: digital darshan of Ganpati Bappa',
 });
 
-/** Null when Razorpay isn't configured — the page then says so instead of taking money. */
-export function ashirwadConfig(): SevaConfig | null {
-  return sevaConfig();
+/**
+ * Local test mode: under `next dev` the ₹501 button opens the darshan
+ * without Razorpay, so the whole experience can be tried on a laptop or a
+ * phone on the same Wi-Fi without paying. Never on Vercel or `next start`:
+ * both run with NODE_ENV=production. ASHIRWAD_DEV_PAYMENTS=1 turns it off,
+ * to test the real Razorpay flow locally.
+ */
+export function devUnlockEnabled(env: NodeJS.ProcessEnv = process.env): boolean {
+  return env.NODE_ENV === 'development' && env.ASHIRWAD_DEV_PAYMENTS !== '1';
 }
+
+/** Signs local test passes when no Razorpay keys are set. Useless outside dev. */
+const DEV_CONFIG: SevaConfig = {
+  keyId: 'dev',
+  keySecret: 'morya-ashirwad-local-test-only',
+  webhookSecret: null,
+  beneficiary: 'Local test (no payment)',
+};
+
+/**
+ * Null when Razorpay isn't configured — the page then says so instead of
+ * taking money. In local test mode it falls back to a dev-only signing key.
+ */
+export function ashirwadConfig(): SevaConfig | null {
+  return sevaConfig() ?? (devUnlockEnabled() ? DEV_CONFIG : null);
+}
+
+/** The payment ref a local test pass carries; the receipt shows it. */
+export const DEV_PAYMENT_REF = 'pay_LOCALTEST';
 
 export function isAshirwadAmount(value: unknown): value is number {
   return value === ASHIRWAD_AMOUNT;

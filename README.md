@@ -159,6 +159,16 @@ petals, the bell and "Ganpati Bappa Morya!".
   the artwork exists.
 - **Artwork and sounds**: see `src/assets/ashirwad/README.md`, which covers
   licences, credits, swapping in your own image and adding a recorded chant.
+- **Local test mode**: under `npm run dev`, the ₹501 button opens the
+  darshan without payment, and a "Lock again" button resets it so you can
+  retry. On a phone, open `http://<your-laptop-ip>:3000/ashirwad` on the same
+  Wi-Fi. It never runs on Vercel or under `next start`, which both use
+  NODE_ENV=production. To test real Razorpay payments locally, set
+  `ASHIRWAD_DEV_PAYMENTS=1`.
+- **The chant** uses the best Indian voice on the device (Google
+  Marathi/Hindi first, then any Hindi/Marathi, then Indian English), spoken
+  call-and-response. It never falls back to a US/UK voice.
+  `public/ashirwad/morya.m4a` replaces it with a real recording.
 
 **Analytics**: share links carry `utm_source` (`whatsapp`, `native`, `copy`)
 + `utm_medium=share`, and clicks fire a Vercel Web Analytics `share` event.

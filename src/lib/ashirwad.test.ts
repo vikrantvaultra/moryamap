@@ -1,6 +1,12 @@
 import type { NextRequest } from 'next/server';
 import { describe, expect, it } from 'vitest';
-import { ASHIRWAD_AMOUNT, ashirwad, daysUntilVisarjan, isAshirwadAmount } from './ashirwad';
+import {
+  ASHIRWAD_AMOUNT,
+  ashirwad,
+  daysUntilVisarjan,
+  devUnlockEnabled,
+  isAshirwadAmount,
+} from './ashirwad';
 import { type SevaConfig, signToken } from './seva';
 
 const cfg: SevaConfig = {
@@ -85,5 +91,23 @@ describe('days until Bappa goes home (Anant Chaturdashi, 25 Sep 2026, IST)', () 
   it('turns over at IST midnight, not UTC midnight', () => {
     // 19:00 UTC on the 24th is 00:30 IST on the 25th.
     expect(daysUntilVisarjan(new Date('2026-09-24T19:00:00Z'))).toBe(0);
+  });
+});
+
+describe('local test mode', () => {
+  const env = (vars: Record<string, string>) => vars as unknown as NodeJS.ProcessEnv;
+
+  it('is on under next dev only', () => {
+    expect(devUnlockEnabled(env({ NODE_ENV: 'development' }))).toBe(true);
+  });
+
+  it('is never on in production (Vercel, next start) or in tests', () => {
+    expect(devUnlockEnabled(env({ NODE_ENV: 'production' }))).toBe(false);
+    expect(devUnlockEnabled(env({ NODE_ENV: 'test' }))).toBe(false);
+    expect(devUnlockEnabled(env({}))).toBe(false);
+  });
+
+  it('can be switched off locally to test real Razorpay payments', () => {
+    expect(devUnlockEnabled(env({ NODE_ENV: 'development', ASHIRWAD_DEV_PAYMENTS: '1' }))).toBe(false);
   });
 });
