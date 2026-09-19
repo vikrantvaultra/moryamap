@@ -9,6 +9,16 @@ import { estimateWait, type WaitEstimate } from '@/lib/wait';
  */
 export type PinPrecision = 'rooftop' | 'street' | 'area';
 
+/**
+ * BMC administrative ward ('A', 'F/S', 'K/E', …) for mandals inside Greater
+ * Mumbai, or the municipal corporation ('Thane', 'Navi Mumbai', …) for the
+ * few MMR mandals in the directory. Derived from OpenStreetMap admin
+ * boundaries by scripts/assign-wards.ts — provenance in ward-pins.json.
+ * Ward helpers live in @/lib/wards, which stays free of server imports so
+ * the map and list can use them too.
+ */
+export type Ward = string;
+
 // Everything returned here is JSON-serializable (unstable_cache round-trips
 // through JSON), so timestamps travel as ISO strings.
 
@@ -49,6 +59,8 @@ export interface MandalData {
   nameMr: string | null;
   nameHi: string | null;
   area: string;
+  /** BMC ward letter, or the municipal corporation outside Greater Mumbai. */
+  ward: Ward | null;
   tier: Tier;
   idolLat: number | null;
   idolLng: number | null;

@@ -12,6 +12,14 @@
  *                                 mandal_name,also_known_as,area,address,
  *                                 latitude,longitude,place_id,coord_source,
  *                                 coord_precision,verification,qa_flag
+ *   src/db/osm-mandals.json       mandals found in OpenStreetMap that the
+ *                                 dataset misses (scripts/osm-mandals.ts)
+ *   src/db/scraped-mandals.json   mandals scraped from the public
+ *                                 Ganeshotsav directories
+ *                                 (scripts/scrape-mandals.ts)
+ *   src/db/ward-pins.json         slug → BMC ward (scripts/assign-wards.ts).
+ *                                 Missing entries leave ward null; rerun
+ *                                 assign-wards afterwards to fill them in.
  * Outputs
  *   src/db/static-directory.json  what the site serves
  *   src/db/geocoded-pins.json     provenance for every pin
@@ -30,11 +38,46 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseCsv, slugify } from '../src/lib/csv';
 import { directoryProblems } from '../src/lib/directory-check';
+import { PIN_SOURCE_NOTES } from '../src/lib/notes';
 import type { Tier } from '../src/db/schema';
 import type { MandalData, PinPrecision } from '../src/lib/queries';
 
 const DB = join(__dirname, '..', 'src', 'db');
 const read = <T>(file: string): T => JSON.parse(readFileSync(join(DB, file), 'utf8')) as T;
+
+interface OsmMandal {
+  name: string;
+  aliases?: string[];
+  area: string;
+  tier: Tier;
+  lat: number;
+  lng: number;
+  /** 'node/123' | 'way/456' — the feature the coordinate came from. */
+  osm: string;
+}
+interface OsmFile {
+  mandals: OsmMandal[];
+}
+interface WardPin {
+  slug: string;
+  ward: string;
+}
+interface ScrapedMandal {
+  name: string;
+  nameMr: string | null;
+  aliases: string[];
+  area: string;
+  address: string | null;
+  nearestStation: string | null;
+  establishedYear: number | null;
+  lat: number;
+  lng: number;
+  source: string;
+}
+interface ScrapedFile {
+  fetchedAt: string;
+  mandals: ScrapedMandal[];
+}
 
 const BASE_BY_TIER: Record<Tier, number> = { s: 240, a: 90, b: 35, c: 10 };
 const BOUNDS = { minLat: 18.85, maxLat: 19.35, minLng: 72.7, maxLng: 73.15 };
@@ -121,11 +164,7 @@ const POPULAR =
 const STREET_TOKEN =
   /\d|road|\brd\b|marg|lane|\bln\b|galli|path|chowk|nivas|mansion|bhavan|park|complex|colony|society|subway|talao|chawl|garden|wadi\b/i;
 
-const NOTE: Record<'unverified' | 'area', string> = {
-  unverified:
-    'Map pin is approximate — from an earlier community list, not verified. Confirm locally before you go.',
-  area: 'Map pin marks the neighbourhood only — the exact pandal spot isn’t known. Ask locally for directions.',
-};
+const NOTE = { unverified: PIN_SOURCE_NOTES.community, area: PIN_SOURCE_NOTES.area };
 
 interface Row {
   name: string;
@@ -207,6 +246,9 @@ function main() {
   const curated = read<MandalData[]>('curated-mandals.json');
   const curatedPins = read<{ slug: string }[]>('curated-pins.json');
   const previous = read<MandalData[]>('static-directory.json');
+  const osm = read<OsmFile>('osm-mandals.json');
+  const scraped = read<ScrapedFile>('scraped-mandals.json');
+  const wardBySlug = new Map(read<WardPin[]>('ward-pins.json').map((w) => [w.slug, w.ward]));
   const rows = loadRows();
   const byName = new Map(rows.map((r) => [r.name, r]));
 
@@ -237,13 +279,19 @@ function main() {
 
   const dir: MandalData[] = [];
   const matched = new Set<string>();
-  const log = { curated: [] as string[], added: [] as string[], merged: [] as string[] };
+  const log = {
+    curated: [] as string[],
+    added: [] as string[],
+    osm: [] as string[],
+    scraped: [] as string[],
+    merged: [] as string[],
+  };
 
   // 1. Curated mandals, enriched with their dataset row where one exists.
   for (const c of curated) {
     const rowName = Object.keys(CURATED_MATCH).find((n) => CURATED_MATCH[n] === c.slug);
     const row = rowName ? byName.get(rowName) : undefined;
-    const m: MandalData = { ...c, aliases: [], address: null, pinPrecision: null };
+    const m: MandalData = { ...c, aliases: [], address: null, pinPrecision: null, ward: null };
     if (row) {
       matched.add(row.name);
       m.aliases = uniqueAliases(c.name, [row.name, ...row.aliases]);
@@ -292,6 +340,7 @@ function main() {
       nameHi: null,
       aliases: uniqueAliases(name, name === row.name ? row.aliases : [row.name, ...row.aliases]),
       area: row.area,
+      ward: null,
       tier,
       idolLat: row.lat,
       idolLng: row.lng,
@@ -318,6 +367,121 @@ function main() {
     log.added.push(`${slug} [${tier}, ${row.precision}]${prev ? ' (existing id kept)' : ''}`);
   }
 
+  // 3. Mandals that only OpenStreetMap knows about (scripts/osm-mandals.ts).
+  for (const o of osm.mandals) {
+    if (o.lat < BOUNDS.minLat || o.lat > BOUNDS.maxLat || o.lng < BOUNDS.minLng || o.lng > BOUNDS.maxLng) {
+      throw new Error(`osm-mandals.json: ${o.name} is outside Mumbai`);
+    }
+    if (dir.some((m) => norm(m.name) === norm(o.name) || m.aliases.some((a) => norm(a) === norm(o.name)))) {
+      log.merged.push(`${o.name} → already in the directory (OSM row skipped)`);
+      continue;
+    }
+    const prev = prevByKey.get(norm(o.name));
+    const slug = prev?.slug ?? slugify(o.name);
+    dir.push({
+      id: prev?.id ?? nextId++,
+      slug,
+      name: o.name,
+      nameMr: null,
+      nameHi: null,
+      aliases: uniqueAliases(o.name, o.aliases ?? []),
+      area: o.area,
+      ward: null,
+      tier: o.tier,
+      idolLat: o.lat,
+      idolLng: o.lng,
+      // The OSM feature is the mandal's own premises — better than a street
+      // guess, short of a verified pandal spot. Never a queue start.
+      pinPrecision: 'street',
+      address: null,
+      nearestStation: null,
+      stationWalkMinutes: null,
+      notes: PIN_SOURCE_NOTES.osm,
+      queues: [
+        {
+          id: prev?.queues[0]?.id ?? nextQueueId++,
+          kind: 'general',
+          label: 'Darshan',
+          labelMr: 'दर्शन',
+          entryLat: null,
+          entryLng: null,
+          baseMinutes: BASE_BY_TIER[o.tier],
+          entryPoints: [],
+          report: null,
+        },
+      ],
+    });
+    pinEntry(slug, o.lat, o.lng, 'street', `OpenStreetMap ${o.osm} (ODbL) — mandal premises`);
+    log.osm.push(`${slug} [${o.tier}] ← OSM ${o.osm}`);
+  }
+
+  // 4. Everything the public directories list that we don't have yet.
+  //    scrape-mandals.ts already deduplicated against the directory; this
+  //    repeats the name check so a stale file can't smuggle a twin in.
+  for (const row of scraped.mandals) {
+    if (row.lat < BOUNDS.minLat || row.lat > BOUNDS.maxLat || row.lng < BOUNDS.minLng || row.lng > BOUNDS.maxLng) {
+      throw new Error(`scraped-mandals.json: ${row.name} is outside Mumbai`);
+    }
+    const names = [row.name, ...row.aliases].map(norm);
+    if (dir.some((m) => names.includes(norm(m.name)) || m.aliases.some((a) => names.includes(norm(a))))) {
+      log.merged.push(`${row.name} → already in the directory (scraped row skipped)`);
+      continue;
+    }
+    // Same guard as the dataset pass: a previous entry can only lend its id
+    // and slug once, or two scraped rows would collide on both.
+    const prev = [row.name, ...row.aliases]
+      .map((k) => prevByKey.get(norm(k)))
+      .find((p) => p && !dir.some((d) => d.id === p.id));
+    const slug = prev?.slug ?? slugify(row.name);
+    // Always 'c'. The POPULAR heuristic was tuned on 127 vetted rows; over
+    // 278 scraped ones "cha Raja" and "Vighnaharta" are in half the names
+    // and say nothing about crowd size. Tier drives the wait baseline, so
+    // guessing 'b' here would invent a 15–60 min queue for a galli mandal.
+    const tier: Tier = 'c';
+    const established = row.establishedYear
+      ? `Sarvajanik Ganeshotsav since ${row.establishedYear}.`
+      : '';
+    dir.push({
+      id: prev?.id ?? nextId++,
+      slug,
+      name: row.name,
+      nameMr: row.nameMr,
+      nameHi: null,
+      aliases: uniqueAliases(row.name, row.aliases),
+      area: row.area,
+      ward: null,
+      tier,
+      idolLat: row.lat,
+      idolLng: row.lng,
+      // A directory's own pin for the mandal: better than a locality guess,
+      // short of a place we've verified. Never a queue start.
+      pinPrecision: 'street',
+      address: row.address,
+      nearestStation: row.nearestStation,
+      stationWalkMinutes: null,
+      notes: [established, PIN_SOURCE_NOTES.scraped].filter(Boolean).join('\n\n'),
+      queues: [
+        {
+          id: prev?.queues[0]?.id ?? nextQueueId++,
+          kind: 'general',
+          label: 'Darshan',
+          labelMr: 'दर्शन',
+          entryLat: null,
+          entryLng: null,
+          baseMinutes: BASE_BY_TIER[tier],
+          entryPoints: [],
+          report: null,
+        },
+      ],
+    });
+    pinEntry(slug, row.lat, row.lng, 'street', `${row.source} (scraped ${scraped.fetchedAt})`);
+    log.scraped.push(`${slug} [${tier}] ← ${row.source}`);
+  }
+
+  // 5. BMC ward for each mandal, carried over from the last assign-wards run.
+  for (const m of dir) m.ward = wardBySlug.get(m.slug) ?? null;
+  const unwarded = dir.filter((m) => !m.ward).map((m) => m.slug);
+
   const problems = directoryProblems(dir);
   if (problems.length) throw new Error(`Directory check failed:\n  ${problems.join('\n  ')}`);
 
@@ -336,12 +500,22 @@ function main() {
   const count = (p: PinPrecision | null) => dir.filter((m) => m.pinPrecision === p).length;
   console.log(`Curated (${log.curated.length}):\n  ${log.curated.join('\n  ')}`);
   console.log(`\nAdded from dataset (${log.added.length}):\n  ${log.added.join('\n  ')}`);
+  console.log(`\nAdded from OpenStreetMap (${log.osm.length}):\n  ${log.osm.join('\n  ')}`);
+  console.log(`\nAdded from public directories (${log.scraped.length}).`);
   console.log(`\nMerged duplicates (${log.merged.length}):\n  ${log.merged.join('\n  ')}`);
   console.log(`\nRemoved since last build (${removed.length}):\n  ${removed.join('\n  ')}`);
   console.log(
     `\n${dir.length} mandals, all pinned — rooftop ${count('rooftop')}, street ${count('street')}, ` +
       `area ${count('area')}, original OSM ${count(null)}.`,
   );
+  const warded = dir.length - unwarded.length;
+  console.log(`${warded} of ${dir.length} carry a BMC ward.`);
+  if (unwarded.length) {
+    console.log(
+      `No ward yet (${unwarded.length}): ${unwarded.join(', ')}\n` +
+        '→ run `npx tsx scripts/assign-wards.ts` to fill them in.',
+    );
+  }
 }
 
 main();

@@ -10,13 +10,22 @@ import type { MapStrings } from '@/components/MapView';
 import { formatRangeParts } from '@/components/WaitFigure';
 import { immersionMoment } from '@/lib/festival-data';
 import { absoluteUrl, shareMetadata } from '@/lib/metadata';
-import { mandalName, queueLabel } from '@/lib/names';
+import { mandalName, pinIcon, pinShortKey, queueLabel } from '@/lib/names';
+import { firstRealNote } from '@/lib/notes';
 import { estimateForQueue, getMandalDirectory, type MandalData } from '@/lib/queries';
 import { localePath } from '@/lib/site';
+import { regionOfWard, wardLabel, wardPlaces, type Region } from '@/lib/wards';
 
 // ISR — the single most important decision in the build. The CDN absorbs
 // festival-evening spikes; origin sees ~1 request/minute.
 export const revalidate = 60;
+
+const TIER_CLASS: Record<string, string> = {
+  s: 'bg-maroon text-amber-100',
+  a: 'bg-flame text-white',
+  b: 'bg-marigold text-maroon-deep',
+  c: 'bg-cream-deep text-ink-soft',
+};
 
 const BAND_KEYS = ['green', 'amber', 'red', 'deepred'] as const;
 const BAND_DOT: Record<(typeof BAND_KEYS)[number], string> = {
@@ -55,15 +64,34 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const tw = await getTranslations('wait');
   const tb = await getTranslations('bands');
   const tm = await getTranslations('mandal');
+  const ti = await getTranslations('tier');
   const tc = await getTranslations('common');
   const ts = await getTranslations('share');
   const tf = await getTranslations('festival');
   const tn = await getTranslations('nav');
 
   // The map is a client island with no intl provider — hand it raw templates.
+  const tg = await getTranslations('regions');
+  const regionLabels: Record<Region, string> = {
+    island: tg('island'),
+    western: tg('western'),
+    eastern: tg('eastern'),
+    mmr: tg('mmr'),
+  };
+
   const mapStrings: MapStrings = {
     loading: tc('loading'),
     noPins: t('noPinsYet'),
+    all: t('all'),
+    regions: regionLabels,
+    wardWord: t('wardWord'),
+    filterRegion: t('filterRegion'),
+    filterWard: t('filterWard'),
+    showing: t.raw('mapShowing'),
+    clusterHint: t('clusterHint'),
+    searchPlaceholder: t('searchPlaceholder'),
+    noResults: t('noResults'),
+    nearestStation: tm('nearestStation'),
     mapNote: t('mapNote'),
     approxLocation: t('approxLocation'),
     areaOnly: t('areaOnly'),
@@ -120,13 +148,45 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   // Precompute display strings server-side so the list client component
   // ships no i18n runtime. Order stays area/popularity — never wait.
-  const items: ListItem[] = mandals.map((m) => ({
+  const wardWord = t('wardWord');
+  const items: ListItem[] = mandals.map((m) => {
+    const localName = mandalName(m, locale);
+    const station = [
+      m.nearestStation,
+      m.stationWalkMinutes != null ? tm('walk', { mins: m.stationWalkMinutes }) : null,
+    ]
+      .filter(Boolean)
+      .join(' · ');
+    return {
     slug: m.slug,
-    name: mandalName(m, locale),
+    name: localName,
+    originalName: localName === m.name ? null : m.name,
     area: m.area,
+    ward: m.ward,
+    wardLabel: wardLabel(m.ward, wardWord),
+    region: regionOfWard(m.ward),
     aliases: m.aliases,
     address: m.address,
-    search: [m.name, m.nameMr, m.nameHi, m.area, m.address, ...m.aliases]
+    tierLabel: ti(m.tier),
+    tierClass: TIER_CLASS[m.tier],
+    pinLabel: t(pinShortKey(m.pinPrecision)),
+    pinIcon: pinIcon(m.pinPrecision),
+    gettingThere: station || null,
+    // Only notes about THIS mandal. The shared "where the pin came from"
+    // paragraph is on 300+ of them; the precision badge already says it.
+    note: firstRealNote(m.notes),
+    // Ward letter and its localities are searchable too: "F/S", "Lalbaug".
+    search: [
+      m.name,
+      m.nameMr,
+      m.nameHi,
+      m.area,
+      m.address,
+      m.ward,
+      wardPlaces(m.ward),
+      m.nearestStation,
+      ...m.aliases,
+    ]
       .filter(Boolean)
       .join(' ')
       .toLowerCase(),
@@ -147,7 +207,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         reported,
       };
     }),
-  }));
+    };
+  });
 
   return (
     <HomeShell
@@ -208,11 +269,33 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 searchPlaceholder: t('searchPlaceholder'),
                 noResults: t('noResults'),
                 pageOf: t.raw('pageOf'),
+                prev: tc('prevPage'),
+                next: tc('nextPage'),
+                showing: t.raw('showing'),
+                showAll: t('showAll'),
+                paginate: t('paginate'),
+                all: t('all'),
+                regions: regionLabels,
+                filterRegion: t('filterRegion'),
+                filterWard: t('filterWard'),
+                clear: t('clear'),
               }}
             />
           </div>
 
           <p className="mt-5 text-xs italic text-ink-soft">{t('sortNote')}</p>
+
+          {/* What "every mandal in Mumbai" actually means here. Saying it in
+              the UI is cheaper than letting someone find out the hard way. */}
+          <details className="card mt-4 p-4">
+            <summary className="cursor-pointer text-sm font-bold text-maroon">
+              {t('coverageTitle')}
+            </summary>
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+              {t('coverageBody', { count: mandals.length })}
+            </p>
+            <p className="mt-2 text-xs text-ink-soft">{t('coverageSources')}</p>
+          </details>
 
           <div className="card mt-6 p-4">
             <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">

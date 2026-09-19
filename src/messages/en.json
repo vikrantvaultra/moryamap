@@ -58,8 +58,8 @@
   },
   "home": {
     "title": "Where's the line?",
-    "subtitle": "Queue starts, honest waits and how to reach {count} famous Ganpati mandals across Mumbai.",
-    "listTitle": "Browse by area",
+    "subtitle": "Queue starts, honest waits and how to reach {count} Ganpati mandals across Mumbai.",
+    "listTitle": "Browse every mandal",
     "legendTitle": "Wait bands",
     "mapNote": "Pins mark where the darshan queue starts — not where the idol is.",
     "noPinsYet": "Map pins are still being verified on the ground and will appear as they're confirmed. Use the list below meanwhile.",
@@ -68,12 +68,29 @@
     "showMap": "Map",
     "queueStart": "Queue start",
     "details": "Details",
-    "searchPlaceholder": "Search mandal or area…",
+    "searchPlaceholder": "Search mandal, area or ward…",
     "noResults": "No mandals match your search.",
     "pageOf": "Page {page} of {total}",
     "approxLocation": "Approximate mandal location — exact queue start not verified yet.",
     "areaOnly": "Neighbourhood only — the exact pandal spot isn't known. Ask locally.",
-    "mandalLocation": "Mandal location — the darshan queue may start elsewhere."
+    "mandalLocation": "Mandal location — the darshan queue may start elsewhere.",
+    "showing": "Showing {shown} of {total}",
+    "showAll": "Show all",
+    "paginate": "Show in pages",
+    "all": "All Mumbai",
+    "clear": "Clear filters",
+    "filterRegion": "Filter by part of the city",
+    "filterWard": "Filter by BMC ward",
+    "pinExact": "Verified location",
+    "pinApprox": "Approx. location",
+    "pinArea": "Neighbourhood only",
+    "wardWord": "Ward",
+    "mapFilterHint": "Filter the map",
+    "mapShowing": "{shown} of {total} mandals",
+    "clusterHint": "Tap a circle to zoom in.",
+    "coverageTitle": "How complete is this list?",
+    "coverageBody": "Every mandal here is individually sourced and pinned — {count} of them. Mumbai has far more: BMC permits roughly 2,500–3,000 sarvajanik mandals a season, and there is no public list of them. The BMC one-window register, the police zone lists and the Samanvay Samiti roster are the only routes to the rest, and each needs a person to ask. Housing-society and galli installations are not counted at all.",
+    "coverageSources": "Sources: hand-curated mandals, a verified community dataset, and OpenStreetMap (ODbL). Wards from OpenStreetMap admin boundaries."
   },
   "report": {
     "title": "Where does the line start right now?",
@@ -392,5 +409,11 @@
     "lockPonds": "Immersion ponds near you",
     "lockCta": "Pay ₹{amount} · unlock all features",
     "lockHint": "One payment unlocks every feature, for all of Ganeshotsav"
+  },
+  "regions": {
+    "island": "Island City",
+    "western": "Western Suburbs",
+    "eastern": "Eastern Suburbs",
+    "mmr": "Beyond Mumbai"
   }
 }

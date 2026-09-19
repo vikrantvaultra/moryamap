@@ -54,6 +54,7 @@ export function buildPublicSnapshot(state: StoredState) {
       nameMr: m.nameMr,
       nameHi: m.nameHi,
       area: m.area,
+      ward: m.ward,
       tier: m.tier,
       // Mandal location (often geocoded/approximate) — NOT the queue start.
       idolLat: m.idolLat,
@@ -63,6 +64,7 @@ export function buildPublicSnapshot(state: StoredState) {
       address: m.address,
       nearestStation: m.nearestStation,
       stationWalkMinutes: m.stationWalkMinutes,
+      notes: m.notes,
       queues: m.queues.map((q) => {
         const est = estimateForQueue(q, now);
         return {
