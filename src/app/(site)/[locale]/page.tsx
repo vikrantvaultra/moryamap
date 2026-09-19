@@ -147,8 +147,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const tp = await getTranslations('ashirwadPromo');
   const bappaHome = daysUntilVisarjan(now) < 0;
   // On phones the map fills the screen, so the ashirwad floats over it as its
-  // own card (promo). The single-line callout above the Map/List pill stays
-  // for immersion-day logistics, else the routes when there's no ashirwad.
+  // own card (promo). The single-line callout above the Map/List pill is
+  // separate and always there: immersion-day logistics on their days, the
+  // pandal-hopping routes (the ₹21 unlock) every other day.
   const promo = showAshirwad
     ? {
         href: ASHIRWAD_LINK.href,
@@ -156,11 +157,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         cta: tp(bappaHome ? 'calloutAfter' : 'callout') + ' →',
       }
     : undefined;
-  const callout =
-    banner ??
-    (showAshirwad
-      ? undefined
-      : { href: localePath(locale, '/routes'), icon: '🪔', label: `${tn('routes')} →` });
+  const callout = banner ?? {
+    href: localePath(locale, '/routes'),
+    icon: '🪔',
+    label: `${tn('routes')} →`,
+  };
 
   // Precompute display strings server-side so the list client component
   // ships no i18n runtime. Order stays area/popularity — never wait.
