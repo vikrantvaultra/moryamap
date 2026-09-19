@@ -5,6 +5,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { pinLabelKey } from '@/lib/names';
+import { nearestTo } from '@/lib/map-hit';
 import { firstRealNote } from '@/lib/notes';
 import type { PublicSnapshot, SnapshotMandal, SnapshotQueue } from '@/lib/snapshot';
 import { compareWards, regionOfWard, wardLabel, REGIONS, type Region } from '@/lib/wards';
@@ -56,6 +57,15 @@ const L_CLUSTER = 'mandal-clusters';
 const L_COUNT = 'mandal-cluster-count';
 const L_PIN = 'mandal-pin';
 const L_SELECTED = 'mandal-pin-selected';
+/**
+ * Transparent, finger-sized circles under the visible ones. A rendered pin
+ * is 15-19 px across, so a mouse hits it and a fingertip - whose contact
+ * patch is nearer 40 px, and whose centroid lands 10-15 px from where the
+ * user aimed - does not. Taps are hit-tested against this layer instead.
+ */
+const L_HIT = 'mandal-hit';
+/** Half a 44 px touch target, the Apple/Android floor. */
+const HIT_RADIUS = 22;
 
 function fmt(template: string, vars: Record<string, string | number>): string {
   return template.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ''));
@@ -272,6 +282,10 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
       center: [72.87, 19.0], // island city, where most big mandals are
       zoom: 11,
       minZoom: 8.5,
+      // Default is 3 px. A tap on glass almost always drifts further than
+      // that, and MapLibre then classes it as a drag and emits no click at
+      // all - which is why pins opened with a mouse but not with a thumb.
+      clickTolerance: 8,
       // Generous bounds: tighter ones can be narrower than a desktop
       // viewport, which wedges MapLibre into a state where it never
       // requests tiles at all.
@@ -300,6 +314,23 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
         // break apart early or the densest galli stays a single dot.
         clusterRadius: 38,
         clusterMaxZoom: 14,
+      });
+
+      map.addLayer({
+        id: L_HIT,
+        type: 'circle',
+        source: SOURCE,
+        paint: {
+          // Fully transparent, but still hit-tested: queryRenderedFeatures
+          // goes by geometry and radius, not by what you can see.
+          'circle-color': 'rgba(0,0,0,0)',
+          'circle-radius': [
+            'case',
+            ['has', 'point_count'],
+            ['step', ['get', 'point_count'], HIT_RADIUS, 5, HIT_RADIUS + 4, 15, HIT_RADIUS + 8],
+            HIT_RADIUS,
+          ],
+        },
       });
 
       map.addLayer({
@@ -363,10 +394,8 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
         },
       });
 
-      for (const id of [L_CLUSTER, L_PIN]) {
-        map.on('mouseenter', id, () => (map.getCanvas().style.cursor = 'pointer'));
-        map.on('mouseleave', id, () => (map.getCanvas().style.cursor = ''));
-      }
+      map.on('mouseenter', L_HIT, () => (map.getCanvas().style.cursor = 'pointer'));
+      map.on('mouseleave', L_HIT, () => (map.getCanvas().style.cursor = ''));
       setStyleReady(true);
     });
 
@@ -401,44 +430,54 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
     const map = mapRef.current;
     if (!map || !styleReady) return;
 
-    const onCluster = (e: maplibregl.MapMouseEvent) => {
-      const feature = map.queryRenderedFeatures(e.point, { layers: [L_CLUSTER] })[0];
-      const clusterId = feature?.properties?.cluster_id;
-      if (clusterId == null) return;
-      const source = map.getSource(SOURCE) as maplibregl.GeoJSONSource;
-      source.getClusterExpansionZoom(clusterId).then((zoom) => {
-        map.easeTo({ center: (feature.geometry as GeoJSON.Point).coordinates as [number, number], zoom });
-      });
-    };
+    // One handler over the fat hit layer. Separate per-layer handlers would
+    // both fire once the targets are finger-sized and overlapping.
+    const onClick = (e: maplibregl.MapMouseEvent) => {
+      const hits = map.queryRenderedFeatures(e.point, { layers: [L_HIT] });
+      if (hits.length === 0) {
+        close();
+        return;
+      }
 
-    const onPin = (e: maplibregl.MapMouseEvent) => {
-      const feature = map.queryRenderedFeatures(e.point, { layers: [L_PIN] })[0];
-      const index = feature?.properties?.pin;
-      if (index == null) return;
-      const pin = pinsRef.current[index as number];
+      // A 44 px target covers several mandals in a Khetwadi lane, so take
+      // the one actually closest to the finger, not the first match.
+      const best = nearestTo(e.point, hits, (hit) =>
+        map.project((hit.geometry as GeoJSON.Point).coordinates as [number, number]),
+      );
+      if (!best) return;
+
+      const clusterId = best.properties?.cluster_id;
+      if (clusterId != null) {
+        const source = map.getSource(SOURCE) as maplibregl.GeoJSONSource;
+        source
+          .getClusterExpansionZoom(clusterId)
+          .then((zoom) =>
+            map.easeTo({
+              center: (best.geometry as GeoJSON.Point).coordinates as [number, number],
+              zoom,
+            }),
+          )
+          .catch(() => {});
+        return;
+      }
+
+      const index = best.properties?.pin;
+      const pin = index == null ? undefined : pinsRef.current[index as number];
       if (!pin) return;
       setSelected({ mandal: pin.mandal, queue: pin.queue });
       setSelectedPin(pin.id);
       map.easeTo({
         center: [pin.lng, pin.lat],
         zoom: Math.max(map.getZoom(), 14),
-        padding: { bottom: 280 },
+        // Room for the sheet, but never more than the map has: on a short
+        // phone viewport a fixed 280 would shove the pin off the top.
+        padding: { bottom: Math.min(280, Math.round(map.getCanvas().clientHeight * 0.45)) },
       });
     };
 
-    // A tap that hits neither layer closes the sheet.
-    const onBackground = (e: maplibregl.MapMouseEvent) => {
-      const hit = map.queryRenderedFeatures(e.point, { layers: [L_CLUSTER, L_PIN] });
-      if (hit.length === 0) close();
-    };
-
-    map.on('click', L_CLUSTER, onCluster);
-    map.on('click', L_PIN, onPin);
-    map.on('click', onBackground);
+    map.on('click', onClick);
     return () => {
-      map.off('click', L_CLUSTER, onCluster);
-      map.off('click', L_PIN, onPin);
-      map.off('click', onBackground);
+      map.off('click', onClick);
     };
   }, [styleReady, close]);
 
