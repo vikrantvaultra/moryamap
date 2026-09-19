@@ -1,0 +1,103 @@
+{
+  "_comment": "Ganeshotsav mandals that exist in OpenStreetMap and are NOT in community-mandals.csv. Harvested with scripts/osm-mandals.ts on 19 Sep 2026 from the Overpass API and reviewed by hand: every generic name ('Ganesh Mandal', 'Ganpati Mandir'), every permanent temple, and every school / hospital / shop / housing society that merely carries a mandal's name was dropped. Data © OpenStreetMap contributors, ODbL — the same licence as the rest of this directory's pins. The coordinate is the mandal's own mapped premises (its maidan, shelter or hall), which is where the pandal usually goes up — but it is NOT a verified pandal spot and NEVER a queue start, so every row ships at 'street' precision with the note below. Rebuild the directory after editing: npx tsx scripts/build-directory.ts",
+  "mandals": [
+    {
+      "name": "Jai Machindranath Mitra Mandal",
+      "area": "Sion Koliwada",
+      "tier": "c",
+      "lat": 19.0479764,
+      "lng": 72.8539648,
+      "osm": "node/12811681070"
+    },
+    {
+      "name": "Jai Shree Ganesh Mitra Mandal",
+      "area": "Sion Koliwada",
+      "tier": "c",
+      "lat": 19.0464243,
+      "lng": 72.8538281,
+      "osm": "way/1394136080"
+    },
+    {
+      "name": "Sagar Tarun Mitra Mandal",
+      "area": "Sion Koliwada",
+      "tier": "c",
+      "lat": 19.0478988,
+      "lng": 72.854629,
+      "osm": "way/1394136082"
+    },
+    {
+      "name": "Sai Ganesh Seva Mandal",
+      "area": "Asalpha",
+      "tier": "c",
+      "lat": 19.0968294,
+      "lng": 72.8871357,
+      "osm": "node/3518461508"
+    },
+    {
+      "name": "Shivsahyadri Mitra Mandal",
+      "area": "Mulund Colony",
+      "tier": "c",
+      "lat": 19.1777131,
+      "lng": 72.9405969,
+      "osm": "node/11567692043"
+    },
+    {
+      "name": "Achanak Mitra Mandal",
+      "aliases": [
+        "Achanak Mitra Mandal, Ram Nagar"
+      ],
+      "area": "Bhandup East",
+      "tier": "c",
+      "lat": 19.1357205,
+      "lng": 72.9389842,
+      "osm": "way/747092419"
+    },
+    {
+      "name": "Krishna Mitra Mandal",
+      "area": "Airoli",
+      "tier": "c",
+      "lat": 19.1454194,
+      "lng": 72.9899749,
+      "osm": "way/1068979629"
+    },
+    {
+      "name": "Bhimtola Mitra Mandal",
+      "aliases": [
+        "Bhimtola Mitra Mandal, Vishnu Nagar"
+      ],
+      "area": "Chembur",
+      "tier": "c",
+      "lat": 19.0256816,
+      "lng": 72.9068305,
+      "osm": "node/2930721773"
+    },
+    {
+      "name": "Ayre Road cha Maharaja",
+      "area": "Dombivli East",
+      "tier": "b",
+      "lat": 19.2109067,
+      "lng": 73.0845705,
+      "osm": "node/8454503709"
+    },
+    {
+      "name": "Ekta Yuva Mandal",
+      "aliases": [
+        "Mira Road cha Raja",
+        "Miraroad cha Raja"
+      ],
+      "area": "Mira Road",
+      "tier": "b",
+      "lat": 19.2773039,
+      "lng": 72.861226,
+      "osm": "node/14124525318"
+    },
+    {
+      "name": "Panvel cha Raja Chintamani",
+      "area": "New Panvel",
+      "tier": "b",
+      "lat": 19.003357,
+      "lng": 73.1221365,
+      "osm": "way/353980375"
+    }
+  ]
+}

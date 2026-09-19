@@ -144,7 +144,7 @@ export function addPending(req: NextRequest, res: NextResponse, id: string, cfg:
 
 // --- Razorpay API -----------------------------------------------------------
 
-async function razorpay<T>(cfg: SevaConfig, path: string, body?: unknown): Promise<T> {
+export async function razorpay<T>(cfg: SevaConfig, path: string, body?: unknown): Promise<T> {
   const auth = Buffer.from(`${cfg.keyId}:${cfg.keySecret}`).toString('base64');
   const res = await fetch(`https://api.razorpay.com/v1${path}`, {
     method: body ? 'POST' : 'GET',

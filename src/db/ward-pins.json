@@ -1,0 +1,2921 @@
+[
+  {
+    "slug": "sakinakyacha-vighnaharta",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ambewadi-cha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "jijamata-nagar-cha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kalachowki-cha-maharaja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kalewadi-cha-bappa",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kalewadi-cha-vighnaharta",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "utsava-cha-raja-abhyudaya-nagar",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "airolicha-raja",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "krishna-mitra-mandal",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "akhil-diva-airoli-ganeshotsav-mandal",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "andheri-cha-morya",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "navsala-pavnara-andhericha-maharaja",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bamanwada-sarvajanik-ganeshotsav-mandal",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "marol-ganesh-mitra-mandal",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "riddhi-siddhi-mandal",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "andhericha-raja",
+    "ward": "K/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885383 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "andhericha-mahaganpati",
+    "ward": "K/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885383 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "jogeshwari-cha-laadka",
+    "ward": "K/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885383 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "anushakti-nagar-ganpati-mandal",
+    "ward": "M/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885392 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sai-ganesh-seva-mandal",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "balshakti-mitra-mandal",
+    "ward": "H/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885378 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vandryacha-raja-lane",
+    "ward": "H/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885378 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vandryacha-vighnaharta",
+    "ward": "H/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885382 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "azad-nagar-sarvajanik-ganeshostav-mandal",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bhandup-jay-bajrang-mitra-mandal",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "achanak-mitra-mandal",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bhandupcha-raja",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "pratap-nagarcha-raja",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bhandupcha-bappa-ganesh-mandal",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shrimant-icchapurti-maha-ganpati-devasthan-bhandup",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "balajinagarcha-raja",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "navghar-cha-raja",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "navtarun-mitra-mandal",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shirdi-nagar-cha-maghi-ganesh-utsav",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mira-bhayander-cha-rajadhiraj",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mira-bhayandercha-ganraj",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "rani-sati-nagar-sarvajanik-ganeshotsav-mandal",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sarvajanik-bal-ganesh-mitra-mandal-bhayandar",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "padmanagarcha-sundar-raja-bhiwandi",
+    "ward": "Bhiwandi - Nizampur",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184109 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bhoiwada-vibhag-sarvajanik-ganeshotsav-mandal",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "matoshree-shivgarjana-sarvajanik-ganeshotsav-mandal",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ekta-mitra-sarvajanik-ganeshotsav-mandal",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "parel-cha-morya",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "borivali-cha-raja",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ashtavinayak-mitra-mandal-sarvajanik-ganeshotsav",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "carter-road-cha-raja-maghi-ganesh-utsav-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "borivalicha-maharaja",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "upnagarcha-raja-ekta-sarvajanik-ganeshotsav-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bal-mitra-sarvajanik-ganeshotsav-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kajupadyacha-raja-sarvajanik-shree-ganeshostav-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sodawala-lanecha-raja-sarvajanik-ganeshotsav-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bal-vikas-sarvajanik-ganeshotsav-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "i-c-colony-sarvajanik-ganeshotsav-mandal",
+    "ward": "R/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885390 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "jairaj-nagar-sarvajanik-ganeshotsav-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "manav-mitra-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ram-nagar-ganesh-utsav-mitra-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-ganesh-mandir-gajanan-m-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-sarvajanik-ganeshotsav-mandal-kasturpark",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "madhya-byculla-cha-maharaja",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "cbd-cha-raja-ganesh-temple",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "government-colony-cha-raja-belapur",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chandivali-cha-raja",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chembur-cha-raja",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chembur-cha-samrat",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chembur-cha-sarkar-wadi-cha-raja",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dukes-cha-raja",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bhimtola-mitra-mandal",
+    "ward": "M/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885392 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chembur-cha-rajkumar",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chhedanagar-sarvajanik-ganeshotsav-mandal",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sahakar-nagar-sarvajanik-ganeshotsav-mandal",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sai-bal-ganesh-mitra-mandal-nagawadi-cha-raja",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shri-siddhivinayak-ganesh-temple-chembur",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chinchpoklicha-chintamani",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chewoolwadi-balmitra-mandal-sarvajanik-ganeshotsav",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chirabazar-cha-maharaja",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chirabazar-cha-raja",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kolbhatlane-cha-raja",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "raja-utkarshcha",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "colaba-cha-raja",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "colaba-cha-samrat",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "colabacha-yuvraj",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "colaba-cha-ladka",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "colabyacha-vighnaharta",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "cuffe-parade-cha-maharaja",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "cuffe-parade-cha-yuvraj",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "colabacha-yuvaraj",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "cotton-cha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "currey-road-cha-kaivari",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "currey-road-cha-raja",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dadar-cha-raja",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "panchshil-utsav-mandal",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "manuber-mansion-sarvajanik-ganeshotsav-mandal",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dadar-tt-sarvajanik-ganeshotsav-mandal",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sai-ganesh-sadan-sarvajanik-ganeshotsav-mandal",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dahisar-cha-raja",
+    "ward": "R/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885390 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "amruth-ganesh-utsav-mandal",
+    "ward": "R/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885390 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ghartanpada-sarvajanik-ganeshoutsav-mandal",
+    "ward": "R/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885390 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dattani-parkcha-raja",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dharavicha-dhumravarna",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dharavicha-sukhakarta",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dhobhitalao-cha-vighnaharta",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dhobitalao-cha-maharaja",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dhobitalao-cha-raja",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "trimurti-ganeshostav-mandal-diva",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ayre-road-cha-maharaja",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "gsb-mandals-shree-sharada-pooja-mahotsav",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-varad-siddhi-vinayak-seva-bhavan",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "devichowkacha-raja-gokul-mitra-mandal",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "everest-selva-ganesh-mitra-mandal",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dongri-cha-raja",
+    "ward": "B",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885397 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shiv-sai-sarvajanik-ganeshotsav-mandal",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "koliwadi-sarvajanik-ganeshotsav-mandal",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fort-cha-raja",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "balvir-fort",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dn-road-cha-raja",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fort-cha-ekach-raja",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fort-cha-ganraj",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fort-cha-laadka",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fort-cha-maharaja",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fort-cha-samrat",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fort-cha-vighnaharta",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fort-horniman-circle",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fort-market",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ghansoli-cha-samrat",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ghansolicha-raja",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ghatkoparcha-raja",
+    "ward": "N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885388 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ganesh-mitra-mandal-ghatkopar",
+    "ward": "N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885388 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ghatkopar-amar-mitra-mandal",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "gsb-sabha-kcg",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "navayuvak-sarvajanik-ganeshotsav-mandal",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ghodapdev-cha-raja",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "girgaon-cha-maharaja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "girgaoncha-raja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "jitekar-wadi-sarvajanik-ganeshotsav-mandal",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "keshavji-naik-chawl",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbaicha-maharaja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "gorai-cha-shree",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "goregaoncha-raja",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sarvajanik-ganeshotsav-mandal-tilak-nagar",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "goregaoncha-vighnaharta",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "pimpleshwar-mahadev-sarvajanik-ganeshotsav-mandal",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "gavdevi-cha-raja-sarvajanik-ganeshotsav-mandal",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "jawahar-nagar-cha-raja",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "industrial-colony-sarvajanik-ganeshotsav-mandal",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "om-sai-maghi-ganesh-utsav-mandal",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "malabar-hill-cha-raja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "nana-chowk-cha-morya",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "slater-road-cha-raja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "grant-road-cha-raja-sarvajanik-ganesh-utsav-mandal",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "hanuman-nagarcha-raja",
+    "ward": "Kalyan-Dombivli",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184538 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "nav-chaitanya-mandal-sarvajanik-ganeshotsav",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sarvajanik-bal-ganesh-utsav-mandal",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-ganesh-mitra-mandal-jogeshwari",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-ganesh-mitra-mandal-oshiwara",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "juhu-koliwada-ganeshotsav-mandal",
+    "ward": "K/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885383 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "juinagarcha-maharaja",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "juinagarcha-raja",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "laxmi-plaza-cha-raja",
+    "ward": "Kalyan-Dombivli",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184538 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "abhyudaya-nagar-cha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "abhyudayanagarcha-ganraj",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kalachowkicha-mahaganpati",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kalamboli-cha-raja",
+    "ward": "Panvel",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13182526 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kalbadevi-cha-ganraj",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kalingacha-raja",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sarvajanik-maghi-ganeshotsav-mandal-kalyan-west",
+    "ward": "Kalyan-Dombivli",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184538 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kamathipuracha-maharaja",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kamathipura-cha-chintamani",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kamothyacha-raja",
+    "ward": "Panvel",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13182526 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "gaondevi-mitra-mandal",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kandivali-cha-ichhapurti",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "thakur-complexcha-maharaja-ekta-shakti-mitra-mandal",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "charkop-cha-raja",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kandivali-cha-raja-ekta-nagar",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kandivali-cha-raja-khajuria-tank-rd",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mahavir-nagar-cha-raja",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "balla-mitra-mandal",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "charkopcha-parmeshwar-maaghi-ganeshotsav",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "charkopcha-shree-vighnaharta-mitra-mandal",
+    "ward": "R/C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885385 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kandivali-cha-mahaganesha",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kandivali-cha-shree",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "pancham-cha-laadka-raja",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shivmandir-shiv-darshana-sarvajanik-ganesh-utsav-mandal",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-sai-mitra-yuva-mandal",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kanjurmarg-east-shivshakti-sarvajanik-ganeshotsav-mandal",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kanjurcha-vighnaharta-ganesh-mandir",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "navatarun-sarvajanik-ganeshotsav-mandal",
+    "ward": "H/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885378 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vaghwadi-ganesh-mandal",
+    "ward": "H/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885378 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khargharcha-sukhkarta-sarvajanik-shree-ganeshotsav-mandal",
+    "ward": "Panvel",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13182526 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khargharcha-raja-ganesh-mandir",
+    "ward": "Panvel",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13182526 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadicha-ganraj",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadi-cha-ganadhish",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadi-cha-moraya",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadicha-raja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-cha-samrat",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "1st-khattar-galli",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "1st-parsiwada",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "1st-suttarlane",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "2nd-khattar-galli",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "2nd-suttarlane",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "akhil-khetwadi-sarvajanik-ganeshotsav-madhyasta-mandal",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "balgopal-sarvajanik-ganeshotsav-mandal",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bhuleshwar-cha-raja",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dakshin-mumbai-cha-samrat",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "giragaon-cha-vignaharta",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "girgaon-cha-ganraj",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "girgaon-cha-mahaganpati",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "gol-deval-cha-raja",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "gulalwadi-cha-ganraj",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kamathipura-cha-gajmukh",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kamathipura-cha-shree",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kharwa-galli-cha-raja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadi-cha-chintamani-9th-lane",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadi-cha-ekvish-mukhi",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadi-cha-morya-7th-lane",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadi-cha-sukhkarta-67-cross",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadi-cha-vighnaharta-3rd-lane",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "krupalu",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kumbharwada-ch-vighnaharta",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kumbharwada-cha-ganraj",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kumbharwada-cha-maharaja",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kumbharwada-cha-sukhkarta",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kumbharwadya-cha-eco-friendly-ganpati",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kumbharwadya-cha-samrat",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mahaganpati-3rd-lane",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "maza-ganpati",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbadevi-cha-raja",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-cha-anant",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-cha-icchapurti-cp-tank",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-cha-vighnaraj",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "om-tandav-sarvajanik-utsav-mandal",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "panbazar-cha-raja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "panchsheel-utsav-mandal",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sarvajanik-shree-ganesh-utsav-mandal-khetwadi-4th-galli",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbaicha-mangalmurti",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "gsb-seva-mandal",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "koparkhairne-cha-samarat",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kumbharwadyacha-ganraj",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sandesh-nagar-cha-maharaja",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-ganesh-mitra-mandal-welfare-association",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kurla-cha-raja",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "lamboder-sarvajanik-ganeshotsav-mandal",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "parel-cha-icchapurti",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "lalbaugcha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbaicha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "tejukaya",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shiv-hanuman-mitra-mandal",
+    "ward": "Kalyan-Dombivli",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184538 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "arthur-road-cha-raja",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "balganeshcha-ballaleshwar",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "deen-building",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "delisle-road-cha-maharaja",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "delisle-road-cha-raja",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "girangaon-cha-raja",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "hukmill-lanecha-raja",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "rangari-badak-chawl",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "malad-cha-morya-ramnagar",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "malad-cha-raja-matanpur-nagar",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "maladcha-raja-shree-siddhi-vinayak-mitra-mandal",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "yuva-achanak-mitra-mandal",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "malad-cha-maharaja",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "maladcha-raja-goraswadi",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-cha-shree-sarvajanik-ganeshotsav-mandal",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "adarsh-mitra-mandal-orlemeshwar-maladcha-mahaganpati",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "maladcha-mahaganpati",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "maladcha-morreshwar-bhadran-nagar-sarvajanik-ganesh-utsav-ma",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "malwanicha-omshree-ganeshutsav-mandal",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "malwanicha-sukhkarta",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "natrajmarketcha-raja",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sapurpada-cha-raja",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shri-ganesh-mitra-mandal-raipada",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "akhil-chandanwadi-ganeshotsav-mandal",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "marine-drive-cha-samrat",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ganesh-mandir-seva-sansthan",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-cha-lambodar",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mazgaon-cha-morya",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ganeshutsav-mandal-mazgaon-tadwadi",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mazgaon-purva-vibhag-sarvajanik-ganeshotsav-mandal",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mirabhayandarcha-maharaja",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ekta-yuva-mandal",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mira-road-cha-maharaja",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "miraroad-cha-gannu",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "miraroad-cha-morya-shanti-nagar-sarvajanik-ganeshotsav-manda",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "new-green-wood-ganesh-utsav-mandal",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sargam-mitra-mandal",
+    "ward": "T",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885386 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shivsahyadri-mitra-mandal",
+    "ward": "T",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885386 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mulund-cha-raja",
+    "ward": "T",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885386 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ichapurti-shree-ganesh-mulund-east",
+    "ward": "T",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885386 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-morya-mitra-mandal",
+    "ward": "T",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885386 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khindipada-sarvajanik-ganeshotsav-mandal",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mulund-sargam-mitra-mandal",
+    "ward": "T",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885386 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "salpadevi-sadan-mulund-cha-mahaganpati",
+    "ward": "T",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885386 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbadevicha-ganraj",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bappa-khetwadicha-10th-lane",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chandivali-cha-maharaja",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chembur-cha-vighnaharta",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "chirabazarcha-icchapurti",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "cuffe-parade-cha-ladka",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "diamond-cha-raja",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dombivalikar-mitra-mandal",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dombivlicha-morya",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ghatkoparcha-icchapurati",
+    "ward": "N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885388 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "goddev-cha-raja",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "grant-road-cha-mahaganpati",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kamothyacha-vighnaharta",
+    "ward": "Panvel",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13182526 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kharghar-cha-maharaja",
+    "ward": "Panvel",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13182526 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "khetwadicha-yuvraj",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kopricha-maharaja",
+    "ward": "Thane",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7120000 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "krushna-nagar-cha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "labour-camp-cha-ganraj",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ladibazar-cha-lambodar",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ladkalambodar-rangaribadakchal",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "malad-cha-vighanharta",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "maniklal-cha-vighna-harta",
+    "ward": "M/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885392 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-cha-ladkaa-shubhankar",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "parel-cha-lambodar",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "parel-cha-samrat",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sakinakacha-mahagapati-sai-siddhi-mitra-mandalsatyanagar",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "santosh-nagar-marketcha-raja",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shivsena-galicha-raja",
+    "ward": "Mira-Bhayander",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180677 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-siddhivinayak-mitra-mandal",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sion-cha-icchapurati",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "tardeo-cha-raja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "thakurdwar-cha-raja-dhobiwadi",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "umarkhadi-cha-raja",
+    "ward": "B",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885397 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "upanagarcha-chintamani",
+    "ward": "P/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885384 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vasant-wadi-ganesh-mitra-mandal",
+    "ward": "Dombivali",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7117887 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vijay-nagar-cha-raja",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "worlicha-raja",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-central-cha-raja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-cha-aaradhya",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "saatrastya-cha-raja",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "tardeo-cha-vighnaharta",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "tulsiwadi-cha-maharaja",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sir-surya-lal-hindu-khatik-bal-gopal-mitra-mandal-mutton-vib",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "baalmurti-sarvajanik-ganeshotsav-mandal",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "naigaon-cha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "koparkhairane-cha-icchapurti",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "santacruz-cha-vigneshwar",
+    "ward": "H/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885378 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "akashdeep-sarvajanik-ganeshotsav-mandal",
+    "ward": "H/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885378 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "singhestate-cha-raja",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-ganpati-mandir-nerul-west",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "panvel-cha-raja-chintamani",
+    "ward": "Panvel",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13182526 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-sai-dristi-mitra-mandal",
+    "ward": "H/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885378 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbaicha-ekdant",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "fortcha-ichhapurti-ganesh",
+    "ward": "A",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885399 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "dhamankar-naka-ganpati",
+    "ward": "Bhiwandi - Nizampur",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184109 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "millennium-mitra-mandal",
+    "ward": "Bhiwandi - Nizampur",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184109 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mithila-navayuvak-ganeshotsav-sanstha",
+    "ward": "Bhiwandi - Nizampur",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184109 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "padmanagar-mitra-mandal",
+    "ward": "Bhiwandi - Nizampur",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184109 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "parel-cha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "parelcha-maharaja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bhoiwada-cha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "elphinstone-cha-ekdant",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "parel-sarvajanik-ganeshotsav-bal-gopal-mandal",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "prabhadevi-cha-raja",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "parel-cha-vighnaharta",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "panvel-raja-lambodar",
+    "ward": "Panvel",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13182526 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "powaicha-raja",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "hanuman-mitra-mandal-powai",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shivshakti-seva-sangh-ganpati-mandap",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "adarsh-nagar-sarvajanik-ganeshotsav-mandal",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "elphinstonecha-raja",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-siddhivinayak-temple",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-cha-maharajadhiraj-sarvajanik-ganeshutsav-mandal",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ekta-bal-mitra-mandal-sarvajanik-ganesh-utsav",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sanpadyacha-maharaja",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sanpada-cha-raja-sarvajanik-ganeshotsav-mandal",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "golibar-sarvajanik-ganeshotsav-mandal",
+    "ward": "H/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885378 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ganesh-baug-cha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shivdicha-raja",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vigneshwar-pooja-mandal",
+    "ward": "Kalyan-Dombivli",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13184538 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shivdi-cha-samrat",
+    "ward": "F/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885395 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "navjeevan-mitra-mandal",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "bigbulls-mitramandal",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shri-golden-ganesh-mitra-mandal",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sion-fort-cha-raja",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "jai-machindranath-mitra-mandal",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "jai-shree-ganesh-mitra-mandal",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sagar-tarun-mitra-mandal",
+    "ward": "G/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885381 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sion-koliwada-star-boys-mitra-mandal",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sundarbagacha-raja",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sahakarwadi-cha-raja",
+    "ward": "P/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885377 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mazgoancha-morya",
+    "ward": "E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885393 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "tulshiwadi-sarvajanik-ganeshotsav-mandal",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vakratunda-mitra-mandal-sarvajanik-ganeshutsav-kandivali-cha",
+    "ward": "R/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885376 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kamat-chawl-sarvajanik-ganeshotsav-mandal",
+    "ward": "C",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885398 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbaicha-krupalu",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "thanyacha-raja",
+    "ward": "Thane",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7120000 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "thane-cha-raja",
+    "ward": "Thane",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7120000 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mahavishwacha-raja",
+    "ward": "Thane",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7120000 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "thanyacha-maharaja",
+    "ward": "Thane",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7120000 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "thanyacha-siddhidata",
+    "ward": "Thane",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7120000 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "kajuwadicha-raja",
+    "ward": "Thane",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7120000 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "wagle-cha-raja",
+    "ward": "Thane",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 7120000 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "sahyadri-krida-mandal",
+    "ward": "M/W",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885389 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "tardeocha-icchapurti",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "tulsiwadicha-maharaj",
+    "ward": "D",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885394 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "navi-mumbai-cha-raja-shiv-chaya-mitra-mandal-turbhe",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ranatil-ganpati-mandir-turbhe",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shivaji-nagar-sarvajanik-ganeshotsav-mandal",
+    "ward": "H/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885378 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vasai-cha-raja",
+    "ward": "Vasai-Virar",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13253971 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vashicha-raja",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "yuva-ganesh-utsav-mandal-vashi",
+    "ward": "Navi Mumbai",
+    "wardKind": "municipal",
+    "source": "OpenStreetMap relation 13180880 (admin_level 8)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-ganesh-mandir-bal-mitra-mandal-asalpha",
+    "ward": "L",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885380 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "ganesh-marg-cha-raja",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "market-cha-raja",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "raigad-cha-raja",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vikhroli-cha-raja",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "jai-ganesh-mitra-mandal-vikhroli",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vikhroli-balmitra-kala-mandal",
+    "ward": "S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885387 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-sankalp-siddhi-ganesh-mitra-mandal",
+    "ward": "N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885388 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbaicha-peshwa",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "vile-parle-cha-vighnesh-sarvajanik-ganeshotsav-mandal",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "shree-icchapurti-ganesh-utsav-mandal-vile-parle",
+    "ward": "K/E",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885379 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "nadkarni-park-cha-raja",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "gsb-sarvajanik-ganeshotsava-samiti-wadala",
+    "ward": "F/N",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885396 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "janta-colony-sarvajanik-ganeshotsav-mandal",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  },
+  {
+    "slug": "mumbai-polisancha-raja-worli",
+    "ward": "G/S",
+    "wardKind": "bmc",
+    "source": "OpenStreetMap relation 7885391 (admin_level 10)",
+    "fetchedAt": "2026-09-19"
+  }
+]

@@ -61,14 +61,59 @@ Postgres) but **required in production**.
 
 ## Mandal directory (hardcoded, no database)
 
-The site serves `src/db/static-directory.json` (128 mandals). Rebuild it with
-`npx tsx scripts/build-directory.ts` from the 20 hand-curated mandals
-(`curated-mandals.json`) plus the community dataset
-(`community-mandals.csv`; read `community-mandals.README.md`, including its
-Google Places licensing caveat). Every pin is labelled by precision —
-rooftop-verified, unverified street, or neighbourhood only — and never as a
-queue start. `npm test` fails on a duplicate id/slug/name/address/pin or an
-unpinned mandal.
+The site serves `src/db/static-directory.json` — **417 mandals, every one of
+them pinned and on both the map and the list**. Every pin is labelled by
+precision (rooftop-verified, unverified street, or neighbourhood only) and
+never as a queue start.
+
+Four sources feed it, in this order of trust:
+
+| Source | Rows | How |
+|---|---|---|
+| `curated-mandals.json` | 20 | Hand-curated: मराठी/हिंदी names, stations, tiers, queues, notes |
+| `community-mandals.csv` | 127 | Verified community dataset — read `community-mandals.README.md`, including its Google Places licensing caveat |
+| `osm-mandals.json` | 11 | OpenStreetMap features that are genuinely utsav mandals (`scripts/osm-mandals.ts` finds candidates; promoting one is a human call) |
+| `scraped-mandals.json` | 278 | The public Ganeshotsav directories, via `scripts/scrape-mandals.ts` |
+
+Rebuild in this order — the second step needs the slugs the first one mints:
+
+```bash
+npx tsx scripts/scrape-mandals.ts    # refresh the scraped set (network)
+npx tsx scripts/build-directory.ts   # merge everything into the directory
+npx tsx scripts/assign-wards.ts      # stamp each mandal's BMC ward (network)
+npm test                             # the directory checks run here
+```
+
+`npm test` fails on a duplicate id/slug/name, a duplicate rooftop
+address/pin, an unpinned mandal, or a mandal with no ward. Street and
+neighbourhood pins are *allowed* to coincide: nine mandals share one
+Khetwadi lane and pretending otherwise would mean inventing coordinates.
+
+### Wards
+
+Every mandal carries a `ward` — its BMC ward (`A`, `F/S`, `K/E`, …) or, for
+the MMR ones, its municipal corporation (`Thane`, `Navi Mumbai`, `Panvel`,
+`Mira-Bhayander`, `Dombivali`, …). `scripts/assign-wards.ts` derives it by
+point-in-polygon against OpenStreetMap admin boundaries (ODbL) and records
+the provenance in `ward-pins.json`; the boundaries are fetched at run time
+rather than vendored, because 1.2 MB of ring coordinates has no business in
+the repo when only the label ships.
+
+Ward is the browse axis for the map and the list. `area` is free-text
+locality — 174 distinct values across 417 mandals — which is too fine to
+filter by; there are exactly 24 wards, and they're how BMC and the police
+actually carve up Ganeshotsav. `src/lib/wards.ts` rolls them up into four
+regions (Island City / Western Suburbs / Eastern Suburbs / Beyond Mumbai).
+
+### Map and list at this size
+
+The map plots a **clustered GeoJSON source**, not one DOM marker per pin —
+417 markers janks a mid-range phone on pan, and the directory only grows.
+Clusters break apart by zoom 14 (`clusterRadius: 38`) so the dense Khetwadi
+and Lalbaug lanes separate rather than staying one dot. Both views filter by
+region → ward and search across name, alias, area, ward and station; the
+list groups by ward, then area, and has a "show all" escape hatch so nothing
+is reachable only through pagination.
 
 ## Festival tools (all hardcoded, no database)
 
@@ -146,10 +191,31 @@ tap-to-call 112 link.
 
 ## Getting more mandals in (the "BMC list")
 
-The MCGM/BMC Ganeshotsav portal is an **application system, not a public
-dataset** — there is no downloadable list of the ~2,500 approved mandals
-(verified: BMC portal, data.gov.in/opencity, BGSS, OSM Overpass, Wikipedia
-were all checked). What exists instead:
+**There is still no public list of every Mumbai mandal, and 417 is not it.**
+Re-verified on 19 September 2026: the MCGM/BMC Ganeshotsav portal is an
+application system with no downloadable register; `data.opencity.in` returns
+zero datasets for *ganesh*, *mandal*, *pandal* or *ganeshotsav*; and an
+Overpass sweep of the whole MMR bounding box returns ~440 features whose
+name mentions Ganesh/Ganpati/mandal, of which about a dozen are actual utsav
+mandals. BMC permits roughly 2,500–3,000 sarvajanik mandals a season — over
+1,000 of them were still awaiting their 2026 permission four days before the
+festival — and housing-society and galli installations aren't counted at all.
+
+So what 417 means: **every Mumbai mandal that any public source lists
+individually, with a location**, pulled from all four sources above. The
+remaining routes to real completeness all need a person to ask:
+
+1. **BMC one-window permission data** — the authoritative register, held per
+   ward office. An RTI or a ward-level ask gets names and addresses.
+2. **Mumbai Police zone lists**, published before visarjan for route planning.
+3. **User submissions** — a moderated "add a missing mandal" form. For a
+   wait-time product you need contributors anyway.
+4. **Brihanmumbai Sarvajanik Ganeshotsav Samanvay Samiti**'s member roster.
+
+The home page says a version of this to visitors, under "How complete is
+this list?" — the count is not presented as the whole city.
+
+What exists in the repo today:
 
 - `src/db/press-mandals.json` — a press/official-site-verified dataset
   (every entry carries its source URLs). Apply it with

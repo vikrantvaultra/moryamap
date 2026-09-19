@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     '/api/og/**': ['./src/assets/fonts/*.ttf'],
     '/api/story/**': ['./src/assets/fonts/*.ttf'],
+    // The paid darshan photo is read from disk at request time and is
+    // deliberately not in /public, so ship it with the function.
+    '/api/darshan/image': ['./src/assets/darshan/*'],
   },
 };
 

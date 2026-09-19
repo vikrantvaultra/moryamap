@@ -12,7 +12,12 @@
     "db:migrate": "drizzle-kit migrate",
     "db:seed": "tsx src/db/seed.ts",
     "db:import": "tsx src/db/import-mandals.ts",
-    "geocode": "tsx scripts/geocode-mandals.ts"
+    "geocode": "tsx scripts/geocode-mandals.ts",
+    "scrape": "tsx scripts/scrape-mandals.ts",
+    "directory": "tsx scripts/build-directory.ts",
+    "wards": "tsx scripts/assign-wards.ts",
+    "osm": "tsx scripts/osm-mandals.ts",
+    "darshan:preview": "tsx scripts/make-darshan-preview.ts"
   },
   "dependencies": {
     "@upstash/ratelimit": "^2.0.8",
@@ -37,6 +42,7 @@
     "drizzle-kit": "^0.31.10",
     "eslint": "^9",
     "eslint-config-next": "15.5.25",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4",
     "tsx": "^4.23.13",
     "typescript": "^5",

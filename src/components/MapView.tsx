@@ -3,9 +3,11 @@
 import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { pinLabelKey } from '@/lib/names';
+import { firstRealNote } from '@/lib/notes';
 import type { PublicSnapshot, SnapshotMandal, SnapshotQueue } from '@/lib/snapshot';
+import { compareWards, regionOfWard, wardLabel, REGIONS, type Region } from '@/lib/wards';
 
 export interface MapStrings {
   loading: string;
@@ -26,8 +28,34 @@ export interface MapStrings {
   hours: string;
   minutes: string;
   minutesUpTo: string;
+  all: string;
+  regions: Record<Region, string>;
+  wardWord: string;
+  filterRegion: string;
+  filterWard: string;
+  /** "{shown} of {total} mandals" */
+  showing: string;
+  clusterHint: string;
+  searchPlaceholder: string;
+  noResults: string;
+  nearestStation: string;
   bands: Record<'green' | 'amber' | 'red' | 'deepred', string>;
 }
+
+const BAND_COLOR: Record<string, string> = {
+  green: '#15803d',
+  amber: '#b45309',
+  red: '#dc2626',
+  deepred: '#7f1d1d',
+};
+const MAROON = '#7c2d12';
+const MARIGOLD = '#f59e0b';
+
+const SOURCE = 'mandals';
+const L_CLUSTER = 'mandal-clusters';
+const L_COUNT = 'mandal-cluster-count';
+const L_PIN = 'mandal-pin';
+const L_SELECTED = 'mandal-pin-selected';
 
 function fmt(template: string, vars: Record<string, string | number>): string {
   return template.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ''));
@@ -66,28 +94,123 @@ const BAND_BG: Record<string, string> = {
   deepred: 'bg-band-deepred',
 };
 
-const BAND_DOT = BAND_BG;
-
 interface Selection {
   mandal: SnapshotMandal;
-  /** null → the approximate mandal-location marker was tapped. */
+  /** null → the approximate mandal-location pin was tapped. */
   queue: SnapshotQueue | null;
 }
 
-function clearActive() {
-  document
-    .querySelectorAll('.qmarker--active, .amarker--active')
-    .forEach((n) => n.classList.remove('qmarker--active', 'amarker--active'));
+/** One map pin: a verified queue start, or the mandal's own location. */
+interface Pin {
+  /** Stable feature id — the index into the pin array. */
+  id: number;
+  mandal: SnapshotMandal;
+  queue: SnapshotQueue | null;
+  lat: number;
+  lng: number;
+  band: string;
+  region: Region;
+  ward: string | null;
+  search: string;
 }
 
+function buildPins(snapshot: PublicSnapshot): Pin[] {
+  const pins: Pin[] = [];
+  for (const mandal of snapshot.mandals) {
+    const search = [mandal.name, mandal.nameMr, mandal.nameHi, mandal.area, mandal.ward, ...mandal.aliases]
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase();
+    const common = {
+      mandal,
+      region: regionOfWard(mandal.ward),
+      ward: mandal.ward,
+      search,
+    };
+    const queuePins = mandal.queues.filter((q) => q.entryLat != null && q.entryLng != null);
+    for (const queue of queuePins) {
+      pins.push({
+        id: pins.length,
+        ...common,
+        queue,
+        lat: queue.entryLat!,
+        lng: queue.entryLng!,
+        band: queue.wait.band,
+      });
+    }
+    // The mandal's own location, only when no verified queue pin exists.
+    if (queuePins.length === 0 && mandal.idolLat != null && mandal.idolLng != null) {
+      pins.push({
+        id: pins.length,
+        ...common,
+        queue: null,
+        lat: mandal.idolLat,
+        lng: mandal.idolLng,
+        band: 'approx',
+      });
+    }
+  }
+  return pins;
+}
+
+function toGeoJson(pins: Pin[]): GeoJSON.FeatureCollection<GeoJSON.Point> {
+  return {
+    type: 'FeatureCollection',
+    features: pins.map((p) => ({
+      type: 'Feature',
+      id: p.id,
+      geometry: { type: 'Point', coordinates: [p.lng, p.lat] },
+      properties: { pin: p.id, band: p.band, approx: p.queue == null },
+    })),
+  };
+}
+
+function Chip({
+  active,
+  onClick,
+  children,
+  count,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+  count?: number;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={active}
+      className={`pointer-events-auto shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 text-[11px] font-semibold shadow-md transition-colors ${
+        active ? 'bg-maroon text-amber-50' : 'bg-white/95 text-ink-soft hover:text-maroon'
+      }`}
+    >
+      {children}
+      {count != null && <span className="ml-1 tabular-nums opacity-70">{count}</span>}
+    </button>
+  );
+}
+
+/**
+ * The whole directory on one map. Pins go through a clustered GeoJSON
+ * source rather than one DOM marker each: 139 markers already janks a
+ * mid-range phone on pan, and the directory only grows. Region and ward
+ * filters narrow what's plotted; search flies to a single mandal.
+ */
 export default function MapView({ strings, locale }: { strings: MapStrings; locale: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
-  const markersRef = useRef<maplibregl.Marker[]>([]);
+  const pinsRef = useRef<Pin[]>([]);
   const didFitRef = useRef(false);
   const [snapshot, setSnapshot] = useState<PublicSnapshot | null>(null);
   const [loaded, setLoaded] = useState(false);
+  const [styleReady, setStyleReady] = useState(false);
   const [selected, setSelected] = useState<Selection | null>(null);
+  const [selectedPin, setSelectedPin] = useState<number | null>(null);
+  const [region, setRegion] = useState<Region | null>(null);
+  const [ward, setWard] = useState<string | null>(null);
+  const [query, setQuery] = useState('');
+  const [showFilters, setShowFilters] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -105,6 +228,42 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
     };
   }, []);
 
+  const allPins = useMemo(() => (snapshot ? buildPins(snapshot) : []), [snapshot]);
+  pinsRef.current = allPins;
+
+  const searched = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return q ? allPins.filter((p) => p.search.includes(q)) : allPins;
+  }, [allPins, query]);
+
+  const regionCounts = useMemo(() => {
+    const c = new Map<Region, number>();
+    for (const p of searched) c.set(p.region, (c.get(p.region) ?? 0) + 1);
+    return c;
+  }, [searched]);
+
+  const wardCounts = useMemo(() => {
+    const c = new Map<string, number>();
+    for (const p of searched) {
+      if (region && p.region !== region) continue;
+      if (p.ward) c.set(p.ward, (c.get(p.ward) ?? 0) + 1);
+    }
+    return c;
+  }, [searched, region]);
+
+  const wards = useMemo(() => [...wardCounts.keys()].sort(compareWards), [wardCounts]);
+
+  const visible = useMemo(
+    () => searched.filter((p) => (!region || p.region === region) && (!ward || p.ward === ward)),
+    [searched, region, ward],
+  );
+
+  const close = useCallback(() => {
+    setSelected(null);
+    setSelectedPin(null);
+  }, []);
+
+  // --- map setup ------------------------------------------------------
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
     const map = new maplibregl.Map({
@@ -131,99 +290,187 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
       (window as unknown as Record<string, unknown>).__morya_map = map;
       map.on('error', (e) => console.warn('[map error]', e.error?.message ?? e));
     }
+
+    map.on('load', () => {
+      map.addSource(SOURCE, {
+        type: 'geojson',
+        data: { type: 'FeatureCollection', features: [] },
+        cluster: true,
+        // Khetwadi alone has nine mandals inside 300 m, so clusters have to
+        // break apart early or the densest galli stays a single dot.
+        clusterRadius: 38,
+        clusterMaxZoom: 14,
+      });
+
+      map.addLayer({
+        id: L_CLUSTER,
+        type: 'circle',
+        source: SOURCE,
+        filter: ['has', 'point_count'],
+        paint: {
+          'circle-color': MAROON,
+          'circle-opacity': 0.92,
+          'circle-stroke-width': 2,
+          'circle-stroke-color': '#fdf9f2',
+          'circle-radius': ['step', ['get', 'point_count'], 15, 5, 19, 15, 24],
+        },
+      });
+      map.addLayer({
+        id: L_COUNT,
+        type: 'symbol',
+        source: SOURCE,
+        filter: ['has', 'point_count'],
+        layout: {
+          'text-field': ['get', 'point_count_abbreviated'],
+          'text-font': ['Noto Sans Bold'],
+          'text-size': 12,
+          'text-allow-overlap': true,
+        },
+        paint: { 'text-color': '#fdf9f2' },
+      });
+      map.addLayer({
+        id: L_PIN,
+        type: 'circle',
+        source: SOURCE,
+        filter: ['!', ['has', 'point_count']],
+        paint: {
+          // Verified queue starts are filled with their wait band; an
+          // approximate mandal location stays a hollow ring, as on the list.
+          'circle-color': [
+            'match',
+            ['get', 'band'],
+            'green', BAND_COLOR.green,
+            'amber', BAND_COLOR.amber,
+            'red', BAND_COLOR.red,
+            'deepred', BAND_COLOR.deepred,
+            '#ffffff',
+          ],
+          'circle-radius': ['case', ['get', 'approx'], 6, 7.5],
+          'circle-stroke-width': ['case', ['get', 'approx'], 3, 2],
+          'circle-stroke-color': ['case', ['get', 'approx'], MAROON, '#ffffff'],
+        },
+      });
+      map.addLayer({
+        id: L_SELECTED,
+        type: 'circle',
+        source: SOURCE,
+        filter: ['==', ['get', 'pin'], -1],
+        paint: {
+          'circle-color': 'rgba(0,0,0,0)',
+          'circle-radius': 13,
+          'circle-stroke-width': 3,
+          'circle-stroke-color': MARIGOLD,
+        },
+      });
+
+      for (const id of [L_CLUSTER, L_PIN]) {
+        map.on('mouseenter', id, () => (map.getCanvas().style.cursor = 'pointer'));
+        map.on('mouseleave', id, () => (map.getCanvas().style.cursor = ''));
+      }
+      setStyleReady(true);
+    });
+
     mapRef.current = map;
     return () => {
       map.remove();
       mapRef.current = null;
+      setStyleReady(false);
     };
   }, []);
 
-  // Place markers whenever snapshot data arrives.
+  // --- data + interaction ---------------------------------------------
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !snapshot) return;
-    markersRef.current.forEach((m) => m.remove());
-    markersRef.current = [];
+    if (!map || !styleReady) return;
+    const source = map.getSource(SOURCE) as maplibregl.GeoJSONSource | undefined;
+    source?.setData(toGeoJson(visible));
 
-    const select = (sel: Selection, el: HTMLElement, lng: number, lat: number, activeCls: string) => {
-      clearActive();
-      el.classList.add(activeCls);
-      setSelected(sel);
-      map.easeTo({
-        center: [lng, lat],
-        zoom: Math.max(map.getZoom(), 13.5),
-        padding: { bottom: 260 },
+    // Selecting a pin that a filter just removed would strand the sheet.
+    setSelectedPin((prev) => (prev != null && visible.some((p) => p.id === prev) ? prev : null));
+  }, [visible, styleReady]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !styleReady) return;
+    if (map.getLayer(L_SELECTED)) {
+      map.setFilter(L_SELECTED, ['==', ['get', 'pin'], selectedPin ?? -1]);
+    }
+  }, [selectedPin, styleReady]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !styleReady) return;
+
+    const onCluster = (e: maplibregl.MapMouseEvent) => {
+      const feature = map.queryRenderedFeatures(e.point, { layers: [L_CLUSTER] })[0];
+      const clusterId = feature?.properties?.cluster_id;
+      if (clusterId == null) return;
+      const source = map.getSource(SOURCE) as maplibregl.GeoJSONSource;
+      source.getClusterExpansionZoom(clusterId).then((zoom) => {
+        map.easeTo({ center: (feature.geometry as GeoJSON.Point).coordinates as [number, number], zoom });
       });
     };
 
-    for (const mandal of snapshot.mandals) {
-      let hasQueuePin = false;
-      for (const queue of mandal.queues) {
-        if (queue.entryLat == null || queue.entryLng == null) continue;
-        hasQueuePin = true;
-        const el = document.createElement('div');
-        el.className = `qmarker qmarker--${queue.wait.band}`;
-        el.setAttribute('role', 'button');
-        el.setAttribute(
-          'aria-label',
-          `${displayName(mandal, locale)} — ${queue.label}: ${rangeText(queue.wait, strings)}`,
-        );
-        el.appendChild(document.createElement('span'));
-        el.addEventListener('click', (e) => {
-          e.stopPropagation();
-          select({ mandal, queue }, el, queue.entryLng!, queue.entryLat!, 'qmarker--active');
-        });
-        markersRef.current.push(
-          new maplibregl.Marker({ element: el, anchor: 'bottom' })
-            .setLngLat([queue.entryLng, queue.entryLat])
-            .addTo(map),
-        );
-      }
-
-      // Approximate mandal-location dot when no verified queue pin exists.
-      if (!hasQueuePin && mandal.idolLat != null && mandal.idolLng != null) {
-        const el = document.createElement('div');
-        el.className = 'amarker';
-        el.setAttribute('role', 'button');
-        el.setAttribute('aria-label', `${displayName(mandal, locale)} — ${strings.approxLocation}`);
-        el.addEventListener('click', (e) => {
-          e.stopPropagation();
-          select({ mandal, queue: null }, el, mandal.idolLng!, mandal.idolLat!, 'amarker--active');
-        });
-        markersRef.current.push(
-          new maplibregl.Marker({ element: el, anchor: 'center' })
-            .setLngLat([mandal.idolLng, mandal.idolLat])
-            .addTo(map),
-        );
-      }
-    }
-
-    // Frame the pins once, so the first view is the mandals — not open sea.
-    if (!didFitRef.current && markersRef.current.length > 0) {
-      didFitRef.current = true;
-      const bounds = new maplibregl.LngLatBounds();
-      markersRef.current.forEach((mk) => bounds.extend(mk.getLngLat()));
-      map.fitBounds(bounds, { padding: 72, maxZoom: 14.5, duration: 0 });
-    }
-
-    const close = () => {
-      setSelected(null);
-      clearActive();
+    const onPin = (e: maplibregl.MapMouseEvent) => {
+      const feature = map.queryRenderedFeatures(e.point, { layers: [L_PIN] })[0];
+      const index = feature?.properties?.pin;
+      if (index == null) return;
+      const pin = pinsRef.current[index as number];
+      if (!pin) return;
+      setSelected({ mandal: pin.mandal, queue: pin.queue });
+      setSelectedPin(pin.id);
+      map.easeTo({
+        center: [pin.lng, pin.lat],
+        zoom: Math.max(map.getZoom(), 14),
+        padding: { bottom: 280 },
+      });
     };
-    map.on('click', close);
+
+    // A tap that hits neither layer closes the sheet.
+    const onBackground = (e: maplibregl.MapMouseEvent) => {
+      const hit = map.queryRenderedFeatures(e.point, { layers: [L_CLUSTER, L_PIN] });
+      if (hit.length === 0) close();
+    };
+
+    map.on('click', L_CLUSTER, onCluster);
+    map.on('click', L_PIN, onPin);
+    map.on('click', onBackground);
     return () => {
-      map.off('click', close);
+      map.off('click', L_CLUSTER, onCluster);
+      map.off('click', L_PIN, onPin);
+      map.off('click', onBackground);
     };
-  }, [snapshot, locale, strings]);
+  }, [styleReady, close]);
 
-  const markerCount =
-    snapshot?.mandals.reduce(
-      (acc, m) =>
-        acc +
-        m.queues.filter((q) => q.entryLat != null && q.entryLng != null).length +
-        (m.idolLat != null && m.idolLng != null ? 1 : 0),
-      0,
-    ) ?? 0;
+  // Frame the pins once, so the first view is the mandals — not open sea.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !styleReady || didFitRef.current || allPins.length === 0) return;
+    didFitRef.current = true;
+    const bounds = new maplibregl.LngLatBounds();
+    allPins.forEach((p) => bounds.extend([p.lng, p.lat]));
+    // Asymmetric: the honesty note, legend and filter button stack down the
+    // top-left, and a pin underneath them reads as a missing pin.
+    map.fitBounds(bounds, {
+      padding: { top: 96, left: 96, right: 48, bottom: 48 },
+      maxZoom: 14.5,
+      duration: 0,
+    });
+  }, [allPins, styleReady]);
+
+  // A filter change reframes what's left, so you see the ward you picked.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !styleReady || !didFitRef.current) return;
+    if (visible.length === 0 || visible.length === allPins.length) return;
+    const bounds = new maplibregl.LngLatBounds();
+    visible.forEach((p) => bounds.extend([p.lng, p.lat]));
+    map.fitBounds(bounds, {
+      padding: { top: 96, left: 96, right: 48, bottom: 48 },
+      maxZoom: 15,
+      duration: 500,
+    });
+  }, [region, ward, query, styleReady]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const prefix = locale === 'en' ? '' : `/${locale}`;
   const shownQueue = selected ? (selected.queue ?? selected.mandal.queues[0] ?? null) : null;
@@ -233,32 +480,108 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
       ? { lat: selected.mandal.idolLat, lng: selected.mandal.idolLng }
       : { lat: selected.queue!.entryLat, lng: selected.queue!.entryLng }
     : null;
+  const filtersOn = region != null || ward != null || query.trim() !== '';
 
   return (
     <div className="relative h-full w-full bg-cream-deep">
       <div ref={containerRef} className="h-full w-full" />
 
       {/* Honesty note + legend live ON the map so they're always visible. */}
-      <div className="pointer-events-none absolute left-3 top-3 z-10 flex max-w-[calc(100%-4.5rem)] flex-col items-start gap-1.5">
-        <p className="rounded-lg bg-white/95 px-2.5 py-1.5 text-[11px] font-semibold leading-snug text-maroon shadow-md">
+      <div className="pointer-events-none absolute left-3 top-3 z-10 flex w-[calc(100%-1.5rem)] flex-col items-start gap-1.5">
+        {/* The note and legend clear the zoom/locate controls at top right;
+            the filter block below them spans the full width instead. */}
+        <p className="max-w-[calc(100%-3rem)] rounded-lg bg-white/95 px-2.5 py-1.5 text-[11px] font-semibold leading-snug text-maroon shadow-md">
           📍 {strings.mapNote}
         </p>
-        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 rounded-lg bg-white/95 px-2.5 py-1.5 shadow-md">
+        <div className="flex max-w-[calc(100%-3rem)] flex-wrap items-center gap-x-2.5 gap-y-1 rounded-lg bg-white/95 px-2.5 py-1.5 shadow-md">
           {(['green', 'amber', 'red', 'deepred'] as const).map((b) => (
             <span key={b} className="flex items-center gap-1 text-[10px] font-medium text-ink-soft">
-              <span className={`size-2 rounded-full ${BAND_DOT[b]}`} aria-hidden />
+              <span className={`size-2 rounded-full ${BAND_BG[b]}`} aria-hidden />
               {strings.bands[b]}
             </span>
           ))}
           <span className="flex items-center gap-1 text-[10px] font-medium text-ink-soft">
+            <span className="size-2.5 rounded-full border-2 border-maroon bg-white" aria-hidden />≈
+          </span>
+          <span className="flex items-center gap-1 text-[10px] font-medium text-ink-soft">
             <span
-              className="size-2.5 rounded-full border-2 border-maroon bg-white"
+              className="grid size-3.5 place-items-center rounded-full bg-maroon text-[7px] font-bold text-cream"
               aria-hidden
-            />
-            ≈
+            >
+              9
+            </span>
+            <span className="hidden sm:inline">{strings.clusterHint}</span>
+            <span className="sr-only sm:hidden">{strings.clusterHint}</span>
           </span>
         </div>
-        {loaded && markerCount === 0 && (
+
+        <button
+          type="button"
+          onClick={() => setShowFilters(!showFilters)}
+          aria-expanded={showFilters}
+          className={`pointer-events-auto rounded-lg px-2.5 py-1.5 text-[11px] font-semibold shadow-md ${
+            filtersOn ? 'bg-maroon text-amber-50' : 'bg-white/95 text-maroon'
+          }`}
+        >
+          ⚲ {fmt(strings.showing, { shown: visible.length, total: allPins.length })}
+        </button>
+
+        {showFilters && (
+          <div className="pointer-events-auto w-full max-w-sm rounded-xl bg-white/97 p-2.5 shadow-lg backdrop-blur">
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={strings.searchPlaceholder}
+              aria-label={strings.searchPlaceholder}
+              className="w-full rounded-lg border border-amber-900/15 bg-white px-2.5 py-1.5 text-sm text-ink outline-none placeholder:text-ink-soft/60 focus:border-flame"
+            />
+            <div className="mt-2 flex gap-1.5 overflow-x-auto pb-1" aria-label={strings.filterRegion}>
+              <Chip
+                active={region == null}
+                onClick={() => {
+                  setRegion(null);
+                  setWard(null);
+                }}
+                count={searched.length}
+              >
+                {strings.all}
+              </Chip>
+              {REGIONS.filter((r) => regionCounts.has(r)).map((r) => (
+                <Chip
+                  key={r}
+                  active={region === r}
+                  onClick={() => {
+                    setRegion(region === r ? null : r);
+                    setWard(null);
+                  }}
+                  count={regionCounts.get(r)}
+                >
+                  {strings.regions[r]}
+                </Chip>
+              ))}
+            </div>
+            {wards.length > 1 && (
+              <div className="mt-1 flex gap-1.5 overflow-x-auto pb-1" aria-label={strings.filterWard}>
+                {wards.map((w) => (
+                  <Chip
+                    key={w}
+                    active={ward === w}
+                    onClick={() => setWard(ward === w ? null : w)}
+                    count={wardCounts.get(w)}
+                  >
+                    {wardLabel(w, strings.wardWord)}
+                  </Chip>
+                ))}
+              </div>
+            )}
+            {visible.length === 0 && (
+              <p className="mt-1 text-[11px] text-ink-soft">{strings.noResults}</p>
+            )}
+          </div>
+        )}
+
+        {loaded && allPins.length === 0 && (
           <p className="max-w-xs rounded-lg bg-white/95 px-2.5 py-1.5 text-[11px] leading-snug text-ink-soft shadow-md">
             {strings.noPins}
           </p>
@@ -275,7 +598,7 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
 
       {selected && shownQueue && (
         <div className="sheet-enter absolute inset-x-0 bottom-0 z-40 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
-          <div className="card mx-auto max-w-md p-4 shadow-xl">
+          <div className="card mx-auto max-h-[60dvh] max-w-md overflow-y-auto p-4 shadow-xl">
             <div className="flex items-start justify-between gap-3">
               <div>
                 <h3 className="text-base font-bold leading-tight text-maroon">
@@ -290,17 +613,30 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
                     {selected.mandal.aliases.join(' · ')}
                   </p>
                 )}
+                <p className="mt-1 flex flex-wrap items-center gap-1.5">
+                  <span className="rounded-full bg-cream-deep px-2 py-0.5 text-[10px] font-semibold text-ink-soft">
+                    {selected.mandal.area}
+                  </span>
+                  {selected.mandal.ward && (
+                    <span className="rounded-full bg-cream-deep px-2 py-0.5 text-[10px] font-semibold text-ink-soft">
+                      {wardLabel(selected.mandal.ward, strings.wardWord)}
+                    </span>
+                  )}
+                </p>
                 {selected.mandal.address && (
-                  <p className="mt-0.5 text-xs leading-snug text-ink-soft">
+                  <p className="mt-1 text-xs leading-snug text-ink-soft">
                     {selected.mandal.address}
+                  </p>
+                )}
+                {selected.mandal.nearestStation && (
+                  <p className="mt-0.5 text-xs leading-snug text-ink-soft">
+                    <span aria-hidden>🚆</span> {strings.nearestStation}:{' '}
+                    {selected.mandal.nearestStation}
                   </p>
                 )}
               </div>
               <button
-                onClick={() => {
-                  setSelected(null);
-                  clearActive();
-                }}
+                onClick={close}
                 aria-label="Close"
                 className="grid size-7 shrink-0 place-items-center rounded-full bg-cream-deep text-ink-soft"
               >
@@ -339,6 +675,11 @@ export default function MapView({ strings, locale }: { strings: MapStrings; loca
               <p className="mt-1 rounded-md bg-amber-100 px-2 py-1 text-xs font-medium text-maroon">
                 {selected.mandal.pinPrecision === 'rooftop' ? '📍' : '≈'}{' '}
                 {strings[pinLabelKey(selected.mandal.pinPrecision)]}
+              </p>
+            )}
+            {firstRealNote(selected.mandal.notes) && (
+              <p className="mt-1 border-l-2 border-amber-900/15 pl-2 text-xs leading-snug text-ink-soft">
+                {firstRealNote(selected.mandal.notes)}
               </p>
             )}
             <p className="mt-1 text-xs italic text-ink-soft/90">{strings.disclaimer}</p>

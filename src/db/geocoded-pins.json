@@ -1026,5 +1026,2317 @@
     "precision": "area",
     "source": "community dataset: earlier list (unknown, unverified)",
     "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "jai-machindranath-mitra-mandal",
+    "lat": 19.0479764,
+    "lng": 72.8539648,
+    "precision": "street",
+    "source": "OpenStreetMap node/12811681070 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "jai-shree-ganesh-mitra-mandal",
+    "lat": 19.0464243,
+    "lng": 72.8538281,
+    "precision": "street",
+    "source": "OpenStreetMap way/1394136080 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sagar-tarun-mitra-mandal",
+    "lat": 19.0478988,
+    "lng": 72.854629,
+    "precision": "street",
+    "source": "OpenStreetMap way/1394136082 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sai-ganesh-seva-mandal",
+    "lat": 19.0968294,
+    "lng": 72.8871357,
+    "precision": "street",
+    "source": "OpenStreetMap node/3518461508 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shivsahyadri-mitra-mandal",
+    "lat": 19.1777131,
+    "lng": 72.9405969,
+    "precision": "street",
+    "source": "OpenStreetMap node/11567692043 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "achanak-mitra-mandal",
+    "lat": 19.1357205,
+    "lng": 72.9389842,
+    "precision": "street",
+    "source": "OpenStreetMap way/747092419 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "krishna-mitra-mandal",
+    "lat": 19.1454194,
+    "lng": 72.9899749,
+    "precision": "street",
+    "source": "OpenStreetMap way/1068979629 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "bhimtola-mitra-mandal",
+    "lat": 19.0256816,
+    "lng": 72.9068305,
+    "precision": "street",
+    "source": "OpenStreetMap node/2930721773 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ayre-road-cha-maharaja",
+    "lat": 19.2109067,
+    "lng": 73.0845705,
+    "precision": "street",
+    "source": "OpenStreetMap node/8454503709 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ekta-yuva-mandal",
+    "lat": 19.2773039,
+    "lng": 72.861226,
+    "precision": "street",
+    "source": "OpenStreetMap node/14124525318 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "panvel-cha-raja-chintamani",
+    "lat": 19.003357,
+    "lng": 73.1221365,
+    "precision": "street",
+    "source": "OpenStreetMap way/353980375 (ODbL) — mandal premises",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sakinakyacha-vighnaharta",
+    "lat": 19.1031,
+    "lng": 72.8877,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sakinakyacha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ambewadi-cha-raja",
+    "lat": 18.9902936,
+    "lng": 72.8407819,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/ambewadi-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "jijamata-nagar-cha-raja",
+    "lat": 18.9925417,
+    "lng": 72.8429406,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/jijamata-nagar-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kalachowki-cha-maharaja",
+    "lat": 18.9919218,
+    "lng": 72.8424589,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kalachowki-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kalewadi-cha-bappa",
+    "lat": 18.995191,
+    "lng": 72.845439,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kalewadi-cha-bappa (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kalewadi-cha-vighnaharta",
+    "lat": 18.9955732,
+    "lng": 72.8464613,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kalewadi-cha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "utsava-cha-raja-abhyudaya-nagar",
+    "lat": 18.9901219,
+    "lng": 72.8442008,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/utsava-cha-raja-abhyudaya-nagar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "airolicha-raja",
+    "lat": 19.15389,
+    "lng": 72.9975,
+    "precision": "street",
+    "source": "bappagram.com/mandal/airolicha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "akhil-diva-airoli-ganeshotsav-mandal",
+    "lat": 19.14494,
+    "lng": 72.99283,
+    "precision": "street",
+    "source": "bappagram.com/mandal/akhil-diva-airoli-ganeshotsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "riddhi-siddhi-mandal",
+    "lat": 19.10845,
+    "lng": 72.86693,
+    "precision": "street",
+    "source": "bappagram.com/mandal/riddhi-siddhi-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "jogeshwari-cha-laadka",
+    "lat": 19.14881,
+    "lng": 72.83413,
+    "precision": "street",
+    "source": "bappagram.com/mandal/jogeshwari-cha-laadka (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "balshakti-mitra-mandal",
+    "lat": 19.06195,
+    "lng": 72.84234,
+    "precision": "street",
+    "source": "bappagram.com/mandal/balshakti-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "vandryacha-raja-lane",
+    "lat": 19.06224,
+    "lng": 72.84301,
+    "precision": "street",
+    "source": "bappagram.com/mandal/vandryacha-raja-lane (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "vandryacha-vighnaharta",
+    "lat": 19.05608,
+    "lng": 72.83399,
+    "precision": "street",
+    "source": "bappagram.com/mandal/vandryacha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "azad-nagar-sarvajanik-ganeshostav-mandal",
+    "lat": 19.16445,
+    "lng": 72.93403,
+    "precision": "street",
+    "source": "bappagram.com/mandal/azad-nagar-sarvajanik-ganeshostav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "bhandupcha-bappa-ganesh-mandal",
+    "lat": 19.14203,
+    "lng": 72.92832,
+    "precision": "street",
+    "source": "bappagram.com/mandal/bhandupcha-bappa-ganesh-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shrimant-icchapurti-maha-ganpati-devasthan-bhandup",
+    "lat": 19.15154,
+    "lng": 72.92815,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shrimant-icchapurti-maha-ganpati-devasthan-bhandup (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "balajinagarcha-raja",
+    "lat": 19.31013,
+    "lng": 72.85071,
+    "precision": "street",
+    "source": "bappagram.com/mandal/balajinagarcha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "navghar-cha-raja",
+    "lat": 19.30845,
+    "lng": 72.85966,
+    "precision": "street",
+    "source": "bappagram.com/mandal/navghar-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "navtarun-mitra-mandal",
+    "lat": 19.30961,
+    "lng": 72.86063,
+    "precision": "street",
+    "source": "bappagram.com/mandal/navtarun-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shirdi-nagar-cha-maghi-ganesh-utsav",
+    "lat": 19.305,
+    "lng": 72.86257,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shirdi-nagar-cha-maghi-ganesh-utsav (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mira-bhayander-cha-rajadhiraj",
+    "lat": 19.29941,
+    "lng": 72.85063,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mira-bhayander-cha-rajadhiraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mira-bhayandercha-ganraj",
+    "lat": 19.30764,
+    "lng": 72.85051,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mira-bhayandercha-ganraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "rani-sati-nagar-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.30353,
+    "lng": 72.85117,
+    "precision": "street",
+    "source": "bappagram.com/mandal/rani-sati-nagar-sarvajanik-ganeshotsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sarvajanik-bal-ganesh-mitra-mandal-bhayandar",
+    "lat": 19.30444,
+    "lng": 72.84733,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sarvajanik-bal-ganesh-mitra-mandal-bhayandar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "padmanagarcha-sundar-raja-bhiwandi",
+    "lat": 19.28631,
+    "lng": 73.06112,
+    "precision": "street",
+    "source": "bappagram.com/mandal/padmanagarcha-sundar-raja-bhiwandi (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "parel-cha-morya",
+    "lat": 19.0030917,
+    "lng": 72.8468594,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/parel-cha-morya (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "carter-road-cha-raja-maghi-ganesh-utsav-mandal",
+    "lat": 19.22838,
+    "lng": 72.8611,
+    "precision": "street",
+    "source": "bappagram.com/mandal/carter-road-cha-raja-maghi-ganesh-utsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kajupadyacha-raja-sarvajanik-shree-ganeshostav-mandal",
+    "lat": 19.23652,
+    "lng": 72.86879,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kajupadyacha-raja-sarvajanik-shree-ganeshostav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "manav-mitra-mandal",
+    "lat": 19.22802,
+    "lng": 72.85272,
+    "precision": "street",
+    "source": "bappagram.com/mandal/manav-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ram-nagar-ganesh-utsav-mitra-mandal",
+    "lat": 19.21876,
+    "lng": 72.8498,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ram-nagar-ganesh-utsav-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-ganesh-mandir-gajanan-m-mandal",
+    "lat": 19.23141,
+    "lng": 72.84726,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-ganesh-mandir-gajanan-m-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "madhya-byculla-cha-maharaja",
+    "lat": 18.9787313,
+    "lng": 72.8294259,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/madhya-byculla-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "cbd-cha-raja-ganesh-temple",
+    "lat": 19.02973,
+    "lng": 73.04056,
+    "precision": "street",
+    "source": "bappagram.com/mandal/cbd-cha-raja-ganesh-temple (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "government-colony-cha-raja-belapur",
+    "lat": 19.02632,
+    "lng": 73.04406,
+    "precision": "street",
+    "source": "bappagram.com/mandal/government-colony-cha-raja-belapur (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "chembur-cha-rajkumar",
+    "lat": 19.044721,
+    "lng": 72.894257,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/chembur-cha-rajkumar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sai-bal-ganesh-mitra-mandal-nagawadi-cha-raja",
+    "lat": 19.06361,
+    "lng": 72.9061,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sai-bal-ganesh-mitra-mandal-nagawadi-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shri-siddhivinayak-ganesh-temple-chembur",
+    "lat": 19.05426,
+    "lng": 72.89369,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shri-siddhivinayak-ganesh-temple-chembur (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "chirabazar-cha-maharaja",
+    "lat": 18.948266,
+    "lng": 72.8256586,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/chirabazar-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "chirabazar-cha-raja",
+    "lat": 18.9473904,
+    "lng": 72.8272192,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/chirabazar-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kolbhatlane-cha-raja",
+    "lat": 18.9478389,
+    "lng": 72.826875,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kolbhatlane-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "raja-utkarshcha",
+    "lat": 18.9486206,
+    "lng": 72.8266742,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/raja-utkarshcha (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "colaba-cha-ladka",
+    "lat": 18.9151482,
+    "lng": 72.8255102,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/colaba-cha-ladka (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "colabyacha-vighnaharta",
+    "lat": 18.9129888,
+    "lng": 72.8225532,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/colabyacha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "cuffe-parade-cha-maharaja",
+    "lat": 18.9117429,
+    "lng": 72.8176963,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/cuffe-parade-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "cuffe-parade-cha-yuvraj",
+    "lat": 18.9126929,
+    "lng": 72.817926,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/cuffe-parade-cha-yuvraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "colabacha-yuvaraj",
+    "lat": 18.9067,
+    "lng": 72.8147,
+    "precision": "street",
+    "source": "bappagram.com/mandal/colabacha-yuvaraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "currey-road-cha-kaivari",
+    "lat": 18.9950378,
+    "lng": 72.833414,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/currey-road-cha-kaivari (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "currey-road-cha-raja",
+    "lat": 18.9946895,
+    "lng": 72.8320001,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/currey-road-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "panchshil-utsav-mandal",
+    "lat": 19.0175,
+    "lng": 72.8315,
+    "precision": "street",
+    "source": "bappagram.com/mandal/panchshil-utsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "amruth-ganesh-utsav-mandal",
+    "lat": 19.24427,
+    "lng": 72.87245,
+    "precision": "street",
+    "source": "bappagram.com/mandal/amruth-ganesh-utsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ghartanpada-sarvajanik-ganeshoutsav-mandal",
+    "lat": 19.25066,
+    "lng": 72.87025,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ghartanpada-sarvajanik-ganeshoutsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dattani-parkcha-raja",
+    "lat": 19.212555,
+    "lng": 72.869121,
+    "precision": "street",
+    "source": "bappagram.com/mandal/dattani-parkcha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dharavicha-dhumravarna",
+    "lat": 19.04026,
+    "lng": 72.85515,
+    "precision": "street",
+    "source": "bappagram.com/mandal/dharavicha-dhumravarna (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dharavicha-sukhakarta",
+    "lat": 19.04611,
+    "lng": 72.85601,
+    "precision": "street",
+    "source": "bappagram.com/mandal/dharavicha-sukhakarta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dhobhitalao-cha-vighnaharta",
+    "lat": 18.9438708,
+    "lng": 72.8262169,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/dhobhitalao-cha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dhobitalao-cha-maharaja",
+    "lat": 18.9429914,
+    "lng": 72.8270293,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/dhobitalao-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dhobitalao-cha-raja",
+    "lat": 18.9436464,
+    "lng": 72.82782,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/dhobitalao-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "trimurti-ganeshostav-mandal-diva",
+    "lat": 19.18587,
+    "lng": 73.0509,
+    "precision": "street",
+    "source": "bappagram.com/mandal/trimurti-ganeshostav-mandal-diva (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "gsb-mandals-shree-sharada-pooja-mahotsav",
+    "lat": 19.20475,
+    "lng": 73.10515,
+    "precision": "street",
+    "source": "bappagram.com/mandal/gsb-mandal-s-shree-sharada-pooja-mahotsav (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-varad-siddhi-vinayak-seva-bhavan",
+    "lat": 19.194,
+    "lng": 73.08804,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-varad-siddhi-vinayak-seva-bhavan (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "devichowkacha-raja-gokul-mitra-mandal",
+    "lat": 19.2202,
+    "lng": 73.08149,
+    "precision": "street",
+    "source": "bappagram.com/mandal/devichowkacha-raja-gokul-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "everest-selva-ganesh-mitra-mandal",
+    "lat": 19.21881,
+    "lng": 73.08581,
+    "precision": "street",
+    "source": "bappagram.com/mandal/everest-selva-ganesh-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "balvir-fort",
+    "lat": 18.9361629,
+    "lng": 72.8358646,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/balvir-fort (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dn-road-cha-raja",
+    "lat": 18.9401591,
+    "lng": 72.8347847,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/dn-road-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "fort-cha-ekach-raja",
+    "lat": 18.9359581,
+    "lng": 72.8348805,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/fort-cha-ekach-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "fort-cha-ganraj",
+    "lat": 18.9371543,
+    "lng": 72.8364522,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/fort-cha-ganraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "fort-cha-laadka",
+    "lat": 18.9335906,
+    "lng": 72.8347055,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/fort-cha-laadka (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "fort-cha-maharaja",
+    "lat": 18.9369419,
+    "lng": 72.8388436,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/fort-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "fort-cha-samrat",
+    "lat": 18.9375993,
+    "lng": 72.8379049,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/fort-cha-samrat (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "fort-cha-vighnaharta",
+    "lat": 18.935444,
+    "lng": 72.837713,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/fort-cha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "fort-horniman-circle",
+    "lat": 18.9329327,
+    "lng": 72.8352376,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/fort-horniman-circle (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "fort-market",
+    "lat": 18.935094,
+    "lng": 72.837005,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/fort-market (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ghansoli-cha-samrat",
+    "lat": 19.11493,
+    "lng": 73.00105,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ghansoli-cha-samrat (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ghansolicha-raja",
+    "lat": 19.12714,
+    "lng": 72.99958,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ghansolicha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ganesh-mitra-mandal-ghatkopar",
+    "lat": 19.07436,
+    "lng": 72.91378,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ganesh-mitra-mandal-ghatkopar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "gsb-sabha-kcg",
+    "lat": 19.06652,
+    "lng": 72.8801,
+    "precision": "street",
+    "source": "bappagram.com/mandal/gsb-sabha-kcg (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ghodapdev-cha-raja",
+    "lat": 18.981408,
+    "lng": 72.84109,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ghodapdev-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "gorai-cha-shree",
+    "lat": 19.224142,
+    "lng": 72.831622,
+    "precision": "street",
+    "source": "bappagram.com/mandal/gorai-cha-shree (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "goregaoncha-vighnaharta",
+    "lat": 19.15842,
+    "lng": 72.85111,
+    "precision": "street",
+    "source": "bappagram.com/mandal/goregaoncha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "om-sai-maghi-ganesh-utsav-mandal",
+    "lat": 19.16324,
+    "lng": 72.83516,
+    "precision": "street",
+    "source": "bappagram.com/mandal/om-sai-maghi-ganesh-utsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "malabar-hill-cha-raja",
+    "lat": 18.9630477,
+    "lng": 72.8145446,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/malabar-hill-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "nana-chowk-cha-morya",
+    "lat": 18.9626692,
+    "lng": 72.8129773,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/nana-chowk-cha-morya (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "slater-road-cha-raja",
+    "lat": 18.9632182,
+    "lng": 72.8156743,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/slater-road-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "hanuman-nagarcha-raja",
+    "lat": 19.22659,
+    "lng": 73.14111,
+    "precision": "street",
+    "source": "bappagram.com/mandal/hanuman-nagarcha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-ganesh-mitra-mandal-jogeshwari",
+    "lat": 19.1497,
+    "lng": 72.84905,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-ganesh-mitra-mandal-jogeshwari (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "juinagarcha-maharaja",
+    "lat": 19.05304,
+    "lng": 73.01483,
+    "precision": "street",
+    "source": "bappagram.com/mandal/juinagarcha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "juinagarcha-raja",
+    "lat": 19.0515,
+    "lng": 73.01357,
+    "precision": "street",
+    "source": "bappagram.com/mandal/juinagarcha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "laxmi-plaza-cha-raja",
+    "lat": 19.209208,
+    "lng": 73.131177,
+    "precision": "street",
+    "source": "bappagram.com/mandal/laxmi-plaza-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kalamboli-cha-raja",
+    "lat": 19.02677,
+    "lng": 73.10024,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kalamboli-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kalbadevi-cha-ganraj",
+    "lat": 18.9500038,
+    "lng": 72.8292209,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kalbadevi-cha-ganraj-marine-lines (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kalingacha-raja",
+    "lat": 19.093002,
+    "lng": 72.886795,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kalingacha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sarvajanik-maghi-ganeshotsav-mandal-kalyan-west",
+    "lat": 19.24857,
+    "lng": 73.13171,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sarvajanik-maghi-ganeshotsav-mandal-kalyan-west (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kamathipura-cha-chintamani",
+    "lat": 18.96723,
+    "lng": 72.8257,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kamathipura-cha-chintamani (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kamothyacha-raja",
+    "lat": 19.02257,
+    "lng": 73.09182,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kamothyacha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "gaondevi-mitra-mandal",
+    "lat": 19.21218,
+    "lng": 72.85867,
+    "precision": "street",
+    "source": "bappagram.com/mandal/gaondevi-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kandivali-cha-ichhapurti",
+    "lat": 19.2066,
+    "lng": 72.87022,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kandivali-cha-ichhapurti (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "thakur-complexcha-maharaja-ekta-shakti-mitra-mandal",
+    "lat": 19.21033,
+    "lng": 72.86136,
+    "precision": "street",
+    "source": "bappagram.com/mandal/thakur-complexcha-maharaja-ekta-shakti-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "charkopcha-parmeshwar-maaghi-ganeshotsav",
+    "lat": 19.21711,
+    "lng": 72.83302,
+    "precision": "street",
+    "source": "bappagram.com/mandal/charkopcha-parmeshwar-maaghi-ganeshotsav (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "charkopcha-shree-vighnaharta-mitra-mandal",
+    "lat": 19.21833,
+    "lng": 72.83138,
+    "precision": "street",
+    "source": "bappagram.com/mandal/charkopcha-shree-vighnaharta-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kandivali-cha-mahaganesha",
+    "lat": 19.20189,
+    "lng": 72.84801,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kandivali-cha-mahaganesha (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kandivali-cha-shree",
+    "lat": 19.21154,
+    "lng": 72.83715,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kandivali-cha-shree (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "pancham-cha-laadka-raja",
+    "lat": 19.202662,
+    "lng": 72.841419,
+    "precision": "street",
+    "source": "bappagram.com/mandal/pancham-cha-laadka-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shivmandir-shiv-darshana-sarvajanik-ganesh-utsav-mandal",
+    "lat": 19.2022,
+    "lng": 72.83339,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shivmandir-shiv-darshana-sarvajanik-ganesh-utsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-sai-mitra-yuva-mandal",
+    "lat": 19.20245,
+    "lng": 72.82957,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-sai-mitra-yuva-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "vaghwadi-ganesh-mandal",
+    "lat": 19.06812,
+    "lng": 72.8444,
+    "precision": "street",
+    "source": "bappagram.com/mandal/vaghwadi-ganesh-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "khargharcha-sukhkarta-sarvajanik-shree-ganeshotsav-mandal",
+    "lat": 19.03113,
+    "lng": 73.06669,
+    "precision": "street",
+    "source": "bappagram.com/mandal/khargharcha-sukhkarta-sarvajanik-shree-ganeshotsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "khargharcha-raja-ganesh-mandir",
+    "lat": 19.04107,
+    "lng": 73.06587,
+    "precision": "street",
+    "source": "bappagram.com/mandal/khargharcha-raja-ganesh-mandir (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "1st-khattar-galli",
+    "lat": 18.9537053,
+    "lng": 72.8254433,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/1st-khattar-galli (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "1st-parsiwada",
+    "lat": 18.956506,
+    "lng": 72.825022,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/1st-parsiwada (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "1st-suttarlane",
+    "lat": 18.9563995,
+    "lng": 72.8271749,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/1st-suttarlane (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "2nd-khattar-galli",
+    "lat": 18.9530824,
+    "lng": 72.8255869,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/2nd-khattar-galli (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "2nd-suttarlane",
+    "lat": 18.9569315,
+    "lng": 72.8273442,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/2nd-suttarlane (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "bhuleshwar-cha-raja",
+    "lat": 18.9533286,
+    "lng": 72.8277567,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/bhuleshwar-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dakshin-mumbai-cha-samrat",
+    "lat": 18.9642335,
+    "lng": 72.8262836,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/dakshin-mumbai-cha-samrat (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "giragaon-cha-vignaharta",
+    "lat": 18.9538569,
+    "lng": 72.8216049,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/giragaon-cha-vignaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "girgaon-cha-ganraj",
+    "lat": 18.9557176,
+    "lng": 72.8216229,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/girgaon-cha-ganraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "girgaon-cha-mahaganpati",
+    "lat": 18.9556593,
+    "lng": 72.8186069,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/girgaon-cha-mahaganpati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "gol-deval-cha-raja",
+    "lat": 18.9585954,
+    "lng": 72.828038,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/gol-deval-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "gulalwadi-cha-ganraj",
+    "lat": 18.9553362,
+    "lng": 72.8295665,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/gulalwadi-cha-ganraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kamathipura-cha-gajmukh",
+    "lat": 18.9641395,
+    "lng": 72.825888,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kamathipura-cha-gajmukh (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kamathipura-cha-shree",
+    "lat": 18.9667582,
+    "lng": 72.8274868,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kamathipura-cha-shree (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kharwa-galli-cha-raja",
+    "lat": 18.9598214,
+    "lng": 72.825484,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kharwa-galli-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "khetwadi-cha-chintamani-9th-lane",
+    "lat": 18.9593864,
+    "lng": 72.822672,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/khetwadi-cha-chintamani-9th-lane (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "khetwadi-cha-ekvish-mukhi",
+    "lat": 18.9603038,
+    "lng": 72.8217016,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/khetwadi-cha-ekvish-mukhi (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "khetwadi-cha-morya-7th-lane",
+    "lat": 18.9597962,
+    "lng": 72.8235571,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/khetwadi-cha-morya-7th-lane (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "khetwadi-cha-sukhkarta-67-cross",
+    "lat": 18.959486,
+    "lng": 72.8240588,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/khetwadi-cha-sukhkarta-6-7-cross (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "khetwadi-cha-vighnaharta-3rd-lane",
+    "lat": 18.9583581,
+    "lng": 72.8250298,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/khetwadi-cha-vighnaharta--3rd-lane (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "krupalu",
+    "lat": 18.9647248,
+    "lng": 72.8271279,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/krupalu (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kumbharwada-ch-vighnaharta",
+    "lat": 18.9592285,
+    "lng": 72.8267012,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kumbharwada-ch-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kumbharwada-cha-ganraj",
+    "lat": 18.960278,
+    "lng": 72.8272367,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kumbharwada-cha-ganraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kumbharwada-cha-maharaja",
+    "lat": 18.960377,
+    "lng": 72.82801,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kumbharwada-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kumbharwada-cha-sukhkarta",
+    "lat": 18.9611624,
+    "lng": 72.8261147,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kumbharwada-cha-sukhkarta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kumbharwadya-cha-eco-friendly-ganpati",
+    "lat": 18.9577933,
+    "lng": 72.8275799,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kumbharwadya-cha-eco-friendly-ganpati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kumbharwadya-cha-samrat",
+    "lat": 18.9611624,
+    "lng": 72.8261147,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/kumbharwadya-cha-samrat (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mahaganpati-3rd-lane",
+    "lat": 18.9632967,
+    "lng": 72.826507,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/mahaganpati-3rd-lane (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "maza-ganpati",
+    "lat": 18.9575765,
+    "lng": 72.828063,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/maza-ganpati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbadevi-cha-raja",
+    "lat": 18.9478014,
+    "lng": 72.8330186,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/mumbadevi-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbai-cha-anant",
+    "lat": 18.9598776,
+    "lng": 72.8205848,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/mumbai-cha-anant (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbai-cha-icchapurti-cp-tank",
+    "lat": 18.955674,
+    "lng": 72.8272748,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/mumbai-cha-icchapurti-cp-tank (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbai-cha-vighnaraj",
+    "lat": 18.9560762,
+    "lng": 72.8253304,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/mumbai-cha-vighnaraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "panbazar-cha-raja",
+    "lat": 18.9573235,
+    "lng": 72.8248364,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/panbazar-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "panchsheel-utsav-mandal",
+    "lat": 18.9643303,
+    "lng": 72.8254897,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/panchsheel-utsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbaicha-mangalmurti",
+    "lat": 18.961,
+    "lng": 72.8235,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mumbaicha-mangalmurti (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "koparkhairne-cha-samarat",
+    "lat": 19.10308,
+    "lng": 73.00186,
+    "precision": "street",
+    "source": "bappagram.com/mandal/koparkhairne-cha-samarat (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kumbharwadyacha-ganraj",
+    "lat": 18.9581,
+    "lng": 72.8276,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kumbharwadyacha-ganraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sandesh-nagar-cha-maharaja",
+    "lat": 19.0870949,
+    "lng": 72.8799783,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/sandesh-nagar-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-ganesh-mitra-mandal-welfare-association",
+    "lat": 19.06318,
+    "lng": 72.89564,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-ganesh-mitra-mandal-welfare-association (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "parel-cha-icchapurti",
+    "lat": 19.00099,
+    "lng": 72.83934,
+    "precision": "street",
+    "source": "bappagram.com/mandal/parel-cha-icchapurti (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shiv-hanuman-mitra-mandal",
+    "lat": 19.23082,
+    "lng": 73.13024,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shiv-hanuman-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "arthur-road-cha-raja",
+    "lat": 18.9871243,
+    "lng": 72.8315808,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/arthur-road-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "balganeshcha-ballaleshwar",
+    "lat": 18.9885999,
+    "lng": 72.8371035,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/balganeshcha-ballaleshwar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "deen-building",
+    "lat": 18.9906787,
+    "lng": 72.8320694,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/deen-building (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "delisle-road-cha-maharaja",
+    "lat": 18.9899605,
+    "lng": 72.8320694,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/delisle-road-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "delisle-road-cha-raja",
+    "lat": 18.989234,
+    "lng": 72.8326238,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/delisle-road-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "girangaon-cha-raja",
+    "lat": 18.9858417,
+    "lng": 72.8362055,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/girangaon-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "hukmill-lanecha-raja",
+    "lat": 18.9900751,
+    "lng": 72.8314477,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/hukmill-lanecha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "rangari-badak-chawl",
+    "lat": 18.9876264,
+    "lng": 72.8365465,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/rangari-badak-chawl (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "malad-cha-morya-ramnagar",
+    "lat": 19.18137,
+    "lng": 72.83759,
+    "precision": "street",
+    "source": "bappagram.com/mandal/malad-cha-morya-ramnagar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "yuva-achanak-mitra-mandal",
+    "lat": 19.18654,
+    "lng": 72.863526,
+    "precision": "street",
+    "source": "bappagram.com/mandal/yuva-achanak-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "adarsh-mitra-mandal-orlemeshwar-maladcha-mahaganpati",
+    "lat": 19.19974,
+    "lng": 72.83873,
+    "precision": "street",
+    "source": "bappagram.com/mandal/adarsh-mitra-mandal-orlemeshwar-maladcha-mahaganpati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "maladcha-mahaganpati",
+    "lat": 19.18535,
+    "lng": 72.84304,
+    "precision": "street",
+    "source": "bappagram.com/mandal/maladcha-mahaganpati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "maladcha-morreshwar-bhadran-nagar-sarvajanik-ganesh-utsav-ma",
+    "lat": 19.19313,
+    "lng": 72.84859,
+    "precision": "street",
+    "source": "bappagram.com/mandal/maladcha-morreshwar-bhadran-nagar-sarvajanik-ganesh-utsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "malwanicha-omshree-ganeshutsav-mandal",
+    "lat": 19.1841,
+    "lng": 72.82168,
+    "precision": "street",
+    "source": "bappagram.com/mandal/malwanicha-omshree-ganeshutsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "malwanicha-sukhkarta",
+    "lat": 19.18805,
+    "lng": 72.82421,
+    "precision": "street",
+    "source": "bappagram.com/mandal/malwanicha-sukhkarta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "natrajmarketcha-raja",
+    "lat": 19.188,
+    "lng": 72.84686,
+    "precision": "street",
+    "source": "bappagram.com/mandal/natrajmarketcha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sapurpada-cha-raja",
+    "lat": 19.198172,
+    "lng": 72.839439,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sapurpada-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shri-ganesh-mitra-mandal-raipada",
+    "lat": 19.184,
+    "lng": 72.84634,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shri-ganesh-mitra-mandal-raipada (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "marine-drive-cha-samrat",
+    "lat": 18.9418281,
+    "lng": 72.8243136,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/marine-drive-cha-samrat (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ganesh-mandir-seva-sansthan",
+    "lat": 19.12095,
+    "lng": 72.87814,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ganesh-mandir-seva-sansthan (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbai-cha-lambodar",
+    "lat": 19.03693,
+    "lng": 72.85019,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mumbai-cha-lambodar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mirabhayandarcha-maharaja",
+    "lat": 19.3087,
+    "lng": 72.85407,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mirabhayandarcha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mira-road-cha-maharaja",
+    "lat": 19.27567,
+    "lng": 72.8631,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mira-road-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "miraroad-cha-gannu",
+    "lat": 19.28027,
+    "lng": 72.86353,
+    "precision": "street",
+    "source": "bappagram.com/mandal/miraroad-cha-gannu (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "miraroad-cha-morya-shanti-nagar-sarvajanik-ganeshotsav-manda",
+    "lat": 19.2795,
+    "lng": 72.8601,
+    "precision": "street",
+    "source": "bappagram.com/mandal/miraroad-cha-morya-shanti-nagar-sarvajanik-ganeshotsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "new-green-wood-ganesh-utsav-mandal",
+    "lat": 19.27042,
+    "lng": 72.88957,
+    "precision": "street",
+    "source": "bappagram.com/mandal/new-green-wood-ganesh-utsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sargam-mitra-mandal",
+    "lat": 19.17101,
+    "lng": 72.95371,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sargam-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ichapurti-shree-ganesh-mulund-east",
+    "lat": 19.16867,
+    "lng": 72.95694,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ichapurti-shree-ganesh-mulund-east (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-morya-mitra-mandal",
+    "lat": 19.17579,
+    "lng": 72.96163,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-morya-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "salpadevi-sadan-mulund-cha-mahaganpati",
+    "lat": 19.16643,
+    "lng": 72.94296,
+    "precision": "street",
+    "source": "bappagram.com/mandal/salpadevi-sadan-mulund-cha-mahaganpati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbadevicha-ganraj",
+    "lat": 18.9526,
+    "lng": 72.8317,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mumbadevicha-ganraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "bappa-khetwadicha-10th-lane",
+    "lat": 18.95981,
+    "lng": 72.82215,
+    "precision": "street",
+    "source": "bappagram.com/mandal/bappa-khetwadicha-10th-lane (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "chandivali-cha-maharaja",
+    "lat": 19.11122,
+    "lng": 72.8962,
+    "precision": "street",
+    "source": "bappagram.com/mandal/chandivali-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "chembur-cha-vighnaharta",
+    "lat": 19.04663,
+    "lng": 72.90364,
+    "precision": "street",
+    "source": "bappagram.com/mandal/chembur-cha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "chirabazarcha-icchapurti",
+    "lat": 18.94697,
+    "lng": 72.82521,
+    "precision": "street",
+    "source": "bappagram.com/mandal/chirabazarcha-icchapurti (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "cuffe-parade-cha-ladka",
+    "lat": 18.91255,
+    "lng": 72.81682,
+    "precision": "street",
+    "source": "bappagram.com/mandal/cuffe-parade-cha-ladka (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "diamond-cha-raja",
+    "lat": 19.20927,
+    "lng": 73.10239,
+    "precision": "street",
+    "source": "bappagram.com/mandal/diamond-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dombivalikar-mitra-mandal",
+    "lat": 19.22468,
+    "lng": 73.08682,
+    "precision": "street",
+    "source": "bappagram.com/mandal/dombivalikar-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dombivlicha-morya",
+    "lat": 19.22629,
+    "lng": 73.08746,
+    "precision": "street",
+    "source": "bappagram.com/mandal/dombivlicha-morya (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ghatkoparcha-icchapurati",
+    "lat": 19.09383,
+    "lng": 72.90414,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ghatkoparcha-icchapurati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "goddev-cha-raja",
+    "lat": 19.30485,
+    "lng": 72.8587,
+    "precision": "street",
+    "source": "bappagram.com/mandal/goddev-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "grant-road-cha-mahaganpati",
+    "lat": 18.96144,
+    "lng": 72.81863,
+    "precision": "street",
+    "source": "bappagram.com/mandal/grant-road-cha-mahaganpati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kamothyacha-vighnaharta",
+    "lat": 19.02026,
+    "lng": 73.08629,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kamothyacha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kharghar-cha-maharaja",
+    "lat": 19.0471,
+    "lng": 73.0732,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kharghar-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "khetwadicha-yuvraj",
+    "lat": 18.95922,
+    "lng": 72.82292,
+    "precision": "street",
+    "source": "bappagram.com/mandal/khetwadicha-yuvraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kopricha-maharaja",
+    "lat": 19.18351,
+    "lng": 72.9701,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kopricha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "krushna-nagar-cha-raja",
+    "lat": 19.0031,
+    "lng": 72.83807,
+    "precision": "street",
+    "source": "bappagram.com/mandal/krushna-nagar-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "labour-camp-cha-ganraj",
+    "lat": 19.03749,
+    "lng": 72.85223,
+    "precision": "street",
+    "source": "bappagram.com/mandal/labour-camp-cha-ganraj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ladibazar-cha-lambodar",
+    "lat": 18.95698,
+    "lng": 72.82865,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ladibazar-cha-lambodar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ladkalambodar-rangaribadakchal",
+    "lat": 18.98769,
+    "lng": 72.83665,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ladkalambodar-rangaribadakchal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "malad-cha-vighanharta",
+    "lat": 19.18202,
+    "lng": 72.84509,
+    "precision": "street",
+    "source": "bappagram.com/mandal/malad-cha-vighanharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "maniklal-cha-vighna-harta",
+    "lat": 19.0089,
+    "lng": 72.902,
+    "precision": "street",
+    "source": "bappagram.com/mandal/maniklal-cha-vighna-harta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbai-cha-ladkaa-shubhankar",
+    "lat": 18.96446,
+    "lng": 72.82528,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mumbai-cha-ladkaa-shubhankar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "parel-cha-lambodar",
+    "lat": 19.00254,
+    "lng": 72.83817,
+    "precision": "street",
+    "source": "bappagram.com/mandal/parel-cha-lambodar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "parel-cha-samrat",
+    "lat": 19.0072,
+    "lng": 72.83807,
+    "precision": "street",
+    "source": "bappagram.com/mandal/parel-cha-samrat (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sakinakacha-mahagapati-sai-siddhi-mitra-mandalsatyanagar",
+    "lat": 19.10146,
+    "lng": 72.88696,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sakinakacha-mahagapati-sai-siddhi-mitra-mandal-satyanagar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "santosh-nagar-marketcha-raja",
+    "lat": 19.1701,
+    "lng": 72.8762,
+    "precision": "street",
+    "source": "bappagram.com/mandal/santosh-nagar-marketcha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shivsena-galicha-raja",
+    "lat": 19.30746,
+    "lng": 72.84769,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shivsena-galicha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-siddhivinayak-mitra-mandal",
+    "lat": 19.22582,
+    "lng": 73.08093,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-siddhivinayak-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sion-cha-icchapurati",
+    "lat": 19.04605,
+    "lng": 72.86916,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sion-cha-icchapurati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "tardeo-cha-raja",
+    "lat": 18.97123,
+    "lng": 72.81786,
+    "precision": "street",
+    "source": "bappagram.com/mandal/tardeo-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "thakurdwar-cha-raja-dhobiwadi",
+    "lat": 18.9521,
+    "lng": 72.82328,
+    "precision": "street",
+    "source": "bappagram.com/mandal/thakurdwar-cha-raja-dhobiwadi (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "umarkhadi-cha-raja",
+    "lat": 18.96166,
+    "lng": 72.83587,
+    "precision": "street",
+    "source": "bappagram.com/mandal/umarkhadi-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "upanagarcha-chintamani",
+    "lat": 19.1758,
+    "lng": 72.8158,
+    "precision": "street",
+    "source": "bappagram.com/mandal/upanagarcha-chintamani (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "vasant-wadi-ganesh-mitra-mandal",
+    "lat": 19.21197,
+    "lng": 73.09394,
+    "precision": "street",
+    "source": "bappagram.com/mandal/vasant-wadi-ganesh-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "vijay-nagar-cha-raja",
+    "lat": 19.02933,
+    "lng": 72.87209,
+    "precision": "street",
+    "source": "bappagram.com/mandal/vijay-nagar-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "worlicha-raja",
+    "lat": 18.99881,
+    "lng": 72.81667,
+    "precision": "street",
+    "source": "bappagram.com/mandal/worlicha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbai-central-cha-raja",
+    "lat": 18.9664337,
+    "lng": 72.8211293,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/mumbai-central-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbai-cha-aaradhya",
+    "lat": 18.976084,
+    "lng": 72.8262797,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/mumbai-cha-aaradhya (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "saatrastya-cha-raja",
+    "lat": 18.9806766,
+    "lng": 72.82496,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/saatrastya-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "tardeo-cha-vighnaharta",
+    "lat": 18.9717482,
+    "lng": 72.8133678,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/tardeo-cha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "tulsiwadi-cha-maharaja",
+    "lat": 18.9751289,
+    "lng": 72.8126434,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/tulsiwadi-cha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sir-surya-lal-hindu-khatik-bal-gopal-mitra-mandal-mutton-vib",
+    "lat": 19.010365,
+    "lng": 72.820538,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sir-surya-lal-hindu-khatik-bal-gopal-mitra-mandal-mutton (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "naigaon-cha-raja",
+    "lat": 19.00842,
+    "lng": 72.84775,
+    "precision": "street",
+    "source": "bappagram.com/mandal/naigaon-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "koparkhairane-cha-icchapurti",
+    "lat": 19.10186,
+    "lng": 73.00097,
+    "precision": "street",
+    "source": "bappagram.com/mandal/koparkhairane-cha-icchapurti (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "santacruz-cha-vigneshwar",
+    "lat": 19.08323,
+    "lng": 72.847159,
+    "precision": "street",
+    "source": "bappagram.com/mandal/santacruz-cha-vigneshwar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "akashdeep-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.068697,
+    "lng": 72.842219,
+    "precision": "street",
+    "source": "bappagram.com/mandal/akashdeep-sarvajanik-ganeshotsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "singhestate-cha-raja",
+    "lat": 19.205614,
+    "lng": 72.872422,
+    "precision": "street",
+    "source": "bappagram.com/mandal/singhestate-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-ganpati-mandir-nerul-west",
+    "lat": 19.03637,
+    "lng": 73.01172,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-ganpati-mandir-nerul-west (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-sai-dristi-mitra-mandal",
+    "lat": 19.081801,
+    "lng": 72.856016,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-sai-drushti-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbaicha-ekdant",
+    "lat": 19.003374,
+    "lng": 72.837246,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mumbaicha-ekdant (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "fortcha-ichhapurti-ganesh",
+    "lat": 18.937673,
+    "lng": 72.836969,
+    "precision": "street",
+    "source": "bappagram.com/mandal/fortcha-ichhapurti-ganesh (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "dhamankar-naka-ganpati",
+    "lat": 19.2881,
+    "lng": 73.0548,
+    "precision": "street",
+    "source": "bappagram.com/mandal/dhamankar-naka-ganpati (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "millennium-mitra-mandal",
+    "lat": 19.28591,
+    "lng": 73.05886,
+    "precision": "street",
+    "source": "bappagram.com/mandal/millennium-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mithila-navayuvak-ganeshotsav-sanstha",
+    "lat": 19.28317,
+    "lng": 73.07246,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mithila-navayuvak-ganeshotsav-sanstha (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "padmanagar-mitra-mandal",
+    "lat": 19.28542,
+    "lng": 73.06519,
+    "precision": "street",
+    "source": "bappagram.com/mandal/padmanagar-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "bhoiwada-cha-raja",
+    "lat": 19.0072356,
+    "lng": 72.8444198,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/bhoiwada-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "elphinstone-cha-ekdant",
+    "lat": 19.0079845,
+    "lng": 72.8351619,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/elphinstone-cha-ekdant (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "prabhadevi-cha-raja",
+    "lat": 19.0101351,
+    "lng": 72.8298346,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/prabhadevi-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "parel-cha-vighnaharta",
+    "lat": 19.003859,
+    "lng": 72.838344,
+    "precision": "street",
+    "source": "bappagram.com/mandal/parel-cha-vighnaharta (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "panvel-raja-lambodar",
+    "lat": 19.009365,
+    "lng": 73.11706,
+    "precision": "street",
+    "source": "bappagram.com/mandal/panvel-raja-lambodar (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "hanuman-mitra-mandal-powai",
+    "lat": 19.12509,
+    "lng": 72.91994,
+    "precision": "street",
+    "source": "bappagram.com/mandal/hanuman-mitra-mandal-powai (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shivshakti-seva-sangh-ganpati-mandap",
+    "lat": 19.12315,
+    "lng": 72.88939,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shivshakti-seva-sangh-ganpati-mandap (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "adarsh-nagar-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.01465,
+    "lng": 72.82198,
+    "precision": "street",
+    "source": "bappagram.com/mandal/adarsh-nagar-sarvajanik-ganeshotsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "elphinstonecha-raja",
+    "lat": 19.0054998,
+    "lng": 72.8322894,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/located-near-prabhadevi-station-now-murti-is-being (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-siddhivinayak-temple",
+    "lat": 19.01695,
+    "lng": 72.83039,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-siddhivinayak-temple (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbai-cha-maharajadhiraj-sarvajanik-ganeshutsav-mandal",
+    "lat": 19.10085,
+    "lng": 72.89258,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mumbai-cha-maharajadhiraj-sarvajanik-ganeshutsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sanpadyacha-maharaja",
+    "lat": 19.06724,
+    "lng": 73.00823,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sanpadyacha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sanpada-cha-raja-sarvajanik-ganeshotsav-mandal",
+    "lat": 19.06243,
+    "lng": 73.01071,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sanpada-cha-raja-sarvajanik-ganeshotsav-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shivdicha-raja",
+    "lat": 18.99853,
+    "lng": 72.85177,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shivdicha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "vigneshwar-pooja-mandal",
+    "lat": 19.2285,
+    "lng": 73.14052,
+    "precision": "street",
+    "source": "bappagram.com/mandal/vigneshwar-pooja-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shivdi-cha-samrat",
+    "lat": 18.9958336,
+    "lng": 72.8520882,
+    "precision": "street",
+    "source": "mumbaiganpatipandals.in/pandal/shivdi-cha-samrat (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "navjeevan-mitra-mandal",
+    "lat": 19.202606,
+    "lng": 72.875474,
+    "precision": "street",
+    "source": "bappagram.com/mandal/navjeevan-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "bigbulls-mitramandal",
+    "lat": 19.040872,
+    "lng": 72.86307,
+    "precision": "street",
+    "source": "bappagram.com/mandal/bigbulls-mitramandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sion-fort-cha-raja",
+    "lat": 19.04689,
+    "lng": 72.86903,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sion-fort-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sundarbagacha-raja",
+    "lat": 19.0725,
+    "lng": 72.8834,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sundarbagacha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "sahakarwadi-cha-raja",
+    "lat": 19.172678,
+    "lng": 72.857108,
+    "precision": "street",
+    "source": "bappagram.com/mandal/sahakarwadi-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mazgoancha-morya",
+    "lat": 18.9691,
+    "lng": 72.8458,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mazgoancha-morya (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "vakratunda-mitra-mandal-sarvajanik-ganeshutsav-kandivali-cha",
+    "lat": 19.209291,
+    "lng": 72.878899,
+    "precision": "street",
+    "source": "bappagram.com/mandal/vakratunda-mitra-mandal-sarvajanik-ganeshutsav-kandivali (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbaicha-krupalu",
+    "lat": 18.9525,
+    "lng": 72.8188,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mumbaicha-krupalu (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "thanyacha-raja",
+    "lat": 19.19699,
+    "lng": 72.9648,
+    "precision": "street",
+    "source": "bappagram.com/mandal/thanyacha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mahavishwacha-raja",
+    "lat": 19.19177,
+    "lng": 72.95224,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mahavishwacha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "thanyacha-maharaja",
+    "lat": 19.18865,
+    "lng": 72.95128,
+    "precision": "street",
+    "source": "bappagram.com/mandal/thanyacha-maharaja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "thanyacha-siddhidata",
+    "lat": 19.1879,
+    "lng": 72.95167,
+    "precision": "street",
+    "source": "bappagram.com/mandal/thanyacha-siddhidata (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "kajuwadicha-raja",
+    "lat": 19.19757,
+    "lng": 72.96074,
+    "precision": "street",
+    "source": "bappagram.com/mandal/kajuwadicha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "wagle-cha-raja",
+    "lat": 19.18679,
+    "lng": 72.95461,
+    "precision": "street",
+    "source": "bappagram.com/mandal/wagle-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "tardeocha-icchapurti",
+    "lat": 18.9696,
+    "lng": 72.8139,
+    "precision": "street",
+    "source": "bappagram.com/mandal/tardeo-cha-icchapurti (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "tulsiwadicha-maharaj",
+    "lat": 18.9688,
+    "lng": 72.8142,
+    "precision": "street",
+    "source": "bappagram.com/mandal/tulsiwadicha-maharaj (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "navi-mumbai-cha-raja-shiv-chaya-mitra-mandal-turbhe",
+    "lat": 19.07295,
+    "lng": 73.01276,
+    "precision": "street",
+    "source": "bappagram.com/mandal/navi-mumbai-cha-raja-shiv-chaya-mitra-mandal-turbhe (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "ranatil-ganpati-mandir-turbhe",
+    "lat": 19.07724,
+    "lng": 73.02971,
+    "precision": "street",
+    "source": "bappagram.com/mandal/ranatil-ganpati-mandir-turbhe (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "vasai-cha-raja",
+    "lat": 19.3434,
+    "lng": 72.80378,
+    "precision": "street",
+    "source": "bappagram.com/mandal/vasai-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "yuva-ganesh-utsav-mandal-vashi",
+    "lat": 19.07341,
+    "lng": 72.98736,
+    "precision": "street",
+    "source": "bappagram.com/mandal/yuva-ganesh-utsav-mandal-vashi (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-ganesh-mandir-bal-mitra-mandal-asalpha",
+    "lat": 19.10225,
+    "lng": 72.88797,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-ganesh-mandir-bal-mitra-mandal-asalpha (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "jai-ganesh-mitra-mandal-vikhroli",
+    "lat": 19.1228,
+    "lng": 72.94046,
+    "precision": "street",
+    "source": "bappagram.com/mandal/jai-ganesh-mitra-mandal-vikhroli (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-sankalp-siddhi-ganesh-mitra-mandal",
+    "lat": 19.10131,
+    "lng": 72.91802,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-sankalp-siddhi-ganesh-mitra-mandal (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "shree-icchapurti-ganesh-utsav-mandal-vile-parle",
+    "lat": 19.11001,
+    "lng": 72.84702,
+    "precision": "street",
+    "source": "bappagram.com/mandal/shree-icchapurti-ganesh-utsav-mandal-vile-parle (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "nadkarni-park-cha-raja",
+    "lat": 19.0159,
+    "lng": 72.86219,
+    "precision": "street",
+    "source": "bappagram.com/mandal/nadkarni-park-cha-raja (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
+  },
+  {
+    "slug": "mumbai-polisancha-raja-worli",
+    "lat": 19.0006,
+    "lng": 72.8162,
+    "precision": "street",
+    "source": "bappagram.com/mandal/mumbai-polisancha-raja-worli (scraped 2026-09-19)",
+    "fetchedAt": "2026-09-13"
   }
 ]
