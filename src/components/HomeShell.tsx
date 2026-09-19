@@ -33,11 +33,15 @@ export default function HomeShell({
       <div className={`${showList ? 'block' : 'hidden'} md:block`}>{list}</div>
 
       {view && (
-        <nav className="fixed inset-x-0 bottom-[max(1rem,env(safe-area-inset-bottom))] z-30 flex flex-col items-center gap-2 px-4 md:hidden">
+        // The bar spans the full width but is mostly empty space. Without
+        // pointer-events-none it ate every tap in the bottom 90 px of the
+        // map — exactly where a thumb rests — so pins down there never
+        // opened. Only the controls themselves take taps.
+        <nav className="pointer-events-none fixed inset-x-0 bottom-[max(1rem,env(safe-area-inset-bottom))] z-30 flex flex-col items-center gap-2 px-4 md:hidden">
           {callout && view === 'map' && (
             <Link
               href={callout.href}
-              className="max-w-full truncate rounded-full border border-amber-900/10 bg-white/95 px-4 py-2 text-[13px] font-semibold text-maroon shadow-lg backdrop-blur"
+              className="pointer-events-auto max-w-full truncate rounded-full border border-amber-900/10 bg-white/95 px-4 py-2 text-[13px] font-semibold text-maroon shadow-lg backdrop-blur"
             >
               <span aria-hidden className="mr-1.5">
                 {callout.icon}
@@ -45,7 +49,7 @@ export default function HomeShell({
               {callout.label}
             </Link>
           )}
-          <div className="flex rounded-full bg-maroon p-1 shadow-lg shadow-maroon/30">
+          <div className="pointer-events-auto flex rounded-full bg-maroon p-1 shadow-lg shadow-maroon/30">
             {(
               [
                 ['map', labels.map],
