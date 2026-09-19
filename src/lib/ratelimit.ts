@@ -34,3 +34,20 @@ export function getSevaLimiter(): Ratelimit | null {
   }
   return sevaLimiter;
 }
+
+let restoreLimiter: Ratelimit | null | undefined;
+
+/** 10 restore-code attempts per IP hash per hour, so codes can't be guessed. */
+export function getRestoreLimiter(): Ratelimit | null {
+  if (restoreLimiter === undefined) {
+    const redis = getRedis();
+    restoreLimiter = redis
+      ? new Ratelimit({
+          redis,
+          limiter: Ratelimit.slidingWindow(10, '1 h'),
+          prefix: 'morya:rl:restore',
+        })
+      : null;
+  }
+  return restoreLimiter;
+}

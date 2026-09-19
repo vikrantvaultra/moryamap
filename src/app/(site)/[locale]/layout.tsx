@@ -126,7 +126,11 @@ export default async function LocaleLayout({
           </footer>
         </div>
         {seva && (
-          <SevaGate labels={seva} amount={SEVA_AMOUNT} />
+          <SevaGate
+            labels={seva}
+            amount={SEVA_AMOUNT}
+            restoreHref={localePath(locale, '/restore')}
+          />
         )}
         <Analytics />
       </body>
@@ -171,5 +175,6 @@ async function sevaLabels(): Promise<SevaLabels | null> {
     paymentRef: raw('paymentRef'),
     enter: raw('enter'),
     close: raw('close'),
+    restoreLink: raw('restoreLink'),
   };
 }
