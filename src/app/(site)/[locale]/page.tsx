@@ -8,6 +8,9 @@ import MandalList, { type ListItem } from '@/components/MandalList';
 import MapShell from '@/components/MapShell';
 import type { MapStrings } from '@/components/MapView';
 import { formatRangeParts } from '@/components/WaitFigure';
+import AshirwadPromo from '@/components/AshirwadPromo';
+import { ASHIRWAD_LINK } from '@/components/ToolsNav';
+import { ashirwadOpen, daysUntilVisarjan } from '@/lib/ashirwad';
 import { immersionMoment } from '@/lib/festival-data';
 import { absoluteUrl, shareMetadata } from '@/lib/metadata';
 import { mandalName, pinIcon, pinShortKey, queueLabel } from '@/lib/names';
@@ -140,11 +143,21 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           }),
         }
     : null;
-  const callout = banner ?? {
-    href: localePath(locale, '/routes'),
-    icon: '🪔',
-    label: `${tn('routes')} →`,
-  };
+  // Immersion-day logistics win the one floating slot on their days; the
+  // rest of the time it invites visitors to Bappa's ashirwad (when it can
+  // actually be offered), else to the routes.
+  const showAshirwad = await ashirwadOpen();
+  const tp = await getTranslations('ashirwadPromo');
+  const bappaHome = daysUntilVisarjan(now) < 0;
+  const callout =
+    banner ??
+    (showAshirwad
+      ? {
+          href: ASHIRWAD_LINK.href,
+          icon: ASHIRWAD_LINK.icon,
+          label: `${tp(bappaHome ? 'calloutAfter' : 'callout')} →`,
+        }
+      : { href: localePath(locale, '/routes'), icon: '🪔', label: `${tn('routes')} →` });
 
   // Precompute display strings server-side so the list client component
   // ships no i18n runtime. Order stays area/popularity — never wait.
@@ -237,6 +250,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               {banner.label}
             </Link>
           )}
+
+          {showAshirwad && <AshirwadPromo className="mt-3" />}
 
           <div className="mt-3">
             <ToolsNav locale={locale} current="map" hideMap />

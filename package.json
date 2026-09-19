@@ -17,7 +17,8 @@
     "directory": "tsx scripts/build-directory.ts",
     "wards": "tsx scripts/assign-wards.ts",
     "osm": "tsx scripts/osm-mandals.ts",
-    "darshan:preview": "tsx scripts/make-darshan-preview.ts"
+    "darshan:preview": "tsx scripts/make-darshan-preview.ts",
+    "ashirwad:preview": "tsx scripts/make-ashirwad-preview.ts"
   },
   "dependencies": {
     "@upstash/ratelimit": "^2.0.8",

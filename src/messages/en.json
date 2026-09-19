@@ -138,7 +138,8 @@
     "visarjan": "Visarjan day",
     "ponds": "Immersion ponds",
     "trains": "Night trains",
-    "guide": "First-timer guide"
+    "guide": "First-timer guide",
+    "ashirwad": "Bappa's ashirwad"
   },
   "festival": {
     "one_and_half_day": "1½-day visarjan",
@@ -415,5 +416,13 @@
     "western": "Western Suburbs",
     "eastern": "Eastern Suburbs",
     "mmr": "Beyond Mumbai"
+  },
+  "ashirwadPromo": {
+    "callout": "Receive Bappa's ashirwad before He goes home",
+    "calloutAfter": "Keep Bappa's ashirwad with you",
+    "title": "Bappa is waiting for you",
+    "body": "Before He goes home on Anant Chaturdashi, stand before Him once more and receive His ashirwad — wherever you are.",
+    "bodyAfter": "Bappa has gone home. Until He comes again, keep His ashirwad close — wherever you are.",
+    "cta": "Receive the ashirwad →"
   }
 }

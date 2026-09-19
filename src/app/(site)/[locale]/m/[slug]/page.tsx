@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { marked } from 'marked';
+import AshirwadPromo from '@/components/AshirwadPromo';
 import PaidFeature from '@/components/PaidFeature';
 import ShareBar from '@/components/ShareBar';
 import WaitFigure from '@/components/WaitFigure';
@@ -10,6 +11,7 @@ import { absoluteUrl, shareMetadata } from '@/lib/metadata';
 import { landmarkName, mandalName, pinLabelKey, queueLabel } from '@/lib/names';
 import { estimateForQueue, getAllMandalSlugs, getMandalBySlug } from '@/lib/queries';
 import { circuitsContaining, l10n } from '@/lib/routes';
+import { ashirwadOpen } from '@/lib/ashirwad';
 import { localePath } from '@/lib/site';
 
 // ISR: the CDN absorbs festival-evening spikes; origin sees ~1 req/min/page.
@@ -181,6 +183,8 @@ export default async function MandalPage({
           </PaidFeature>
         </section>
       )}
+
+      {(await ashirwadOpen()) && <AshirwadPromo className="mt-4" />}
 
       <section className="card mt-4 p-4">
         <h2 className="text-sm font-bold uppercase tracking-wide text-ink-soft">{ts('heading')}</h2>

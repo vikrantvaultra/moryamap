@@ -42,3 +42,10 @@ next-env.d.ts
 
 # Template with placeholder values only — safe to commit.
 !.env.example
+
+# Ashirwad artwork: only the committed, CC BY-SA default (bappa.jpg) is
+# tracked. Anything else dropped here — an exclusive image of your own — stays
+# out of this public repo; serve that via ASHIRWAD_IMAGE_URL instead.
+/src/assets/ashirwad/*
+!/src/assets/ashirwad/README.md
+!/src/assets/ashirwad/bappa.jpg

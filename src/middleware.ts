@@ -7,10 +7,12 @@ const intl = createMiddleware(routing);
 export default function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
-  // /darshan is a standalone page outside the locale tree — no /en, /mr, /hi
-  // prefix, and no next-intl rewrite.
-  if (pathname === '/darshan' || pathname.startsWith('/darshan/')) {
-    return NextResponse.next();
+  // /darshan and /ashirwad are standalone pages outside the locale tree — no
+  // /en, /mr, /hi prefix, and no next-intl rewrite.
+  for (const standalone of ['/darshan', '/ashirwad']) {
+    if (pathname === standalone || pathname.startsWith(`${standalone}/`)) {
+      return NextResponse.next();
+    }
   }
 
   // /admin sits outside the locale tree and behind HTTP basic auth.

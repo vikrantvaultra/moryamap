@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers';
 import { DARSHAN_AMOUNT, DARSHAN_PASS_COOKIE, darshanConfig, hasDarshanPass } from '@/lib/darshan';
 import { PREVIEW_PATH, findOriginal } from '@/lib/darshan-image';
-import DarshanGate from './DarshanGate';
+import UnlockGate from '@/components/UnlockGate';
 import UnlockedPhoto from './UnlockedPhoto';
 
 // Dynamic on purpose: the pass is read here, on the server, so a locked visitor
@@ -57,7 +57,19 @@ export default async function DarshanPage() {
 
               {cfg ? (
                 hasPhoto ? (
-                  <DarshanGate amount={DARSHAN_AMOUNT} />
+                  <UnlockGate
+                    amount={DARSHAN_AMOUNT}
+                    api="/api/darshan"
+                    labels={{
+                      pay: `Pay ₹${DARSHAN_AMOUNT} to see the image`,
+                      opening: 'Opening…',
+                      showQr: 'Show a UPI QR code instead',
+                      scanCaption:
+                        'Scan with any UPI app. The image unlocks by itself once the payment lands.',
+                      waiting: 'Waiting for the payment to confirm…',
+                      checkoutDescription: 'Mandal darshan photograph',
+                    }}
+                  />
                 ) : (
                   <p className="mt-5 rounded-2xl bg-cream-deep px-4 py-3 text-center text-xs text-ink-soft">
                     Payment is switched off until the photograph is in place.
