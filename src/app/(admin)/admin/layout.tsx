@@ -17,9 +17,17 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <Link href="/admin" className="text-sm font-bold text-maroon">
               Morya Map · Admin
             </Link>
-            <Link href="/" className="text-xs font-medium text-stone-500 hover:text-stone-800">
-              View site →
-            </Link>
+            <div className="flex items-center gap-4">
+              <Link
+                href="/admin/restore"
+                className="text-xs font-semibold text-maroon hover:text-stone-800"
+              >
+                Restore codes
+              </Link>
+              <Link href="/" className="text-xs font-medium text-stone-500 hover:text-stone-800">
+                View site →
+              </Link>
+            </div>
           </div>
         </header>
         <main className="mx-auto w-full max-w-5xl px-4 py-6">{children}</main>

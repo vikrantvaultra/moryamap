@@ -35,6 +35,7 @@ export interface SevaLabels {
   paymentRef: string;
   enter: string;
   close: string;
+  restoreLink: string;
 }
 
 interface Qr {
@@ -93,7 +94,16 @@ const fill = (s: string, amount: number) => s.replaceAll('{amount}', String(amou
  * it (SEVA_OPEN_EVENT); once Razorpay confirms payment this device is unlocked
  * and every locked feature on the page opens (SEVA_PAID_EVENT).
  */
-export default function SevaGate({ labels, amount }: { labels: SevaLabels; amount: number }) {
+export default function SevaGate({
+  labels,
+  amount,
+  restoreHref,
+}: {
+  labels: SevaLabels;
+  amount: number;
+  /** The restore-code page, for people who paid in another browser. */
+  restoreHref: string;
+}) {
   const [phase, setPhase] = useState<'hidden' | 'open' | 'paid'>('hidden');
   const [qr, setQr] = useState<Qr | null>(null);
   const [qrState, setQrState] = useState<QrState>('loading');
@@ -452,6 +462,11 @@ export default function SevaGate({ labels, amount }: { labels: SevaLabels; amoun
 
             <div className="space-y-1.5 border-t border-amber-900/10 pt-3 text-center text-xs text-ink-soft">
               <p>{fill(labels.unlockNote, amount)}</p>
+              <p>
+                <a href={restoreHref} className="font-semibold text-maroon underline">
+                  {labels.restoreLink}
+                </a>
+              </p>
               <p>🔒 {labels.secured}</p>
               <p>
                 <a href="tel:112" className="font-semibold text-band-red underline">

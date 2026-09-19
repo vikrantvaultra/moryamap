@@ -409,7 +409,8 @@
     "lockRoutes": "Pandal-hopping routes",
     "lockPonds": "Immersion ponds near you",
     "lockCta": "Pay ₹{amount} · unlock all features",
-    "lockHint": "One payment unlocks every feature, for all of Ganeshotsav"
+    "lockHint": "One payment unlocks every feature, for all of Ganeshotsav",
+    "restoreLink": "Paid already on another browser or phone? Use a restore code"
   },
   "regions": {
     "island": "Island City",
@@ -424,5 +425,25 @@
     "body": "Before He goes home on Anant Chaturdashi, stand before Him once more and receive His ashirwad — wherever you are.",
     "bodyAfter": "Bappa has gone home. Until He comes again, keep His ashirwad close — wherever you are.",
     "cta": "Receive the ashirwad →"
+  },
+  "restore": {
+    "metaTitle": "Unlock with a restore code",
+    "title": "Paid already? Unlock this browser",
+    "subtitle": "If you paid ₹{amount} on another browser or phone, enter the restore code we sent you to unlock every feature here.",
+    "label": "Restore code",
+    "placeholder": "ABCD-2345",
+    "submit": "Unlock this browser",
+    "checking": "Checking…",
+    "note": "A restore code works in one browser only. Once it is used here it will not work anywhere else, so please don’t share it.",
+    "invalid": "That code isn’t valid. Check it and try again, or ask us for a new one.",
+    "used": "This code has already been used in another browser. Ask us for a new one.",
+    "rateLimited": "Too many attempts. Please try again in a little while.",
+    "error": "Something went wrong. Check your connection and try again.",
+    "successTitle": "Unlocked! Ganpati Bappa Morya 🙏",
+    "successBody": "Every feature is unlocked in this browser until Ganeshotsav ends on 25 September: where the queue starts, wait times, pandal-hopping routes and immersion ponds.",
+    "already": "This browser is already unlocked",
+    "goHome": "Go to the map",
+    "howTitle": "Don’t have a code?",
+    "howBody": "Send us a screenshot of your UPI payment, or the payment reference (it starts with pay_) shown after paying. We check it with Razorpay and send you a code for your new browser."
   }
 }
